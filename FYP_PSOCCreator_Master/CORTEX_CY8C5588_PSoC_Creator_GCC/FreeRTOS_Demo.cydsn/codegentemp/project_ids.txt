@@ -1,0 +1,5 @@
+C:\Users\tadge\Documents\GitHub\FYP_PSOCCreator_Follower\FYP_New_Test\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj|d338a49a-52d8-4ef7-8380-5f1fb174f0be
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|048e6732-7c0a-4ce2-808c-49a6e442bd73
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2ef770aa-bfa2-4e7e-8564-bb8a5976f223
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f36a8e2b-9afd-42ce-8d9c-dc002912fb0c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2af4bc19-d7bb-40c6-9f72-4df288398d49

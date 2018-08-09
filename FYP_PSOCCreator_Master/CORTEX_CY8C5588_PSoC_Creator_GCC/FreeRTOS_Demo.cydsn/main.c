@@ -66,6 +66,7 @@ tick hook. */
 
 void PID_initialise( void *p );
 void receive_data( void *p );
+void DMA_config();
 static void prvHardwareSetup( void );
 
 
@@ -88,7 +89,7 @@ int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
 
 // START OF FUNCTIONS
 int main( void ) {
-	
+	const signed char * run[64];
     if (isMaster){
     /* This is the for loop for the master system */
         
@@ -99,7 +100,10 @@ int main( void ) {
     /* This is the for loop for the slave system */
         
     prvHardwareSetup(); 
-    const signed char * run[64];
+    DMA_config();
+    sprintf((char *) run, "\n=== Master ===\n\n");
+    vSerialPutString(pxPort, (const signed char *) run, 64);
+    
     sprintf((char *) run, "\n=== NEW RUN ===\n\n");
     vSerialPutString(pxPort, (const signed char *) run, 64);
     
@@ -113,6 +117,36 @@ int main( void ) {
     }
 
 	for( ;; );  // You won't actually reach this for loop.
+}
+void DMA_config(){
+    ADC_DelSig_1_Start();
+    ADC_DelSig_1_StartConvert();
+    Filter_1_Start();
+    Opamp_1_Start();
+    PGA_1_Start();
+    PGA_2_Start();  
+    /* Defines for DMA_1 */
+    #define DMA_1_BYTES_PER_BURST 1
+    #define DMA_1_REQUEST_PER_BURST 1
+    #define DMA_1_SRC_BASE (CYDEV_PERIPH_BASE)
+    #define DMA_1_DST_BASE (CYDEV_PERIPH_BASE)
+
+    /* Variable declarations for DMA_1 */
+    /* Move these variable declarations to the top of the function */
+    uint8 DMA_1_Chan;
+    uint8 DMA_1_TD[1];
+
+    /* DMA Configuration for DMA_1 */
+    DMA_1_Chan = DMA_1_DmaInitialize(DMA_1_BYTES_PER_BURST, DMA_1_REQUEST_PER_BURST, 
+        HI16(DMA_1_SRC_BASE), HI16(DMA_1_DST_BASE));
+    DMA_1_TD[0] = CyDmaTdAllocate();
+    CyDmaTdSetConfiguration(DMA_1_TD[0], 8, CY_DMA_DISABLE_TD, 0);
+    CyDmaTdSetAddress(DMA_1_TD[0], LO16((uint32)ADC_DelSig_1_DEC_SAMP_PTR), LO16((uint32)Filter_1_STAGEA_PTR));
+    CyDmaChSetInitialTd(DMA_1_Chan, DMA_1_TD[0]);
+    CyDmaChEnable(DMA_1_Chan, 1);
+    const signed char * local_write[64];
+    sprintf((char *) local_write, "In DMA CONFIG  ");
+    vSerialPutString(pxPort, (const signed char *) local_write, 64);
 }
 
 void receive_data( void *p ) {
@@ -174,9 +208,9 @@ void PID_initialise( void *p ) {
     initialise_wheel_data(&left_wheel);
     initialise_wheel_data(&right_wheel);
     
-    k.Kp = 100;
-    k.Ki = 0.1;
-    k.Kd = 1000;
+    k.Kp = 40;
+    k.Ki = 0;
+    k.Kd = 20;
     
     signed char *local_write[64];  
     
@@ -188,7 +222,8 @@ void PID_initialise( void *p ) {
             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors using PID
             
             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels
-            
+            sprintf((char *) local_write, "Filter Read: %u\n", Filter_1_Read8(Filter_1_CHANNEL_A));
+            vSerialPutString(pxPort, (signed char *) local_write, 64);
 			xSemaphoreGive(gatekeeper);                     // give the semaphore back
     	}
         vTaskDelay(10);                                     // wait 10ms before going again
@@ -229,7 +264,7 @@ void prvHardwareSetup( void ) {
 
     /* Start up the master peripherals. */
     if (isMaster){
-        Laser_Write(1); // turn on the laser
+         Laser_Write(1);// turn on the laser
     }
     
     /* Start up the slave peripherals. */

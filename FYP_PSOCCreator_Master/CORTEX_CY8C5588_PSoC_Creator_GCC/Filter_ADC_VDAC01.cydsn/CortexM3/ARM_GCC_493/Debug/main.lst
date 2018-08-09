@@ -1,0 +1,1038 @@
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"main.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.comm	buffer,10,4
+  19              		.section	.rodata
+  20              		.align	2
+  21              	.LC0:
+  22 0000 46696C74 		.ascii	"Filter: %i\000"
+  22      65723A20 
+  22      256900
+  23 000b 00       		.align	2
+  24              	.LC1:
+  25 000c 68656C6C 		.ascii	"hello\000"
+  25      6F00
+  26              		.section	.text.filterVDAC,"ax",%progbits
+  27              		.align	2
+  28              		.global	filterVDAC
+  29              		.thumb
+  30              		.thumb_func
+  31              		.type	filterVDAC, %function
+  32              	filterVDAC:
+  33              	.LFB63:
+  34              		.file 1 "main.c"
+   1:main.c        **** /*******************************************************************************
+   2:main.c        **** * File Name: main.c
+   3:main.c        **** *
+   4:main.c        **** * Version: 1.10
+   5:main.c        **** *
+   6:main.c        **** ********************************************************************************
+   7:main.c        **** * Copyright 2012, Cypress Semiconductor Corporation. All rights reserved.
+   8:main.c        **** * This software is owned by Cypress Semiconductor Corporation and is protected
+   9:main.c        **** * by and subject to worldwide patent and copyright laws and treaties.
+  10:main.c        **** * Therefore, you may use this software only as provided in the license agreement
+  11:main.c        **** * accompanying the software package from which you obtained this software.
+  12:main.c        **** * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  13:main.c        **** * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  14:main.c        **** * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  15:main.c        **** *******************************************************************************/
+  16:main.c        **** 
+  17:main.c        **** #include <project.h>
+  18:main.c        **** 
+  19:main.c        **** 
+  20:main.c        **** #define REQUEST_PER_BURST        (1u)
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 2
+
+
+  21:main.c        **** #define BYTES_PER_BURST          (1u)
+  22:main.c        **** #define UPPER_SRC_ADDRESS        CYDEV_PERIPH_BASE
+  23:main.c        **** #define UPPER_DEST_ADDRESS       CYDEV_PERIPH_BASE
+  24:main.c        **** 
+  25:main.c        **** void DMA_Config(void);
+  26:main.c        **** 
+  27:main.c        **** char buffer[10];
+  28:main.c        **** /*******************************************************************************
+  29:main.c        **** * Interrupt
+  30:main.c        **** ********************************************************************************
+  31:main.c        **** * Interrupt generated on Filter sample-ready. Interrupt handle:filterVDAC
+  32:main.c        **** *
+  33:main.c        **** * Summary:
+  34:main.c        **** *  The interrupt performs following functions:
+  35:main.c        **** *   1: Reads the left-justified register for Filter Channel A
+  36:main.c        **** *   2: Converts it into an unsigned value
+  37:main.c        **** *   3: Writes this value to VDAC
+  38:main.c        **** *
+  39:main.c        **** *******************************************************************************/
+  40:main.c        **** CY_ISR(filterVDAC)
+  41:main.c        **** {
+  35              		.loc 1 41 0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 0
+  38              		@ frame_needed = 1, uses_anonymous_args = 0
+  39 0000 80B5     		push	{r7, lr}
+  40              		.cfi_def_cfa_offset 8
+  41              		.cfi_offset 7, -8
+  42              		.cfi_offset 14, -4
+  43 0002 00AF     		add	r7, sp, #0
+  44              		.cfi_def_cfa_register 7
+  42:main.c        ****     /* Convert the 2's complement value to an unsigned 8-bit value
+  43:main.c        ****      * The VDAC expects an unsigned 8-bit value as input.
+  44:main.c        ****      */
+  45:main.c        ****     sprintf(buffer,"Filter: %i",Filter_Read8(Filter_CHANNEL_A));
+  45              		.loc 1 45 0
+  46 0004 0020     		movs	r0, #0
+  47 0006 FFF7FEFF 		bl	Filter_Read8
+  48 000a 0346     		mov	r3, r0
+  49 000c 0448     		ldr	r0, .L2
+  50 000e 0549     		ldr	r1, .L2+4
+  51 0010 1A46     		mov	r2, r3
+  52 0012 FFF7FEFF 		bl	sprintf
+  46:main.c        **** 	UART_1_PutString("hello");
+  53              		.loc 1 46 0
+  54 0016 0448     		ldr	r0, .L2+8
+  55 0018 FFF7FEFF 		bl	UART_1_PutString
+  47:main.c        **** }
+  56              		.loc 1 47 0
+  57 001c 80BD     		pop	{r7, pc}
+  58              	.L3:
+  59 001e 00BF     		.align	2
+  60              	.L2:
+  61 0020 00000000 		.word	buffer
+  62 0024 00000000 		.word	.LC0
+  63 0028 0C000000 		.word	.LC1
+  64              		.cfi_endproc
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 3
+
+
+  65              	.LFE63:
+  66              		.size	filterVDAC, .-filterVDAC
+  67              		.section	.rodata
+  68 0012 0000     		.align	2
+  69              	.LC2:
+  70 0014 46696C74 		.ascii	"Filter: %i\012\000"
+  70      65723A20 
+  70      25690A00 
+  71              		.section	.text.main,"ax",%progbits
+  72              		.align	2
+  73              		.global	main
+  74              		.thumb
+  75              		.thumb_func
+  76              		.type	main, %function
+  77              	main:
+  78              	.LFB64:
+  48:main.c        **** 
+  49:main.c        **** 
+  50:main.c        **** /*******************************************************************************
+  51:main.c        **** * Function Name: main
+  52:main.c        **** ********************************************************************************
+  53:main.c        **** *
+  54:main.c        **** * Summary:
+  55:main.c        **** *  Main function performs following functions:
+  56:main.c        **** *   1: Enables global interrupts
+  57:main.c        **** *   2: Start all components on the schematic
+  58:main.c        **** *   3: Calls a function to configure DMA
+  59:main.c        **** 
+  60:main.c        **** * Parameters:
+  61:main.c        **** *  None.
+  62:main.c        **** *
+  63:main.c        **** * Return:
+  64:main.c        **** *  None.
+  65:main.c        **** *
+  66:main.c        **** *******************************************************************************/
+  67:main.c        **** int main()
+  68:main.c        **** {
+  79              		.loc 1 68 0
+  80              		.cfi_startproc
+  81              		@ args = 0, pretend = 0, frame = 0
+  82              		@ frame_needed = 1, uses_anonymous_args = 0
+  83 0000 80B5     		push	{r7, lr}
+  84              		.cfi_def_cfa_offset 8
+  85              		.cfi_offset 7, -8
+  86              		.cfi_offset 14, -4
+  87 0002 00AF     		add	r7, sp, #0
+  88              		.cfi_def_cfa_register 7
+  69:main.c        ****     /* Start all components used on schematic */
+  70:main.c        ****     UART_1_Start();
+  89              		.loc 1 70 0
+  90 0004 FFF7FEFF 		bl	UART_1_Start
+  71:main.c        ****     ADC_DelSig_IRQ_Start();
+  91              		.loc 1 71 0
+  92 0008 FFF7FEFF 		bl	ADC_DelSig_IRQ_Start
+  72:main.c        ****     isr_StartEx(filterVDAC);
+  93              		.loc 1 72 0
+  94 000c 0B48     		ldr	r0, .L6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 4
+
+
+  95 000e FFF7FEFF 		bl	isr_StartEx
+  73:main.c        ****     
+  74:main.c        ****     ADC_DelSig_StartConvert();
+  96              		.loc 1 74 0
+  97 0012 FFF7FEFF 		bl	ADC_DelSig_StartConvert
+  75:main.c        ****     
+  76:main.c        ****     Opamp_Start();
+  98              		.loc 1 76 0
+  99 0016 FFF7FEFF 		bl	Opamp_Start
+  77:main.c        ****     Filter_Start();
+ 100              		.loc 1 77 0
+ 101 001a FFF7FEFF 		bl	Filter_Start
+  78:main.c        **** 
+  79:main.c        ****     /* User-implemented function to set-up DMA */
+  80:main.c        ****     DMA_Config();
+ 102              		.loc 1 80 0
+ 103 001e FFF7FEFF 		bl	DMA_Config
+  81:main.c        **** 
+  82:main.c        ****     /* Enable Global Interrupts */
+  83:main.c        ****     CYGlobalIntEnable;
+ 104              		.loc 1 83 0
+ 105              	@ 83 "main.c" 1
+ 106 0022 62B6     		CPSIE   i
+ 107              	@ 0 "" 2
+ 108              		.thumb
+ 109              	.L5:
+ 110              	.LBB2:
+  84:main.c        **** 
+  85:main.c        ****     for(;;)
+  86:main.c        ****     {
+  87:main.c        ****         sprintf(buffer,"Filter: %i\n",ADC_DelSig_GetResult8);
+ 111              		.loc 1 87 0 discriminator 1
+ 112 0024 0648     		ldr	r0, .L6+4
+ 113 0026 0749     		ldr	r1, .L6+8
+ 114 0028 074A     		ldr	r2, .L6+12
+ 115 002a FFF7FEFF 		bl	sprintf
+  88:main.c        **** 	    UART_1_PutString(buffer);
+ 116              		.loc 1 88 0 discriminator 1
+ 117 002e 0448     		ldr	r0, .L6+4
+ 118 0030 FFF7FEFF 		bl	UART_1_PutString
+  89:main.c        ****         CyDelay(100);
+ 119              		.loc 1 89 0 discriminator 1
+ 120 0034 6420     		movs	r0, #100
+ 121 0036 FFF7FEFF 		bl	CyDelay
+ 122              	.LBE2:
+  90:main.c        ****     }
+ 123              		.loc 1 90 0 discriminator 1
+ 124 003a F3E7     		b	.L5
+ 125              	.L7:
+ 126              		.align	2
+ 127              	.L6:
+ 128 003c 00000000 		.word	filterVDAC
+ 129 0040 00000000 		.word	buffer
+ 130 0044 14000000 		.word	.LC2
+ 131 0048 00000000 		.word	ADC_DelSig_GetResult8
+ 132              		.cfi_endproc
+ 133              	.LFE64:
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 5
+
+
+ 134              		.size	main, .-main
+ 135              		.section	.text.DMA_Config,"ax",%progbits
+ 136              		.align	2
+ 137              		.global	DMA_Config
+ 138              		.thumb
+ 139              		.thumb_func
+ 140              		.type	DMA_Config, %function
+ 141              	DMA_Config:
+ 142              	.LFB65:
+  91:main.c        **** } /* End of main */
+  92:main.c        **** 
+  93:main.c        **** 
+  94:main.c        **** /*******************************************************************************
+  95:main.c        **** * Function Name: DMA_Config
+  96:main.c        **** ********************************************************************************
+  97:main.c        **** *
+  98:main.c        **** * Summary:
+  99:main.c        **** *  Initializes and sets up DMA for use (generated by DMA Wizard)
+ 100:main.c        **** *
+ 101:main.c        **** * Parameters:
+ 102:main.c        **** *  None.
+ 103:main.c        **** *
+ 104:main.c        **** * Return:
+ 105:main.c        **** *  None.
+ 106:main.c        **** *
+ 107:main.c        **** *******************************************************************************/
+ 108:main.c        **** void DMA_Config(void)
+ 109:main.c        **** {
+ 143              		.loc 1 109 0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 8
+ 146              		@ frame_needed = 1, uses_anonymous_args = 0
+ 147 0000 80B5     		push	{r7, lr}
+ 148              		.cfi_def_cfa_offset 8
+ 149              		.cfi_offset 7, -8
+ 150              		.cfi_offset 14, -4
+ 151 0002 82B0     		sub	sp, sp, #8
+ 152              		.cfi_def_cfa_offset 16
+ 153 0004 00AF     		add	r7, sp, #0
+ 154              		.cfi_def_cfa_register 7
+ 110:main.c        ****     /* Declare variable to hold the handle for DMA channel */
+ 111:main.c        ****     uint8 channelHandle;
+ 112:main.c        **** 
+ 113:main.c        ****     /* Declare DMA Transaction Descriptor for memory transfer into
+ 114:main.c        ****      * Filter Channel.
+ 115:main.c        ****      */
+ 116:main.c        ****     uint8 tdChanA;
+ 117:main.c        **** 
+ 118:main.c        ****     /* Configure the DMA to Transfer the data in 1 burst with individual trigger
+ 119:main.c        ****      * for each burst.
+ 120:main.c        ****      */
+ 121:main.c        ****     channelHandle = DMA_DmaInitialize(BYTES_PER_BURST, REQUEST_PER_BURST,
+ 155              		.loc 1 121 0
+ 156 0006 0120     		movs	r0, #1
+ 157 0008 0121     		movs	r1, #1
+ 158 000a 4FF48042 		mov	r2, #16384
+ 159 000e 4FF48043 		mov	r3, #16384
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 6
+
+
+ 160 0012 FFF7FEFF 		bl	DMA_DmaInitialize
+ 161 0016 0346     		mov	r3, r0
+ 162 0018 FB71     		strb	r3, [r7, #7]
+ 122:main.c        ****                                         HI16(UPPER_SRC_ADDRESS), HI16(UPPER_DEST_ADDRESS));
+ 123:main.c        **** 
+ 124:main.c        ****     /* This function allocates a TD for use with an initialized DMA channel */
+ 125:main.c        ****     tdChanA = CyDmaTdAllocate();
+ 163              		.loc 1 125 0
+ 164 001a FFF7FEFF 		bl	CyDmaTdAllocate
+ 165 001e 0346     		mov	r3, r0
+ 166 0020 BB71     		strb	r3, [r7, #6]
+ 126:main.c        **** 
+ 127:main.c        ****     /* Configure the tdChanA to transfer 1 byte with no next TD */
+ 128:main.c        ****     CyDmaTdSetConfiguration(tdChanA, 1u, DMA_INVALID_TD, 0u);
+ 167              		.loc 1 128 0
+ 168 0022 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 169 0024 1846     		mov	r0, r3
+ 170 0026 0121     		movs	r1, #1
+ 171 0028 FF22     		movs	r2, #255
+ 172 002a 0023     		movs	r3, #0
+ 173 002c FFF7FEFF 		bl	CyDmaTdSetConfiguration
+ 129:main.c        **** 
+ 130:main.c        ****     /* Set the source address as ADC_DelSig and the destination as
+ 131:main.c        ****      * Filter Channel A.
+ 132:main.c        ****      */
+ 133:main.c        ****     CyDmaTdSetAddress(tdChanA, LO16((uint32)ADC_DelSig_DEC_SAMP_PTR), LO16((uint32)Filter_STAGEAH_P
+ 174              		.loc 1 133 0
+ 175 0030 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 176 0032 1846     		mov	r0, r3
+ 177 0034 44F61061 		movw	r1, #19984
+ 178 0038 4CF2A272 		movw	r2, #51106
+ 179 003c FFF7FEFF 		bl	CyDmaTdSetAddress
+ 134:main.c        **** 
+ 135:main.c        ****     /* Set tdChanA to be the initial TD associated with channelHandle */
+ 136:main.c        ****     CyDmaChSetInitialTd(channelHandle, tdChanA);
+ 180              		.loc 1 136 0
+ 181 0040 FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
+ 182 0042 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 183 0044 1046     		mov	r0, r2
+ 184 0046 1946     		mov	r1, r3
+ 185 0048 FFF7FEFF 		bl	CyDmaChSetInitialTd
+ 137:main.c        **** 
+ 138:main.c        ****     /* Enable the DMA channel represented by channelHandle and preserve the TD */
+ 139:main.c        ****     CyDmaChEnable(channelHandle, 1u);
+ 186              		.loc 1 139 0
+ 187 004c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 188 004e 1846     		mov	r0, r3
+ 189 0050 0121     		movs	r1, #1
+ 190 0052 FFF7FEFF 		bl	CyDmaChEnable
+ 140:main.c        **** }
+ 191              		.loc 1 140 0
+ 192 0056 0837     		adds	r7, r7, #8
+ 193              		.cfi_def_cfa_offset 8
+ 194 0058 BD46     		mov	sp, r7
+ 195              		.cfi_def_cfa_register 13
+ 196              		@ sp needed
+ 197 005a 80BD     		pop	{r7, pc}
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 7
+
+
+ 198              		.cfi_endproc
+ 199              	.LFE65:
+ 200              		.size	DMA_Config, .-DMA_Config
+ 201              		.text
+ 202              	.Letext0:
+ 203              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.
+ 204              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.
+ 205              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 206              		.file 5 "<built-in>"
+ 207              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 208              		.section	.debug_info,"",%progbits
+ 209              	.Ldebug_info0:
+ 210 0000 AC010000 		.4byte	0x1ac
+ 211 0004 0400     		.2byte	0x4
+ 212 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 213 000a 04       		.byte	0x4
+ 214 000b 01       		.uleb128 0x1
+ 215 000c 13000000 		.4byte	.LASF27
+ 216 0010 01       		.byte	0x1
+ 217 0011 67010000 		.4byte	.LASF28
+ 218 0015 98010000 		.4byte	.LASF29
+ 219 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 220 001d 00000000 		.4byte	0
+ 221 0021 00000000 		.4byte	.Ldebug_line0
+ 222 0025 02       		.uleb128 0x2
+ 223 0026 01       		.byte	0x1
+ 224 0027 06       		.byte	0x6
+ 225 0028 1F020000 		.4byte	.LASF0
+ 226 002c 02       		.uleb128 0x2
+ 227 002d 01       		.byte	0x1
+ 228 002e 08       		.byte	0x8
+ 229 002f B2000000 		.4byte	.LASF1
+ 230 0033 02       		.uleb128 0x2
+ 231 0034 02       		.byte	0x2
+ 232 0035 05       		.byte	0x5
+ 233 0036 73010000 		.4byte	.LASF2
+ 234 003a 02       		.uleb128 0x2
+ 235 003b 02       		.byte	0x2
+ 236 003c 07       		.byte	0x7
+ 237 003d D7000000 		.4byte	.LASF3
+ 238 0041 03       		.uleb128 0x3
+ 239 0042 00000000 		.4byte	.LASF9
+ 240 0046 02       		.byte	0x2
+ 241 0047 3F       		.byte	0x3f
+ 242 0048 4C000000 		.4byte	0x4c
+ 243 004c 02       		.uleb128 0x2
+ 244 004d 04       		.byte	0x4
+ 245 004e 05       		.byte	0x5
+ 246 004f 0A000000 		.4byte	.LASF4
+ 247 0053 02       		.uleb128 0x2
+ 248 0054 04       		.byte	0x4
+ 249 0055 07       		.byte	0x7
+ 250 0056 C5000000 		.4byte	.LASF5
+ 251 005a 02       		.uleb128 0x2
+ 252 005b 08       		.byte	0x8
+ 253 005c 05       		.byte	0x5
+ 254 005d 59010000 		.4byte	.LASF6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 8
+
+
+ 255 0061 02       		.uleb128 0x2
+ 256 0062 08       		.byte	0x8
+ 257 0063 07       		.byte	0x7
+ 258 0064 29010000 		.4byte	.LASF7
+ 259 0068 04       		.uleb128 0x4
+ 260 0069 04       		.byte	0x4
+ 261 006a 05       		.byte	0x5
+ 262 006b 696E7400 		.ascii	"int\000"
+ 263 006f 02       		.uleb128 0x2
+ 264 0070 04       		.byte	0x4
+ 265 0071 07       		.byte	0x7
+ 266 0072 1C010000 		.4byte	.LASF8
+ 267 0076 03       		.uleb128 0x3
+ 268 0077 48010000 		.4byte	.LASF10
+ 269 007b 03       		.byte	0x3
+ 270 007c 2C       		.byte	0x2c
+ 271 007d 41000000 		.4byte	0x41
+ 272 0081 05       		.uleb128 0x5
+ 273 0082 84010000 		.4byte	.LASF11
+ 274 0086 04       		.byte	0x4
+ 275 0087 9201     		.2byte	0x192
+ 276 0089 2C000000 		.4byte	0x2c
+ 277 008d 05       		.uleb128 0x5
+ 278 008e 0E010000 		.4byte	.LASF12
+ 279 0092 04       		.byte	0x4
+ 280 0093 9301     		.2byte	0x193
+ 281 0095 3A000000 		.4byte	0x3a
+ 282 0099 05       		.uleb128 0x5
+ 283 009a 15010000 		.4byte	.LASF13
+ 284 009e 04       		.byte	0x4
+ 285 009f 9401     		.2byte	0x194
+ 286 00a1 53000000 		.4byte	0x53
+ 287 00a5 02       		.uleb128 0x2
+ 288 00a6 04       		.byte	0x4
+ 289 00a7 04       		.byte	0x4
+ 290 00a8 AC000000 		.4byte	.LASF14
+ 291 00ac 02       		.uleb128 0x2
+ 292 00ad 08       		.byte	0x8
+ 293 00ae 04       		.byte	0x4
+ 294 00af F7000000 		.4byte	.LASF15
+ 295 00b3 02       		.uleb128 0x2
+ 296 00b4 01       		.byte	0x1
+ 297 00b5 08       		.byte	0x8
+ 298 00b6 6E010000 		.4byte	.LASF16
+ 299 00ba 05       		.uleb128 0x5
+ 300 00bb C0000000 		.4byte	.LASF17
+ 301 00bf 04       		.byte	0x4
+ 302 00c0 3C02     		.2byte	0x23c
+ 303 00c2 C6000000 		.4byte	0xc6
+ 304 00c6 06       		.uleb128 0x6
+ 305 00c7 81000000 		.4byte	0x81
+ 306 00cb 02       		.uleb128 0x2
+ 307 00cc 04       		.byte	0x4
+ 308 00cd 07       		.byte	0x7
+ 309 00ce 50010000 		.4byte	.LASF18
+ 310 00d2 07       		.uleb128 0x7
+ 311 00d3 04       		.byte	0x4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 9
+
+
+ 312 00d4 B3000000 		.4byte	0xb3
+ 313 00d8 07       		.uleb128 0x7
+ 314 00d9 04       		.byte	0x4
+ 315 00da DE000000 		.4byte	0xde
+ 316 00de 08       		.uleb128 0x8
+ 317 00df B3000000 		.4byte	0xb3
+ 318 00e3 09       		.uleb128 0x9
+ 319 00e4 A1000000 		.4byte	.LASF19
+ 320 00e8 01       		.byte	0x1
+ 321 00e9 28       		.byte	0x28
+ 322 00ea 00000000 		.4byte	.LFB63
+ 323 00ee 2C000000 		.4byte	.LFE63-.LFB63
+ 324 00f2 01       		.uleb128 0x1
+ 325 00f3 9C       		.byte	0x9c
+ 326 00f4 10010000 		.4byte	0x110
+ 327 00f8 0A       		.uleb128 0xa
+ 328 00f9 2B020000 		.4byte	.LASF21
+ 329 00fd 05       		.byte	0x5
+ 330 00fe 00       		.byte	0
+ 331 00ff 68000000 		.4byte	0x68
+ 332 0103 0B       		.uleb128 0xb
+ 333 0104 D2000000 		.4byte	0xd2
+ 334 0108 0B       		.uleb128 0xb
+ 335 0109 D8000000 		.4byte	0xd8
+ 336 010d 0C       		.uleb128 0xc
+ 337 010e 00       		.byte	0
+ 338 010f 00       		.byte	0
+ 339 0110 0D       		.uleb128 0xd
+ 340 0111 09010000 		.4byte	.LASF20
+ 341 0115 01       		.byte	0x1
+ 342 0116 43       		.byte	0x43
+ 343 0117 68000000 		.4byte	0x68
+ 344 011b 00000000 		.4byte	.LFB64
+ 345 011f 4C000000 		.4byte	.LFE64-.LFB64
+ 346 0123 01       		.uleb128 0x1
+ 347 0124 9C       		.byte	0x9c
+ 348 0125 4B010000 		.4byte	0x14b
+ 349 0129 0E       		.uleb128 0xe
+ 350 012a 24000000 		.4byte	.LBB2
+ 351 012e 16000000 		.4byte	.LBE2-.LBB2
+ 352 0132 0A       		.uleb128 0xa
+ 353 0133 2B020000 		.4byte	.LASF21
+ 354 0137 05       		.byte	0x5
+ 355 0138 00       		.byte	0
+ 356 0139 68000000 		.4byte	0x68
+ 357 013d 0B       		.uleb128 0xb
+ 358 013e D2000000 		.4byte	0xd2
+ 359 0142 0B       		.uleb128 0xb
+ 360 0143 D8000000 		.4byte	0xd8
+ 361 0147 0C       		.uleb128 0xc
+ 362 0148 00       		.byte	0
+ 363 0149 00       		.byte	0
+ 364 014a 00       		.byte	0
+ 365 014b 09       		.uleb128 0x9
+ 366 014c FE000000 		.4byte	.LASF22
+ 367 0150 01       		.byte	0x1
+ 368 0151 6C       		.byte	0x6c
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 10
+
+
+ 369 0152 00000000 		.4byte	.LFB65
+ 370 0156 5C000000 		.4byte	.LFE65-.LFB65
+ 371 015a 01       		.uleb128 0x1
+ 372 015b 9C       		.byte	0x9c
+ 373 015c 7D010000 		.4byte	0x17d
+ 374 0160 0F       		.uleb128 0xf
+ 375 0161 8A010000 		.4byte	.LASF23
+ 376 0165 01       		.byte	0x1
+ 377 0166 6F       		.byte	0x6f
+ 378 0167 81000000 		.4byte	0x81
+ 379 016b 02       		.uleb128 0x2
+ 380 016c 91       		.byte	0x91
+ 381 016d 77       		.sleb128 -9
+ 382 016e 0F       		.uleb128 0xf
+ 383 016f 40010000 		.4byte	.LASF24
+ 384 0173 01       		.byte	0x1
+ 385 0174 74       		.byte	0x74
+ 386 0175 81000000 		.4byte	0x81
+ 387 0179 02       		.uleb128 0x2
+ 388 017a 91       		.byte	0x91
+ 389 017b 76       		.sleb128 -10
+ 390 017c 00       		.byte	0
+ 391 017d 10       		.uleb128 0x10
+ 392 017e EA000000 		.4byte	.LASF25
+ 393 0182 06       		.byte	0x6
+ 394 0183 9606     		.2byte	0x696
+ 395 0185 89010000 		.4byte	0x189
+ 396 0189 06       		.uleb128 0x6
+ 397 018a 76000000 		.4byte	0x76
+ 398 018e 11       		.uleb128 0x11
+ 399 018f B3000000 		.4byte	0xb3
+ 400 0193 9E010000 		.4byte	0x19e
+ 401 0197 12       		.uleb128 0x12
+ 402 0198 CB000000 		.4byte	0xcb
+ 403 019c 09       		.byte	0x9
+ 404 019d 00       		.byte	0
+ 405 019e 13       		.uleb128 0x13
+ 406 019f 7D010000 		.4byte	.LASF26
+ 407 01a3 01       		.byte	0x1
+ 408 01a4 1B       		.byte	0x1b
+ 409 01a5 8E010000 		.4byte	0x18e
+ 410 01a9 05       		.uleb128 0x5
+ 411 01aa 03       		.byte	0x3
+ 412 01ab 00000000 		.4byte	buffer
+ 413 01af 00       		.byte	0
+ 414              		.section	.debug_abbrev,"",%progbits
+ 415              	.Ldebug_abbrev0:
+ 416 0000 01       		.uleb128 0x1
+ 417 0001 11       		.uleb128 0x11
+ 418 0002 01       		.byte	0x1
+ 419 0003 25       		.uleb128 0x25
+ 420 0004 0E       		.uleb128 0xe
+ 421 0005 13       		.uleb128 0x13
+ 422 0006 0B       		.uleb128 0xb
+ 423 0007 03       		.uleb128 0x3
+ 424 0008 0E       		.uleb128 0xe
+ 425 0009 1B       		.uleb128 0x1b
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 11
+
+
+ 426 000a 0E       		.uleb128 0xe
+ 427 000b 55       		.uleb128 0x55
+ 428 000c 17       		.uleb128 0x17
+ 429 000d 11       		.uleb128 0x11
+ 430 000e 01       		.uleb128 0x1
+ 431 000f 10       		.uleb128 0x10
+ 432 0010 17       		.uleb128 0x17
+ 433 0011 00       		.byte	0
+ 434 0012 00       		.byte	0
+ 435 0013 02       		.uleb128 0x2
+ 436 0014 24       		.uleb128 0x24
+ 437 0015 00       		.byte	0
+ 438 0016 0B       		.uleb128 0xb
+ 439 0017 0B       		.uleb128 0xb
+ 440 0018 3E       		.uleb128 0x3e
+ 441 0019 0B       		.uleb128 0xb
+ 442 001a 03       		.uleb128 0x3
+ 443 001b 0E       		.uleb128 0xe
+ 444 001c 00       		.byte	0
+ 445 001d 00       		.byte	0
+ 446 001e 03       		.uleb128 0x3
+ 447 001f 16       		.uleb128 0x16
+ 448 0020 00       		.byte	0
+ 449 0021 03       		.uleb128 0x3
+ 450 0022 0E       		.uleb128 0xe
+ 451 0023 3A       		.uleb128 0x3a
+ 452 0024 0B       		.uleb128 0xb
+ 453 0025 3B       		.uleb128 0x3b
+ 454 0026 0B       		.uleb128 0xb
+ 455 0027 49       		.uleb128 0x49
+ 456 0028 13       		.uleb128 0x13
+ 457 0029 00       		.byte	0
+ 458 002a 00       		.byte	0
+ 459 002b 04       		.uleb128 0x4
+ 460 002c 24       		.uleb128 0x24
+ 461 002d 00       		.byte	0
+ 462 002e 0B       		.uleb128 0xb
+ 463 002f 0B       		.uleb128 0xb
+ 464 0030 3E       		.uleb128 0x3e
+ 465 0031 0B       		.uleb128 0xb
+ 466 0032 03       		.uleb128 0x3
+ 467 0033 08       		.uleb128 0x8
+ 468 0034 00       		.byte	0
+ 469 0035 00       		.byte	0
+ 470 0036 05       		.uleb128 0x5
+ 471 0037 16       		.uleb128 0x16
+ 472 0038 00       		.byte	0
+ 473 0039 03       		.uleb128 0x3
+ 474 003a 0E       		.uleb128 0xe
+ 475 003b 3A       		.uleb128 0x3a
+ 476 003c 0B       		.uleb128 0xb
+ 477 003d 3B       		.uleb128 0x3b
+ 478 003e 05       		.uleb128 0x5
+ 479 003f 49       		.uleb128 0x49
+ 480 0040 13       		.uleb128 0x13
+ 481 0041 00       		.byte	0
+ 482 0042 00       		.byte	0
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 12
+
+
+ 483 0043 06       		.uleb128 0x6
+ 484 0044 35       		.uleb128 0x35
+ 485 0045 00       		.byte	0
+ 486 0046 49       		.uleb128 0x49
+ 487 0047 13       		.uleb128 0x13
+ 488 0048 00       		.byte	0
+ 489 0049 00       		.byte	0
+ 490 004a 07       		.uleb128 0x7
+ 491 004b 0F       		.uleb128 0xf
+ 492 004c 00       		.byte	0
+ 493 004d 0B       		.uleb128 0xb
+ 494 004e 0B       		.uleb128 0xb
+ 495 004f 49       		.uleb128 0x49
+ 496 0050 13       		.uleb128 0x13
+ 497 0051 00       		.byte	0
+ 498 0052 00       		.byte	0
+ 499 0053 08       		.uleb128 0x8
+ 500 0054 26       		.uleb128 0x26
+ 501 0055 00       		.byte	0
+ 502 0056 49       		.uleb128 0x49
+ 503 0057 13       		.uleb128 0x13
+ 504 0058 00       		.byte	0
+ 505 0059 00       		.byte	0
+ 506 005a 09       		.uleb128 0x9
+ 507 005b 2E       		.uleb128 0x2e
+ 508 005c 01       		.byte	0x1
+ 509 005d 3F       		.uleb128 0x3f
+ 510 005e 19       		.uleb128 0x19
+ 511 005f 03       		.uleb128 0x3
+ 512 0060 0E       		.uleb128 0xe
+ 513 0061 3A       		.uleb128 0x3a
+ 514 0062 0B       		.uleb128 0xb
+ 515 0063 3B       		.uleb128 0x3b
+ 516 0064 0B       		.uleb128 0xb
+ 517 0065 27       		.uleb128 0x27
+ 518 0066 19       		.uleb128 0x19
+ 519 0067 11       		.uleb128 0x11
+ 520 0068 01       		.uleb128 0x1
+ 521 0069 12       		.uleb128 0x12
+ 522 006a 06       		.uleb128 0x6
+ 523 006b 40       		.uleb128 0x40
+ 524 006c 18       		.uleb128 0x18
+ 525 006d 9642     		.uleb128 0x2116
+ 526 006f 19       		.uleb128 0x19
+ 527 0070 01       		.uleb128 0x1
+ 528 0071 13       		.uleb128 0x13
+ 529 0072 00       		.byte	0
+ 530 0073 00       		.byte	0
+ 531 0074 0A       		.uleb128 0xa
+ 532 0075 2E       		.uleb128 0x2e
+ 533 0076 01       		.byte	0x1
+ 534 0077 3F       		.uleb128 0x3f
+ 535 0078 19       		.uleb128 0x19
+ 536 0079 03       		.uleb128 0x3
+ 537 007a 0E       		.uleb128 0xe
+ 538 007b 3A       		.uleb128 0x3a
+ 539 007c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 13
+
+
+ 540 007d 3B       		.uleb128 0x3b
+ 541 007e 0B       		.uleb128 0xb
+ 542 007f 27       		.uleb128 0x27
+ 543 0080 19       		.uleb128 0x19
+ 544 0081 49       		.uleb128 0x49
+ 545 0082 13       		.uleb128 0x13
+ 546 0083 3C       		.uleb128 0x3c
+ 547 0084 19       		.uleb128 0x19
+ 548 0085 00       		.byte	0
+ 549 0086 00       		.byte	0
+ 550 0087 0B       		.uleb128 0xb
+ 551 0088 05       		.uleb128 0x5
+ 552 0089 00       		.byte	0
+ 553 008a 49       		.uleb128 0x49
+ 554 008b 13       		.uleb128 0x13
+ 555 008c 00       		.byte	0
+ 556 008d 00       		.byte	0
+ 557 008e 0C       		.uleb128 0xc
+ 558 008f 18       		.uleb128 0x18
+ 559 0090 00       		.byte	0
+ 560 0091 00       		.byte	0
+ 561 0092 00       		.byte	0
+ 562 0093 0D       		.uleb128 0xd
+ 563 0094 2E       		.uleb128 0x2e
+ 564 0095 01       		.byte	0x1
+ 565 0096 3F       		.uleb128 0x3f
+ 566 0097 19       		.uleb128 0x19
+ 567 0098 03       		.uleb128 0x3
+ 568 0099 0E       		.uleb128 0xe
+ 569 009a 3A       		.uleb128 0x3a
+ 570 009b 0B       		.uleb128 0xb
+ 571 009c 3B       		.uleb128 0x3b
+ 572 009d 0B       		.uleb128 0xb
+ 573 009e 49       		.uleb128 0x49
+ 574 009f 13       		.uleb128 0x13
+ 575 00a0 11       		.uleb128 0x11
+ 576 00a1 01       		.uleb128 0x1
+ 577 00a2 12       		.uleb128 0x12
+ 578 00a3 06       		.uleb128 0x6
+ 579 00a4 40       		.uleb128 0x40
+ 580 00a5 18       		.uleb128 0x18
+ 581 00a6 9642     		.uleb128 0x2116
+ 582 00a8 19       		.uleb128 0x19
+ 583 00a9 01       		.uleb128 0x1
+ 584 00aa 13       		.uleb128 0x13
+ 585 00ab 00       		.byte	0
+ 586 00ac 00       		.byte	0
+ 587 00ad 0E       		.uleb128 0xe
+ 588 00ae 0B       		.uleb128 0xb
+ 589 00af 01       		.byte	0x1
+ 590 00b0 11       		.uleb128 0x11
+ 591 00b1 01       		.uleb128 0x1
+ 592 00b2 12       		.uleb128 0x12
+ 593 00b3 06       		.uleb128 0x6
+ 594 00b4 00       		.byte	0
+ 595 00b5 00       		.byte	0
+ 596 00b6 0F       		.uleb128 0xf
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 14
+
+
+ 597 00b7 34       		.uleb128 0x34
+ 598 00b8 00       		.byte	0
+ 599 00b9 03       		.uleb128 0x3
+ 600 00ba 0E       		.uleb128 0xe
+ 601 00bb 3A       		.uleb128 0x3a
+ 602 00bc 0B       		.uleb128 0xb
+ 603 00bd 3B       		.uleb128 0x3b
+ 604 00be 0B       		.uleb128 0xb
+ 605 00bf 49       		.uleb128 0x49
+ 606 00c0 13       		.uleb128 0x13
+ 607 00c1 02       		.uleb128 0x2
+ 608 00c2 18       		.uleb128 0x18
+ 609 00c3 00       		.byte	0
+ 610 00c4 00       		.byte	0
+ 611 00c5 10       		.uleb128 0x10
+ 612 00c6 34       		.uleb128 0x34
+ 613 00c7 00       		.byte	0
+ 614 00c8 03       		.uleb128 0x3
+ 615 00c9 0E       		.uleb128 0xe
+ 616 00ca 3A       		.uleb128 0x3a
+ 617 00cb 0B       		.uleb128 0xb
+ 618 00cc 3B       		.uleb128 0x3b
+ 619 00cd 05       		.uleb128 0x5
+ 620 00ce 49       		.uleb128 0x49
+ 621 00cf 13       		.uleb128 0x13
+ 622 00d0 3F       		.uleb128 0x3f
+ 623 00d1 19       		.uleb128 0x19
+ 624 00d2 3C       		.uleb128 0x3c
+ 625 00d3 19       		.uleb128 0x19
+ 626 00d4 00       		.byte	0
+ 627 00d5 00       		.byte	0
+ 628 00d6 11       		.uleb128 0x11
+ 629 00d7 01       		.uleb128 0x1
+ 630 00d8 01       		.byte	0x1
+ 631 00d9 49       		.uleb128 0x49
+ 632 00da 13       		.uleb128 0x13
+ 633 00db 01       		.uleb128 0x1
+ 634 00dc 13       		.uleb128 0x13
+ 635 00dd 00       		.byte	0
+ 636 00de 00       		.byte	0
+ 637 00df 12       		.uleb128 0x12
+ 638 00e0 21       		.uleb128 0x21
+ 639 00e1 00       		.byte	0
+ 640 00e2 49       		.uleb128 0x49
+ 641 00e3 13       		.uleb128 0x13
+ 642 00e4 2F       		.uleb128 0x2f
+ 643 00e5 0B       		.uleb128 0xb
+ 644 00e6 00       		.byte	0
+ 645 00e7 00       		.byte	0
+ 646 00e8 13       		.uleb128 0x13
+ 647 00e9 34       		.uleb128 0x34
+ 648 00ea 00       		.byte	0
+ 649 00eb 03       		.uleb128 0x3
+ 650 00ec 0E       		.uleb128 0xe
+ 651 00ed 3A       		.uleb128 0x3a
+ 652 00ee 0B       		.uleb128 0xb
+ 653 00ef 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 15
+
+
+ 654 00f0 0B       		.uleb128 0xb
+ 655 00f1 49       		.uleb128 0x49
+ 656 00f2 13       		.uleb128 0x13
+ 657 00f3 3F       		.uleb128 0x3f
+ 658 00f4 19       		.uleb128 0x19
+ 659 00f5 02       		.uleb128 0x2
+ 660 00f6 18       		.uleb128 0x18
+ 661 00f7 00       		.byte	0
+ 662 00f8 00       		.byte	0
+ 663 00f9 00       		.byte	0
+ 664              		.section	.debug_aranges,"",%progbits
+ 665 0000 2C000000 		.4byte	0x2c
+ 666 0004 0200     		.2byte	0x2
+ 667 0006 00000000 		.4byte	.Ldebug_info0
+ 668 000a 04       		.byte	0x4
+ 669 000b 00       		.byte	0
+ 670 000c 0000     		.2byte	0
+ 671 000e 0000     		.2byte	0
+ 672 0010 00000000 		.4byte	.LFB63
+ 673 0014 2C000000 		.4byte	.LFE63-.LFB63
+ 674 0018 00000000 		.4byte	.LFB64
+ 675 001c 4C000000 		.4byte	.LFE64-.LFB64
+ 676 0020 00000000 		.4byte	.LFB65
+ 677 0024 5C000000 		.4byte	.LFE65-.LFB65
+ 678 0028 00000000 		.4byte	0
+ 679 002c 00000000 		.4byte	0
+ 680              		.section	.debug_ranges,"",%progbits
+ 681              	.Ldebug_ranges0:
+ 682 0000 00000000 		.4byte	.LFB63
+ 683 0004 2C000000 		.4byte	.LFE63
+ 684 0008 00000000 		.4byte	.LFB64
+ 685 000c 4C000000 		.4byte	.LFE64
+ 686 0010 00000000 		.4byte	.LFB65
+ 687 0014 5C000000 		.4byte	.LFE65
+ 688 0018 00000000 		.4byte	0
+ 689 001c 00000000 		.4byte	0
+ 690              		.section	.debug_line,"",%progbits
+ 691              	.Ldebug_line0:
+ 692 0000 B2010000 		.section	.debug_str,"MS",%progbits,1
+ 692      02005501 
+ 692      00000201 
+ 692      FB0E0D00 
+ 692      01010101 
+ 693              	.LASF9:
+ 694 0000 5F5F696E 		.ascii	"__int32_t\000"
+ 694      7433325F 
+ 694      7400
+ 695              	.LASF4:
+ 696 000a 6C6F6E67 		.ascii	"long int\000"
+ 696      20696E74 
+ 696      00
+ 697              	.LASF27:
+ 698 0013 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 698      4320342E 
+ 698      392E3320 
+ 698      32303135 
+ 698      30333033 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 16
+
+
+ 699 0046 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 699      20726576 
+ 699      6973696F 
+ 699      6E203232 
+ 699      31323230 
+ 700 0079 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 700      66756E63 
+ 700      74696F6E 
+ 700      2D736563 
+ 700      74696F6E 
+ 701              	.LASF19:
+ 702 00a1 66696C74 		.ascii	"filterVDAC\000"
+ 702      65725644 
+ 702      414300
+ 703              	.LASF14:
+ 704 00ac 666C6F61 		.ascii	"float\000"
+ 704      7400
+ 705              	.LASF1:
+ 706 00b2 756E7369 		.ascii	"unsigned char\000"
+ 706      676E6564 
+ 706      20636861 
+ 706      7200
+ 707              	.LASF17:
+ 708 00c0 72656738 		.ascii	"reg8\000"
+ 708      00
+ 709              	.LASF5:
+ 710 00c5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 710      20756E73 
+ 710      69676E65 
+ 710      6420696E 
+ 710      7400
+ 711              	.LASF3:
+ 712 00d7 73686F72 		.ascii	"short unsigned int\000"
+ 712      7420756E 
+ 712      7369676E 
+ 712      65642069 
+ 712      6E7400
+ 713              	.LASF25:
+ 714 00ea 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 714      52784275 
+ 714      66666572 
+ 714      00
+ 715              	.LASF15:
+ 716 00f7 646F7562 		.ascii	"double\000"
+ 716      6C6500
+ 717              	.LASF22:
+ 718 00fe 444D415F 		.ascii	"DMA_Config\000"
+ 718      436F6E66 
+ 718      696700
+ 719              	.LASF20:
+ 720 0109 6D61696E 		.ascii	"main\000"
+ 720      00
+ 721              	.LASF12:
+ 722 010e 75696E74 		.ascii	"uint16\000"
+ 722      313600
+ 723              	.LASF13:
+ 724 0115 75696E74 		.ascii	"uint32\000"
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 17
+
+
+ 724      333200
+ 725              	.LASF8:
+ 726 011c 756E7369 		.ascii	"unsigned int\000"
+ 726      676E6564 
+ 726      20696E74 
+ 726      00
+ 727              	.LASF7:
+ 728 0129 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 728      206C6F6E 
+ 728      6720756E 
+ 728      7369676E 
+ 728      65642069 
+ 729              	.LASF24:
+ 730 0140 74644368 		.ascii	"tdChanA\000"
+ 730      616E4100 
+ 731              	.LASF10:
+ 732 0148 696E7433 		.ascii	"int32_t\000"
+ 732      325F7400 
+ 733              	.LASF18:
+ 734 0150 73697A65 		.ascii	"sizetype\000"
+ 734      74797065 
+ 734      00
+ 735              	.LASF6:
+ 736 0159 6C6F6E67 		.ascii	"long long int\000"
+ 736      206C6F6E 
+ 736      6720696E 
+ 736      7400
+ 737              	.LASF28:
+ 738 0167 6D61696E 		.ascii	"main.c\000"
+ 738      2E6300
+ 739              	.LASF16:
+ 740 016e 63686172 		.ascii	"char\000"
+ 740      00
+ 741              	.LASF2:
+ 742 0173 73686F72 		.ascii	"short int\000"
+ 742      7420696E 
+ 742      7400
+ 743              	.LASF26:
+ 744 017d 62756666 		.ascii	"buffer\000"
+ 744      657200
+ 745              	.LASF11:
+ 746 0184 75696E74 		.ascii	"uint8\000"
+ 746      3800
+ 747              	.LASF23:
+ 748 018a 6368616E 		.ascii	"channelHandle\000"
+ 748      6E656C48 
+ 748      616E646C 
+ 748      6500
+ 749              	.LASF29:
+ 750 0198 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\GitHub\\FYP_POSCCreato"
+ 750      73657273 
+ 750      5C736865 
+ 750      76695C44 
+ 750      6F63756D 
+ 751 01c6 725F4D61 		.ascii	"r_Master\\FYP_PSOCCreator_Master\\CORTEX_CY8C5588_P"
+ 751      73746572 
+ 751      5C465950 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccUXjnPr.s 			page 18
+
+
+ 751      5F50534F 
+ 751      43437265 
+ 752 01f7 536F435F 		.ascii	"SoC_Creator_GCC\\Filter_ADC_VDAC01.cydsn\000"
+ 752      43726561 
+ 752      746F725F 
+ 752      4743435C 
+ 752      46696C74 
+ 753              	.LASF0:
+ 754 021f 7369676E 		.ascii	"signed char\000"
+ 754      65642063 
+ 754      68617200 
+ 755              	.LASF21:
+ 756 022b 73707269 		.ascii	"sprintf\000"
+ 756      6E746600 
+ 757              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

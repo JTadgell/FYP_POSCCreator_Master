@@ -1,0 +1,712 @@
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Filter_Coefficients.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	Filter_ChannelAFirCoefficients
+  19              		.section	.rodata
+  20              		.align	2
+  21              		.type	Filter_ChannelAFirCoefficients, %object
+  22              		.size	Filter_ChannelAFirCoefficients, 340
+  23              	Filter_ChannelAFirCoefficients:
+  24 0000 AD       		.byte	-83
+  25 0001 00       		.byte	0
+  26 0002 00       		.byte	0
+  27 0003 00       		.byte	0
+  28 0004 95       		.byte	-107
+  29 0005 00       		.byte	0
+  30 0006 00       		.byte	0
+  31 0007 00       		.byte	0
+  32 0008 00       		.byte	0
+  33 0009 00       		.byte	0
+  34 000a 00       		.byte	0
+  35 000b 00       		.byte	0
+  36 000c E7       		.byte	-25
+  37 000d FE       		.byte	-2
+  38 000e FF       		.byte	-1
+  39 000f 00       		.byte	0
+  40 0010 D2       		.byte	-46
+  41 0011 FD       		.byte	-3
+  42 0012 FF       		.byte	-1
+  43 0013 00       		.byte	0
+  44 0014 DF       		.byte	-33
+  45 0015 FD       		.byte	-3
+  46 0016 FF       		.byte	-1
+  47 0017 00       		.byte	0
+  48 0018 00       		.byte	0
+  49 0019 00       		.byte	0
+  50 001a 00       		.byte	0
+  51 001b 00       		.byte	0
+  52 001c D6       		.byte	-42
+  53 001d 03       		.byte	3
+  54 001e 00       		.byte	0
+  55 001f 00       		.byte	0
+  56 0020 17       		.byte	23
+  57 0021 07       		.byte	7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 2
+
+
+  58 0022 00       		.byte	0
+  59 0023 00       		.byte	0
+  60 0024 72       		.byte	114
+  61 0025 06       		.byte	6
+  62 0026 00       		.byte	0
+  63 0027 00       		.byte	0
+  64 0028 00       		.byte	0
+  65 0029 00       		.byte	0
+  66 002a 00       		.byte	0
+  67 002b 00       		.byte	0
+  68 002c C3       		.byte	-61
+  69 002d F5       		.byte	-11
+  70 002e FF       		.byte	-1
+  71 002f 00       		.byte	0
+  72 0030 0D       		.byte	13
+  73 0031 EE       		.byte	-18
+  74 0032 FF       		.byte	-1
+  75 0033 00       		.byte	0
+  76 0034 6C       		.byte	108
+  77 0035 F0       		.byte	-16
+  78 0036 FF       		.byte	-1
+  79 0037 00       		.byte	0
+  80 0038 00       		.byte	0
+  81 0039 00       		.byte	0
+  82 003a 00       		.byte	0
+  83 003b 00       		.byte	0
+  84 003c E6       		.byte	-26
+  85 003d 16       		.byte	22
+  86 003e 00       		.byte	0
+  87 003f 00       		.byte	0
+  88 0040 D3       		.byte	-45
+  89 0041 26       		.byte	38
+  90 0042 00       		.byte	0
+  91 0043 00       		.byte	0
+  92 0044 B5       		.byte	-75
+  93 0045 20       		.byte	32
+  94 0046 00       		.byte	0
+  95 0047 00       		.byte	0
+  96 0048 00       		.byte	0
+  97 0049 00       		.byte	0
+  98 004a 00       		.byte	0
+  99 004b 00       		.byte	0
+ 100 004c 60       		.byte	96
+ 101 004d D2       		.byte	-46
+ 102 004e FF       		.byte	-1
+ 103 004f 00       		.byte	0
+ 104 0050 60       		.byte	96
+ 105 0051 B4       		.byte	-76
+ 106 0052 FF       		.byte	-1
+ 107 0053 00       		.byte	0
+ 108 0054 9A       		.byte	-102
+ 109 0055 C1       		.byte	-63
+ 110 0056 FF       		.byte	-1
+ 111 0057 00       		.byte	0
+ 112 0058 00       		.byte	0
+ 113 0059 00       		.byte	0
+ 114 005a 00       		.byte	0
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 3
+
+
+ 115 005b 00       		.byte	0
+ 116 005c FD       		.byte	-3
+ 117 005d 53       		.byte	83
+ 118 005e 00       		.byte	0
+ 119 005f 00       		.byte	0
+ 120 0060 21       		.byte	33
+ 121 0061 89       		.byte	-119
+ 122 0062 00       		.byte	0
+ 123 0063 00       		.byte	0
+ 124 0064 A9       		.byte	-87
+ 125 0065 6F       		.byte	111
+ 126 0066 00       		.byte	0
+ 127 0067 00       		.byte	0
+ 128 0068 00       		.byte	0
+ 129 0069 00       		.byte	0
+ 130 006a 00       		.byte	0
+ 131 006b 00       		.byte	0
+ 132 006c C4       		.byte	-60
+ 133 006d 6C       		.byte	108
+ 134 006e FF       		.byte	-1
+ 135 006f 00       		.byte	0
+ 136 0070 43       		.byte	67
+ 137 0071 11       		.byte	17
+ 138 0072 FF       		.byte	-1
+ 139 0073 00       		.byte	0
+ 140 0074 74       		.byte	116
+ 141 0075 3E       		.byte	62
+ 142 0076 FF       		.byte	-1
+ 143 0077 00       		.byte	0
+ 144 0078 00       		.byte	0
+ 145 0079 00       		.byte	0
+ 146 007a 00       		.byte	0
+ 147 007b 00       		.byte	0
+ 148 007c 67       		.byte	103
+ 149 007d FF       		.byte	-1
+ 150 007e 00       		.byte	0
+ 151 007f 00       		.byte	0
+ 152 0080 C4       		.byte	-60
+ 153 0081 A0       		.byte	-96
+ 154 0082 01       		.byte	1
+ 155 0083 00       		.byte	0
+ 156 0084 D8       		.byte	-40
+ 157 0085 55       		.byte	85
+ 158 0086 01       		.byte	1
+ 159 0087 00       		.byte	0
+ 160 0088 00       		.byte	0
+ 161 0089 00       		.byte	0
+ 162 008a 00       		.byte	0
+ 163 008b 00       		.byte	0
+ 164 008c AB       		.byte	-85
+ 165 008d 27       		.byte	39
+ 166 008e FE       		.byte	-2
+ 167 008f 00       		.byte	0
+ 168 0090 B0       		.byte	-80
+ 169 0091 DD       		.byte	-35
+ 170 0092 FC       		.byte	-4
+ 171 0093 00       		.byte	0
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 4
+
+
+ 172 0094 4D       		.byte	77
+ 173 0095 46       		.byte	70
+ 174 0096 FD       		.byte	-3
+ 175 0097 00       		.byte	0
+ 176 0098 00       		.byte	0
+ 177 0099 00       		.byte	0
+ 178 009a 00       		.byte	0
+ 179 009b 00       		.byte	0
+ 180 009c F3       		.byte	-13
+ 181 009d B4       		.byte	-76
+ 182 009e 04       		.byte	4
+ 183 009f 00       		.byte	0
+ 184 00a0 96       		.byte	-106
+ 185 00a1 18       		.byte	24
+ 186 00a2 0A       		.byte	10
+ 187 00a3 00       		.byte	0
+ 188 00a4 89       		.byte	-119
+ 189 00a5 5F       		.byte	95
+ 190 00a6 0E       		.byte	14
+ 191 00a7 00       		.byte	0
+ 192 00a8 FF       		.byte	-1
+ 193 00a9 FF       		.byte	-1
+ 194 00aa 0F       		.byte	15
+ 195 00ab 00       		.byte	0
+ 196 00ac 89       		.byte	-119
+ 197 00ad 5F       		.byte	95
+ 198 00ae 0E       		.byte	14
+ 199 00af 00       		.byte	0
+ 200 00b0 96       		.byte	-106
+ 201 00b1 18       		.byte	24
+ 202 00b2 0A       		.byte	10
+ 203 00b3 00       		.byte	0
+ 204 00b4 F3       		.byte	-13
+ 205 00b5 B4       		.byte	-76
+ 206 00b6 04       		.byte	4
+ 207 00b7 00       		.byte	0
+ 208 00b8 00       		.byte	0
+ 209 00b9 00       		.byte	0
+ 210 00ba 00       		.byte	0
+ 211 00bb 00       		.byte	0
+ 212 00bc 4D       		.byte	77
+ 213 00bd 46       		.byte	70
+ 214 00be FD       		.byte	-3
+ 215 00bf 00       		.byte	0
+ 216 00c0 B0       		.byte	-80
+ 217 00c1 DD       		.byte	-35
+ 218 00c2 FC       		.byte	-4
+ 219 00c3 00       		.byte	0
+ 220 00c4 AB       		.byte	-85
+ 221 00c5 27       		.byte	39
+ 222 00c6 FE       		.byte	-2
+ 223 00c7 00       		.byte	0
+ 224 00c8 00       		.byte	0
+ 225 00c9 00       		.byte	0
+ 226 00ca 00       		.byte	0
+ 227 00cb 00       		.byte	0
+ 228 00cc D8       		.byte	-40
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 5
+
+
+ 229 00cd 55       		.byte	85
+ 230 00ce 01       		.byte	1
+ 231 00cf 00       		.byte	0
+ 232 00d0 C4       		.byte	-60
+ 233 00d1 A0       		.byte	-96
+ 234 00d2 01       		.byte	1
+ 235 00d3 00       		.byte	0
+ 236 00d4 67       		.byte	103
+ 237 00d5 FF       		.byte	-1
+ 238 00d6 00       		.byte	0
+ 239 00d7 00       		.byte	0
+ 240 00d8 00       		.byte	0
+ 241 00d9 00       		.byte	0
+ 242 00da 00       		.byte	0
+ 243 00db 00       		.byte	0
+ 244 00dc 74       		.byte	116
+ 245 00dd 3E       		.byte	62
+ 246 00de FF       		.byte	-1
+ 247 00df 00       		.byte	0
+ 248 00e0 43       		.byte	67
+ 249 00e1 11       		.byte	17
+ 250 00e2 FF       		.byte	-1
+ 251 00e3 00       		.byte	0
+ 252 00e4 C4       		.byte	-60
+ 253 00e5 6C       		.byte	108
+ 254 00e6 FF       		.byte	-1
+ 255 00e7 00       		.byte	0
+ 256 00e8 00       		.byte	0
+ 257 00e9 00       		.byte	0
+ 258 00ea 00       		.byte	0
+ 259 00eb 00       		.byte	0
+ 260 00ec A9       		.byte	-87
+ 261 00ed 6F       		.byte	111
+ 262 00ee 00       		.byte	0
+ 263 00ef 00       		.byte	0
+ 264 00f0 21       		.byte	33
+ 265 00f1 89       		.byte	-119
+ 266 00f2 00       		.byte	0
+ 267 00f3 00       		.byte	0
+ 268 00f4 FD       		.byte	-3
+ 269 00f5 53       		.byte	83
+ 270 00f6 00       		.byte	0
+ 271 00f7 00       		.byte	0
+ 272 00f8 00       		.byte	0
+ 273 00f9 00       		.byte	0
+ 274 00fa 00       		.byte	0
+ 275 00fb 00       		.byte	0
+ 276 00fc 9A       		.byte	-102
+ 277 00fd C1       		.byte	-63
+ 278 00fe FF       		.byte	-1
+ 279 00ff 00       		.byte	0
+ 280 0100 60       		.byte	96
+ 281 0101 B4       		.byte	-76
+ 282 0102 FF       		.byte	-1
+ 283 0103 00       		.byte	0
+ 284 0104 60       		.byte	96
+ 285 0105 D2       		.byte	-46
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 6
+
+
+ 286 0106 FF       		.byte	-1
+ 287 0107 00       		.byte	0
+ 288 0108 00       		.byte	0
+ 289 0109 00       		.byte	0
+ 290 010a 00       		.byte	0
+ 291 010b 00       		.byte	0
+ 292 010c B5       		.byte	-75
+ 293 010d 20       		.byte	32
+ 294 010e 00       		.byte	0
+ 295 010f 00       		.byte	0
+ 296 0110 D3       		.byte	-45
+ 297 0111 26       		.byte	38
+ 298 0112 00       		.byte	0
+ 299 0113 00       		.byte	0
+ 300 0114 E6       		.byte	-26
+ 301 0115 16       		.byte	22
+ 302 0116 00       		.byte	0
+ 303 0117 00       		.byte	0
+ 304 0118 00       		.byte	0
+ 305 0119 00       		.byte	0
+ 306 011a 00       		.byte	0
+ 307 011b 00       		.byte	0
+ 308 011c 6C       		.byte	108
+ 309 011d F0       		.byte	-16
+ 310 011e FF       		.byte	-1
+ 311 011f 00       		.byte	0
+ 312 0120 0D       		.byte	13
+ 313 0121 EE       		.byte	-18
+ 314 0122 FF       		.byte	-1
+ 315 0123 00       		.byte	0
+ 316 0124 C3       		.byte	-61
+ 317 0125 F5       		.byte	-11
+ 318 0126 FF       		.byte	-1
+ 319 0127 00       		.byte	0
+ 320 0128 00       		.byte	0
+ 321 0129 00       		.byte	0
+ 322 012a 00       		.byte	0
+ 323 012b 00       		.byte	0
+ 324 012c 72       		.byte	114
+ 325 012d 06       		.byte	6
+ 326 012e 00       		.byte	0
+ 327 012f 00       		.byte	0
+ 328 0130 17       		.byte	23
+ 329 0131 07       		.byte	7
+ 330 0132 00       		.byte	0
+ 331 0133 00       		.byte	0
+ 332 0134 D6       		.byte	-42
+ 333 0135 03       		.byte	3
+ 334 0136 00       		.byte	0
+ 335 0137 00       		.byte	0
+ 336 0138 00       		.byte	0
+ 337 0139 00       		.byte	0
+ 338 013a 00       		.byte	0
+ 339 013b 00       		.byte	0
+ 340 013c DF       		.byte	-33
+ 341 013d FD       		.byte	-3
+ 342 013e FF       		.byte	-1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 7
+
+
+ 343 013f 00       		.byte	0
+ 344 0140 D2       		.byte	-46
+ 345 0141 FD       		.byte	-3
+ 346 0142 FF       		.byte	-1
+ 347 0143 00       		.byte	0
+ 348 0144 E7       		.byte	-25
+ 349 0145 FE       		.byte	-2
+ 350 0146 FF       		.byte	-1
+ 351 0147 00       		.byte	0
+ 352 0148 00       		.byte	0
+ 353 0149 00       		.byte	0
+ 354 014a 00       		.byte	0
+ 355 014b 00       		.byte	0
+ 356 014c 95       		.byte	-107
+ 357 014d 00       		.byte	0
+ 358 014e 00       		.byte	0
+ 359 014f 00       		.byte	0
+ 360 0150 AD       		.byte	-83
+ 361 0151 00       		.byte	0
+ 362 0152 00       		.byte	0
+ 363 0153 00       		.byte	0
+ 364              		.text
+ 365              	.Letext0:
+ 366              		.file 1 "Generated_Source\\PSoC5\\cytypes.h"
+ 367              		.file 2 "Generated_Source\\PSoC5\\Filter_Coefficients.c"
+ 368              		.section	.debug_info,"",%progbits
+ 369              	.Ldebug_info0:
+ 370 0000 AF000000 		.4byte	0xaf
+ 371 0004 0400     		.2byte	0x4
+ 372 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 373 000a 04       		.byte	0x4
+ 374 000b 01       		.uleb128 0x1
+ 375 000c 66000000 		.4byte	.LASF13
+ 376 0010 01       		.byte	0x1
+ 377 0011 D9010000 		.4byte	.LASF14
+ 378 0015 1A010000 		.4byte	.LASF15
+ 379 0019 00000000 		.4byte	.Ldebug_line0
+ 380 001d 02       		.uleb128 0x2
+ 381 001e 04       		.byte	0x4
+ 382 001f 05       		.byte	0x5
+ 383 0020 696E7400 		.ascii	"int\000"
+ 384 0024 03       		.uleb128 0x3
+ 385 0025 04       		.byte	0x4
+ 386 0026 07       		.byte	0x7
+ 387 0027 0E000000 		.4byte	.LASF0
+ 388 002b 03       		.uleb128 0x3
+ 389 002c 01       		.byte	0x1
+ 390 002d 06       		.byte	0x6
+ 391 002e 0E010000 		.4byte	.LASF1
+ 392 0032 03       		.uleb128 0x3
+ 393 0033 01       		.byte	0x1
+ 394 0034 08       		.byte	0x8
+ 395 0035 4A000000 		.4byte	.LASF2
+ 396 0039 03       		.uleb128 0x3
+ 397 003a 02       		.byte	0x2
+ 398 003b 05       		.byte	0x5
+ 399 003c A7010000 		.4byte	.LASF3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 8
+
+
+ 400 0040 03       		.uleb128 0x3
+ 401 0041 02       		.byte	0x2
+ 402 0042 07       		.byte	0x7
+ 403 0043 FB000000 		.4byte	.LASF4
+ 404 0047 03       		.uleb128 0x3
+ 405 0048 04       		.byte	0x4
+ 406 0049 05       		.byte	0x5
+ 407 004a 5D000000 		.4byte	.LASF5
+ 408 004e 03       		.uleb128 0x3
+ 409 004f 04       		.byte	0x4
+ 410 0050 07       		.byte	0x7
+ 411 0051 21000000 		.4byte	.LASF6
+ 412 0055 03       		.uleb128 0x3
+ 413 0056 08       		.byte	0x8
+ 414 0057 05       		.byte	0x5
+ 415 0058 00000000 		.4byte	.LASF7
+ 416 005c 03       		.uleb128 0x3
+ 417 005d 08       		.byte	0x8
+ 418 005e 07       		.byte	0x7
+ 419 005f 33000000 		.4byte	.LASF8
+ 420 0063 03       		.uleb128 0x3
+ 421 0064 04       		.byte	0x4
+ 422 0065 07       		.byte	0x7
+ 423 0066 D0010000 		.4byte	.LASF9
+ 424 006a 03       		.uleb128 0x3
+ 425 006b 01       		.byte	0x1
+ 426 006c 08       		.byte	0x8
+ 427 006d 58000000 		.4byte	.LASF10
+ 428 0071 04       		.uleb128 0x4
+ 429 0072 1B000000 		.4byte	.LASF16
+ 430 0076 01       		.byte	0x1
+ 431 0077 9201     		.2byte	0x192
+ 432 0079 32000000 		.4byte	0x32
+ 433 007d 03       		.uleb128 0x3
+ 434 007e 04       		.byte	0x4
+ 435 007f 04       		.byte	0x4
+ 436 0080 A1010000 		.4byte	.LASF11
+ 437 0084 03       		.uleb128 0x3
+ 438 0085 08       		.byte	0x8
+ 439 0086 04       		.byte	0x4
+ 440 0087 F4000000 		.4byte	.LASF12
+ 441 008b 05       		.uleb128 0x5
+ 442 008c 71000000 		.4byte	0x71
+ 443 0090 9C000000 		.4byte	0x9c
+ 444 0094 06       		.uleb128 0x6
+ 445 0095 63000000 		.4byte	0x63
+ 446 0099 5301     		.2byte	0x153
+ 447 009b 00       		.byte	0
+ 448 009c 07       		.uleb128 0x7
+ 449 009d B1010000 		.4byte	.LASF17
+ 450 00a1 02       		.byte	0x2
+ 451 00a2 11       		.byte	0x11
+ 452 00a3 AD000000 		.4byte	0xad
+ 453 00a7 05       		.uleb128 0x5
+ 454 00a8 03       		.byte	0x3
+ 455 00a9 00000000 		.4byte	Filter_ChannelAFirCoefficients
+ 456 00ad 08       		.uleb128 0x8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 9
+
+
+ 457 00ae 8B000000 		.4byte	0x8b
+ 458 00b2 00       		.byte	0
+ 459              		.section	.debug_abbrev,"",%progbits
+ 460              	.Ldebug_abbrev0:
+ 461 0000 01       		.uleb128 0x1
+ 462 0001 11       		.uleb128 0x11
+ 463 0002 01       		.byte	0x1
+ 464 0003 25       		.uleb128 0x25
+ 465 0004 0E       		.uleb128 0xe
+ 466 0005 13       		.uleb128 0x13
+ 467 0006 0B       		.uleb128 0xb
+ 468 0007 03       		.uleb128 0x3
+ 469 0008 0E       		.uleb128 0xe
+ 470 0009 1B       		.uleb128 0x1b
+ 471 000a 0E       		.uleb128 0xe
+ 472 000b 10       		.uleb128 0x10
+ 473 000c 17       		.uleb128 0x17
+ 474 000d 00       		.byte	0
+ 475 000e 00       		.byte	0
+ 476 000f 02       		.uleb128 0x2
+ 477 0010 24       		.uleb128 0x24
+ 478 0011 00       		.byte	0
+ 479 0012 0B       		.uleb128 0xb
+ 480 0013 0B       		.uleb128 0xb
+ 481 0014 3E       		.uleb128 0x3e
+ 482 0015 0B       		.uleb128 0xb
+ 483 0016 03       		.uleb128 0x3
+ 484 0017 08       		.uleb128 0x8
+ 485 0018 00       		.byte	0
+ 486 0019 00       		.byte	0
+ 487 001a 03       		.uleb128 0x3
+ 488 001b 24       		.uleb128 0x24
+ 489 001c 00       		.byte	0
+ 490 001d 0B       		.uleb128 0xb
+ 491 001e 0B       		.uleb128 0xb
+ 492 001f 3E       		.uleb128 0x3e
+ 493 0020 0B       		.uleb128 0xb
+ 494 0021 03       		.uleb128 0x3
+ 495 0022 0E       		.uleb128 0xe
+ 496 0023 00       		.byte	0
+ 497 0024 00       		.byte	0
+ 498 0025 04       		.uleb128 0x4
+ 499 0026 16       		.uleb128 0x16
+ 500 0027 00       		.byte	0
+ 501 0028 03       		.uleb128 0x3
+ 502 0029 0E       		.uleb128 0xe
+ 503 002a 3A       		.uleb128 0x3a
+ 504 002b 0B       		.uleb128 0xb
+ 505 002c 3B       		.uleb128 0x3b
+ 506 002d 05       		.uleb128 0x5
+ 507 002e 49       		.uleb128 0x49
+ 508 002f 13       		.uleb128 0x13
+ 509 0030 00       		.byte	0
+ 510 0031 00       		.byte	0
+ 511 0032 05       		.uleb128 0x5
+ 512 0033 01       		.uleb128 0x1
+ 513 0034 01       		.byte	0x1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 10
+
+
+ 514 0035 49       		.uleb128 0x49
+ 515 0036 13       		.uleb128 0x13
+ 516 0037 01       		.uleb128 0x1
+ 517 0038 13       		.uleb128 0x13
+ 518 0039 00       		.byte	0
+ 519 003a 00       		.byte	0
+ 520 003b 06       		.uleb128 0x6
+ 521 003c 21       		.uleb128 0x21
+ 522 003d 00       		.byte	0
+ 523 003e 49       		.uleb128 0x49
+ 524 003f 13       		.uleb128 0x13
+ 525 0040 2F       		.uleb128 0x2f
+ 526 0041 05       		.uleb128 0x5
+ 527 0042 00       		.byte	0
+ 528 0043 00       		.byte	0
+ 529 0044 07       		.uleb128 0x7
+ 530 0045 34       		.uleb128 0x34
+ 531 0046 00       		.byte	0
+ 532 0047 03       		.uleb128 0x3
+ 533 0048 0E       		.uleb128 0xe
+ 534 0049 3A       		.uleb128 0x3a
+ 535 004a 0B       		.uleb128 0xb
+ 536 004b 3B       		.uleb128 0x3b
+ 537 004c 0B       		.uleb128 0xb
+ 538 004d 49       		.uleb128 0x49
+ 539 004e 13       		.uleb128 0x13
+ 540 004f 3F       		.uleb128 0x3f
+ 541 0050 19       		.uleb128 0x19
+ 542 0051 02       		.uleb128 0x2
+ 543 0052 18       		.uleb128 0x18
+ 544 0053 00       		.byte	0
+ 545 0054 00       		.byte	0
+ 546 0055 08       		.uleb128 0x8
+ 547 0056 26       		.uleb128 0x26
+ 548 0057 00       		.byte	0
+ 549 0058 49       		.uleb128 0x49
+ 550 0059 13       		.uleb128 0x13
+ 551 005a 00       		.byte	0
+ 552 005b 00       		.byte	0
+ 553 005c 00       		.byte	0
+ 554              		.section	.debug_aranges,"",%progbits
+ 555 0000 14000000 		.4byte	0x14
+ 556 0004 0200     		.2byte	0x2
+ 557 0006 00000000 		.4byte	.Ldebug_info0
+ 558 000a 04       		.byte	0x4
+ 559 000b 00       		.byte	0
+ 560 000c 0000     		.2byte	0
+ 561 000e 0000     		.2byte	0
+ 562 0010 00000000 		.4byte	0
+ 563 0014 00000000 		.4byte	0
+ 564              		.section	.debug_line,"",%progbits
+ 565              	.Ldebug_line0:
+ 566 0000 56000000 		.section	.debug_str,"MS",%progbits,1
+ 566      02005000 
+ 566      00000201 
+ 566      FB0E0D00 
+ 566      01010101 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 11
+
+
+ 567              	.LASF7:
+ 568 0000 6C6F6E67 		.ascii	"long long int\000"
+ 568      206C6F6E 
+ 568      6720696E 
+ 568      7400
+ 569              	.LASF0:
+ 570 000e 756E7369 		.ascii	"unsigned int\000"
+ 570      676E6564 
+ 570      20696E74 
+ 570      00
+ 571              	.LASF16:
+ 572 001b 75696E74 		.ascii	"uint8\000"
+ 572      3800
+ 573              	.LASF6:
+ 574 0021 6C6F6E67 		.ascii	"long unsigned int\000"
+ 574      20756E73 
+ 574      69676E65 
+ 574      6420696E 
+ 574      7400
+ 575              	.LASF8:
+ 576 0033 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 576      206C6F6E 
+ 576      6720756E 
+ 576      7369676E 
+ 576      65642069 
+ 577              	.LASF2:
+ 578 004a 756E7369 		.ascii	"unsigned char\000"
+ 578      676E6564 
+ 578      20636861 
+ 578      7200
+ 579              	.LASF10:
+ 580 0058 63686172 		.ascii	"char\000"
+ 580      00
+ 581              	.LASF5:
+ 582 005d 6C6F6E67 		.ascii	"long int\000"
+ 582      20696E74 
+ 582      00
+ 583              	.LASF13:
+ 584 0066 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 584      4320342E 
+ 584      392E3320 
+ 584      32303135 
+ 584      30333033 
+ 585 0099 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 585      20726576 
+ 585      6973696F 
+ 585      6E203232 
+ 585      31323230 
+ 586 00cc 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 586      66756E63 
+ 586      74696F6E 
+ 586      2D736563 
+ 586      74696F6E 
+ 587              	.LASF12:
+ 588 00f4 646F7562 		.ascii	"double\000"
+ 588      6C6500
+ 589              	.LASF4:
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRDZgso.s 			page 12
+
+
+ 590 00fb 73686F72 		.ascii	"short unsigned int\000"
+ 590      7420756E 
+ 590      7369676E 
+ 590      65642069 
+ 590      6E7400
+ 591              	.LASF1:
+ 592 010e 7369676E 		.ascii	"signed char\000"
+ 592      65642063 
+ 592      68617200 
+ 593              	.LASF15:
+ 594 011a 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\GitHub\\FYP_POSCCreato"
+ 594      73657273 
+ 594      5C736865 
+ 594      76695C44 
+ 594      6F63756D 
+ 595 0148 725F4D61 		.ascii	"r_Master\\FYP_PSOCCreator_Master\\CORTEX_CY8C5588_P"
+ 595      73746572 
+ 595      5C465950 
+ 595      5F50534F 
+ 595      43437265 
+ 596 0179 536F435F 		.ascii	"SoC_Creator_GCC\\Filter_ADC_VDAC01.cydsn\000"
+ 596      43726561 
+ 596      746F725F 
+ 596      4743435C 
+ 596      46696C74 
+ 597              	.LASF11:
+ 598 01a1 666C6F61 		.ascii	"float\000"
+ 598      7400
+ 599              	.LASF3:
+ 600 01a7 73686F72 		.ascii	"short int\000"
+ 600      7420696E 
+ 600      7400
+ 601              	.LASF17:
+ 602 01b1 46696C74 		.ascii	"Filter_ChannelAFirCoefficients\000"
+ 602      65725F43 
+ 602      68616E6E 
+ 602      656C4146 
+ 602      6972436F 
+ 603              	.LASF9:
+ 604 01d0 73697A65 		.ascii	"sizetype\000"
+ 604      74797065 
+ 604      00
+ 605              	.LASF14:
+ 606 01d9 47656E65 		.ascii	"Generated_Source\\PSoC5\\Filter_Coefficients.c\000"
+ 606      72617465 
+ 606      645F536F 
+ 606      75726365 
+ 606      5C50536F 
+ 607              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

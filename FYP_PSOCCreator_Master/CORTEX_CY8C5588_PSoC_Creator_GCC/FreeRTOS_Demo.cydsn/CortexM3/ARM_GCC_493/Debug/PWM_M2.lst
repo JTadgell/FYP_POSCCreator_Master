@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
   23:Generated_Source\PSoC5/PWM_M2.c **** 
   24:Generated_Source\PSoC5/PWM_M2.c **** #include "PWM_M2.h"
   25:Generated_Source\PSoC5/PWM_M2.c **** 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 2
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 2
 
 
   26:Generated_Source\PSoC5/PWM_M2.c **** /* Error message for removed <resource> through optimization */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
   51 0010 024B     		ldr	r3, .L3
   52 0012 0122     		movs	r2, #1
   53 0014 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 3
 
 
   54              	.L2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
   84 0004 00AF     		add	r7, sp, #0
   85              		.cfi_def_cfa_register 7
   86:Generated_Source\PSoC5/PWM_M2.c ****     #if (PWM_M2_UsingFixedFunction || PWM_M2_UseControl)
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 4
 
 
   87:Generated_Source\PSoC5/PWM_M2.c ****         uint8 ctrl;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  129:Generated_Source\PSoC5/PWM_M2.c ****             PWM_M2_AUX_CONTROLDP0 |= (PWM_M2_AUX_CTRL_FIFO0_CLR);
   98              		.loc 1 129 0
   99 001e 1A4A     		ldr	r2, .L6+4
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 5
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 5
 
 
  100 0020 194B     		ldr	r3, .L6+4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  158:Generated_Source\PSoC5/PWM_M2.c ****         /* Globally Enable the Fixed Function Block chosen */
  159:Generated_Source\PSoC5/PWM_M2.c ****         PWM_M2_GLOBAL_ENABLE |= PWM_M2_BLOCK_EN_MASK;
  160:Generated_Source\PSoC5/PWM_M2.c ****         /* Set the Interrupt source to come from the status register */
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 6
 
 
  161:Generated_Source\PSoC5/PWM_M2.c ****         PWM_M2_CONTROL2 |= PWM_M2_CTRL2_IRQ_SEL;
@@ -348,9 +348,9 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  151              	.L7:
  152              		.align	2
  153              	.L6:
- 154 0084 75640040 		.word	1073767541
- 155 0088 94640040 		.word	1073767572
- 156 008c 95640040 		.word	1073767573
+ 154 0084 73640040 		.word	1073767539
+ 155 0088 92640040 		.word	1073767570
+ 156 008c 93640040 		.word	1073767571
  157              		.cfi_endproc
  158              	.LFE1:
  159              		.size	PWM_M2_Init, .-PWM_M2_Init
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  161              		.align	2
  162              		.global	PWM_M2_Enable
  163              		.thumb
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 7
 
 
  164              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  186              		.loc 1 211 0
  187 0014 BD46     		mov	sp, r7
  188              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 8
 
 
  189              		@ sp needed
@@ -429,7 +429,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  194              	.L10:
  195              		.align	2
  196              	.L9:
- 197 001c 75640040 		.word	1073767541
+ 197 001c 73640040 		.word	1073767539
  198              		.cfi_endproc
  199              	.LFE2:
  200              		.size	PWM_M2_Enable, .-PWM_M2_Enable
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  236:Generated_Source\PSoC5/PWM_M2.c ****         PWM_M2_CONTROL &= ((uint8)(~PWM_M2_CTRL_ENABLE));
  219              		.loc 1 236 0
  220 0004 054A     		ldr	r2, .L12
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 9
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 9
 
 
  221 0006 054B     		ldr	r3, .L12
@@ -506,7 +506,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  235              	.L13:
  236              		.align	2
  237              	.L12:
- 238 001c 75640040 		.word	1073767541
+ 238 001c 73640040 		.word	1073767539
  239              		.cfi_endproc
  240              	.LFE3:
  241              		.size	PWM_M2_Stop, .-PWM_M2_Stop
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  262:Generated_Source\PSoC5/PWM_M2.c ****         * Return:
  263:Generated_Source\PSoC5/PWM_M2.c ****         *  None
  264:Generated_Source\PSoC5/PWM_M2.c ****         *
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 10
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 10
 
 
  265:Generated_Source\PSoC5/PWM_M2.c ****         *******************************************************************************/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  319:Generated_Source\PSoC5/PWM_M2.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
  320:Generated_Source\PSoC5/PWM_M2.c ****         *                defined in the H file as input arguments.
  321:Generated_Source\PSoC5/PWM_M2.c ****         *
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 11
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 11
 
 
  322:Generated_Source\PSoC5/PWM_M2.c ****         * Return:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  376:Generated_Source\PSoC5/PWM_M2.c **** 
  377:Generated_Source\PSoC5/PWM_M2.c **** #endif /* UseOneCompareMode */
  378:Generated_Source\PSoC5/PWM_M2.c **** 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 12
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 12
 
 
  379:Generated_Source\PSoC5/PWM_M2.c **** 
@@ -718,13 +718,13 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  275              		.cfi_restore 7
  276              		.cfi_def_cfa_offset 0
  277 0018 7047     		bx	lr
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 13
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 13
 
 
  278              	.L16:
  279 001a 00BF     		.align	2
  280              	.L15:
- 281 001c 08680040 		.word	1073768456
+ 281 001c 04680040 		.word	1073768452
  282              		.cfi_endproc
  283              	.LFE4:
  284              		.size	PWM_M2_WriteCounter, .-PWM_M2_WriteCounter
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  306              		.loc 1 433 0
  307 0008 044B     		ldr	r3, .L19+4
  308 000a 1B88     		ldrh	r3, [r3]	@ movhi
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 14
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 14
 
 
  309 000c 9BB2     		uxth	r3, r3
@@ -795,8 +795,8 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  319              	.L20:
  320              		.align	2
  321              	.L19:
- 322 0018 14640040 		.word	1073767444
- 323 001c A8680040 		.word	1073768616
+ 322 0018 12640040 		.word	1073767442
+ 323 001c A4680040 		.word	1073768612
  324              		.cfi_endproc
  325              	.LFE5:
  326              		.size	PWM_M2_ReadCounter, .-PWM_M2_ReadCounter
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  342              		.cfi_offset 14, -4
  343 0002 00AF     		add	r7, sp, #0
  344              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 15
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 15
 
 
  455:Generated_Source\PSoC5/PWM_M2.c ****             while(0u != (PWM_M2_ReadStatusRegister() & PWM_M2_STATUS_FIFONEMPTY))
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  483:Generated_Source\PSoC5/PWM_M2.c **** {
  370              		.loc 1 483 0
  371              		.cfi_startproc
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 16
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 16
 
 
  372              		@ args = 0, pretend = 0, frame = 8
@@ -936,7 +936,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  398              	.L26:
  399 001a 00BF     		.align	2
  400              	.L25:
- 401 001c 88680040 		.word	1073768584
+ 401 001c 84680040 		.word	1073768580
  402              		.cfi_endproc
  403              	.LFE7:
  404              		.size	PWM_M2_WritePeriod, .-PWM_M2_WritePeriod
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  497:Generated_Source\PSoC5/PWM_M2.c ****     *
  498:Generated_Source\PSoC5/PWM_M2.c ****     * Summary:
  499:Generated_Source\PSoC5/PWM_M2.c ****     *  This funtion is used to change the compare1 value when the PWM is in Dither
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 17
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 17
 
 
  500:Generated_Source\PSoC5/PWM_M2.c ****     *  mode. The compare output will reflect the new value on the next UDB clock.
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  434 0012 BD46     		mov	sp, r7
  435              		.cfi_def_cfa_register 13
  436              		@ sp needed
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 18
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 18
 
 
  437 0014 5DF8047B 		ldr	r7, [sp], #4
@@ -1028,7 +1028,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  441              	.L29:
  442 001a 00BF     		.align	2
  443              	.L28:
- 444 001c 48680040 		.word	1073768520
+ 444 001c 44680040 		.word	1073768516
  445              		.cfi_endproc
  446              	.LFE8:
  447              		.size	PWM_M2_WriteCompare, .-PWM_M2_WriteCompare
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  568:Generated_Source\PSoC5/PWM_M2.c ****     ********************************************************************************
  569:Generated_Source\PSoC5/PWM_M2.c ****     *
  570:Generated_Source\PSoC5/PWM_M2.c ****     * Summary:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 19
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 19
 
 
  571:Generated_Source\PSoC5/PWM_M2.c ****     *  This funtion is used to change the compare value, for compare1 output.
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  625:Generated_Source\PSoC5/PWM_M2.c ****                                                     PWM_M2_DEADBAND_COUNT_MASK;
  626:Generated_Source\PSoC5/PWM_M2.c ****             #else
  627:Generated_Source\PSoC5/PWM_M2.c ****                 PWM_M2_DEADBAND_COUNT |= deadtime & PWM_M2_DEADBAND_COUNT_MASK;
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 20
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 20
 
 
  628:Generated_Source\PSoC5/PWM_M2.c ****             #endif /* (PWM_M2_DEADBAND_COUNT_SHIFT) */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  682:Generated_Source\PSoC5/PWM_M2.c ****     *
  683:Generated_Source\PSoC5/PWM_M2.c ****     *******************************************************************************/
  684:Generated_Source\PSoC5/PWM_M2.c ****     void PWM_M2_SetInterruptMode(uint8 interruptMode) 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 21
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 21
 
 
  685:Generated_Source\PSoC5/PWM_M2.c ****     {
@@ -1235,7 +1235,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  484              	.L32:
  485 001a 00BF     		.align	2
  486              	.L31:
- 487 001c 85640040 		.word	1073767557
+ 487 001c 83640040 		.word	1073767555
  488              		.cfi_endproc
  489              	.LFE9:
  490              		.size	PWM_M2_SetInterruptMode, .-PWM_M2_SetInterruptMode
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  696:Generated_Source\PSoC5/PWM_M2.c ****     *
  697:Generated_Source\PSoC5/PWM_M2.c ****     * Parameters:
  698:Generated_Source\PSoC5/PWM_M2.c ****     *  None
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 22
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 22
 
 
  699:Generated_Source\PSoC5/PWM_M2.c ****     *
@@ -1303,7 +1303,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  522              	.L36:
  523              		.align	2
  524              	.L35:
- 525 0014 65640040 		.word	1073767525
+ 525 0014 63640040 		.word	1073767523
  526              		.cfi_endproc
  527              	.LFE10:
  528              		.size	PWM_M2_ReadStatusRegister, .-PWM_M2_ReadStatusRegister
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  715:Generated_Source\PSoC5/PWM_M2.c **** 
  716:Generated_Source\PSoC5/PWM_M2.c **** #endif /* (PWM_M2_UseStatus || PWM_M2_UsingFixedFunction) */
  717:Generated_Source\PSoC5/PWM_M2.c **** 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 23
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 23
 
 
  718:Generated_Source\PSoC5/PWM_M2.c **** 
@@ -1378,11 +1378,11 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  565 0018 7047     		bx	lr
  566              	.L40:
  567 001a 00BF     		.align	2
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 24
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 24
 
 
  568              	.L39:
- 569 001c 75640040 		.word	1073767541
+ 569 001c 73640040 		.word	1073767539
  570              		.cfi_endproc
  571              	.LFE11:
  572              		.size	PWM_M2_ReadControlRegister, .-PWM_M2_ReadControlRegister
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  598 000e 1370     		strb	r3, [r2]
  768:Generated_Source\PSoC5/PWM_M2.c ****     }
  599              		.loc 1 768 0
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 25
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 25
 
 
  600 0010 0C37     		adds	r7, r7, #12
@@ -1453,7 +1453,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  609              	.L43:
  610 001a 00BF     		.align	2
  611              	.L42:
- 612 001c 75640040 		.word	1073767541
+ 612 001c 73640040 		.word	1073767539
  613              		.cfi_endproc
  614              	.LFE12:
  615              		.size	PWM_M2_WriteControlRegister, .-PWM_M2_WriteControlRegister
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  631              		.cfi_offset 7, -4
  632 0002 00AF     		add	r7, sp, #0
  633              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 26
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 26
 
 
  792:Generated_Source\PSoC5/PWM_M2.c ****         return (CY_GET_REG16(PWM_M2_CAPTURE_LSB_PTR));
@@ -1519,7 +1519,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  647              	.L47:
  648              		.align	2
  649              	.L46:
- 650 0014 A8680040 		.word	1073768616
+ 650 0014 A4680040 		.word	1073768612
  651              		.cfi_endproc
  652              	.LFE13:
  653              		.size	PWM_M2_ReadCapture, .-PWM_M2_ReadCapture
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  662              		.loc 1 817 0
  663              		.cfi_startproc
  664              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 27
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 27
 
 
  665              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1590,7 +1590,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  685              	.L51:
  686              		.align	2
  687              	.L50:
- 688 0014 48680040 		.word	1073768520
+ 688 0014 44680040 		.word	1073768516
  689              		.cfi_endproc
  690              	.LFE14:
  691              		.size	PWM_M2_ReadCompare, .-PWM_M2_ReadCompare
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  837:Generated_Source\PSoC5/PWM_M2.c ****     *
  838:Generated_Source\PSoC5/PWM_M2.c ****     * Return:
  839:Generated_Source\PSoC5/PWM_M2.c ****     *  uint8/uint16: Current compare value.
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 28
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 28
 
 
  840:Generated_Source\PSoC5/PWM_M2.c ****     *
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  708 0002 00AF     		add	r7, sp, #0
  709              		.cfi_def_cfa_register 7
  886:Generated_Source\PSoC5/PWM_M2.c ****     #if(PWM_M2_UsingFixedFunction)
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 29
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 29
 
 
  887:Generated_Source\PSoC5/PWM_M2.c ****         return ((uint16)CY_GET_REG16(PWM_M2_PERIOD_LSB_PTR));
@@ -1702,7 +1702,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  723              	.L55:
  724              		.align	2
  725              	.L54:
- 726 0014 88680040 		.word	1073768584
+ 726 0014 84680040 		.word	1073768580
  727              		.cfi_endproc
  728              	.LFE15:
  729              		.size	PWM_M2_ReadPeriod, .-PWM_M2_ReadPeriod
@@ -1716,48 +1716,48 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  737 0006 00000000 		.4byte	.Ldebug_abbrev0
  738 000a 04       		.byte	0x4
  739 000b 01       		.uleb128 0x1
- 740 000c 90010000 		.4byte	.LASF40
+ 740 000c 98010000 		.4byte	.LASF40
  741 0010 01       		.byte	0x1
- 742 0011 51030000 		.4byte	.LASF41
- 743 0015 15010000 		.4byte	.LASF42
+ 742 0011 59030000 		.4byte	.LASF41
+ 743 0015 89000000 		.4byte	.LASF42
  744 0019 00000000 		.4byte	.Ldebug_ranges0+0
  745 001d 00000000 		.4byte	0
  746 0021 00000000 		.4byte	.Ldebug_line0
  747 0025 02       		.uleb128 0x2
  748 0026 01       		.byte	0x1
  749 0027 06       		.byte	0x6
- 750 0028 3D030000 		.4byte	.LASF0
+ 750 0028 45030000 		.4byte	.LASF0
  751 002c 02       		.uleb128 0x2
  752 002d 01       		.byte	0x1
  753 002e 08       		.byte	0x8
- 754 002f B6000000 		.4byte	.LASF1
+ 754 002f 39010000 		.4byte	.LASF1
  755 0033 02       		.uleb128 0x2
  756 0034 02       		.byte	0x2
  757 0035 05       		.byte	0x5
- 758 0036 0F030000 		.4byte	.LASF2
+ 758 0036 17030000 		.4byte	.LASF2
  759 003a 02       		.uleb128 0x2
  760 003b 02       		.byte	0x2
  761 003c 07       		.byte	0x7
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 30
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 30
 
 
  762 003d 4C000000 		.4byte	.LASF3
  763 0041 02       		.uleb128 0x2
  764 0042 04       		.byte	0x4
  765 0043 05       		.byte	0x5
- 766 0044 2F030000 		.4byte	.LASF4
+ 766 0044 37030000 		.4byte	.LASF4
  767 0048 02       		.uleb128 0x2
  768 0049 04       		.byte	0x4
  769 004a 07       		.byte	0x7
- 770 004b F5000000 		.4byte	.LASF5
+ 770 004b 78010000 		.4byte	.LASF5
  771 004f 02       		.uleb128 0x2
  772 0050 08       		.byte	0x8
  773 0051 05       		.byte	0x5
- 774 0052 B6020000 		.4byte	.LASF6
+ 774 0052 BE020000 		.4byte	.LASF6
  775 0056 02       		.uleb128 0x2
  776 0057 08       		.byte	0x8
  777 0058 07       		.byte	0x7
- 778 0059 7B020000 		.4byte	.LASF7
+ 778 0059 83020000 		.4byte	.LASF7
  779 005d 03       		.uleb128 0x3
  780 005e 04       		.byte	0x4
  781 005f 05       		.byte	0x5
@@ -1765,31 +1765,31 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  783 0064 02       		.uleb128 0x2
  784 0065 04       		.byte	0x4
  785 0066 07       		.byte	0x7
- 786 0067 62020000 		.4byte	.LASF8
+ 786 0067 6A020000 		.4byte	.LASF8
  787 006b 04       		.uleb128 0x4
- 788 006c 07010000 		.4byte	.LASF9
+ 788 006c 8A010000 		.4byte	.LASF9
  789 0070 02       		.byte	0x2
  790 0071 9201     		.2byte	0x192
  791 0073 2C000000 		.4byte	0x2c
  792 0077 04       		.uleb128 0x4
- 793 0078 45020000 		.4byte	.LASF10
+ 793 0078 4D020000 		.4byte	.LASF10
  794 007c 02       		.byte	0x2
  795 007d 9301     		.2byte	0x193
  796 007f 3A000000 		.4byte	0x3a
  797 0083 02       		.uleb128 0x2
  798 0084 04       		.byte	0x4
  799 0085 04       		.byte	0x4
- 800 0086 95000000 		.4byte	.LASF11
+ 800 0086 18010000 		.4byte	.LASF11
  801 008a 02       		.uleb128 0x2
  802 008b 08       		.byte	0x8
  803 008c 04       		.byte	0x4
- 804 008d 1E020000 		.4byte	.LASF12
+ 804 008d 26020000 		.4byte	.LASF12
  805 0091 02       		.uleb128 0x2
  806 0092 01       		.byte	0x1
  807 0093 08       		.byte	0x8
- 808 0094 38030000 		.4byte	.LASF13
+ 808 0094 40030000 		.4byte	.LASF13
  809 0098 04       		.uleb128 0x4
- 810 0099 D8000000 		.4byte	.LASF14
+ 810 0099 5B010000 		.4byte	.LASF14
  811 009d 02       		.byte	0x2
  812 009e 3C02     		.2byte	0x23c
  813 00a0 A4000000 		.4byte	0xa4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  816 00a9 04       		.uleb128 0x4
  817 00aa 00000000 		.4byte	.LASF15
  818 00ae 02       		.byte	0x2
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 31
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 31
 
 
  819 00af 3D02     		.2byte	0x23d
@@ -1808,9 +1808,9 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  823 00ba 02       		.uleb128 0x2
  824 00bb 04       		.byte	0x4
  825 00bc 07       		.byte	0x7
- 826 00bd AD020000 		.4byte	.LASF16
+ 826 00bd B5020000 		.4byte	.LASF16
  827 00c1 06       		.uleb128 0x6
- 828 00c2 38020000 		.4byte	.LASF19
+ 828 00c2 40020000 		.4byte	.LASF19
  829 00c6 01       		.byte	0x1
  830 00c7 37       		.byte	0x37
  831 00c8 00000000 		.4byte	.LFB0
@@ -1818,7 +1818,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  833 00d0 01       		.uleb128 0x1
  834 00d1 9C       		.byte	0x9c
  835 00d2 07       		.uleb128 0x7
- 836 00d3 89000000 		.4byte	.LASF22
+ 836 00d3 0C010000 		.4byte	.LASF22
  837 00d7 01       		.byte	0x1
  838 00d8 54       		.byte	0x54
  839 00d9 00000000 		.4byte	.LFB1
@@ -1827,7 +1827,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  842 00e2 9C       		.byte	0x9c
  843 00e3 04010000 		.4byte	0x104
  844 00e7 08       		.uleb128 0x8
- 845 00e8 19030000 		.4byte	.LASF17
+ 845 00e8 21030000 		.4byte	.LASF17
  846 00ec 01       		.byte	0x1
  847 00ed 57       		.byte	0x57
  848 00ee 6B000000 		.4byte	0x6b
@@ -1835,7 +1835,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  850 00f3 91       		.byte	0x91
  851 00f4 77       		.sleb128 -9
  852 00f5 08       		.uleb128 0x8
- 853 00f6 4C020000 		.4byte	.LASF18
+ 853 00f6 54020000 		.4byte	.LASF18
  854 00fa 01       		.byte	0x1
  855 00fb 5D       		.byte	0x5d
  856 00fc 6B000000 		.4byte	0x6b
@@ -1852,18 +1852,18 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  867 0113 01       		.uleb128 0x1
  868 0114 9C       		.byte	0x9c
  869 0115 09       		.uleb128 0x9
- 870 0116 6F020000 		.4byte	.LASF21
+ 870 0116 77020000 		.4byte	.LASF21
  871 011a 01       		.byte	0x1
  872 011b E9       		.byte	0xe9
  873 011c 00000000 		.4byte	.LFB3
  874 0120 20000000 		.4byte	.LFE3-.LFB3
  875 0124 01       		.uleb128 0x1
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 32
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 32
 
 
  876 0125 9C       		.byte	0x9c
  877 0126 0A       		.uleb128 0xa
- 878 0127 99020000 		.4byte	.LASF23
+ 878 0127 A1020000 		.4byte	.LASF23
  879 012b 01       		.byte	0x1
  880 012c 9301     		.2byte	0x193
  881 012e 00000000 		.4byte	.LFB4
@@ -1872,7 +1872,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  884 0137 9C       		.byte	0x9c
  885 0138 4C010000 		.4byte	0x14c
  886 013c 0B       		.uleb128 0xb
- 887 013d 9B000000 		.4byte	.LASF26
+ 887 013d 1E010000 		.4byte	.LASF26
  888 0141 01       		.byte	0x1
  889 0142 9301     		.2byte	0x193
  890 0144 77000000 		.4byte	0x77
@@ -1881,7 +1881,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  893 014a 76       		.sleb128 -10
  894 014b 00       		.byte	0
  895 014c 0C       		.uleb128 0xc
- 896 014d A3000000 		.4byte	.LASF32
+ 896 014d 26010000 		.4byte	.LASF32
  897 0151 01       		.byte	0x1
  898 0152 A901     		.2byte	0x1a9
  899 0154 77000000 		.4byte	0x77
@@ -1890,7 +1890,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  902 0160 01       		.uleb128 0x1
  903 0161 9C       		.byte	0x9c
  904 0162 0D       		.uleb128 0xd
- 905 0163 1E030000 		.4byte	.LASF24
+ 905 0163 26030000 		.4byte	.LASF24
  906 0167 01       		.byte	0x1
  907 0168 C501     		.2byte	0x1c5
  908 016a 00000000 		.4byte	.LFB6
@@ -1898,7 +1898,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  910 0172 01       		.uleb128 0x1
  911 0173 9C       		.byte	0x9c
  912 0174 0A       		.uleb128 0xa
- 913 0175 25020000 		.4byte	.LASF25
+ 913 0175 2D020000 		.4byte	.LASF25
  914 0179 01       		.byte	0x1
  915 017a E201     		.2byte	0x1e2
  916 017c 00000000 		.4byte	.LFB7
@@ -1916,9 +1916,9 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  928 0198 76       		.sleb128 -10
  929 0199 00       		.byte	0
  930 019a 0A       		.uleb128 0xa
- 931 019b C4000000 		.4byte	.LASF28
+ 931 019b 47010000 		.4byte	.LASF28
  932 019f 01       		.byte	0x1
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 33
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 33
 
 
  933 01a0 0402     		.2byte	0x204
@@ -1928,7 +1928,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  937 01ab 9C       		.byte	0x9c
  938 01ac C0010000 		.4byte	0x1c0
  939 01b0 0B       		.uleb128 0xb
- 940 01b1 49030000 		.4byte	.LASF29
+ 940 01b1 51030000 		.4byte	.LASF29
  941 01b5 01       		.byte	0x1
  942 01b6 0402     		.2byte	0x204
  943 01b8 77000000 		.4byte	0x77
@@ -1937,7 +1937,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  946 01be 76       		.sleb128 -10
  947 01bf 00       		.byte	0
  948 01c0 0A       		.uleb128 0xa
- 949 01c1 DD000000 		.4byte	.LASF30
+ 949 01c1 60010000 		.4byte	.LASF30
  950 01c5 01       		.byte	0x1
  951 01c6 AC02     		.2byte	0x2ac
  952 01c8 00000000 		.4byte	.LFB9
@@ -1946,7 +1946,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  955 01d1 9C       		.byte	0x9c
  956 01d2 E6010000 		.4byte	0x1e6
  957 01d6 0B       		.uleb128 0xb
- 958 01d7 DF020000 		.4byte	.LASF31
+ 958 01d7 E7020000 		.4byte	.LASF31
  959 01db 01       		.byte	0x1
  960 01dc AC02     		.2byte	0x2ac
  961 01de 6B000000 		.4byte	0x6b
@@ -1964,7 +1964,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  973 01fa 01       		.uleb128 0x1
  974 01fb 9C       		.byte	0x9c
  975 01fc 0E       		.uleb128 0xe
- 976 01fd C4020000 		.4byte	.LASF43
+ 976 01fd CC020000 		.4byte	.LASF43
  977 0201 01       		.byte	0x1
  978 0202 E102     		.2byte	0x2e1
  979 0204 6B000000 		.4byte	0x6b
@@ -1974,11 +1974,11 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  983 0211 9C       		.byte	0x9c
  984 0212 26020000 		.4byte	0x226
  985 0216 0F       		.uleb128 0xf
- 986 0217 92020000 		.4byte	.LASF34
+ 986 0217 9A020000 		.4byte	.LASF34
  987 021b 01       		.byte	0x1
  988 021c E302     		.2byte	0x2e3
  989 021e 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 34
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 34
 
 
  990 0222 02       		.uleb128 0x2
@@ -1995,7 +1995,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1001 0237 9C       		.byte	0x9c
  1002 0238 4C020000 		.4byte	0x24c
  1003 023c 0B       		.uleb128 0xb
- 1004 023d 0D010000 		.4byte	.LASF36
+ 1004 023d 90010000 		.4byte	.LASF36
  1005 0241 01       		.byte	0x1
  1006 0242 FD02     		.2byte	0x2fd
  1007 0244 6B000000 		.4byte	0x6b
@@ -2004,7 +2004,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1010 024a 77       		.sleb128 -9
  1011 024b 00       		.byte	0
  1012 024c 0C       		.uleb128 0xc
- 1013 024d ED020000 		.4byte	.LASF37
+ 1013 024d F5020000 		.4byte	.LASF37
  1014 0251 01       		.byte	0x1
  1015 0252 1603     		.2byte	0x316
  1016 0254 77000000 		.4byte	0x77
@@ -2031,14 +2031,14 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1037 028c 01       		.uleb128 0x1
  1038 028d 9C       		.byte	0x9c
  1039 028e 10       		.uleb128 0x10
- 1040 028f 00030000 		.4byte	.LASF44
+ 1040 028f 08030000 		.4byte	.LASF44
  1041 0293 01       		.byte	0x1
  1042 0294 20       		.byte	0x20
  1043 0295 6B000000 		.4byte	0x6b
  1044 0299 05       		.uleb128 0x5
  1045 029a 03       		.byte	0x3
  1046 029b 00000000 		.4byte	PWM_M2_initVar
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 35
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 35
 
 
  1047 029f 00       		.byte	0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1101 0033 13       		.uleb128 0x13
  1102 0034 00       		.byte	0
  1103 0035 00       		.byte	0
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 36
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 36
 
 
  1104 0036 05       		.uleb128 0x5
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1158 006e 00       		.byte	0
  1159 006f 08       		.uleb128 0x8
  1160 0070 34       		.uleb128 0x34
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 37
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 37
 
 
  1161 0071 00       		.byte	0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1215 00a8 18       		.uleb128 0x18
  1216 00a9 9742     		.uleb128 0x2117
  1217 00ab 19       		.uleb128 0x19
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 38
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 38
 
 
  1218 00ac 01       		.uleb128 0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1272 00e3 05       		.uleb128 0x5
  1273 00e4 27       		.uleb128 0x27
  1274 00e5 19       		.uleb128 0x19
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 39
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 39
 
 
  1275 00e6 11       		.uleb128 0x11
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1329 011e 00       		.byte	0
  1330 011f 03       		.uleb128 0x3
  1331 0120 0E       		.uleb128 0xe
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 40
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 40
 
 
  1332 0121 3A       		.uleb128 0x3a
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1386 0094 00000000 		.4byte	0
  1387              		.section	.debug_ranges,"",%progbits
  1388              	.Ldebug_ranges0:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 41
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 41
 
 
  1389 0000 00000000 		.4byte	.LFB0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1431      6F6D7061 
  1431      726500
  1432              	.LASF33:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 42
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 42
 
 
  1433 002b 50574D5F 		.ascii	"PWM_M2_ReadStatusRegister\000"
@@ -2486,202 +2486,202 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 1
  1441      72697465 
  1441      436F6E74 
  1441      726F6C52 
- 1442              	.LASF22:
- 1443 0089 50574D5F 		.ascii	"PWM_M2_Init\000"
- 1443      4D325F49 
- 1443      6E697400 
- 1444              	.LASF11:
- 1445 0095 666C6F61 		.ascii	"float\000"
- 1445      7400
- 1446              	.LASF26:
- 1447 009b 636F756E 		.ascii	"counter\000"
- 1447      74657200 
- 1448              	.LASF32:
- 1449 00a3 50574D5F 		.ascii	"PWM_M2_ReadCounter\000"
- 1449      4D325F52 
- 1449      65616443 
- 1449      6F756E74 
- 1449      657200
- 1450              	.LASF1:
- 1451 00b6 756E7369 		.ascii	"unsigned char\000"
- 1451      676E6564 
- 1451      20636861 
- 1451      7200
- 1452              	.LASF28:
- 1453 00c4 50574D5F 		.ascii	"PWM_M2_WriteCompare\000"
- 1453      4D325F57 
- 1453      72697465 
- 1453      436F6D70 
- 1453      61726500 
- 1454              	.LASF14:
- 1455 00d8 72656738 		.ascii	"reg8\000"
- 1455      00
- 1456              	.LASF30:
- 1457 00dd 50574D5F 		.ascii	"PWM_M2_SetInterruptMode\000"
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 43
+ 1442              	.LASF42:
+ 1443 0089 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\GitHub\\FYP_POSCCreato"
+ 1443      73657273 
+ 1443      5C736865 
+ 1443      76695C44 
+ 1443      6F63756D 
+ 1444 00b7 725F4D61 		.ascii	"r_Master\\FYP_PSOCCreator_Master\\CORTEX_CY8C5588_P"
+ 1444      73746572 
+ 1444      5C465950 
+ 1444      5F50534F 
+ 1444      43437265 
+ 1445 00e8 536F435F 		.ascii	"SoC_Creator_GCC\\FreeRTOS_Demo.cydsn\000"
+ 1445      43726561 
+ 1445      746F725F 
+ 1445      4743435C 
+ 1445      46726565 
+ 1446              	.LASF22:
+ 1447 010c 50574D5F 		.ascii	"PWM_M2_Init\000"
+ 1447      4D325F49 
+ 1447      6E697400 
+ 1448              	.LASF11:
+ 1449 0118 666C6F61 		.ascii	"float\000"
+ 1449      7400
+ 1450              	.LASF26:
+ 1451 011e 636F756E 		.ascii	"counter\000"
+ 1451      74657200 
+ 1452              	.LASF32:
+ 1453 0126 50574D5F 		.ascii	"PWM_M2_ReadCounter\000"
+ 1453      4D325F52 
+ 1453      65616443 
+ 1453      6F756E74 
+ 1453      657200
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 43
 
 
- 1457      4D325F53 
- 1457      6574496E 
- 1457      74657272 
- 1457      7570744D 
- 1458              	.LASF5:
- 1459 00f5 6C6F6E67 		.ascii	"long unsigned int\000"
- 1459      20756E73 
- 1459      69676E65 
- 1459      6420696E 
- 1459      7400
- 1460              	.LASF9:
- 1461 0107 75696E74 		.ascii	"uint8\000"
- 1461      3800
- 1462              	.LASF36:
- 1463 010d 636F6E74 		.ascii	"control\000"
- 1463      726F6C00 
- 1464              	.LASF42:
- 1465 0115 433A5C55 		.ascii	"C:\\Users\\tadge\\Documents\\GitHub\\FYP_PSOCCreato"
- 1465      73657273 
- 1465      5C746164 
- 1465      67655C44 
- 1465      6F63756D 
- 1466 0143 725F466F 		.ascii	"r_Follower\\FYP_New_Test\\CORTEX_CY8C5588_PSoC_Crea"
- 1466      6C6C6F77 
- 1466      65725C46 
- 1466      59505F4E 
- 1466      65775F54 
- 1467 0174 746F725F 		.ascii	"tor_GCC\\FreeRTOS_Demo.cydsn\000"
- 1467      4743435C 
- 1467      46726565 
- 1467      52544F53 
- 1467      5F44656D 
+ 1454              	.LASF1:
+ 1455 0139 756E7369 		.ascii	"unsigned char\000"
+ 1455      676E6564 
+ 1455      20636861 
+ 1455      7200
+ 1456              	.LASF28:
+ 1457 0147 50574D5F 		.ascii	"PWM_M2_WriteCompare\000"
+ 1457      4D325F57 
+ 1457      72697465 
+ 1457      436F6D70 
+ 1457      61726500 
+ 1458              	.LASF14:
+ 1459 015b 72656738 		.ascii	"reg8\000"
+ 1459      00
+ 1460              	.LASF30:
+ 1461 0160 50574D5F 		.ascii	"PWM_M2_SetInterruptMode\000"
+ 1461      4D325F53 
+ 1461      6574496E 
+ 1461      74657272 
+ 1461      7570744D 
+ 1462              	.LASF5:
+ 1463 0178 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1463      20756E73 
+ 1463      69676E65 
+ 1463      6420696E 
+ 1463      7400
+ 1464              	.LASF9:
+ 1465 018a 75696E74 		.ascii	"uint8\000"
+ 1465      3800
+ 1466              	.LASF36:
+ 1467 0190 636F6E74 		.ascii	"control\000"
+ 1467      726F6C00 
  1468              	.LASF40:
- 1469 0190 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1469 0198 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  1469      4320342E 
  1469      392E3320 
  1469      32303135 
  1469      30333033 
- 1470 01c3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1470 01cb 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  1470      20726576 
  1470      6973696F 
  1470      6E203232 
  1470      31323230 
- 1471 01f6 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1471 01fe 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  1471      66756E63 
  1471      74696F6E 
  1471      2D736563 
  1471      74696F6E 
  1472              	.LASF12:
- 1473 021e 646F7562 		.ascii	"double\000"
+ 1473 0226 646F7562 		.ascii	"double\000"
  1473      6C6500
  1474              	.LASF25:
- 1475 0225 50574D5F 		.ascii	"PWM_M2_WritePeriod\000"
+ 1475 022d 50574D5F 		.ascii	"PWM_M2_WritePeriod\000"
  1475      4D325F57 
  1475      72697465 
  1475      50657269 
  1475      6F6400
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 44
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 44
 
 
  1476              	.LASF19:
- 1477 0238 50574D5F 		.ascii	"PWM_M2_Start\000"
+ 1477 0240 50574D5F 		.ascii	"PWM_M2_Start\000"
  1477      4D325F53 
  1477      74617274 
  1477      00
  1478              	.LASF10:
- 1479 0245 75696E74 		.ascii	"uint16\000"
+ 1479 024d 75696E74 		.ascii	"uint16\000"
  1479      313600
  1480              	.LASF18:
- 1481 024c 50574D5F 		.ascii	"PWM_M2_interruptState\000"
+ 1481 0254 50574D5F 		.ascii	"PWM_M2_interruptState\000"
  1481      4D325F69 
  1481      6E746572 
  1481      72757074 
  1481      53746174 
  1482              	.LASF8:
- 1483 0262 756E7369 		.ascii	"unsigned int\000"
+ 1483 026a 756E7369 		.ascii	"unsigned int\000"
  1483      676E6564 
  1483      20696E74 
  1483      00
  1484              	.LASF21:
- 1485 026f 50574D5F 		.ascii	"PWM_M2_Stop\000"
+ 1485 0277 50574D5F 		.ascii	"PWM_M2_Stop\000"
  1485      4D325F53 
  1485      746F7000 
  1486              	.LASF7:
- 1487 027b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1487 0283 6C6F6E67 		.ascii	"long long unsigned int\000"
  1487      206C6F6E 
  1487      6720756E 
  1487      7369676E 
  1487      65642069 
  1488              	.LASF34:
- 1489 0292 72657375 		.ascii	"result\000"
+ 1489 029a 72657375 		.ascii	"result\000"
  1489      6C7400
  1490              	.LASF23:
- 1491 0299 50574D5F 		.ascii	"PWM_M2_WriteCounter\000"
+ 1491 02a1 50574D5F 		.ascii	"PWM_M2_WriteCounter\000"
  1491      4D325F57 
  1491      72697465 
  1491      436F756E 
  1491      74657200 
  1492              	.LASF16:
- 1493 02ad 73697A65 		.ascii	"sizetype\000"
+ 1493 02b5 73697A65 		.ascii	"sizetype\000"
  1493      74797065 
  1493      00
  1494              	.LASF6:
- 1495 02b6 6C6F6E67 		.ascii	"long long int\000"
+ 1495 02be 6C6F6E67 		.ascii	"long long int\000"
  1495      206C6F6E 
  1495      6720696E 
  1495      7400
  1496              	.LASF43:
- 1497 02c4 50574D5F 		.ascii	"PWM_M2_ReadControlRegister\000"
+ 1497 02cc 50574D5F 		.ascii	"PWM_M2_ReadControlRegister\000"
  1497      4D325F52 
  1497      65616443 
  1497      6F6E7472 
  1497      6F6C5265 
  1498              	.LASF31:
- 1499 02df 696E7465 		.ascii	"interruptMode\000"
+ 1499 02e7 696E7465 		.ascii	"interruptMode\000"
  1499      72727570 
  1499      744D6F64 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccbw1Omn.s 			page 45
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc01MsoB.s 			page 45
 
 
  1499      6500
  1500              	.LASF37:
- 1501 02ed 50574D5F 		.ascii	"PWM_M2_ReadCapture\000"
+ 1501 02f5 50574D5F 		.ascii	"PWM_M2_ReadCapture\000"
  1501      4D325F52 
  1501      65616443 
  1501      61707475 
  1501      726500
  1502              	.LASF44:
- 1503 0300 50574D5F 		.ascii	"PWM_M2_initVar\000"
+ 1503 0308 50574D5F 		.ascii	"PWM_M2_initVar\000"
  1503      4D325F69 
  1503      6E697456 
  1503      617200
  1504              	.LASF2:
- 1505 030f 73686F72 		.ascii	"short int\000"
+ 1505 0317 73686F72 		.ascii	"short int\000"
  1505      7420696E 
  1505      7400
  1506              	.LASF17:
- 1507 0319 6374726C 		.ascii	"ctrl\000"
+ 1507 0321 6374726C 		.ascii	"ctrl\000"
  1507      00
  1508              	.LASF24:
- 1509 031e 50574D5F 		.ascii	"PWM_M2_ClearFIFO\000"
+ 1509 0326 50574D5F 		.ascii	"PWM_M2_ClearFIFO\000"
  1509      4D325F43 
  1509      6C656172 
  1509      4649464F 
  1509      00
  1510              	.LASF4:
- 1511 032f 6C6F6E67 		.ascii	"long int\000"
+ 1511 0337 6C6F6E67 		.ascii	"long int\000"
  1511      20696E74 
  1511      00
  1512              	.LASF13:
- 1513 0338 63686172 		.ascii	"char\000"
+ 1513 0340 63686172 		.ascii	"char\000"
  1513      00
  1514              	.LASF0:
- 1515 033d 7369676E 		.ascii	"signed char\000"
+ 1515 0345 7369676E 		.ascii	"signed char\000"
  1515      65642063 
  1515      68617200 
  1516              	.LASF29:
- 1517 0349 636F6D70 		.ascii	"compare\000"
+ 1517 0351 636F6D70 		.ascii	"compare\000"
  1517      61726500 
  1518              	.LASF41:
- 1519 0351 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_M2.c\000"
+ 1519 0359 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_M2.c\000"
  1519      72617465 
  1519      645F536F 
  1519      75726365 

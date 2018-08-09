@@ -1,5 +1,5 @@
 -- Project:   FreeRTOS_Demo
--- Generated: 07/16/2018 14:48:55
+-- Generated: 08/07/2018 17:04:48
 -- PSoC Creator  4.0
 
 ENTITY FreeRTOS_Demo IS
@@ -17,7 +17,7 @@ ENTITY FreeRTOS_Demo IS
         M2_Phase1(0)_PAD : IN std_ulogic;
         M1_Phase2(0)_PAD : IN std_ulogic;
         M1_Phase1(0)_PAD : IN std_ulogic;
-        LED(0)_PAD : OUT std_ulogic);
+        Laser(0)_PAD : OUT std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VUSB OF __DEFAULT__ : ENTITY IS 5e0;
@@ -41,7 +41,8 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     SIGNAL ClockBlock_PLL_OUT : bit;
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL \ClockBlock_XTAL 32kHz\ : bit;
-    SIGNAL LED(0)__PA : bit;
+    SIGNAL In_Receiver(0)__PA : bit;
+    SIGNAL Laser(0)__PA : bit;
     SIGNAL M1_BWD(0)__PA : bit;
     SIGNAL M1_FWD(0)__PA : bit;
     SIGNAL M1_Phase1(0)__PA : bit;
@@ -73,11 +74,41 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     SIGNAL Net_755 : bit;
     SIGNAL Net_756 : bit;
     SIGNAL Net_758 : bit;
+    SIGNAL Net_789 : bit;
+    SIGNAL Net_790 : bit;
+    SIGNAL Net_791 : bit;
+    SIGNAL Net_792 : bit;
+    SIGNAL Net_807 : bit;
     SIGNAL PWM_Out_1(0)__PA : bit;
     SIGNAL PWM_Out_2(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL Standby(0)__PA : bit;
     SIGNAL Tx_1(0)__PA : bit;
+    SIGNAL Vout_1(0)__PA : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_0\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_1\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_2\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_3\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_4\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_5\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_6\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_245_7\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_488\ : bit;
+    ATTRIBUTE global_signal OF \ADC_DelSig_1:Net_488\ : SIGNAL IS true;
+    SIGNAL \ADC_DelSig_1:Net_488_adig\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_488_adig_local\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_488_local\ : bit;
+    SIGNAL \ADC_DelSig_1:Net_93\ : bit;
+    ATTRIBUTE global_signal OF \ADC_DelSig_1:Net_93\ : SIGNAL IS true;
+    SIGNAL \ADC_DelSig_1:Net_93_local\ : bit;
+    SIGNAL \ADC_DelSig_1:aclock\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_0\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_1\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_2\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_dat_3\ : bit;
+    SIGNAL \ADC_DelSig_1:mod_reset\ : bit;
+    SIGNAL \Filter_1:Net_8\ : bit;
+    SIGNAL \Filter_1:Net_9\ : bit;
     SIGNAL \M1QuadDec:Cnt16:CounterUDB:cmp_out_i\ : bit;
     SIGNAL \M1QuadDec:Cnt16:CounterUDB:control_0\ : bit;
     SIGNAL \M1QuadDec:Cnt16:CounterUDB:control_1\ : bit;
@@ -162,6 +193,8 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     SIGNAL \M2QuadDec:bQuadDec:quad_B_filt\ : bit;
     SIGNAL \M2QuadDec:bQuadDec:state_0\ : bit;
     SIGNAL \M2QuadDec:bQuadDec:state_1\ : bit;
+    SIGNAL \PGA_1:Net_41\ : bit;
+    SIGNAL \PGA_2:Net_41\ : bit;
     SIGNAL \PWM_M1:PWMUDB:cmp1_less\ : bit;
     SIGNAL \PWM_M1:PWMUDB:control_0\ : bit;
     SIGNAL \PWM_M1:PWMUDB:control_1\ : bit;
@@ -256,6 +289,7 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
     SIGNAL one : bit;
     ATTRIBUTE POWER OF one : SIGNAL IS true;
+    SIGNAL \ClockBlock.aclk_glb_ff_0__sig\ : bit;
     SIGNAL \PWM_M1:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \PWM_M1:PWMUDB:sP16:pwmdp:u0.cl0__sig\ : bit;
     SIGNAL \PWM_M1:PWMUDB:sP16:pwmdp:u0.z0__sig\ : bit;
@@ -368,8 +402,12 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE Location OF M1_Phase2(0) : LABEL IS "P15[5]";
     ATTRIBUTE lib_model OF M1_Phase1(0) : LABEL IS "iocell13";
     ATTRIBUTE Location OF M1_Phase1(0) : LABEL IS "P15[4]";
-    ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell14";
-    ATTRIBUTE Location OF LED(0) : LABEL IS "P3[3]";
+    ATTRIBUTE lib_model OF Laser(0) : LABEL IS "iocell14";
+    ATTRIBUTE Location OF Laser(0) : LABEL IS "P3[3]";
+    ATTRIBUTE lib_model OF Vout_1(0) : LABEL IS "iocell15";
+    ATTRIBUTE Location OF Vout_1(0) : LABEL IS "P3[7]";
+    ATTRIBUTE lib_model OF In_Receiver(0) : LABEL IS "iocell16";
+    ATTRIBUTE Location OF In_Receiver(0) : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF Net_213 : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \UART_1:BUART:counter_load_not\ : LABEL IS "macrocell3";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_status_0\ : LABEL IS "macrocell4";
@@ -395,6 +433,7 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE lib_model OF \M1QuadDec:Net_530\ : LABEL IS "macrocell24";
     ATTRIBUTE lib_model OF \M1QuadDec:Net_611\ : LABEL IS "macrocell25";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "macrocell26";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell27";
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell2";
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:TxSts\ : LABEL IS "statusicell1";
@@ -412,23 +451,23 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "statusicell5";
     ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "datapathcell8";
     ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "datapathcell9";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_delayed_0\ : LABEL IS "macrocell27";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_delayed_1\ : LABEL IS "macrocell28";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_delayed_2\ : LABEL IS "macrocell29";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_delayed_0\ : LABEL IS "macrocell30";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_delayed_1\ : LABEL IS "macrocell31";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_delayed_2\ : LABEL IS "macrocell32";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_delayed_0\ : LABEL IS "macrocell28";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_delayed_1\ : LABEL IS "macrocell29";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_delayed_2\ : LABEL IS "macrocell30";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_delayed_0\ : LABEL IS "macrocell31";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_delayed_1\ : LABEL IS "macrocell32";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_delayed_2\ : LABEL IS "macrocell33";
     ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:Stsreg\ : LABEL IS "statusicell6";
     ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "controlcell4";
     ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "statusicell7";
     ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "datapathcell10";
     ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "datapathcell11";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_delayed_0\ : LABEL IS "macrocell33";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_delayed_1\ : LABEL IS "macrocell34";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_delayed_2\ : LABEL IS "macrocell35";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_delayed_0\ : LABEL IS "macrocell36";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_delayed_1\ : LABEL IS "macrocell37";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_delayed_2\ : LABEL IS "macrocell38";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_delayed_0\ : LABEL IS "macrocell34";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_delayed_1\ : LABEL IS "macrocell35";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_delayed_2\ : LABEL IS "macrocell36";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_delayed_0\ : LABEL IS "macrocell37";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_delayed_1\ : LABEL IS "macrocell38";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_delayed_2\ : LABEL IS "macrocell39";
     ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:Stsreg\ : LABEL IS "statusicell8";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell5";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell9";
@@ -436,59 +475,66 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u1\ : LABEL IS "datapathcell13";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u2\ : LABEL IS "datapathcell14";
     ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT32:timerdp:u3\ : LABEL IS "datapathcell15";
-    ATTRIBUTE lib_model OF \UART_1:BUART:txn\ : LABEL IS "macrocell39";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_1\ : LABEL IS "macrocell40";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_0\ : LABEL IS "macrocell41";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_2\ : LABEL IS "macrocell42";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_bitclk\ : LABEL IS "macrocell43";
-    ATTRIBUTE lib_model OF \UART_1:BUART:tx_ctrl_mark_last\ : LABEL IS "macrocell44";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_0\ : LABEL IS "macrocell45";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_load_fifo\ : LABEL IS "macrocell46";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_3\ : LABEL IS "macrocell47";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_2\ : LABEL IS "macrocell48";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "macrocell49";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell50";
-    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_1\ : LABEL IS "macrocell51";
-    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_0\ : LABEL IS "macrocell52";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_3\ : LABEL IS "macrocell53";
-    ATTRIBUTE lib_model OF \UART_1:BUART:rx_last\ : LABEL IS "macrocell54";
-    ATTRIBUTE lib_model OF \PWM_M1:PWMUDB:runmode_enable\ : LABEL IS "macrocell55";
-    ATTRIBUTE lib_model OF \PWM_M1:PWMUDB:prevCompare1\ : LABEL IS "macrocell56";
-    ATTRIBUTE lib_model OF \PWM_M1:PWMUDB:status_0\ : LABEL IS "macrocell57";
-    ATTRIBUTE lib_model OF Net_654 : LABEL IS "macrocell58";
-    ATTRIBUTE lib_model OF \PWM_M2:PWMUDB:runmode_enable\ : LABEL IS "macrocell59";
-    ATTRIBUTE lib_model OF \PWM_M2:PWMUDB:prevCompare1\ : LABEL IS "macrocell60";
-    ATTRIBUTE lib_model OF \PWM_M2:PWMUDB:status_0\ : LABEL IS "macrocell61";
-    ATTRIBUTE lib_model OF \M1QuadDec:Net_1203_split\ : LABEL IS "macrocell62";
-    ATTRIBUTE lib_model OF Net_135 : LABEL IS "macrocell63";
-    ATTRIBUTE lib_model OF \M2QuadDec:Net_1251\ : LABEL IS "macrocell64";
-    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell65";
-    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell66";
-    ATTRIBUTE lib_model OF \M2QuadDec:Net_1275\ : LABEL IS "macrocell67";
-    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:prevCompare\ : LABEL IS "macrocell68";
-    ATTRIBUTE lib_model OF \M2QuadDec:Net_1251_split\ : LABEL IS "macrocell69";
-    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "macrocell70";
-    ATTRIBUTE lib_model OF \M2QuadDec:Net_1203\ : LABEL IS "macrocell71";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_filt\ : LABEL IS "macrocell72";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_filt\ : LABEL IS "macrocell73";
-    ATTRIBUTE lib_model OF \M2QuadDec:Net_1260\ : LABEL IS "macrocell74";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:error\ : LABEL IS "macrocell75";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:state_1\ : LABEL IS "macrocell76";
-    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:state_0\ : LABEL IS "macrocell77";
-    ATTRIBUTE lib_model OF \M1QuadDec:Net_1251\ : LABEL IS "macrocell78";
-    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell79";
-    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell80";
-    ATTRIBUTE lib_model OF \M1QuadDec:Net_1275\ : LABEL IS "macrocell81";
-    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:prevCompare\ : LABEL IS "macrocell82";
-    ATTRIBUTE lib_model OF \M2QuadDec:Net_1203_split\ : LABEL IS "macrocell83";
-    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "macrocell84";
-    ATTRIBUTE lib_model OF \M1QuadDec:Net_1203\ : LABEL IS "macrocell85";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_filt\ : LABEL IS "macrocell86";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_filt\ : LABEL IS "macrocell87";
-    ATTRIBUTE lib_model OF \M1QuadDec:Net_1260\ : LABEL IS "macrocell88";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:error\ : LABEL IS "macrocell89";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:state_1\ : LABEL IS "macrocell90";
-    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:state_0\ : LABEL IS "macrocell91";
+    ATTRIBUTE Location OF \PGA_1:SC\ : LABEL IS "F(SC,3)";
+    ATTRIBUTE Location OF \PGA_2:SC\ : LABEL IS "F(SC,2)";
+    ATTRIBUTE Location OF \ADC_DelSig_1:DSM\ : LABEL IS "F(DSM,0)";
+    ATTRIBUTE lib_model OF DMA_1 : LABEL IS "drqcell1";
+    ATTRIBUTE Location OF \Opamp_1:ABuf\ : LABEL IS "F(OpAmp,3)";
+    ATTRIBUTE lib_model OF \UART_1:BUART:txn\ : LABEL IS "macrocell40";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_1\ : LABEL IS "macrocell41";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_0\ : LABEL IS "macrocell42";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_state_2\ : LABEL IS "macrocell43";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_bitclk\ : LABEL IS "macrocell44";
+    ATTRIBUTE lib_model OF \UART_1:BUART:tx_ctrl_mark_last\ : LABEL IS "macrocell45";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_0\ : LABEL IS "macrocell46";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_load_fifo\ : LABEL IS "macrocell47";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_3\ : LABEL IS "macrocell48";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_2\ : LABEL IS "macrocell49";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_bitclk_enable\ : LABEL IS "macrocell50";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell51";
+    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_1\ : LABEL IS "macrocell52";
+    ATTRIBUTE lib_model OF \UART_1:BUART:pollcount_0\ : LABEL IS "macrocell53";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_status_3\ : LABEL IS "macrocell54";
+    ATTRIBUTE lib_model OF \UART_1:BUART:rx_last\ : LABEL IS "macrocell55";
+    ATTRIBUTE lib_model OF \PWM_M1:PWMUDB:runmode_enable\ : LABEL IS "macrocell56";
+    ATTRIBUTE lib_model OF \PWM_M1:PWMUDB:prevCompare1\ : LABEL IS "macrocell57";
+    ATTRIBUTE lib_model OF \PWM_M1:PWMUDB:status_0\ : LABEL IS "macrocell58";
+    ATTRIBUTE lib_model OF Net_654 : LABEL IS "macrocell59";
+    ATTRIBUTE lib_model OF \PWM_M2:PWMUDB:runmode_enable\ : LABEL IS "macrocell60";
+    ATTRIBUTE lib_model OF \PWM_M2:PWMUDB:prevCompare1\ : LABEL IS "macrocell61";
+    ATTRIBUTE lib_model OF \PWM_M2:PWMUDB:status_0\ : LABEL IS "macrocell62";
+    ATTRIBUTE lib_model OF \M1QuadDec:Net_1203_split\ : LABEL IS "macrocell63";
+    ATTRIBUTE lib_model OF Net_135 : LABEL IS "macrocell64";
+    ATTRIBUTE lib_model OF \M2QuadDec:Net_1251\ : LABEL IS "macrocell65";
+    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell66";
+    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell67";
+    ATTRIBUTE lib_model OF \M2QuadDec:Net_1275\ : LABEL IS "macrocell68";
+    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:prevCompare\ : LABEL IS "macrocell69";
+    ATTRIBUTE lib_model OF \M2QuadDec:Net_1251_split\ : LABEL IS "macrocell70";
+    ATTRIBUTE lib_model OF \M2QuadDec:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "macrocell71";
+    ATTRIBUTE lib_model OF \M2QuadDec:Net_1203\ : LABEL IS "macrocell72";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_A_filt\ : LABEL IS "macrocell73";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:quad_B_filt\ : LABEL IS "macrocell74";
+    ATTRIBUTE lib_model OF \M2QuadDec:Net_1260\ : LABEL IS "macrocell75";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:error\ : LABEL IS "macrocell76";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:state_1\ : LABEL IS "macrocell77";
+    ATTRIBUTE lib_model OF \M2QuadDec:bQuadDec:state_0\ : LABEL IS "macrocell78";
+    ATTRIBUTE lib_model OF \M1QuadDec:Net_1251\ : LABEL IS "macrocell79";
+    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell80";
+    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell81";
+    ATTRIBUTE lib_model OF \M1QuadDec:Net_1275\ : LABEL IS "macrocell82";
+    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:prevCompare\ : LABEL IS "macrocell83";
+    ATTRIBUTE lib_model OF \M2QuadDec:Net_1203_split\ : LABEL IS "macrocell84";
+    ATTRIBUTE lib_model OF \M1QuadDec:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "macrocell85";
+    ATTRIBUTE lib_model OF \M1QuadDec:Net_1203\ : LABEL IS "macrocell86";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_A_filt\ : LABEL IS "macrocell87";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:quad_B_filt\ : LABEL IS "macrocell88";
+    ATTRIBUTE lib_model OF \M1QuadDec:Net_1260\ : LABEL IS "macrocell89";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:error\ : LABEL IS "macrocell90";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:state_1\ : LABEL IS "macrocell91";
+    ATTRIBUTE lib_model OF \M1QuadDec:bQuadDec:state_0\ : LABEL IS "macrocell92";
+    COMPONENT abufcell
+    END COMPONENT;
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -709,6 +755,57 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE udb_chain OF datapathcell : COMPONENT IS "ce0i,ce0,cl0i,cl0,z0i,z0,ff0i,ff0,ce1i,ce1,cl1i,cl1,z1i,z1,ff1i,ff1,cap0i,cap0,cap1i,cap1,ci,co_msb,sir,sol_msb,cfbi,cfbo,sil,sor,cmsbi,cmsbo";
     ATTRIBUTE chain_lsb OF datapathcell : COMPONENT IS "ce0i,cl0i,z0i,ff0i,ce1i,cl1i,z1i,ff1i,cap0i,cap1i,ci,sir,cfbi,sor,cmsbo";
     ATTRIBUTE chain_msb OF datapathcell : COMPONENT IS "ce0,cl0,z0,ff0,ce1,cl1,z1,ff1,cap0,cap1,co_msb,sol_msb,cfbo,sil,cmsbi";
+    COMPONENT decimatorcell
+        PORT (
+            aclock : IN std_ulogic;
+            mod_dat_0 : IN std_ulogic;
+            mod_dat_1 : IN std_ulogic;
+            mod_dat_2 : IN std_ulogic;
+            mod_dat_3 : IN std_ulogic;
+            ext_start : IN std_ulogic;
+            modrst : OUT std_ulogic;
+            interrupt : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT dfbcell
+        PORT (
+            clock : IN std_ulogic;
+            in_1 : IN std_ulogic;
+            in_2 : IN std_ulogic;
+            out_1 : OUT std_ulogic;
+            out_2 : OUT std_ulogic;
+            dmareq_1 : OUT std_ulogic;
+            dmareq_2 : OUT std_ulogic;
+            interrupt : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT drqcell
+        PORT (
+            dmareq : IN std_ulogic;
+            termin : IN std_ulogic;
+            termout : OUT std_ulogic;
+            clock : IN std_ulogic);
+    END COMPONENT;
+    COMPONENT dsmodcell
+        PORT (
+            aclock : IN std_ulogic;
+            modbitin_udb : IN std_ulogic;
+            reset_udb : IN std_ulogic;
+            reset_dec : IN std_ulogic;
+            dec_clock : OUT std_ulogic;
+            mod_dat_0 : OUT std_ulogic;
+            mod_dat_1 : OUT std_ulogic;
+            mod_dat_2 : OUT std_ulogic;
+            mod_dat_3 : OUT std_ulogic;
+            dout_udb_0 : OUT std_ulogic;
+            dout_udb_1 : OUT std_ulogic;
+            dout_udb_2 : OUT std_ulogic;
+            dout_udb_3 : OUT std_ulogic;
+            dout_udb_4 : OUT std_ulogic;
+            dout_udb_5 : OUT std_ulogic;
+            dout_udb_6 : OUT std_ulogic;
+            dout_udb_7 : OUT std_ulogic;
+            extclk_cp_udb : IN std_ulogic;
+            clk_udb : IN std_ulogic);
+    END COMPONENT;
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
@@ -796,6 +893,14 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE udb_chain OF macrocell : COMPONENT IS "cin,cout";
     ATTRIBUTE chain_lsb OF macrocell : COMPONENT IS "cin";
     ATTRIBUTE chain_msb OF macrocell : COMPONENT IS "cout";
+    COMPONENT sccell
+        PORT (
+            aclk : IN std_ulogic;
+            bst_clk : IN std_ulogic;
+            clk_udb : IN std_ulogic;
+            modout : OUT std_ulogic;
+            dyn_cntl_udb : IN std_ulogic);
+    END COMPONENT;
     COMPONENT statusicell
         PORT (
             status_0 : IN std_ulogic;
@@ -857,12 +962,19 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => Net_732,
-            dclk_0 => Net_732_local,
-            dclk_glb_1 => Net_4,
-            dclk_1 => Net_4_local,
-            dclk_glb_2 => \UART_1:Net_9\,
-            dclk_2 => \UART_1:Net_9_local\);
+            dclk_glb_0 => \ADC_DelSig_1:Net_93\,
+            dclk_0 => \ADC_DelSig_1:Net_93_local\,
+            dclk_glb_1 => Net_732,
+            dclk_1 => Net_732_local,
+            dclk_glb_2 => Net_4,
+            dclk_2 => Net_4_local,
+            aclk_glb_0 => \ADC_DelSig_1:Net_488\,
+            aclk_0 => \ADC_DelSig_1:Net_488_local\,
+            clk_a_dig_glb_0 => \ADC_DelSig_1:Net_488_adig\,
+            clk_a_dig_0 => \ADC_DelSig_1:Net_488_adig_local\,
+            dclk_glb_3 => \UART_1:Net_9\,
+            dclk_3 => \UART_1:Net_9_local\,
+            aclk_glb_ff_0 => \ClockBlock.aclk_glb_ff_0__sig\);
 
     Rx_1:logicalport
         GENERIC MAP(
@@ -2046,7 +2158,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    LED:logicalport
+    Laser:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -2117,18 +2229,196 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    LED(0):iocell
+    Laser(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "LED",
+            logicalport => "Laser",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
-            pa_out => LED(0)__PA,
+            pa_out => Laser(0)__PA,
             oe => open,
-            pad_in => LED(0)_PAD,
+            pad_in => Laser(0)_PAD,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Vout_1:logicalport
+        GENERIC MAP(
+            drive_mode => "000",
+            ibuf_enabled => "0",
+            id => "cc3bcd7e-5dc0-48ea-9bf6-6aa082be1ada",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "NONCONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "A",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "00000000",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vohsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 1,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    Vout_1(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Vout_1",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000010")
+        PORT MAP(
+            pa_out => Vout_1(0)__PA,
+            oe => open,
+            in_clock => open,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    In_Receiver:logicalport
+        GENERIC MAP(
+            drive_mode => "000",
+            ibuf_enabled => "0",
+            id => "77715107-f8d5-47e5-a629-0fb83101ac6b",
+            init_dr_st => "0",
+            input_buffer_sel => "00",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            ovt_hyst_trim => "0",
+            ovt_needed => "0",
+            ovt_slew_control => "00",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "A",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "00000000",
+            sio_hyst => "1",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vohsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "10",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    In_Receiver(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "In_Receiver",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000010")
+        PORT MAP(
+            pa_out => In_Receiver(0)__PA,
+            oe => open,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -2416,6 +2706,14 @@ BEGIN
         PORT MAP(
             interrupt => Net_30,
             clock => ClockBlock_BUS_CLK);
+
+    __ONE__:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b0",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => __ONE__);
 
     \UART_1:BUART:sTX:TxShifter:u0\:datapathcell
         GENERIC MAP(
@@ -3584,6 +3882,91 @@ BEGIN
             cfbi => \Timer_1:TimerUDB:sT32:timerdp:u2.cfbo__sig\,
             sor => \Timer_1:TimerUDB:sT32:timerdp:u3.sor__sig\,
             cmsbo => \Timer_1:TimerUDB:sT32:timerdp:u3.cmsbo__sig\);
+
+    \PGA_1:SC\:sccell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            dyn_cntl_udb => open,
+            modout => \PGA_1:Net_41\);
+
+    \PGA_2:SC\:sccell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            dyn_cntl_udb => open,
+            modout => \PGA_2:Net_41\);
+
+    \ADC_DelSig_1:DSM\:dsmodcell
+        GENERIC MAP(
+            cy_registers => "",
+            resolution => 8)
+        PORT MAP(
+            aclock => \ClockBlock.aclk_glb_ff_0__sig\,
+            modbitin_udb => open,
+            reset_udb => open,
+            reset_dec => \ADC_DelSig_1:mod_reset\,
+            extclk_cp_udb => \ADC_DelSig_1:Net_93_local\,
+            dec_clock => \ADC_DelSig_1:aclock\,
+            mod_dat_3 => \ADC_DelSig_1:mod_dat_3\,
+            mod_dat_2 => \ADC_DelSig_1:mod_dat_2\,
+            mod_dat_1 => \ADC_DelSig_1:mod_dat_1\,
+            mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
+            dout_udb_7 => \ADC_DelSig_1:Net_245_7\,
+            dout_udb_6 => \ADC_DelSig_1:Net_245_6\,
+            dout_udb_5 => \ADC_DelSig_1:Net_245_5\,
+            dout_udb_4 => \ADC_DelSig_1:Net_245_4\,
+            dout_udb_3 => \ADC_DelSig_1:Net_245_3\,
+            dout_udb_2 => \ADC_DelSig_1:Net_245_2\,
+            dout_udb_1 => \ADC_DelSig_1:Net_245_1\,
+            dout_udb_0 => \ADC_DelSig_1:Net_245_0\);
+
+    \ADC_DelSig_1:IRQ\:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_807,
+            clock => ClockBlock_BUS_CLK);
+
+    \ADC_DelSig_1:DEC\:decimatorcell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            aclock => \ADC_DelSig_1:aclock\,
+            mod_dat_3 => \ADC_DelSig_1:mod_dat_3\,
+            mod_dat_2 => \ADC_DelSig_1:mod_dat_2\,
+            mod_dat_1 => \ADC_DelSig_1:mod_dat_1\,
+            mod_dat_0 => \ADC_DelSig_1:mod_dat_0\,
+            ext_start => __ONE__,
+            modrst => \ADC_DelSig_1:mod_reset\,
+            interrupt => Net_807);
+
+    DMA_1:drqcell
+        GENERIC MAP(
+            drq_type => "10",
+            num_tds => 0)
+        PORT MAP(
+            dmareq => Net_807,
+            termin => '0',
+            termout => Net_789,
+            clock => ClockBlock_BUS_CLK);
+
+    \Filter_1:DFB\:dfbcell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            in_1 => open,
+            in_2 => open,
+            out_1 => \Filter_1:Net_8\,
+            out_2 => \Filter_1:Net_9\,
+            dmareq_1 => Net_790,
+            dmareq_2 => Net_791,
+            interrupt => Net_792);
+
+    \Opamp_1:ABuf\:abufcell
+        GENERIC MAP(
+            cy_registers => "");
 
     \UART_1:BUART:txn\:macrocell
         GENERIC MAP(

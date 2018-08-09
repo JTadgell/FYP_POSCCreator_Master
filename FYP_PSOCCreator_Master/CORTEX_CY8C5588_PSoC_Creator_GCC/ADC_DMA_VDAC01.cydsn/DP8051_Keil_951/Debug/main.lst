@@ -1,0 +1,161 @@
+C51 COMPILER V9.51   MAIN                                                                  08/05/2018 14:08:58 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE MAIN
+NO OBJECT MODULE REQUESTED
+COMPILER INVOKED BY: C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\import\keil\pk51\9.51\C51\BIN\c51.exe 
+                    -main.c NOIV LARGE MODDP2 OMF2 VB(1) NOIP INCDIR(.,Generated_Source\PSoC3) FF(3) DB WL(2) PR(.\DP8051_Keil_951\Debug/main
+                    -.lst) CD OT(2,SIZE) OJ(.\DP8051_Keil_951\Debug\main.obj)
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF main.c: INCORRECT LICENSE ID CODE (LIC) IN 'TOOLS.INI'
+   1          /*******************************************************************************
+   2          * File Name: main.c
+   3          *
+   4          * Version: 1.00
+   5          *
+   6          * Description:
+   7          *   This example project uses ADC, DMA and VDAC components along with the LCD
+   8          *     status register. ADC output is transferred to VDAC input register using
+   9          *   the DMA.
+  10          *
+  11          * Note that this file contains the DMA_Config function as well.
+  12          *
+  13          ********************************************************************************
+  14          * Copyright 2012, Cypress Semiconductor Corporation. All rights reserved.
+  15          * This software is owned by Cypress Semiconductor Corporation and is protected
+  16          * by and subject to worldwide patent and copyright laws and treaties.
+  17          * Therefore, you may use this software only as provided in the license agreement
+  18          * accompanying the software package from which you obtained this software.
+  19          * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  20          * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  21          * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  22          *******************************************************************************/
+  23          
+  24          #include <project.h>
+  25          
+  26          /* DMA Configuration constants for DMA_1 */
+  27          #define DMA_1_BYTES_PER_BURST (1u)
+  28          #define DMA_1_REQUEST_PER_BURST (1u)
+  29          #define DMA_1_SRC_BASE (CYDEV_PERIPH_BASE)
+  30          #define DMA_1_DST_BASE (CYDEV_PERIPH_BASE)
+  31          
+  32          void DMA_Config(void);
+  33          
+  34          
+  35          /*******************************************************************************
+  36          * Function Name: main
+  37          ********************************************************************************
+  38          *
+  39          * Summary:
+  40          *  main() performs following functions:
+  41          *  1: Starts the components
+  42          *  2: Calls function DMA_Config to setup the DMA.
+  43          *  3: Starts ADC continuous conversion.
+  44          *  4: Gets the converted result and displays it in LCD. Also displays VDAC data
+  45          *     register value on LCD.
+  46          *
+  47          * Parameters:
+  48          *  None.
+  49          *
+  50          * Return:
+  51          *  None.
+  52          *
+C51 COMPILER V9.51   MAIN                                                                  08/05/2018 14:08:58 PAGE 2   
+
+  53          *******************************************************************************/
+  54          int main()
+  55          {
+  56   1          /* Start the components */
+  57   1          LCD_Char_1_Start();
+*** WARNING C206 IN LINE 57 OF main.c: 'LCD_Char_1_Start': missing function-prototype
+  58   1          VDAC8_1_Start();
+*** WARNING C206 IN LINE 58 OF main.c: 'VDAC8_1_Start': missing function-prototype
+  59   1          ADC_DelSig_1_Start();
+  60   1      
+  61   1          /* Configure DMA to transfer ADC output to VDAC input register */
+  62   1          DMA_Config();
+  63   1      
+  64   1          /* Start the ADC conversion */
+  65   1          ADC_DelSig_1_StartConvert();
+  66   1      
+  67   1          LCD_Char_1_Position(0u, 0u);
+*** WARNING C206 IN LINE 67 OF main.c: 'LCD_Char_1_Position': missing function-prototype
+*** ERROR C267 IN LINE 67 OF main.c: 'LCD_Char_1_Position': requires ANSI-style prototype
+  68   1          LCD_Char_1_PrintString("ADC Output: ");
+  69   1          LCD_Char_1_Position(1u, 0u);
+  70   1          LCD_Char_1_PrintString("DAC Input: ");
+  71   1      
+  72   1          for(;;)
+  73   1          {
+  74   2              /* If converted ADC value has been transferred to VDAC, print results */
+  75   2              if(Status_Reg_1_Read())
+  76   2              {
+  77   3              /* Print the ADC output value on LCD */
+  78   3              LCD_Char_1_Position(0u, strlen("ADC Output: "));
+  79   3              LCD_Char_1_PrintInt16(ADC_DelSig_1_GetResult16());
+  80   3      
+  81   3              /* Print the DAC Data register value */
+  82   3              LCD_Char_1_Position(1u, strlen("DAC Input: "));
+  83   3              LCD_Char_1_PrintInt8(VDAC8_1_Data);
+  84   3              }
+  85   2          }
+  86   1      }
+  87          
+  88          
+  89          /*******************************************************************************
+  90          * Function Name:  DMA_Config
+  91          ********************************************************************************
+  92          *
+  93          * Summary:
+  94          *    Code generated by the DMA Wizard.
+  95          *
+  96          *    DMA_Config() performs following functions:
+  97          *  1: Initializes the DMA channel
+  98          *  2: Allocates Transfer Descriptors
+  99          *  3: Configures the TD.
+ 100          *  4: Sets source and destination address for this TD.
+ 101          *  5: Initializes the TD.
+ 102          *  6: Enables the DMA channel.
+ 103          *
+ 104          * Parameters:
+ 105          *  None.
+ 106          *
+ 107          * Return:
+ 108          *  None.
+ 109          *
+ 110          *******************************************************************************/
+C51 COMPILER V9.51   MAIN                                                                  08/05/2018 14:08:58 PAGE 3   
+
+ 111          void DMA_Config()
+ 112          {
+ 113   1          /* Variable declarations for DMA_1 */
+ 114   1          uint8 DMA_1_Chan;
+ 115   1          uint8 DMA_1_TD[1] = {0};
+ 116   1      
+ 117   1          /* Iniitialize DMA channel */
+ 118   1          DMA_1_Chan = DMA_1_DmaInitialize(DMA_1_BYTES_PER_BURST, DMA_1_REQUEST_PER_BURST,
+ 119   1                                           HI16(DMA_1_SRC_BASE), HI16(DMA_1_DST_BASE));
+ 120   1      
+ 121   1          /* Allocate TD */
+ 122   1          DMA_1_TD[0] = CyDmaTdAllocate();
+ 123   1      
+ 124   1          /* TD configuration setting */
+ 125   1          CyDmaTdSetConfiguration(DMA_1_TD[0], 1u, DMA_INVALID_TD, DMA_1__TD_TERMOUT_EN);
+ 126   1      
+ 127   1          /* Set Source and Destination address */
+ 128   1          CyDmaTdSetAddress(DMA_1_TD[0], LO16((uint32)ADC_DelSig_1_DEC_SAMP_PTR),
+ 129   1                            LO16((uint32)VDAC8_1_Data_PTR));
+ 130   1      
+ 131   1          /* TD initialization */
+ 132   1          CyDmaChSetInitialTd(DMA_1_Chan, DMA_1_TD[0]);
+ 133   1      
+ 134   1          /* Enable the DMA channel */
+ 135   1          CyDmaChEnable(DMA_1_Chan, 1u);
+ 136   1      }
+ 137          
+ 138          
+ 139          /* [] END OF FILE */
+
+C51 COMPILATION COMPLETE.  4 WARNING(S),  1 ERROR(S)

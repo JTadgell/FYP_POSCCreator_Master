@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
   25:Generated_Source\PSoC5/M1QuadDec_PM.c **** * Function Name: M1QuadDec_SaveConfig
   26:Generated_Source\PSoC5/M1QuadDec_PM.c **** ********************************************************************************
   27:Generated_Source\PSoC5/M1QuadDec_PM.c **** * Summary:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 2
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 2
 
 
   28:Generated_Source\PSoC5/M1QuadDec_PM.c **** *  Saves the current user configuration of the component.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
   57:Generated_Source\PSoC5/M1QuadDec_PM.c **** *  None.
   58:Generated_Source\PSoC5/M1QuadDec_PM.c **** *
   59:Generated_Source\PSoC5/M1QuadDec_PM.c **** * Return:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 3
 
 
   60:Generated_Source\PSoC5/M1QuadDec_PM.c **** *  None.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
   89:Generated_Source\PSoC5/M1QuadDec_PM.c **** * Global Variables:
   90:Generated_Source\PSoC5/M1QuadDec_PM.c **** *  M1QuadDec_backup - modified when non-retention registers are saved.
   91:Generated_Source\PSoC5/M1QuadDec_PM.c **** *
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 4
 
 
   92:Generated_Source\PSoC5/M1QuadDec_PM.c **** * Reentrant:
@@ -236,9 +236,9 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  115              	.L7:
  116 002a 00BF     		.align	2
  117              	.L6:
- 118 002c 9C640040 		.word	1073767580
+ 118 002c 9F640040 		.word	1073767583
  119 0030 00000000 		.word	M1QuadDec_backup
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 5
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 5
 
 
  120              		.cfi_endproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  136:Generated_Source\PSoC5/M1QuadDec_PM.c ****             M1QuadDec_Cnt8_Enable();
  137:Generated_Source\PSoC5/M1QuadDec_PM.c ****         #else 
  138:Generated_Source\PSoC5/M1QuadDec_PM.c ****             /* (M1QuadDec_COUNTER_SIZE == M1QuadDec_COUNTER_SIZE_16_BIT) || 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 6
 
 
  139:Generated_Source\PSoC5/M1QuadDec_PM.c ****             *  (M1QuadDec_COUNTER_SIZE == M1QuadDec_COUNTER_SIZE_32_BIT) 
@@ -337,8 +337,8 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  172 000b 01       		.uleb128 0x1
  173 000c AB000000 		.4byte	.LASF20
  174 0010 01       		.byte	0x1
- 175 0011 92010000 		.4byte	.LASF21
- 176 0015 BE010000 		.4byte	.LASF22
+ 175 0011 0B020000 		.4byte	.LASF21
+ 176 0015 88010000 		.4byte	.LASF22
  177 0019 00000000 		.4byte	.Ldebug_ranges0+0
  178 001d 00000000 		.4byte	0
  179 0021 00000000 		.4byte	.Ldebug_line0
@@ -353,22 +353,22 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  188 0033 03       		.uleb128 0x3
  189 0034 01       		.byte	0x1
  190 0035 06       		.byte	0x6
- 191 0036 86010000 		.4byte	.LASF1
+ 191 0036 7C010000 		.4byte	.LASF1
  192 003a 03       		.uleb128 0x3
  193 003b 01       		.byte	0x1
  194 003c 08       		.byte	0x8
  195 003d 8F000000 		.4byte	.LASF2
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 7
 
 
  196 0041 03       		.uleb128 0x3
  197 0042 02       		.byte	0x2
  198 0043 05       		.byte	0x5
- 199 0044 39010000 		.4byte	.LASF3
+ 199 0044 37020000 		.4byte	.LASF3
  200 0048 03       		.uleb128 0x3
  201 0049 02       		.byte	0x2
  202 004a 07       		.byte	0x7
- 203 004b 73010000 		.4byte	.LASF4
+ 203 004b 69010000 		.4byte	.LASF4
  204 004f 03       		.uleb128 0x3
  205 0050 04       		.byte	0x4
  206 0051 05       		.byte	0x5
@@ -388,7 +388,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  220 006b 03       		.uleb128 0x3
  221 006c 04       		.byte	0x4
  222 006d 07       		.byte	0x7
- 223 006e 53020000 		.4byte	.LASF9
+ 223 006e 5B020000 		.4byte	.LASF9
  224 0072 03       		.uleb128 0x3
  225 0073 01       		.byte	0x1
  226 0074 08       		.byte	0x8
@@ -401,13 +401,13 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  233 0085 03       		.uleb128 0x3
  234 0086 04       		.byte	0x4
  235 0087 04       		.byte	0x4
- 236 0088 B8010000 		.4byte	.LASF11
+ 236 0088 31020000 		.4byte	.LASF11
  237 008c 03       		.uleb128 0x3
  238 008d 08       		.byte	0x8
  239 008e 04       		.byte	0x4
- 240 008f 43010000 		.4byte	.LASF12
+ 240 008f 39010000 		.4byte	.LASF12
  241 0093 04       		.uleb128 0x4
- 242 0094 39020000 		.4byte	.LASF14
+ 242 0094 41020000 		.4byte	.LASF14
  243 0098 02       		.byte	0x2
  244 0099 3C02     		.2byte	0x23c
  245 009b 9F000000 		.4byte	0x9f
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  250 00a6 03       		.byte	0x3
  251 00a7 3D       		.byte	0x3d
  252 00a8 B9000000 		.4byte	0xb9
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 8
 
 
  253 00ac 07       		.uleb128 0x7
@@ -429,12 +429,12 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  258 00b7 00       		.byte	0
  259 00b8 00       		.byte	0
  260 00b9 08       		.uleb128 0x8
- 261 00ba 5B010000 		.4byte	.LASF15
+ 261 00ba 51010000 		.4byte	.LASF15
  262 00be 03       		.byte	0x3
  263 00bf 40       		.byte	0x40
  264 00c0 A4000000 		.4byte	0xa4
  265 00c4 09       		.uleb128 0x9
- 266 00c5 3E020000 		.4byte	.LASF16
+ 266 00c5 46020000 		.4byte	.LASF16
  267 00c9 01       		.byte	0x1
  268 00ca 25       		.byte	0x25
  269 00cb 00000000 		.4byte	.LFB0
@@ -466,7 +466,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  295 0106 01       		.uleb128 0x1
  296 0107 9C       		.byte	0x9c
  297 0108 0A       		.uleb128 0xa
- 298 0109 4A010000 		.4byte	.LASF24
+ 298 0109 40010000 		.4byte	.LASF24
  299 010d 01       		.byte	0x1
  300 010e 15       		.byte	0x15
  301 010f B9000000 		.4byte	0xb9
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  307              	.Ldebug_abbrev0:
  308 0000 01       		.uleb128 0x1
  309 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 9
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 9
 
 
  310 0002 01       		.byte	0x1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  364 0038 00       		.byte	0
  365 0039 49       		.uleb128 0x49
  366 003a 13       		.uleb128 0x13
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 10
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 10
 
 
  367 003b 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  421 0071 27       		.uleb128 0x27
  422 0072 19       		.uleb128 0x19
  423 0073 11       		.uleb128 0x11
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 11
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 11
 
 
  424 0074 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  478 0024 00000000 		.4byte	0
  479              		.section	.debug_line,"",%progbits
  480              	.Ldebug_line0:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 12
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 12
 
 
  481 0000 AB000000 		.section	.debug_str,"MS",%progbits,1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  501      20636861 
  501      7200
  502              	.LASF10:
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 13
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 13
 
 
  503 009d 63686172 		.ascii	"char\000"
@@ -743,74 +743,74 @@ ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 1
  509      74696F6E 
  509      2D736563 
  509      74696F6E 
- 510              	.LASF3:
- 511 0139 73686F72 		.ascii	"short int\000"
- 511      7420696E 
- 511      7400
- 512              	.LASF12:
- 513 0143 646F7562 		.ascii	"double\000"
- 513      6C6500
- 514              	.LASF24:
- 515 014a 4D315175 		.ascii	"M1QuadDec_backup\000"
+ 510              	.LASF12:
+ 511 0139 646F7562 		.ascii	"double\000"
+ 511      6C6500
+ 512              	.LASF24:
+ 513 0140 4D315175 		.ascii	"M1QuadDec_backup\000"
+ 513      61644465 
+ 513      635F6261 
+ 513      636B7570 
+ 513      00
+ 514              	.LASF15:
+ 515 0151 4D315175 		.ascii	"M1QuadDec_BACKUP_STRUCT\000"
  515      61644465 
- 515      635F6261 
- 515      636B7570 
- 515      00
- 516              	.LASF15:
- 517 015b 4D315175 		.ascii	"M1QuadDec_BACKUP_STRUCT\000"
- 517      61644465 
- 517      635F4241 
- 517      434B5550 
- 517      5F535452 
- 518              	.LASF4:
- 519 0173 73686F72 		.ascii	"short unsigned int\000"
- 519      7420756E 
- 519      7369676E 
- 519      65642069 
- 519      6E7400
- 520              	.LASF1:
- 521 0186 7369676E 		.ascii	"signed char\000"
- 521      65642063 
- 521      68617200 
- 522              	.LASF21:
- 523 0192 47656E65 		.ascii	"Generated_Source\\PSoC5\\M1QuadDec_PM.c\000"
- 523      72617465 
- 523      645F536F 
- 523      75726365 
- 523      5C50536F 
-ARM GAS  C:\Users\tadge\AppData\Local\Temp\ccuTRE5W.s 			page 14
+ 515      635F4241 
+ 515      434B5550 
+ 515      5F535452 
+ 516              	.LASF4:
+ 517 0169 73686F72 		.ascii	"short unsigned int\000"
+ 517      7420756E 
+ 517      7369676E 
+ 517      65642069 
+ 517      6E7400
+ 518              	.LASF1:
+ 519 017c 7369676E 		.ascii	"signed char\000"
+ 519      65642063 
+ 519      68617200 
+ 520              	.LASF22:
+ 521 0188 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\GitHub\\FYP_POSCCreato"
+ 521      73657273 
+ 521      5C736865 
+ 521      76695C44 
+ 521      6F63756D 
+ 522 01b6 725F4D61 		.ascii	"r_Master\\FYP_PSOCCreator_Master\\CORTEX_CY8C5588_P"
+ 522      73746572 
+ 522      5C465950 
+ 522      5F50534F 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccg7t15a.s 			page 14
 
 
- 524              	.LASF11:
- 525 01b8 666C6F61 		.ascii	"float\000"
- 525      7400
- 526              	.LASF22:
- 527 01be 433A5C55 		.ascii	"C:\\Users\\tadge\\Documents\\GitHub\\FYP_PSOCCreato"
- 527      73657273 
- 527      5C746164 
- 527      67655C44 
- 527      6F63756D 
- 528 01ec 725F466F 		.ascii	"r_Follower\\FYP_New_Test\\CORTEX_CY8C5588_PSoC_Crea"
- 528      6C6C6F77 
- 528      65725C46 
- 528      59505F4E 
- 528      65775F54 
- 529 021d 746F725F 		.ascii	"tor_GCC\\FreeRTOS_Demo.cydsn\000"
- 529      4743435C 
- 529      46726565 
- 529      52544F53 
- 529      5F44656D 
+ 522      43437265 
+ 523 01e7 536F435F 		.ascii	"SoC_Creator_GCC\\FreeRTOS_Demo.cydsn\000"
+ 523      43726561 
+ 523      746F725F 
+ 523      4743435C 
+ 523      46726565 
+ 524              	.LASF21:
+ 525 020b 47656E65 		.ascii	"Generated_Source\\PSoC5\\M1QuadDec_PM.c\000"
+ 525      72617465 
+ 525      645F536F 
+ 525      75726365 
+ 525      5C50536F 
+ 526              	.LASF11:
+ 527 0231 666C6F61 		.ascii	"float\000"
+ 527      7400
+ 528              	.LASF3:
+ 529 0237 73686F72 		.ascii	"short int\000"
+ 529      7420696E 
+ 529      7400
  530              	.LASF14:
- 531 0239 72656738 		.ascii	"reg8\000"
+ 531 0241 72656738 		.ascii	"reg8\000"
  531      00
  532              	.LASF16:
- 533 023e 4D315175 		.ascii	"M1QuadDec_SaveConfig\000"
+ 533 0246 4D315175 		.ascii	"M1QuadDec_SaveConfig\000"
  533      61644465 
  533      635F5361 
  533      7665436F 
  533      6E666967 
  534              	.LASF9:
- 535 0253 73697A65 		.ascii	"sizetype\000"
+ 535 025b 73697A65 		.ascii	"sizetype\000"
  535      74797065 
  535      00
  536              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

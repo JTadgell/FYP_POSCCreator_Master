@@ -84,7 +84,7 @@ wheel_data left_wheel;
 wheel_data right_wheel;
 PID_data k;
 
-int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
+int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
 
 
 // START OF FUNCTIONS
@@ -98,9 +98,9 @@ int main( void ) {
     }
     if (~isMaster){
     /* This is the for loop for the slave system */
-        
+      }  
     prvHardwareSetup(); 
-    DMA_config();
+    
     sprintf((char *) run, "\n=== Master ===\n\n");
     vSerialPutString(pxPort, (const signed char *) run, 64);
     
@@ -113,40 +113,8 @@ int main( void ) {
     xTaskCreate( receive_data, (const char*) "waiting for a serial bus to come in", 1024, NULL, 1, NULL );
     
 	vTaskStartScheduler();
-    
-    }
 
 	for( ;; );  // You won't actually reach this for loop.
-}
-void DMA_config(){
-    ADC_DelSig_1_Start();
-    ADC_DelSig_1_StartConvert();
-    Filter_1_Start();
-    Opamp_1_Start();
-    PGA_1_Start();
-    PGA_2_Start();  
-    /* Defines for DMA_1 */
-    #define DMA_1_BYTES_PER_BURST 1
-    #define DMA_1_REQUEST_PER_BURST 1
-    #define DMA_1_SRC_BASE (CYDEV_PERIPH_BASE)
-    #define DMA_1_DST_BASE (CYDEV_PERIPH_BASE)
-
-    /* Variable declarations for DMA_1 */
-    /* Move these variable declarations to the top of the function */
-    uint8 DMA_1_Chan;
-    uint8 DMA_1_TD[1];
-
-    /* DMA Configuration for DMA_1 */
-    DMA_1_Chan = DMA_1_DmaInitialize(DMA_1_BYTES_PER_BURST, DMA_1_REQUEST_PER_BURST, 
-        HI16(DMA_1_SRC_BASE), HI16(DMA_1_DST_BASE));
-    DMA_1_TD[0] = CyDmaTdAllocate();
-    CyDmaTdSetConfiguration(DMA_1_TD[0], 8, CY_DMA_DISABLE_TD, 0);
-    CyDmaTdSetAddress(DMA_1_TD[0], LO16((uint32)ADC_DelSig_1_DEC_SAMP_PTR), LO16((uint32)Filter_1_STAGEA_PTR));
-    CyDmaChSetInitialTd(DMA_1_Chan, DMA_1_TD[0]);
-    CyDmaChEnable(DMA_1_Chan, 1);
-    const signed char * local_write[64];
-    sprintf((char *) local_write, "In DMA CONFIG  ");
-    vSerialPutString(pxPort, (const signed char *) local_write, 64);
 }
 
 void receive_data( void *p ) {
@@ -162,7 +130,7 @@ void receive_data( void *p ) {
         if (pdTRUE == xSerialGetChar(pxPort, &rx_receive, comRX_BLOCK_TIME)) {
             type = rx_receive;
             if(xSemaphoreTake(gatekeeper, 50000)) {
-                if(type=='1'){
+                if(type=='1'){//
                     for(i=0;i<8;i++){
                         xSerialGetChar(pxPort, &rx_receive, comRX_BLOCK_TIME);
                         buffer[i] = rx_receive;
@@ -187,6 +155,24 @@ void receive_data( void *p ) {
                     snprintf((char *) local_write,64, "Kp Value: %f", k.Kp);
                     
                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    
+                }
+                if (type=='4'){
+                    sprintf((char *) local_write, "VERTICAL \n");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    PWM_1_Wakeup();                 
+                    PWM_1_WriteCompare(1200);//90 deg Camera;
+                    CyDelay(1000);
+                    PWM_1_Sleep();
+                    
+                }
+                if (type=='5'){
+                    sprintf((char *) local_write, "HORIZONTAL \n");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    PWM_1_Wakeup();
+                    PWM_1_WriteCompare(2100);//0 deg;
+                    CyDelay(1000);
+                    PWM_1_Sleep();
                     
                 }
                 for (i=0; i<65; i++) {
@@ -222,8 +208,6 @@ void PID_initialise( void *p ) {
             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors using PID
             
             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels
-            sprintf((char *) local_write, "Filter Read: %u\n", Filter_1_Read8(Filter_1_CHANNEL_A));
-            vSerialPutString(pxPort, (signed char *) local_write, 64);
 			xSemaphoreGive(gatekeeper);                     // give the semaphore back
     	}
         vTaskDelay(10);                                     // wait 10ms before going again
@@ -269,6 +253,15 @@ void prvHardwareSetup( void ) {
     
     /* Start up the slave peripherals. */
     if (~isMaster){
+        
+        Clock_1_Start();
+        PWM_1_Start();
+        PWM_1_WriteCompare(2100);//90 deg Camera;
+        CyDelay(1000);
+        PWM_1_Sleep();
+        
+        
+        
     }
 }
 

@@ -4,9 +4,9 @@
 
 #Version:            1.1
 
-#Build Date:         Apr 29 2016 09:00:55
+#Build Date:         Feb 27 2017 11:02:10
 
-#File Generated:     Aug 7 2018 17:04:48
+#File Generated:     Aug 20 2018 18:14:55
 
 #Purpose:            
 
@@ -14,16 +14,16 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\bin/sjplacer.exe --proj-name FreeRTOS_Demo --netlist-vh2 FreeRTOS_Demo_p.vh2 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file FreeRTOS_Demo_p.lib --sdc-file FreeRTOS_Demo.sdc --io-pcf FreeRTOS_Demo.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\bin/sjplacer.exe --proj-name FreeRTOS_Demo --netlist-vh2 FreeRTOS_Demo_p.vh2 --arch p35_udb4x6 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file FreeRTOS_Demo_p.lib --sdc-file FreeRTOS_Demo.sdc --io-pcf FreeRTOS_Demo.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
-Build Date : Apr 29 2016	08:58:44
+Build Date : Feb 27 2017	11:00:30
 
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - FreeRTOS_Demo_p.vh2
-Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark
+Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata
 Package                   - 
 Defparam file             - 
 SDC file                  - FreeRTOS_Demo.sdc
@@ -34,7 +34,7 @@ IO Placement file         - FreeRTOS_Demo.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "FreeRTOS_Demo_p.vh2"
-D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark"
+D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\arch/udbdsi_4x6_24.cydata"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design
@@ -45,17 +45,17 @@ Phase 3
 
 Design Statistics after Packing
     Number of Combinational MCs 	:	30
-    Number of Sequential MCs    	:	62
-    Number of DPs               	:	15
-    Number of Controls          	:	6
-    Number of Status            	:	9
+    Number of Sequential MCs    	:	66
+    Number of DPs               	:	17
+    Number of Controls          	:	7
+    Number of Status            	:	10
     Number of SyncCells         	:	1
     Number of count7cells       	:	1
 
 Device Utilization Summary after Packing
-    Macrocells                  :	92/192
-    UDBS                        :	22/24
-    IOs                         :	16/72
+    Macrocells                  :	96/192
+    UDBS                        :	24/24
+    IOs                         :	15/72
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -79,64 +79,56 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 13
-Clock: ADC_DelSig_1_Ext_CP_Clk | Frequency: N/A       | Target:  48.0 MHz
-Clock: ADC_DelSig_1_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  48.0 MHz
-Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   6.0 MHz
-Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   6.0 MHz
-Clock: CyBUS_CLK            | Frequency:  52.0 MHz | Target:  48.0 MHz
+Number of clocks: 9
+Clock: Clock_1              | Frequency:  59.7 MHz | Target:   1.0 MHz
+Clock: CyBUS_CLK            | Frequency:  59.5 MHz | Target:  48.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
 Clock: M1Clock              | Frequency:  42.6 MHz | Target:  12.0 MHz
 Clock: MClock               | Frequency:  35.7 MHz | Target:  12.0 MHz
-Clock: UART_1_IntClock      | Frequency:  39.5 MHz | Target:   0.5 MHz
-Clock: \ADC_DelSig_1:DSM\/dec_clock | Frequency: N/A       | Target:   0.1 MHz
+Clock: UART_1_IntClock      | Frequency:  38.4 MHz | Target:   0.5 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.2 (sec)
+D2088: Phase 6, elapsed time : 0.1 (sec)
 
 Phase 7
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 13
-Clock: ADC_DelSig_1_Ext_CP_Clk | Frequency: N/A       | Target:  48.0 MHz
-Clock: ADC_DelSig_1_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  48.0 MHz
-Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   6.0 MHz
-Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   6.0 MHz
-Clock: CyBUS_CLK            | Frequency:   3.0 MHz | Target:  48.0 MHz
+Number of clocks: 9
+Clock: Clock_1              | Frequency:  59.7 MHz | Target:   1.0 MHz
+Clock: CyBUS_CLK            | Frequency:   3.1 MHz | Target:  48.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
 Clock: M1Clock              | Frequency:  42.6 MHz | Target:  12.0 MHz
 Clock: MClock               | Frequency:  35.7 MHz | Target:  12.0 MHz
-Clock: UART_1_IntClock      | Frequency:   3.0 MHz | Target:   0.5 MHz
-Clock: \ADC_DelSig_1:DSM\/dec_clock | Frequency: N/A       | Target:   0.1 MHz
+Clock: UART_1_IntClock      | Frequency:   3.1 MHz | Target:   0.5 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 3.0 (sec)
+D2088: Phase 7, elapsed time : 1.4 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	30
-    Number of Sequential MCs    	:	62
-    Number of DPs               	:	15
-    Number of Controls          	:	6
-    Number of Status            	:	9
+    Number of Sequential MCs    	:	66
+    Number of DPs               	:	17
+    Number of Controls          	:	7
+    Number of Status            	:	10
     Number of SyncCells         	:	1
     Number of count7cells       	:	1
-    Number of IOs       	:	16
+    Number of IOs       	:	15
 
 Device Utilization Summary
-    Macrocells                  :	92/192
-    IOs                         :	16/72
+    Macrocells                  :	96/192
+    IOs                         :	15/72
 
 
 
@@ -152,20 +144,16 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 13
-Clock: ADC_DelSig_1_Ext_CP_Clk | Frequency: N/A       | Target:  48.0 MHz
-Clock: ADC_DelSig_1_Ext_CP_Clk(routed) | Frequency: N/A       | Target:  48.0 MHz
-Clock: ADC_DelSig_1_theACLK | Frequency: N/A       | Target:   6.0 MHz
-Clock: ADC_DelSig_1_theACLK(fixed-function) | Frequency: N/A       | Target:   6.0 MHz
+Number of clocks: 9
+Clock: Clock_1              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: CyBUS_CLK            | Frequency:   3.4 MHz | Target:  48.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  48.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  48.0 MHz
-Clock: M1Clock              | Frequency:  35.1 MHz | Target:  12.0 MHz
+Clock: M1Clock              | Frequency:  38.2 MHz | Target:  12.0 MHz
 Clock: MClock               | Frequency:  35.7 MHz | Target:  12.0 MHz
 Clock: UART_1_IntClock      | Frequency:   3.4 MHz | Target:   0.5 MHz
-Clock: \ADC_DelSig_1:DSM\/dec_clock | Frequency: N/A       | Target:   0.1 MHz
 
 ======================================================================
                      End of Clock Summary
@@ -176,5 +164,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 5.1 sec.
+I2076: Total run-time: 2.6 sec.
 

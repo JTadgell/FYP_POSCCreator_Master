@@ -215,6 +215,7 @@
     </Group>
     <Group key="Pin">
       <Data key="1c97b18b-7da2-4c83-844d-4f75c797cb1b" value="Laser" />
+      <Data key="1cb71e8a-904f-4382-9dfb-46878da4a8d4" value="LED_RED" />
       <Data key="3a0a5806-ffd9-43bc-b395-84692ceed6cb" value="Pin_1" />
       <Data key="5ccc7cc4-5e58-4ba3-bbaf-044ffcb68e45" value="M1_Phase2" />
       <Data key="48a0bff4-6745-484a-ab45-06053e57b619" value="M1_BWD" />
@@ -222,6 +223,7 @@
       <Data key="289a8dd4-b439-4dcc-b229-17674ce5879f" value="Pin_LED_3" />
       <Data key="1406cb8e-9428-4911-9f54-788199b95eb3" value="PWM_Out_2" />
       <Data key="3678a62a-d019-4376-89bb-67f0545cdfad" value="pwm" />
+      <Data key="4420f4c7-9afd-4351-a2e3-845bc8bd23fd" value="LED_BLUE" />
       <Data key="31701add-6005-44d9-ae4e-af20af5e04c1" value="Startup_Release_Switch" />
       <Data key="448926e4-81be-4c2c-9df2-9a80819dff5f" value="Standby" />
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
@@ -284,6 +286,11 @@
         <Data key="Port Format" value="3,3" />
       </Group>
     </Group>
+    <Group key="1cb71e8a-904f-4382-9dfb-46878da4a8d4">
+      <Group key="0">
+        <Data key="Port Format" value="12,3" />
+      </Group>
+    </Group>
     <Group key="3a0a5806-ffd9-43bc-b395-84692ceed6cb">
       <Group key="0">
         <Data key="Port Format" value="0,2" />
@@ -317,6 +324,11 @@
     <Group key="3678a62a-d019-4376-89bb-67f0545cdfad">
       <Group key="0">
         <Data key="Port Format" value="1,7" />
+      </Group>
+    </Group>
+    <Group key="4420f4c7-9afd-4351-a2e3-845bc8bd23fd">
+      <Group key="0">
+        <Data key="Port Format" value="12,2" />
       </Group>
     </Group>
     <Group key="31701add-6005-44d9-ae4e-af20af5e04c1">

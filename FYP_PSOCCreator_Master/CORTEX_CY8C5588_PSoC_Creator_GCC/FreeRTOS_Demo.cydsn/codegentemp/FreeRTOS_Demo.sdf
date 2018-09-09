@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2018-08-20T08:16:03Z")
+ (DATE "2018-09-09T04:32:55Z")
  (DESIGN "FreeRTOS_Demo")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -677,6 +677,8 @@
     (INTERCONNECT Laser\(0\)_PAD Laser\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT pwm\(0\).pad_out pwm\(0\)_PAD (0.000:0.000:0.000))
     (INTERCONNECT pwm\(0\)_PAD pwm\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT LED_RED\(0\)_PAD LED_RED\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT LED_BLUE\(0\)_PAD LED_BLUE\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

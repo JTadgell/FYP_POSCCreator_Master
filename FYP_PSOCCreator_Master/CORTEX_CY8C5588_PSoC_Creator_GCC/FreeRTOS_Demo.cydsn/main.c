@@ -85,25 +85,22 @@ wheel_data right_wheel;
 PID_data k;
 
 int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
-
+int first_run=1;
 
 // START OF FUNCTIONS
 int main( void ) {
 	const signed char * run[64];
     if (isMaster){
     /* This is the for loop for the master system */
-        
-        
-        
+        sprintf((char *) run, "\n=== Master ===\n\n");
+        vSerialPutString(pxPort, (const signed char *) run, 64);
     }
     if (~isMaster){
     /* This is the for loop for the slave system */
+        sprintf((char *) run, "\n=== Slave ===\n\n");
+        vSerialPutString(pxPort, (const signed char *) run, 64);
       }  
-    prvHardwareSetup(); 
-    
-    sprintf((char *) run, "\n=== Master ===\n\n");
-    vSerialPutString(pxPort, (const signed char *) run, 64);
-    
+    prvHardwareSetup();     
     sprintf((char *) run, "\n=== NEW RUN ===\n\n");
     vSerialPutString(pxPort, (const signed char *) run, 64);
     
@@ -126,6 +123,7 @@ void receive_data( void *p ) {
     int go = 0;
     signed char type = 0;
     char temp[10];
+    
     while(1) {
         if (pdTRUE == xSerialGetChar(pxPort, &rx_receive, comRX_BLOCK_TIME)) {
             type = rx_receive;
@@ -144,29 +142,17 @@ void receive_data( void *p ) {
                 if(type=='2'){
                     CySoftwareReset();
                 }  
-                if (type=='3'){
-                    for(i=0;i<8;i++){
-                        xSerialGetChar(pxPort, &rx_receive, comRX_BLOCK_TIME);
-                        buffer[i] = rx_receive;
-                    }
-                    sprintf((char *) local_write, "buffer read as %s\n", buffer);
-                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
-                    update_k( &k, buffer);
-                    snprintf((char *) local_write,64, "Kp Value: %f", k.Kp);
-                    
-                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
-                    
-                }
-                if (type=='4'){
+            
+                if (type=='4' && ~isMaster){//Camera position for LED CV
                     sprintf((char *) local_write, "VERTICAL \n");
                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
                     PWM_1_Wakeup();                 
-                    PWM_1_WriteCompare(1200);//90 deg Camera;
+                    PWM_1_WriteCompare(1200);
                     CyDelay(1000);
                     PWM_1_Sleep();
                     
                 }
-                if (type=='5'){
+                if (type=='5' && ~isMaster){//Causes position for Laser DOT CV
                     sprintf((char *) local_write, "HORIZONTAL \n");
                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
                     PWM_1_Wakeup();
@@ -174,6 +160,26 @@ void receive_data( void *p ) {
                     CyDelay(1000);
                     PWM_1_Sleep();
                     
+                }
+                 if (type=='6' && isMaster){//TURN ON LED_BLUE
+                    sprintf((char *) local_write, "LED BLUE TURN ON");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    LED_BLUE_Write(1);                    
+                }
+                if (type=='7' && isMaster){//TURN ON LED_RED
+                    sprintf((char *) local_write, "LED RED TURN ON");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    LED_RED_Write(1);                    
+                }
+                 if (type=='8' && isMaster){//TURN OFF LED_BLUE
+                    sprintf((char *) local_write, "LED BLUE TURN OFF");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    LED_BLUE_Write(0);                    
+                }
+                if (type=='9' && isMaster){//TURN OFF LED_RED
+                    sprintf((char *) local_write, "LED RED TURN OFF");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    LED_RED_Write(0);                    
                 }
                 for (i=0; i<65; i++) {
                     buffer[i] = ' ';
@@ -202,6 +208,12 @@ void PID_initialise( void *p ) {
     
     while(1) {
     	if(xSemaphoreTake(gatekeeper, 50000)) {              // wait until semaphore is free:
+            if (first_run==1){
+                M1QuadDec_SetCounter(0);
+                M2QuadDec_SetCounter(0);
+                first_run=0;
+            }
+                
             mov_update_error(&left_wheel, &right_wheel);    // update error values
                 sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
                 //vSerialPutString(pxPort, (signed char *) local_write, 64);
@@ -248,7 +260,7 @@ void prvHardwareSetup( void ) {
 
     /* Start up the master peripherals. */
     if (isMaster){
-         Laser_Write(1);// turn on the laser
+         
     }
     
     /* Start up the slave peripherals. */

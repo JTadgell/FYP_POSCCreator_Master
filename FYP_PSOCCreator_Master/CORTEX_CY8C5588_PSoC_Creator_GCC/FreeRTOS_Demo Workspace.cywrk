@@ -8,7 +8,6 @@
 <files />
 <projects>
 <v>.\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj</v>
-<v>.\Filter_ADC_VDAC01.cydsn\Filter_ADC_VDAC01.cyprj</v>
 </projects>
 <workspace_id v="dd096e2f-e89d-42b3-a9f0-d771ecfa166f" />
 <WriteAppVersionLastSavedWith v="4.1.0.2686" />

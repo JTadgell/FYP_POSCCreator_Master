@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\message_buffer.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Pins">
 <ExpandedNodeIds>
 <v>FreeRTOS_Demo Workspace</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo</v>
@@ -308,14 +308,18 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\FreeRTOS_Demo.cydsn\main.c" />
+<name v=".\FreeRTOS_Demo.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cydwr" />
+</OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer /><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="988, 544" SelectedTabbedMdiWindow="e45e066a-2a51-4374-8009-30ada40c167b"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="2185b81d-c41d-4651-b3a0-16b1b3e4a127" /><DocumentWindow Key="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\main.c" Guid="e45e066a-2a51-4374-8009-30ada40c167b" /><DocumentWindow Key="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\TopDesign\TopDesign.cysch" Guid="f9b153f2-d21d-4d1f-8e2c-eef3bbe69ca5" /><DocumentWindow Key="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cydwr" Guid="db33dbc9-a1aa-4078-bdea-27019ac7d323" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

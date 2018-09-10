@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cceuFPg4.s 			page 1
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGoVfH2.s 			page 1
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc75s1qi.s 			page 1
 
 
    1              		.syntax unified
@@ -58,36 +50,28 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
   47 0032 03       		.uleb128 0x3
   48 0033 08       		.byte	0x8
   49 0034 04       		.byte	0x4
-  50 0035 29010000 		.4byte	.LASF2
+  50 0035 42010000 		.4byte	.LASF2
   51 0039 03       		.uleb128 0x3
   52 003a 01       		.byte	0x1
   53 003b 06       		.byte	0x6
-  54 003c 42010000 		.4byte	.LASF3
+  54 003c 36010000 		.4byte	.LASF3
   55 0040 03       		.uleb128 0x3
   56 0041 01       		.byte	0x1
   57 0042 08       		.byte	0x8
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cceuFPg4.s 			page 2
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGoVfH2.s 			page 2
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 2
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc75s1qi.s 			page 2
 
 
   58 0043 E5000000 		.4byte	.LASF4
   59 0047 03       		.uleb128 0x3
   60 0048 02       		.byte	0x2
   61 0049 05       		.byte	0x5
-  62 004a E1010000 		.4byte	.LASF5
+  62 004a 07020000 		.4byte	.LASF5
   63 004e 03       		.uleb128 0x3
   64 004f 02       		.byte	0x2
   65 0050 07       		.byte	0x7
   66 0051 0E000000 		.4byte	.LASF6
   67 0055 04       		.uleb128 0x4
-  68 0056 D1010000 		.4byte	.LASF10
+  68 0056 F7010000 		.4byte	.LASF10
   69 005a 01       		.byte	0x1
   70 005b 3F       		.byte	0x3f
   71 005c 60000000 		.4byte	0x60
@@ -104,14 +88,14 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
   82 0070 07       		.byte	0x7
   83 0071 40000000 		.4byte	.LASF9
   84 0075 04       		.uleb128 0x4
-  85 0076 EB010000 		.4byte	.LASF11
+  85 0076 11020000 		.4byte	.LASF11
   86 007a 02       		.byte	0x2
   87 007b 2C       		.byte	0x2c
   88 007c 55000000 		.4byte	0x55
   89 0080 03       		.uleb128 0x3
   90 0081 04       		.byte	0x4
   91 0082 04       		.byte	0x4
-  92 0083 DB010000 		.4byte	.LASF12
+  92 0083 01020000 		.4byte	.LASF12
   93 0087 03       		.uleb128 0x3
   94 0088 08       		.byte	0x8
   95 0089 04       		.byte	0x4
@@ -123,9 +107,9 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
  101 0095 03       		.uleb128 0x3
  102 0096 04       		.byte	0x4
  103 0097 07       		.byte	0x7
- 104 0098 F3010000 		.4byte	.LASF15
+ 104 0098 19020000 		.4byte	.LASF15
  105 009c 05       		.uleb128 0x5
- 106 009d 35010000 		.4byte	.LASF19
+ 106 009d 29010000 		.4byte	.LASF19
  107 00a1 03       		.byte	0x3
  108 00a2 9606     		.2byte	0x696
  109 00a4 A8000000 		.4byte	0xa8
@@ -134,15 +118,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
  112 00ad 00       		.byte	0
  113              		.section	.debug_abbrev,"",%progbits
  114              	.Ldebug_abbrev0:
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cceuFPg4.s 			page 3
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGoVfH2.s 			page 3
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 3
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc75s1qi.s 			page 3
 
 
  115 0000 01       		.uleb128 0x1
@@ -202,15 +178,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
  169 0036 0E       		.uleb128 0xe
  170 0037 3A       		.uleb128 0x3a
  171 0038 0B       		.uleb128 0xb
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cceuFPg4.s 			page 4
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGoVfH2.s 			page 4
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 4
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc75s1qi.s 			page 4
 
 
  172 0039 3B       		.uleb128 0x3b
@@ -264,86 +232,13 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
  208      676E6564 
  208      20696E74 
  208      00
-<<<<<<< HEAD
- 209              	.LASF18:
- 210 002e 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
- 210      2E6D6F6E 
- 210      6173682E 
- 210      6564755C 
- 210      686F6D65 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 5
-
-
- 211 005b 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
- 211      4875625C 
- 211      4659505F 
- 211      504F5343 
- 211      43726561 
- 212 008b 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
- 212      725C434F 
- 212      52544558 
- 212      5F435938 
- 212      43353538 
- 213 00bc 656D6F2E 		.ascii	"emo.cydsn\000"
- 213      63796473 
- 213      6E00
- 214              	.LASF8:
- 215 00c6 6C6F6E67 		.ascii	"long unsigned int\000"
- 215      20756E73 
- 215      69676E65 
- 215      6420696E 
- 215      7400
- 216              	.LASF9:
- 217 00d8 6C6F6E67 		.ascii	"long long unsigned int\000"
- 217      206C6F6E 
- 217      6720756E 
- 217      7369676E 
- 217      65642069 
- 218              	.LASF16:
- 219 00ef 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 219      43313120 
- 219      352E342E 
- 219      31203230 
- 219      31363036 
- 220 0122 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 220      20726576 
- 220      6973696F 
- 220      6E203233 
- 220      37373135 
- 221 0155 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 221      66756E63 
- 221      74696F6E 
- 221      2D736563 
- 221      74696F6E 
- 222              	.LASF4:
- 223 017d 756E7369 		.ascii	"unsigned char\000"
- 223      676E6564 
- 223      20636861 
- 223      7200
- 224              	.LASF14:
- 225 018b 63686172 		.ascii	"char\000"
- 225      00
- 226              	.LASF7:
- 227 0190 6C6F6E67 		.ascii	"long int\000"
- 227      20696E74 
- 227      00
- 228              	.LASF17:
- 229 0199 2E2E5C2E 		.ascii	"..\\..\\FreeRTOS_Source\\croutine.c\000"
- 229      2E5C4672 
- 229      65655254 
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cceuFPg4.s 			page 6
-=======
  209              	.LASF8:
  210 002e 6C6F6E67 		.ascii	"long unsigned int\000"
  210      20756E73 
  210      69676E65 
  210      6420696E 
  210      7400
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGoVfH2.s 			page 5
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 6
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc75s1qi.s 			page 5
 
 
  211              	.LASF9:
@@ -389,55 +284,59 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccgaC0wr.s 			page 1
  225              	.LASF13:
  226 0122 646F7562 		.ascii	"double\000"
  226      6C6500
- 227              	.LASF2:
- 228 0129 6C6F6E67 		.ascii	"long double\000"
- 228      20646F75 
- 228      626C6500 
- 229              	.LASF19:
- 230 0135 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 230      52784275 
- 230      66666572 
- 230      00
- 231              	.LASF3:
- 232 0142 7369676E 		.ascii	"signed char\000"
- 232      65642063 
- 232      68617200 
+ 227              	.LASF19:
+ 228 0129 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 228      52784275 
+ 228      66666572 
+ 228      00
+ 229              	.LASF3:
+ 230 0136 7369676E 		.ascii	"signed char\000"
+ 230      65642063 
+ 230      68617200 
+ 231              	.LASF2:
+ 232 0142 6C6F6E67 		.ascii	"long double\000"
+ 232      20646F75 
+ 232      626C6500 
  233              	.LASF18:
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGoVfH2.s 			page 6
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc75s1qi.s 			page 6
 
 
- 234 014e 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\GitHub\\FYP_POSCCreato"
+ 234 014e 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\FYP\\FYP_POSCCreator_M"
  234      73657273 
  234      5C736865 
  234      76695C44 
  234      6F63756D 
- 235 017c 725F4D61 		.ascii	"r_Master\\FYP_PSOCCreator_Master\\CORTEX_CY8C5588_P"
- 235      73746572 
- 235      5C465950 
- 235      5F50534F 
- 235      43437265 
- 236 01ad 536F435F 		.ascii	"SoC_Creator_GCC\\FreeRTOS_Demo.cydsn\000"
- 236      43726561 
- 236      746F725F 
- 236      4743435C 
- 236      46726565 
- 237              	.LASF10:
- 238 01d1 5F5F696E 		.ascii	"__int32_t\000"
- 238      7433325F 
- 238      7400
- 239              	.LASF12:
- 240 01db 666C6F61 		.ascii	"float\000"
- 240      7400
- 241              	.LASF5:
- 242 01e1 73686F72 		.ascii	"short int\000"
- 242      7420696E 
- 242      7400
- 243              	.LASF11:
- 244 01eb 696E7433 		.ascii	"int32_t\000"
- 244      325F7400 
- 245              	.LASF15:
- 246 01f3 73697A65 		.ascii	"sizetype\000"
- 246      74797065 
- 246      00
- 247              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 235 017c 61737465 		.ascii	"aster-cb49844c11f80dd632253a3ce6c772ad769288bc\\FYP"
+ 235      722D6362 
+ 235      34393834 
+ 235      34633131 
+ 235      66383064 
+ 236 01ae 5F50534F 		.ascii	"_PSOCCreator_Master\\CORTEX_CY8C5588_PSoC_Creator_G"
+ 236      43437265 
+ 236      61746F72 
+ 236      5F4D6173 
+ 236      7465725C 
+ 237 01e0 43435C46 		.ascii	"CC\\FreeRTOS_Demo.cydsn\000"
+ 237      72656552 
+ 237      544F535F 
+ 237      44656D6F 
+ 237      2E637964 
+ 238              	.LASF10:
+ 239 01f7 5F5F696E 		.ascii	"__int32_t\000"
+ 239      7433325F 
+ 239      7400
+ 240              	.LASF12:
+ 241 0201 666C6F61 		.ascii	"float\000"
+ 241      7400
+ 242              	.LASF5:
+ 243 0207 73686F72 		.ascii	"short int\000"
+ 243      7420696E 
+ 243      7400
+ 244              	.LASF11:
+ 245 0211 696E7433 		.ascii	"int32_t\000"
+ 245      325F7400 
+ 246              	.LASF15:
+ 247 0219 73697A65 		.ascii	"sizetype\000"
+ 247      74797065 
+ 247      00
+ 248              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

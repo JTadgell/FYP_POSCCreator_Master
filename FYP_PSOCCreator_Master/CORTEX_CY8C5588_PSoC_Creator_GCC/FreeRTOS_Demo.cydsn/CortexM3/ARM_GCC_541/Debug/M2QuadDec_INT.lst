@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 1
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 1
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 1
 
 
    1              		.syntax unified
@@ -66,15 +58,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
   21:Generated_Source\PSoC5/M2QuadDec_INT.c **** 
   22:Generated_Source\PSoC5/M2QuadDec_INT.c **** 
   23:Generated_Source\PSoC5/M2QuadDec_INT.c **** volatile int32 M2QuadDec_count32SoftPart = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 2
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 2
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 2
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 2
 
 
   24:Generated_Source\PSoC5/M2QuadDec_INT.c **** 
@@ -134,15 +118,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
   51              		.loc 1 61 0
   52 000c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
   53 000e 03F00103 		and	r3, r3, #1
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 3
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 3
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 3
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 3
 
 
   54 0012 002B     		cmp	r3, #0
@@ -202,15 +178,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
   83:Generated_Source\PSoC5/M2QuadDec_INT.c **** 
   84:Generated_Source\PSoC5/M2QuadDec_INT.c ****     #ifdef M2QuadDec_ISR_EXIT_CALLBACK
   85:Generated_Source\PSoC5/M2QuadDec_INT.c ****         M2QuadDec_ISR_ExitCallback();
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 4
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 4
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 4
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 4
 
 
   86:Generated_Source\PSoC5/M2QuadDec_INT.c ****     #endif /* M2QuadDec_ISR_EXIT_CALLBACK */
@@ -246,7 +214,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  115 000b 01       		.uleb128 0x1
  116 000c 63000000 		.4byte	.LASF17
  117 0010 0C       		.byte	0xc
- 118 0011 F9010000 		.4byte	.LASF18
+ 118 0011 1F020000 		.4byte	.LASF18
  119 0015 60010000 		.4byte	.LASF19
  120 0019 00000000 		.4byte	.Ldebug_ranges0+0
  121 001d 00000000 		.4byte	0
@@ -266,19 +234,11 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  135 003a 03       		.uleb128 0x3
  136 003b 08       		.byte	0x8
  137 003c 04       		.byte	0x4
- 138 003d E3010000 		.4byte	.LASF2
+ 138 003d 09020000 		.4byte	.LASF2
  139 0041 03       		.uleb128 0x3
  140 0042 01       		.byte	0x1
  141 0043 06       		.byte	0x6
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 5
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 5
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 5
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 5
 
 
  142 0044 54010000 		.4byte	.LASF3
@@ -289,7 +249,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  147 004f 03       		.uleb128 0x3
  148 0050 02       		.byte	0x2
  149 0051 05       		.byte	0x5
- 150 0052 EF010000 		.4byte	.LASF5
+ 150 0052 15020000 		.4byte	.LASF5
  151 0056 03       		.uleb128 0x3
  152 0057 02       		.byte	0x2
  153 0058 07       		.byte	0x7
@@ -309,7 +269,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  167 0072 03       		.uleb128 0x3
  168 0073 04       		.byte	0x4
  169 0074 07       		.byte	0x7
- 170 0075 20020000 		.4byte	.LASF10
+ 170 0075 46020000 		.4byte	.LASF10
  171 0079 03       		.uleb128 0x3
  172 007a 01       		.byte	0x1
  173 007b 08       		.byte	0x8
@@ -320,7 +280,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  178 0086 9201     		.2byte	0x192
  179 0088 48000000 		.4byte	0x48
  180 008c 04       		.uleb128 0x4
- 181 008d 29020000 		.4byte	.LASF13
+ 181 008d 4F020000 		.4byte	.LASF13
  182 0091 02       		.byte	0x2
  183 0092 9701     		.2byte	0x197
  184 0094 5D000000 		.4byte	0x5d
@@ -338,15 +298,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  196 00ac 3C02     		.2byte	0x23c
  197 00ae B2000000 		.4byte	0xb2
  198 00b2 05       		.uleb128 0x5
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 6
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 6
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 6
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 6
 
 
  199 00b3 80000000 		.4byte	0x80
@@ -406,15 +358,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  253 0016 0B       		.uleb128 0xb
  254 0017 0B       		.uleb128 0xb
  255 0018 3E       		.uleb128 0x3e
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 7
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 7
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 7
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 7
 
 
  256 0019 0B       		.uleb128 0xb
@@ -474,15 +418,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  310 004f 18       		.uleb128 0x18
  311 0050 9742     		.uleb128 0x2117
  312 0052 19       		.uleb128 0x19
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 8
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 8
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 8
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 8
 
 
  313 0053 01       		.uleb128 0x1
@@ -542,15 +478,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  367 000c 00000000 		.4byte	0
  368              		.section	.debug_line,"",%progbits
  369              	.Ldebug_line0:
-<<<<<<< HEAD
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 9
-=======
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 9
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 9
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 9
 
 
  370 0000 6B000000 		.section	.debug_str,"MS",%progbits,1
@@ -573,107 +501,6 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  376      61644465 
  376      635F4953 
  376      5200
-<<<<<<< HEAD
- 377              	.LASF19:
- 378 0029 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
- 378      2E6D6F6E 
- 378      6173682E 
- 378      6564755C 
- 378      686F6D65 
- 379 0056 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
- 379      4875625C 
- 379      4659505F 
- 379      504F5343 
- 379      43726561 
- 380 0086 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
- 380      725C434F 
- 380      52544558 
- 380      5F435938 
- 380      43353538 
- 381 00b7 656D6F2E 		.ascii	"emo.cydsn\000"
- 381      63796473 
- 381      6E00
- 382              	.LASF16:
- 383 00c1 72656738 		.ascii	"reg8\000"
- 383      00
- 384              	.LASF12:
- 385 00c6 75696E74 		.ascii	"uint8\000"
- 385      3800
- 386              	.LASF8:
- 387 00cc 6C6F6E67 		.ascii	"long unsigned int\000"
- 387      20756E73 
- 387      69676E65 
- 387      6420696E 
- 387      7400
- 388              	.LASF9:
- 389 00de 6C6F6E67 		.ascii	"long long unsigned int\000"
- 389      206C6F6E 
- 389      6720756E 
- 389      7369676E 
- 389      65642069 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 10
-
-
- 390              	.LASF14:
- 391 00f5 666C6F61 		.ascii	"float\000"
- 391      7400
- 392              	.LASF17:
- 393 00fb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 393      43313120 
- 393      352E342E 
- 393      31203230 
- 393      31363036 
- 394 012e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 394      20726576 
- 394      6973696F 
- 394      6E203233 
- 394      37373135 
- 395 0161 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 395      66756E63 
- 395      74696F6E 
- 395      2D736563 
- 395      74696F6E 
- 396              	.LASF21:
- 397 0189 4D325175 		.ascii	"M2QuadDec_swStatus\000"
- 397      61644465 
- 397      635F7377 
- 397      53746174 
- 397      757300
- 398              	.LASF4:
- 399 019c 756E7369 		.ascii	"unsigned char\000"
- 399      676E6564 
- 399      20636861 
- 399      7200
- 400              	.LASF22:
- 401 01aa 4D325175 		.ascii	"M2QuadDec_count32SoftPart\000"
- 401      61644465 
- 401      635F636F 
- 401      756E7433 
- 401      32536F66 
- 402              	.LASF11:
- 403 01c4 63686172 		.ascii	"char\000"
- 403      00
- 404              	.LASF7:
- 405 01c9 6C6F6E67 		.ascii	"long int\000"
- 405      20696E74 
- 405      00
- 406              	.LASF15:
- 407 01d2 646F7562 		.ascii	"double\000"
- 407      6C6500
- 408              	.LASF6:
- 409 01d9 73686F72 		.ascii	"short unsigned int\000"
- 409      7420756E 
- 409      7369676E 
- 409      65642069 
- 409      6E7400
- 410              	.LASF3:
- 411 01ec 7369676E 		.ascii	"signed char\000"
- 411      65642063 
- 411      68617200 
- 412              	.LASF2:
-<<<<<<< HEAD
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccw5YnIB.s 			page 11
-=======
  377              	.LASF16:
  378 0029 72656738 		.ascii	"reg8\000"
  378      00
@@ -711,10 +538,7 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  390      74696F6E 
  390      2D736563 
  390      74696F6E 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 10
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 11
->>>>>>> parent of cb49844... test
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 10
 
 
  391              	.LASF21:
@@ -755,44 +579,48 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccwwL5nh.s 			page 1
  406      65642063 
  406      68617200 
  407              	.LASF19:
- 408 0160 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\GitHub\\FYP_POSCCreato"
+ 408 0160 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\FYP\\FYP_POSCCreator_M"
  408      73657273 
  408      5C736865 
  408      76695C44 
  408      6F63756D 
- 409 018e 725F4D61 		.ascii	"r_Master\\FYP_PSOCCreator_Master\\CORTEX_CY8C5588_P"
- 409      73746572 
- 409      5C465950 
- 409      5F50534F 
- 409      43437265 
- 410 01bf 536F435F 		.ascii	"SoC_Creator_GCC\\FreeRTOS_Demo.cydsn\000"
- 410      43726561 
- 410      746F725F 
- 410      4743435C 
- 410      46726565 
- 411              	.LASF2:
- 412 01e3 6C6F6E67 		.ascii	"long double\000"
- 412      20646F75 
- 412      626C6500 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccwI3G8c.s 			page 11
->>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+ 409 018e 61737465 		.ascii	"aster-cb49844c11f80dd632253a3ce6c772ad769288bc\\FYP"
+ 409      722D6362 
+ 409      34393834 
+ 409      34633131 
+ 409      66383064 
+ 410 01c0 5F50534F 		.ascii	"_PSOCCreator_Master\\CORTEX_CY8C5588_PSoC_Creator_G"
+ 410      43437265 
+ 410      61746F72 
+ 410      5F4D6173 
+ 410      7465725C 
+ 411 01f2 43435C46 		.ascii	"CC\\FreeRTOS_Demo.cydsn\000"
+ 411      72656552 
+ 411      544F535F 
+ 411      44656D6F 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cceTUuHn.s 			page 11
 
 
- 413              	.LASF5:
- 414 01ef 73686F72 		.ascii	"short int\000"
- 414      7420696E 
- 414      7400
- 415              	.LASF18:
- 416 01f9 47656E65 		.ascii	"Generated_Source\\PSoC5\\M2QuadDec_INT.c\000"
- 416      72617465 
- 416      645F536F 
- 416      75726365 
- 416      5C50536F 
- 417              	.LASF10:
- 418 0220 73697A65 		.ascii	"sizetype\000"
- 418      74797065 
- 418      00
- 419              	.LASF13:
- 420 0229 696E7433 		.ascii	"int32\000"
- 420      3200
- 421              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 411      2E637964 
+ 412              	.LASF2:
+ 413 0209 6C6F6E67 		.ascii	"long double\000"
+ 413      20646F75 
+ 413      626C6500 
+ 414              	.LASF5:
+ 415 0215 73686F72 		.ascii	"short int\000"
+ 415      7420696E 
+ 415      7400
+ 416              	.LASF18:
+ 417 021f 47656E65 		.ascii	"Generated_Source\\PSoC5\\M2QuadDec_INT.c\000"
+ 417      72617465 
+ 417      645F536F 
+ 417      75726365 
+ 417      5C50536F 
+ 418              	.LASF10:
+ 419 0246 73697A65 		.ascii	"sizetype\000"
+ 419      74797065 
+ 419      00
+ 420              	.LASF13:
+ 421 024f 696E7433 		.ascii	"int32\000"
+ 421      3200
+ 422              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

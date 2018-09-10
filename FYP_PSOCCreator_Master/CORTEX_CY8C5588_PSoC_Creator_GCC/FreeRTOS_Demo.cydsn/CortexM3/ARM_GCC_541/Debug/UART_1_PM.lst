@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 1
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
   24:Generated_Source\PSoC5/UART_1_PM.c **** static UART_1_BACKUP_STRUCT  UART_1_backup =
   25:Generated_Source\PSoC5/UART_1_PM.c **** {
   26:Generated_Source\PSoC5/UART_1_PM.c ****     /* enableState - disabled */
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 2
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 2
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   27:Generated_Source\PSoC5/UART_1_PM.c ****     0u,
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
   53              		.size	UART_1_SaveConfig, .-UART_1_SaveConfig
   54              		.section	.text.UART_1_RestoreConfig,"ax",%progbits
   55              		.align	2
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 3
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 3
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   56              		.global	UART_1_RestoreConfig
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
   77 0008 80BC     		pop	{r7}
   78              		.cfi_restore 7
   79              		.cfi_def_cfa_offset 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 4
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 4
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   80 000a 7047     		bx	lr
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  103 0004 094B     		ldr	r3, .L6
  104 0006 1B78     		ldrb	r3, [r3]
  105 0008 DBB2     		uxtb	r3, r3
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 5
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 5
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  106 000a 03F01003 		and	r3, r3, #16
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  139              		.thumb_func
  140              		.type	UART_1_Wakeup, %function
  141              	UART_1_Wakeup:
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 6
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 6
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  142              	.LFB3:
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  182:Generated_Source\PSoC5/UART_1_PM.c ****     if(UART_1_backup.enableState != 0u)
  159              		.loc 1 182 0
  160 0010 034B     		ldr	r3, .L11
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 7
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 7
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  161 0012 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  211 0041 02       		.uleb128 0x2
  212 0042 04       		.byte	0x4
  213 0043 05       		.byte	0x5
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 8
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 8
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  214 0044 3F010000 		.4byte	.LASF4
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  268 00ac 5D010000 		.4byte	.LASF24
  269 00b0 01       		.byte	0x1
  270 00b1 03       		.byte	0x3
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 9
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 9
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  271 00b2 45       		.byte	0x45
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  325 0124 00       		.byte	0
  326              		.section	.debug_abbrev,"",%progbits
  327              	.Ldebug_abbrev0:
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 10
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 10
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  328 0000 01       		.uleb128 0x1
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  382 0036 05       		.uleb128 0x5
  383 0037 35       		.uleb128 0x35
  384 0038 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 11
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 11
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  385 0039 49       		.uleb128 0x49
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  439 006f 3A       		.uleb128 0x3a
  440 0070 0B       		.uleb128 0xb
  441 0071 3B       		.uleb128 0x3b
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 12
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 12
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  442 0072 0B       		.uleb128 0xb
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  496 0004 0200     		.2byte	0x2
  497 0006 00000000 		.4byte	.Ldebug_info0
  498 000a 04       		.byte	0x4
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 13
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 13
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  499 000b 00       		.byte	0
@@ -772,6 +824,151 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  534      5F315F53 
  534      6C656570 
  534      00
+<<<<<<< HEAD
+ 535              	.LASF23:
+ 536 0034 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
+ 536      2E6D6F6E 
+ 536      6173682E 
+ 536      6564755C 
+ 536      686F6D65 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 14
+
+
+ 537 0061 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
+ 537      4875625C 
+ 537      4659505F 
+ 537      504F5343 
+ 537      43726561 
+ 538 0091 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
+ 538      725C434F 
+ 538      52544558 
+ 538      5F435938 
+ 538      43353538 
+ 539 00c2 656D6F2E 		.ascii	"emo.cydsn\000"
+ 539      63796473 
+ 539      6E00
+ 540              	.LASF12:
+ 541 00cc 75696E74 		.ascii	"uint8\000"
+ 541      3800
+ 542              	.LASF5:
+ 543 00d2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 543      20756E73 
+ 543      69676E65 
+ 543      6420696E 
+ 543      7400
+ 544              	.LASF17:
+ 545 00e4 55415254 		.ascii	"UART_1_SaveConfig\000"
+ 545      5F315F53 
+ 545      61766543 
+ 545      6F6E6669 
+ 545      6700
+ 546              	.LASF7:
+ 547 00f6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 547      206C6F6E 
+ 547      6720756E 
+ 547      7369676E 
+ 547      65642069 
+ 548              	.LASF9:
+ 549 010d 666C6F61 		.ascii	"float\000"
+ 549      7400
+ 550              	.LASF21:
+ 551 0113 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 551      43313120 
+ 551      352E342E 
+ 551      31203230 
+ 551      31363036 
+ 552 0146 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 552      20726576 
+ 552      6973696F 
+ 552      6E203233 
+ 552      37373135 
+ 553 0179 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 553      66756E63 
+ 553      74696F6E 
+ 553      2D736563 
+ 553      74696F6E 
+ 554              	.LASF1:
+ 555 01a1 756E7369 		.ascii	"unsigned char\000"
+ 555      676E6564 
+ 555      20636861 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 15
+
+
+ 555      7200
+ 556              	.LASF22:
+ 557 01af 47656E65 		.ascii	"Generated_Source\\PSoC5\\UART_1_PM.c\000"
+ 557      72617465 
+ 557      645F536F 
+ 557      75726365 
+ 557      5C50536F 
+ 558              	.LASF11:
+ 559 01d2 63686172 		.ascii	"char\000"
+ 559      00
+ 560              	.LASF4:
+ 561 01d7 6C6F6E67 		.ascii	"long int\000"
+ 561      20696E74 
+ 561      00
+ 562              	.LASF10:
+ 563 01e0 646F7562 		.ascii	"double\000"
+ 563      6C6500
+ 564              	.LASF26:
+ 565 01e7 55415254 		.ascii	"UART_1_backup\000"
+ 565      5F315F62 
+ 565      61636B75 
+ 565      7000
+ 566              	.LASF24:
+ 567 01f5 55415254 		.ascii	"UART_1_backupStruct_\000"
+ 567      5F315F62 
+ 567      61636B75 
+ 567      70537472 
+ 567      7563745F 
+ 568              	.LASF3:
+ 569 020a 73686F72 		.ascii	"short unsigned int\000"
+ 569      7420756E 
+ 569      7369676E 
+ 569      65642069 
+ 569      6E7400
+ 570              	.LASF0:
+ 571 021d 7369676E 		.ascii	"signed char\000"
+ 571      65642063 
+ 571      68617200 
+ 572              	.LASF18:
+ 573 0229 55415254 		.ascii	"UART_1_RestoreConfig\000"
+ 573      5F315F52 
+ 573      6573746F 
+ 573      7265436F 
+ 573      6E666967 
+ 574              	.LASF14:
+ 575 023e 6C6F6E67 		.ascii	"long double\000"
+ 575      20646F75 
+ 575      626C6500 
+ 576              	.LASF2:
+ 577 024a 73686F72 		.ascii	"short int\000"
+ 577      7420696E 
+ 577      7400
+ 578              	.LASF13:
+ 579 0254 72656738 		.ascii	"reg8\000"
+ 579      00
+ 580              	.LASF20:
+ 581 0259 55415254 		.ascii	"UART_1_Wakeup\000"
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 16
+
+
+ 581      5F315F57 
+ 581      616B6575 
+ 581      7000
+ 582              	.LASF15:
+ 583 0267 73697A65 		.ascii	"sizetype\000"
+ 583      74797065 
+ 583      00
+ 584              	.LASF16:
+ 585 0270 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
+ 585      5F315F42 
+ 585      41434B55 
+ 585      505F5354 
+ 585      52554354 
+ 586              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
  535              	.LASF12:
  536 0034 75696E74 		.ascii	"uint8\000"
  536      3800
@@ -912,3 +1109,4 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
  584      505F5354 
  584      52554354 
  585              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 1
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
   22:Generated_Source\PSoC5/M2QuadDec.c ****     #include "M2QuadDec_PVT.h"
   23:Generated_Source\PSoC5/M2QuadDec.c **** #endif /* M2QuadDec_COUNTER_SIZE == M2QuadDec_COUNTER_SIZE_32_BIT */
   24:Generated_Source\PSoC5/M2QuadDec.c **** 
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 2
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 2
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   25:Generated_Source\PSoC5/M2QuadDec.c **** uint8 M2QuadDec_initVar = 0u;
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
   60 001e 00BF     		.align	2
   61              	.L2:
   62 0020 80E100E0 		.word	-536813184
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 3
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 3
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   63 0024 00000000 		.word	M2QuadDec_ISR
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
   78:Generated_Source\PSoC5/M2QuadDec.c ****     
   79:Generated_Source\PSoC5/M2QuadDec.c ****     enableInterrupts = CyEnterCriticalSection();
   92              		.loc 1 79 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 4
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 4
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   93 0010 FFF7FEFF 		bl	CyEnterCriticalSection
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
   91:Generated_Source\PSoC5/M2QuadDec.c **** 
   92:Generated_Source\PSoC5/M2QuadDec.c **** 
   93:Generated_Source\PSoC5/M2QuadDec.c **** /*******************************************************************************
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 5
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 5
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   94:Generated_Source\PSoC5/M2QuadDec.c **** * Function Name: M2QuadDec_Start
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  153 0012 0022     		movs	r2, #0
  154 0014 1A60     		str	r2, [r3]
  131:Generated_Source\PSoC5/M2QuadDec.c ****     #endif /* M2QuadDec_COUNTER_SIZE == M2QuadDec_COUNTER_SIZE_32_BIT */
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 6
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 6
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  132:Generated_Source\PSoC5/M2QuadDec.c **** 
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  153:Generated_Source\PSoC5/M2QuadDec.c **** * Return:
  154:Generated_Source\PSoC5/M2QuadDec.c **** *  None.
  155:Generated_Source\PSoC5/M2QuadDec.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 7
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 7
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  156:Generated_Source\PSoC5/M2QuadDec.c **** *******************************************************************************/
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  219 002a 044B     		ldr	r3, .L12+4
  220 002c 0222     		movs	r2, #2
  221 002e 1A60     		str	r2, [r3]
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 8
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 8
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  179:Generated_Source\PSoC5/M2QuadDec.c ****     #endif /* M2QuadDec_COUNTER_SIZE == M2QuadDec_COUNTER_SIZE_32_BIT */
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  251              		.cfi_def_cfa_offset 8
  252              		.cfi_offset 7, -8
  253              		.cfi_offset 14, -4
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 9
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 9
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  254 0002 82B0     		sub	sp, sp, #8
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  231:Generated_Source\PSoC5/M2QuadDec.c **** 
  232:Generated_Source\PSoC5/M2QuadDec.c ****     return (count);
  281              		.loc 1 232 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 10
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 10
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  282 0030 3B68     		ldr	r3, [r7]
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  309              		.cfi_startproc
  310              		@ args = 0, pretend = 0, frame = 8
  311              		@ frame_needed = 1, uses_anonymous_args = 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 11
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 11
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  312 0000 80B5     		push	{r7, lr}
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  338 0024 0837     		adds	r7, r7, #8
  339              		.cfi_def_cfa_offset 8
  340 0026 BD46     		mov	sp, r7
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 12
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 12
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  341              		.cfi_def_cfa_register 13
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  312:Generated_Source\PSoC5/M2QuadDec.c ****     return (M2QuadDec_STATUS_REG & M2QuadDec_INIT_INT_MASK);
  371              		.loc 1 312 0
  372 0004 044B     		ldr	r3, .L23
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 13
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 13
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  373 0006 1B78     		ldrb	r3, [r3]
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  406 0000 80B4     		push	{r7}
  407              		.cfi_def_cfa_offset 4
  408              		.cfi_offset 7, -4
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 14
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 14
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  409 0002 83B0     		sub	sp, sp, #12
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  348:Generated_Source\PSoC5/M2QuadDec.c **** * Summary:
  349:Generated_Source\PSoC5/M2QuadDec.c **** *  Reports the current interrupt mask settings.
  350:Generated_Source\PSoC5/M2QuadDec.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 15
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 15
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  351:Generated_Source\PSoC5/M2QuadDec.c **** * Parameters:
@@ -897,8 +957,13 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  489 0006 00000000 		.4byte	.Ldebug_abbrev0
  490 000a 04       		.byte	0x4
  491 000b 01       		.uleb128 0x1
+<<<<<<< HEAD
+ 492 000c 9E000000 		.4byte	.LASF37
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 16
+=======
  492 000c 06000000 		.4byte	.LASF37
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 16
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  493 0010 0C       		.byte	0xc
@@ -958,7 +1023,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  547 0079 03       		.uleb128 0x3
  548 007a 01       		.byte	0x1
  549 007b 08       		.byte	0x8
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 17
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 17
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  550 007c D9020000 		.4byte	.LASF11
@@ -1018,7 +1087,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  604 00fb 01       		.uleb128 0x1
  605 00fc 9C       		.byte	0x9c
  606 00fd 07       		.uleb128 0x7
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 18
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 18
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  607 00fe 40020000 		.4byte	.LASF23
@@ -1078,7 +1151,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  661 0170 9A000000 		.4byte	.LASF26
  662 0174 01       		.byte	0x1
  663 0175 CC       		.byte	0xcc
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 19
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 19
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  664 0176 B0000000 		.4byte	0xb0
@@ -1138,7 +1215,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  718 01e6 01       		.uleb128 0x1
  719 01e7 9C       		.byte	0x9c
  720 01e8 FC010000 		.4byte	0x1fc
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 20
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 20
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  721 01ec 0B       		.uleb128 0xb
@@ -1198,7 +1279,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  775 0012 00       		.byte	0
  776 0013 02       		.uleb128 0x2
  777 0014 24       		.uleb128 0x24
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 21
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 21
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  778 0015 00       		.byte	0
@@ -1258,7 +1343,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  832 004b 01       		.uleb128 0x1
  833 004c 12       		.uleb128 0x12
  834 004d 06       		.uleb128 0x6
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 22
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 22
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  835 004e 40       		.uleb128 0x40
@@ -1318,7 +1407,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  889 0086 0B       		.uleb128 0xb
  890 0087 3B       		.uleb128 0x3b
  891 0088 0B       		.uleb128 0xb
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 23
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 23
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  892 0089 27       		.uleb128 0x27
@@ -1378,7 +1471,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  946 00c1 00       		.byte	0
  947 00c2 00       		.byte	0
  948 00c3 0C       		.uleb128 0xc
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 24
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 24
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  949 00c4 2E       		.uleb128 0x2e
@@ -1438,7 +1535,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  1003 00fc 3A       		.uleb128 0x3a
  1004 00fd 0B       		.uleb128 0xb
  1005 00fe 3B       		.uleb128 0x3b
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 25
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 25
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1006 00ff 0B       		.uleb128 0xb
@@ -1498,7 +1599,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  1060 005c 00000000 		.4byte	0
  1061              		.section	.debug_ranges,"",%progbits
  1062              	.Ldebug_ranges0:
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 26
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 26
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1063 0000 00000000 		.4byte	.LFB0
@@ -1528,6 +1633,219 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  1085      00000201 
  1085      FB0E0D00 
  1085      01010101 
+<<<<<<< HEAD
+ 1086              	.LASF39:
+ 1087 0000 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
+ 1087      2E6D6F6E 
+ 1087      6173682E 
+ 1087      6564755C 
+ 1087      686F6D65 
+ 1088 002d 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
+ 1088      4875625C 
+ 1088      4659505F 
+ 1088      504F5343 
+ 1088      43726561 
+ 1089 005d 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
+ 1089      725C434F 
+ 1089      52544558 
+ 1089      5F435938 
+ 1089      43353538 
+ 1090 008e 656D6F2E 		.ascii	"emo.cydsn\000"
+ 1090      63796473 
+ 1090      6E00
+ 1091              	.LASF20:
+ 1092 0098 72656733 		.ascii	"reg32\000"
+ 1092      3200
+ 1093              	.LASF37:
+ 1094 009e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1094      43313120 
+ 1094      352E342E 
+ 1094      31203230 
+ 1094      31363036 
+ 1095 00d1 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1095      20726576 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 27
+
+
+ 1095      6973696F 
+ 1095      6E203233 
+ 1095      37373135 
+ 1096 0104 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1096      66756E63 
+ 1096      74696F6E 
+ 1096      2D736563 
+ 1096      74696F6E 
+ 1097              	.LASF31:
+ 1098 012c 76616C75 		.ascii	"value\000"
+ 1098      6500
+ 1099              	.LASF26:
+ 1100 0132 636F756E 		.ascii	"count\000"
+ 1100      7400
+ 1101              	.LASF6:
+ 1102 0138 73686F72 		.ascii	"short unsigned int\000"
+ 1102      7420756E 
+ 1102      7369676E 
+ 1102      65642069 
+ 1102      6E7400
+ 1103              	.LASF22:
+ 1104 014b 4D325175 		.ascii	"M2QuadDec_Start\000"
+ 1104      61644465 
+ 1104      635F5374 
+ 1104      61727400 
+ 1105              	.LASF17:
+ 1106 015b 666C6F61 		.ascii	"float\000"
+ 1106      7400
+ 1107              	.LASF4:
+ 1108 0161 756E7369 		.ascii	"unsigned char\000"
+ 1108      676E6564 
+ 1108      20636861 
+ 1108      7200
+ 1109              	.LASF28:
+ 1110 016f 6877436F 		.ascii	"hwCount\000"
+ 1110      756E7400 
+ 1111              	.LASF19:
+ 1112 0177 72656738 		.ascii	"reg8\000"
+ 1112      00
+ 1113              	.LASF15:
+ 1114 017c 696E7431 		.ascii	"int16\000"
+ 1114      3600
+ 1115              	.LASF8:
+ 1116 0182 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1116      20756E73 
+ 1116      69676E65 
+ 1116      6420696E 
+ 1116      7400
+ 1117              	.LASF16:
+ 1118 0194 696E7433 		.ascii	"int32\000"
+ 1118      3200
+ 1119              	.LASF27:
+ 1120 019a 746D7043 		.ascii	"tmpCnt\000"
+ 1120      6E7400
+ 1121              	.LASF36:
+ 1122 01a1 4D325175 		.ascii	"M2QuadDec_count32SoftPart\000"
+ 1122      61644465 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 28
+
+
+ 1122      635F636F 
+ 1122      756E7433 
+ 1122      32536F66 
+ 1123              	.LASF30:
+ 1124 01bb 4D325175 		.ascii	"M2QuadDec_SetInterruptMask\000"
+ 1124      61644465 
+ 1124      635F5365 
+ 1124      74496E74 
+ 1124      65727275 
+ 1125              	.LASF25:
+ 1126 01d6 656E6162 		.ascii	"enableInterrupts\000"
+ 1126      6C65496E 
+ 1126      74657272 
+ 1126      75707473 
+ 1126      00
+ 1127              	.LASF18:
+ 1128 01e7 646F7562 		.ascii	"double\000"
+ 1128      6C6500
+ 1129              	.LASF38:
+ 1130 01ee 47656E65 		.ascii	"Generated_Source\\PSoC5\\M2QuadDec.c\000"
+ 1130      72617465 
+ 1130      645F536F 
+ 1130      75726365 
+ 1130      5C50536F 
+ 1131              	.LASF13:
+ 1132 0211 75696E74 		.ascii	"uint16\000"
+ 1132      313600
+ 1133              	.LASF33:
+ 1134 0218 4D325175 		.ascii	"M2QuadDec_GetEvents\000"
+ 1134      61644465 
+ 1134      635F4765 
+ 1134      74457665 
+ 1134      6E747300 
+ 1135              	.LASF14:
+ 1136 022c 75696E74 		.ascii	"uint32\000"
+ 1136      333200
+ 1137              	.LASF0:
+ 1138 0233 756E7369 		.ascii	"unsigned int\000"
+ 1138      676E6564 
+ 1138      20696E74 
+ 1138      00
+ 1139              	.LASF40:
+ 1140 0240 4D325175 		.ascii	"M2QuadDec_GetCounter\000"
+ 1140      61644465 
+ 1140      635F4765 
+ 1140      74436F75 
+ 1140      6E746572 
+ 1141              	.LASF23:
+ 1142 0255 4D325175 		.ascii	"M2QuadDec_Enable\000"
+ 1142      61644465 
+ 1142      635F456E 
+ 1142      61626C65 
+ 1142      00
+ 1143              	.LASF9:
+ 1144 0266 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1144      206C6F6E 
+ 1144      6720756E 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 29
+
+
+ 1144      7369676E 
+ 1144      65642069 
+ 1145              	.LASF35:
+ 1146 027d 4D325175 		.ascii	"M2QuadDec_initVar\000"
+ 1146      61644465 
+ 1146      635F696E 
+ 1146      69745661 
+ 1146      7200
+ 1147              	.LASF21:
+ 1148 028f 4D325175 		.ascii	"M2QuadDec_Init\000"
+ 1148      61644465 
+ 1148      635F496E 
+ 1148      697400
+ 1149              	.LASF34:
+ 1150 029e 4D325175 		.ascii	"M2QuadDec_GetInterruptMask\000"
+ 1150      61644465 
+ 1150      635F4765 
+ 1150      74496E74 
+ 1150      65727275 
+ 1151              	.LASF10:
+ 1152 02b9 73697A65 		.ascii	"sizetype\000"
+ 1152      74797065 
+ 1152      00
+ 1153              	.LASF1:
+ 1154 02c2 6C6F6E67 		.ascii	"long long int\000"
+ 1154      206C6F6E 
+ 1154      6720696E 
+ 1154      7400
+ 1155              	.LASF32:
+ 1156 02d0 6D61736B 		.ascii	"mask\000"
+ 1156      00
+ 1157              	.LASF5:
+ 1158 02d5 73686F72 		.ascii	"short int\000"
+ 1158      7420696E 
+ 1158      7400
+ 1159              	.LASF12:
+ 1160 02df 75696E74 		.ascii	"uint8\000"
+ 1160      3800
+ 1161              	.LASF7:
+ 1162 02e5 6C6F6E67 		.ascii	"long int\000"
+ 1162      20696E74 
+ 1162      00
+ 1163              	.LASF11:
+ 1164 02ee 63686172 		.ascii	"char\000"
+ 1164      00
+ 1165              	.LASF2:
+ 1166 02f3 6C6F6E67 		.ascii	"long double\000"
+ 1166      20646F75 
+ 1166      626C6500 
+ 1167              	.LASF29:
+ 1168 02ff 4D325175 		.ascii	"M2QuadDec_SetCounter\000"
+ 1168      61644465 
+ 1168      635F5365 
+ 1168      74436F75 
+ 1168      6E746572 
+ 1169              	.LASF3:
+ 1170 0314 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc3yTOaf.s 			page 30
+=======
  1086              	.LASF20:
  1087 0000 72656733 		.ascii	"reg32\000"
  1087      3200
@@ -1739,6 +2057,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 1
  1169      68617200 
  1170              	.LASF24:
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccc67JE0.s 			page 30
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1171 030b 4D325175 		.ascii	"M2QuadDec_Stop\000"

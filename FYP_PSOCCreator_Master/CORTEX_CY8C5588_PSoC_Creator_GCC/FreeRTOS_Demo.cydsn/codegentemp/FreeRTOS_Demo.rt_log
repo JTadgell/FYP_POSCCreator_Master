@@ -25,4 +25,8 @@ I1215: Routing is successful
 I1207: Completed routing
 I1210: Writing routes
 I1218: Exiting the router
+<<<<<<< HEAD
+I1224: Total Time : 7 seconds
+=======
 I1224: Total Time : 3 seconds
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304

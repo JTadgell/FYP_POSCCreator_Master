@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 1
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 1
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
    1              		.syntax unified
@@ -58,7 +66,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
   21:Serial.c      ****  *
   22:Serial.c      ****  * http://www.FreeRTOS.org
   23:Serial.c      ****  * http://aws.amazon.com/freertos
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 2
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 2
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 2
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
   24:Serial.c      ****  *
@@ -118,7 +134,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
   61 0020 FFF7FEFF 		bl	isr_UART1_RX_BYTE_RECEIVED_StartEx
   52:Serial.c      **** 
   53:Serial.c      **** 	/* Configure Tx */
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 3
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 3
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 3
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
   54:Serial.c      **** 	xSerialTxQueue = xQueueCreate( uxQueueLength, sizeof( signed char ) );
@@ -178,7 +202,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  106 0064 04000000 		.word	xSerialRxQueue
  107 0068 00000000 		.word	vUartRxISR
  108 006c 00000000 		.word	xSerialTxQueue
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 4
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 4
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 4
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  109 0070 00000000 		.word	vUartTxISR
@@ -238,7 +270,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
   75:Serial.c      **** 			break;
   76:Serial.c      **** 		}
   77:Serial.c      **** 		
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 5
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 5
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 5
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
   78:Serial.c      **** 		/* Send out, one character at a time. */
@@ -298,7 +338,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
   85:Serial.c      **** /*---------------------------------------------------------------------------*/
   86:Serial.c      **** 
   87:Serial.c      **** signed portBASE_TYPE xSerialGetChar( xComPortHandle pxPort, signed char *pcRxedChar, TickType_t xBl
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 6
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 6
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 6
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
   88:Serial.c      **** {
@@ -358,7 +406,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  240              	.L16:
  241 0034 04000000 		.word	xSerialRxQueue
  242              		.cfi_endproc
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 7
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 7
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 7
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  243              	.LFE70:
@@ -418,7 +474,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  108:Serial.c      **** 	}
  109:Serial.c      **** 	else
  110:Serial.c      **** 	{
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 8
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 8
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 8
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  111:Serial.c      **** 		/* The queue is probably full. */
@@ -478,7 +542,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  324              		.cfi_startproc
  325              		@ args = 0, pretend = 0, frame = 24
  326              		@ frame_needed = 1, uses_anonymous_args = 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 9
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 9
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 9
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  327 0000 80B5     		push	{r7, lr}
@@ -538,7 +610,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
    4:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  *
    5:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * Permission is hereby granted, free of charge, to any person obtaining a copy of
    6:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * this software and associated documentation files (the "Software"), to deal in
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 10
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 10
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 10
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
    7:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * the Software without restriction, including without limitation the rights to
@@ -598,7 +678,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
   61:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	#define portMAX_DELAY ( TickType_t ) 0xffff
   62:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #else
   63:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	typedef uint32_t TickType_t;
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 11
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 11
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 11
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
   64:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	#define portMAX_DELAY ( TickType_t ) 0xffffffffUL
@@ -658,7 +746,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  118:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	#define portSUPPRESS_TICKS_AND_SLEEP( xExpectedIdleTime ) vPortSuppressTicksAndSleep( xExpectedIdl
  119:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #endif
  120:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 12
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 12
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 12
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  121:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
@@ -718,7 +814,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  175:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	__asm volatile( "mrs %0, ipsr" : "=r"( ulCurrentInterrupt ) :: "memory" );
  176:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  177:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	if( ulCurrentInterrupt == 0 )
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 13
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 13
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 13
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  178:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	{
@@ -778,7 +882,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  218:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 		:"=r" (ulOriginalBASEPRI), "=r" (ulNewBASEPRI) : "i" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "
  219:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	);
  220:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 14
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 14
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 14
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  221:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	/* This return will not be reached but is necessary to prevent compiler
@@ -838,7 +950,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  158:Serial.c      **** 	ISR interrupted), then xHigherPriorityTaskWoken will have been set to pdTRUE and
  159:Serial.c      **** 	portEND_SWITCHING_ISR() will request a context switch to the newly unblocked
  160:Serial.c      **** 	task. */
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 15
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 15
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 15
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  161:Serial.c      **** 	portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
@@ -898,7 +1018,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  455              		.cfi_offset 7, -8
  456              		.cfi_offset 14, -4
  457 0002 86B0     		sub	sp, sp, #24
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 16
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 16
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 16
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  458              		.cfi_def_cfa_offset 32
@@ -958,7 +1086,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  501              	@ 0 "" 2
  502              		.thumb
  503              		.syntax unified
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 17
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 17
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 17
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  504 004a FA60     		str	r2, [r7, #12]
@@ -1018,7 +1154,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  538              	.LBB16:
  539              	.LBB17:
  540              		.loc 2 229 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 18
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 18
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 18
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  541 0084 3B69     		ldr	r3, [r7, #16]
@@ -1078,7 +1222,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  581 00ac 04ED00E0 		.word	-536810236
  582              		.cfi_endproc
  583              	.LFE73:
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 19
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 19
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 19
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  584              		.size	vUartTxISR, .-vUartTxISR
@@ -1138,7 +1290,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  638 005f E4010000 		.4byte	.LASF7
  639 0063 03       		.byte	0x3
  640 0064 41       		.byte	0x41
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 20
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 20
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 20
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  641 0065 69000000 		.4byte	0x69
@@ -1197,8 +1357,17 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  694 00ce 02       		.uleb128 0x2
  695 00cf 08       		.byte	0x8
  696 00d0 04       		.byte	0x4
+<<<<<<< HEAD
+ 697 00d1 92030000 		.4byte	.LASF19
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 21
+=======
  697 00d1 7D030000 		.4byte	.LASF19
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 21
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 21
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  698 00d5 02       		.uleb128 0x2
@@ -1258,7 +1427,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  752 0144 A2000000 		.4byte	0xa2
  753 0148 00       		.byte	0
  754 0149 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 22
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 22
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 22
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  755 014a 0B000000 		.4byte	.LASF32
@@ -1318,7 +1495,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  809 01b6 42       		.byte	0x42
  810 01b7 45000000 		.4byte	0x45
  811 01bb 02       		.uleb128 0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 23
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 23
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 23
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  812 01bc 91       		.byte	0x91
@@ -1378,7 +1563,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  866 0225 01       		.byte	0x1
  867 0226 59       		.byte	0x59
  868 0227 57000000 		.4byte	0x57
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 24
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 24
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 24
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  869 022b 02       		.uleb128 0x2
@@ -1438,7 +1631,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  923 028e 00000000 		.4byte	.LFB72
  924 0292 90000000 		.4byte	.LFE72-.LFB72
  925 0296 01       		.uleb128 0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 25
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 25
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 25
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  926 0297 9C       		.byte	0x9c
@@ -1498,7 +1699,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  980 0300 00       		.byte	0
  981 0301 00       		.byte	0
  982 0302 14       		.uleb128 0x14
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 26
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 26
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 26
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  983 0303 31010000 		.4byte	0x131
@@ -1558,7 +1767,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1037 036c 74       		.sleb128 -12
  1038 036d 11       		.uleb128 0x11
  1039 036e 0A010000 		.4byte	0x10a
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 27
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 27
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 27
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1040 0372 36000000 		.4byte	.LBB14
@@ -1618,7 +1835,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1094 03e2 16       		.uleb128 0x16
  1095 03e3 97000000 		.4byte	0x97
  1096 03e7 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 28
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 28
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 28
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1097              		.section	.debug_abbrev,"",%progbits
@@ -1678,7 +1903,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1151 0034 00       		.byte	0
  1152 0035 00       		.byte	0
  1153 0036 05       		.uleb128 0x5
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 29
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 29
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 29
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1154 0037 16       		.uleb128 0x16
@@ -1738,7 +1971,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1208 006d 03       		.uleb128 0x3
  1209 006e 0E       		.uleb128 0xe
  1210 006f 3A       		.uleb128 0x3a
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 30
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 30
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 30
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1211 0070 0B       		.uleb128 0xb
@@ -1798,7 +2039,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1265 00a7 03       		.uleb128 0x3
  1266 00a8 0E       		.uleb128 0xe
  1267 00a9 3A       		.uleb128 0x3a
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 31
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 31
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 31
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1268 00aa 0B       		.uleb128 0xb
@@ -1858,7 +2107,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1322 00e1 49       		.uleb128 0x49
  1323 00e2 13       		.uleb128 0x13
  1324 00e3 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 32
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 32
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 32
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1325 00e4 00       		.byte	0
@@ -1918,7 +2175,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1379 011a 59       		.uleb128 0x59
  1380 011b 0B       		.uleb128 0xb
  1381 011c 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 33
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 33
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 33
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1382 011d 00       		.byte	0
@@ -1978,7 +2243,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1436 003c B0000000 		.4byte	.LFE73-.LFB73
  1437 0040 00000000 		.4byte	0
  1438 0044 00000000 		.4byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 34
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 34
+=======
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccyGwnS8.s 			page 34
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 
 
  1439              		.section	.debug_ranges,"",%progbits
@@ -2004,6 +2277,296 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1457      00000201 
  1457      FB0E0D00 
  1457      01010101 
+<<<<<<< HEAD
+ 1458              	.LASF51:
+ 1459 0000 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
+ 1459      2E6D6F6E 
+ 1459      6173682E 
+ 1459      6564755C 
+ 1459      686F6D65 
+ 1460 002d 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
+ 1460      4875625C 
+ 1460      4659505F 
+ 1460      504F5343 
+ 1460      43726561 
+ 1461 005d 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
+ 1461      725C434F 
+ 1461      52544558 
+ 1461      5F435938 
+ 1461      43353538 
+ 1462 008e 656D6F2E 		.ascii	"emo.cydsn\000"
+ 1462      63796473 
+ 1462      6E00
+ 1463              	.LASF34:
+ 1464 0098 70635278 		.ascii	"pcRxedChar\000"
+ 1464      65644368 
+ 1464      617200
+ 1465              	.LASF32:
+ 1466 00a3 78536572 		.ascii	"xSerialPortInitMinimal\000"
+ 1466      69616C50 
+ 1466      6F727449 
+ 1466      6E69744D 
+ 1466      696E696D 
+ 1467              	.LASF49:
+ 1468 00ba 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1468      43313120 
+ 1468      352E342E 
+ 1468      31203230 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 35
+
+
+ 1468      31363036 
+ 1469 00ed 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1469      20726576 
+ 1469      6973696F 
+ 1469      6E203233 
+ 1469      37373135 
+ 1470 0120 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1470      66756E63 
+ 1470      74696F6E 
+ 1470      2D736563 
+ 1470      74696F6E 
+ 1471              	.LASF52:
+ 1472 0148 756C506F 		.ascii	"ulPortRaiseBASEPRI\000"
+ 1472      72745261 
+ 1472      69736542 
+ 1472      41534550 
+ 1472      524900
+ 1473              	.LASF22:
+ 1474 015b 5469636B 		.ascii	"TickType_t\000"
+ 1474      54797065 
+ 1474      5F7400
+ 1475              	.LASF4:
+ 1476 0166 5F5F7569 		.ascii	"__uint8_t\000"
+ 1476      6E74385F 
+ 1476      7400
+ 1477              	.LASF46:
+ 1478 0170 76556172 		.ascii	"vUartTxISR\000"
+ 1478      74547849 
+ 1478      535200
+ 1479              	.LASF24:
+ 1480 017b 78436F6D 		.ascii	"xComPortHandle\000"
+ 1480      506F7274 
+ 1480      48616E64 
+ 1480      6C6500
+ 1481              	.LASF5:
+ 1482 018a 5F5F696E 		.ascii	"__int32_t\000"
+ 1482      7433325F 
+ 1482      7400
+ 1483              	.LASF23:
+ 1484 0194 51756575 		.ascii	"QueueHandle_t\000"
+ 1484      6548616E 
+ 1484      646C655F 
+ 1484      7400
+ 1485              	.LASF48:
+ 1486 01a2 78536572 		.ascii	"xSerialRxQueue\000"
+ 1486      69616C52 
+ 1486      78517565 
+ 1486      756500
+ 1487              	.LASF27:
+ 1488 01b1 756C5761 		.ascii	"ulWantedBaud\000"
+ 1488      6E746564 
+ 1488      42617564 
+ 1488      00
+ 1489              	.LASF40:
+ 1490 01be 76536572 		.ascii	"vSerialPutString\000"
+ 1490      69616C50 
+ 1490      75745374 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 36
+
+
+ 1490      72696E67 
+ 1490      00
+ 1491              	.LASF47:
+ 1492 01cf 78536572 		.ascii	"xSerialTxQueue\000"
+ 1492      69616C54 
+ 1492      78517565 
+ 1492      756500
+ 1493              	.LASF16:
+ 1494 01de 666C6F61 		.ascii	"float\000"
+ 1494      7400
+ 1495              	.LASF1:
+ 1496 01e4 756E7369 		.ascii	"unsigned char\000"
+ 1496      676E6564 
+ 1496      20636861 
+ 1496      7200
+ 1497              	.LASF29:
+ 1498 01f2 7078506F 		.ascii	"pxPort\000"
+ 1498      727400
+ 1499              	.LASF7:
+ 1500 01f9 5F5F7569 		.ascii	"__uint32_t\000"
+ 1500      6E743332 
+ 1500      5F7400
+ 1501              	.LASF8:
+ 1502 0204 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1502      20756E73 
+ 1502      69676E65 
+ 1502      6420696E 
+ 1502      7400
+ 1503              	.LASF3:
+ 1504 0216 73686F72 		.ascii	"short unsigned int\000"
+ 1504      7420756E 
+ 1504      7369676E 
+ 1504      65642069 
+ 1504      6E7400
+ 1505              	.LASF6:
+ 1506 0229 6C6F6E67 		.ascii	"long int\000"
+ 1506      20696E74 
+ 1506      00
+ 1507              	.LASF39:
+ 1508 0232 634F7574 		.ascii	"cOutChar\000"
+ 1508      43686172 
+ 1508      00
+ 1509              	.LASF38:
+ 1510 023b 78536572 		.ascii	"xSerialPutChar\000"
+ 1510      69616C50 
+ 1510      75744368 
+ 1510      617200
+ 1511              	.LASF30:
+ 1512 024a 70635374 		.ascii	"pcString\000"
+ 1512      72696E67 
+ 1512      00
+ 1513              	.LASF17:
+ 1514 0253 646F7562 		.ascii	"double\000"
+ 1514      6C6500
+ 1515              	.LASF26:
+ 1516 025a 756C4E65 		.ascii	"ulNewBASEPRI\000"
+ 1516      77424153 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 37
+
+
+ 1516      45505249 
+ 1516      00
+ 1517              	.LASF50:
+ 1518 0267 53657269 		.ascii	"Serial.c\000"
+ 1518      616C2E63 
+ 1518      00
+ 1519              	.LASF55:
+ 1520 0270 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1520      52784275 
+ 1520      66666572 
+ 1520      00
+ 1521              	.LASF53:
+ 1522 027d 76506F72 		.ascii	"vPortSetBASEPRI\000"
+ 1522      74536574 
+ 1522      42415345 
+ 1522      50524900 
+ 1523              	.LASF11:
+ 1524 028d 756E7369 		.ascii	"unsigned int\000"
+ 1524      676E6564 
+ 1524      20696E74 
+ 1524      00
+ 1525              	.LASF10:
+ 1526 029a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1526      206C6F6E 
+ 1526      6720756E 
+ 1526      7369676E 
+ 1526      65642069 
+ 1527              	.LASF12:
+ 1528 02b1 75696E74 		.ascii	"uint8_t\000"
+ 1528      385F7400 
+ 1529              	.LASF41:
+ 1530 02b9 76556172 		.ascii	"vUartRxISR\000"
+ 1530      74527849 
+ 1530      535200
+ 1531              	.LASF31:
+ 1532 02c4 75735374 		.ascii	"usStringLength\000"
+ 1532      72696E67 
+ 1532      4C656E67 
+ 1532      746800
+ 1533              	.LASF33:
+ 1534 02d3 78536572 		.ascii	"xSerialGetChar\000"
+ 1534      69616C47 
+ 1534      65744368 
+ 1534      617200
+ 1535              	.LASF35:
+ 1536 02e2 78426C6F 		.ascii	"xBlockTime\000"
+ 1536      636B5469 
+ 1536      6D6500
+ 1537              	.LASF20:
+ 1538 02ed 73697A65 		.ascii	"sizetype\000"
+ 1538      74797065 
+ 1538      00
+ 1539              	.LASF9:
+ 1540 02f6 6C6F6E67 		.ascii	"long long int\000"
+ 1540      206C6F6E 
+ 1540      6720696E 
+ 1540      7400
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 38
+
+
+ 1541              	.LASF18:
+ 1542 0304 63686172 		.ascii	"char\000"
+ 1542      00
+ 1543              	.LASF44:
+ 1544 0309 63496E43 		.ascii	"cInChar\000"
+ 1544      68617200 
+ 1545              	.LASF25:
+ 1546 0311 756C4F72 		.ascii	"ulOriginalBASEPRI\000"
+ 1546      6967696E 
+ 1546      616C4241 
+ 1546      53455052 
+ 1546      4900
+ 1547              	.LASF13:
+ 1548 0323 696E7433 		.ascii	"int32_t\000"
+ 1548      325F7400 
+ 1549              	.LASF42:
+ 1550 032b 78486967 		.ascii	"xHigherPriorityTaskWoken\000"
+ 1550      68657250 
+ 1550      72696F72 
+ 1550      69747954 
+ 1550      61736B57 
+ 1551              	.LASF2:
+ 1552 0344 73686F72 		.ascii	"short int\000"
+ 1552      7420696E 
+ 1552      7400
+ 1553              	.LASF15:
+ 1554 034e 75696E74 		.ascii	"uint8\000"
+ 1554      3800
+ 1555              	.LASF28:
+ 1556 0354 75785175 		.ascii	"uxQueueLength\000"
+ 1556      6575654C 
+ 1556      656E6774 
+ 1556      6800
+ 1557              	.LASF36:
+ 1558 0362 7573496E 		.ascii	"usIndex\000"
+ 1558      64657800 
+ 1559              	.LASF43:
+ 1560 036a 75635374 		.ascii	"ucStatus\000"
+ 1560      61747573 
+ 1560      00
+ 1561              	.LASF14:
+ 1562 0373 75696E74 		.ascii	"uint32_t\000"
+ 1562      33325F74 
+ 1562      00
+ 1563              	.LASF54:
+ 1564 037c 756C4E65 		.ascii	"ulNewMaskValue\000"
+ 1564      774D6173 
+ 1564      6B56616C 
+ 1564      756500
+ 1565              	.LASF45:
+ 1566 038b 756C4D61 		.ascii	"ulMask\000"
+ 1566      736B00
+ 1567              	.LASF19:
+ 1568 0392 6C6F6E67 		.ascii	"long double\000"
+ 1568      20646F75 
+ 1568      626C6500 
+ 1569              	.LASF37:
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccpy6Cou.s 			page 39
+
+
+ 1570 039e 78526574 		.ascii	"xReturn\000"
+ 1570      75726E00 
+ 1571              	.LASF0:
+ 1572 03a6 7369676E 		.ascii	"signed char\000"
+ 1572      65642063 
+ 1572      68617200 
+ 1573              	.LASF21:
+ 1574 03b2 42617365 		.ascii	"BaseType_t\000"
+ 1574      54797065 
+ 1574      5F7400
+ 1575              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
  1458              	.LASF34:
  1459 0000 70635278 		.ascii	"pcRxedChar\000"
  1459      65644368 
@@ -2289,3 +2852,4 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccRm79ba.s 			page 1
  1573      54797065 
  1573      5F7400
  1574              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304

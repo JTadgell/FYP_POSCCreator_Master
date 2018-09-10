@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 1
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
   32              		.loc 1 23 0
   33              		.cfi_startproc
   34              		@ args = 0, pretend = 0, frame = 8
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 2
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 2
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   35              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
   35:movement.c    ****         {
   36:movement.c    ****             M2_FWD_Write(1);
   78              		.loc 1 36 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 3
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 3
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   79 0042 0120     		movs	r0, #1
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  115              		.loc 1 54 0
  116 0084 0120     		movs	r0, #1
  117 0086 FFF7FEFF 		bl	M1_BWD_Write
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 4
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 4
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   55:movement.c    ****         }
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  154              		.global	mov_update_error
  155              		.thumb
  156              		.thumb_func
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 5
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 5
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  157              		.type	mov_update_error, %function
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  205 0046 D361     		str	r3, [r2, #28]
   74:movement.c    ****     
   75:movement.c    ****     right->time_prev = right->time;
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 6
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 6
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  206              		.loc 1 75 0
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  250 009e 7B68     		ldr	r3, [r7, #4]
  251 00a0 1A69     		ldr	r2, [r3, #16]
  252 00a2 7B68     		ldr	r3, [r7, #4]
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 7
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 7
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  253 00a4 DB68     		ldr	r3, [r3, #12]
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  303              		.cfi_offset 9, -8
  304              		.cfi_offset 14, -4
  305 0004 86B0     		sub	sp, sp, #24
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 8
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 8
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  306              		.cfi_def_cfa_offset 48
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  358 0078 FFF7FEFF 		bl	__aeabi_i2d
  359 007c 0246     		mov	r2, r0
  360 007e 0B46     		mov	r3, r1
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 9
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 9
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  361 0080 2046     		mov	r0, r4
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  410              	.L14:
   97:movement.c    ****     
   98:movement.c    ****     left->motor_volt = motor_voltage;
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 10
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 10
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  411              		.loc 1 98 0
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  463 015e 0B46     		mov	r3, r1
  464 0160 2046     		mov	r0, r4
  465 0162 2946     		mov	r1, r5
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 11
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 11
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  466 0164 FFF7FEFF 		bl	__aeabi_dmul
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  107:movement.c    ****     right->motor_volt = motor_voltage;
  514              		.loc 1 107 0
  515 01c8 BB68     		ldr	r3, [r7, #8]
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 12
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 12
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  516 01ca 7A69     		ldr	r2, [r7, #20]
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  566 001e FFF7FEFF 		bl	turn_wheel
  112:movement.c    **** }
  567              		.loc 1 112 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 13
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 13
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  568 0022 00BF     		nop
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  616 0020 7B68     		ldr	r3, [r7, #4]
  617 0022 0022     		movs	r2, #0
  618 0024 9A61     		str	r2, [r3, #24]
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 14
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 14
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  119:movement.c    ****     w->motor_volt = 0;
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  667 0004 00AF     		add	r7, sp, #0
  668              		.cfi_def_cfa_register 7
  669 0006 F860     		str	r0, [r7, #12]
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 15
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 15
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  670 0008 B960     		str	r1, [r7, #8]
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  715 0052 0733     		adds	r3, r3, #7
  716 0054 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  717 0056 303B     		subs	r3, r3, #48
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 16
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 16
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  718 0058 3B61     		str	r3, [r7, #16]
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  767              	.LFE74:
  768              		.size	update_inc, .-update_inc
  769              		.section	.text.update_k,"ax",%progbits
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 17
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 17
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  770              		.align	2
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  817 0032 0433     		adds	r3, r3, #4
  818 0034 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  819 0036 303B     		subs	r3, r3, #48
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 18
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 18
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  820 0038 7B61     		str	r3, [r7, #20]
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  868 009e DB43     		mvns	r3, r3
  869 00a0 1846     		mov	r0, r3
  870 00a2 FFF7FEFF 		bl	__aeabi_i2d
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 19
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 19
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  871 00a6 0346     		mov	r3, r0
@@ -1137,8 +1213,13 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  921 0025 02       		.uleb128 0x2
  922 0026 01       		.byte	0x1
  923 0027 06       		.byte	0x6
+<<<<<<< HEAD
+ 924 0028 10010000 		.4byte	.LASF0
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 20
+=======
  924 0028 FB000000 		.4byte	.LASF0
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 20
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  925 002c 02       		.uleb128 0x2
@@ -1198,7 +1279,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  979 0092 30       		.byte	0x30
  980 0093 53000000 		.4byte	0x53
  981 0097 02       		.uleb128 0x2
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 21
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 21
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  982 0098 04       		.byte	0x4
@@ -1258,7 +1343,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1036 00fe 05       		.byte	0x5
  1037 00ff 07       		.byte	0x7
  1038 0100 73000000 		.4byte	0x73
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 22
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 22
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1039 0104 0C       		.byte	0xc
@@ -1318,7 +1407,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1093 016b 09       		.uleb128 0x9
  1094 016c 4B6400   		.ascii	"Kd\000"
  1095 016f 05       		.byte	0x5
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 23
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 23
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1096 0170 12       		.byte	0x12
@@ -1378,7 +1471,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1150 01dc 01       		.byte	0x1
  1151 01dd 44       		.byte	0x44
  1152 01de E6010000 		.4byte	0x1e6
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 24
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 24
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1153 01e2 02       		.uleb128 0x2
@@ -1438,7 +1535,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1207 0243 01       		.byte	0x1
  1208 0244 6D       		.byte	0x6d
  1209 0245 00000000 		.4byte	.LFB72
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 25
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 25
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1210 0249 2A000000 		.4byte	.LFE72-.LFB72
@@ -1498,7 +1599,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1264 02b3 91       		.byte	0x91
  1265 02b4 54       		.sleb128 -44
  1266 02b5 0B       		.uleb128 0xb
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 26
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 26
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1267 02b6 27010000 		.4byte	.LASF34
@@ -1557,8 +1662,13 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1320 0315 91       		.byte	0x91
  1321 0316 64       		.sleb128 -28
  1322 0317 0D       		.uleb128 0xd
+<<<<<<< HEAD
+ 1323 0318 7B010000 		.4byte	.LASF46
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 27
+=======
  1323 0318 66010000 		.4byte	.LASF46
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 27
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1324 031c 01       		.byte	0x1
@@ -1618,7 +1728,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1378 037d 91       		.byte	0x91
  1379 037e 6C       		.sleb128 -20
  1380 037f 0D       		.uleb128 0xd
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 28
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 28
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1381 0380 52010000 		.4byte	.LASF42
@@ -1678,7 +1792,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1435 03e0 50       		.sleb128 -48
  1436 03e1 00       		.byte	0
  1437 03e2 0D       		.uleb128 0xd
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 29
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 29
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1438 03e3 15010000 		.4byte	.LASF50
@@ -1738,7 +1856,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1492 0025 3B       		.uleb128 0x3b
  1493 0026 0B       		.uleb128 0xb
  1494 0027 49       		.uleb128 0x49
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 30
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 30
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1495 0028 13       		.uleb128 0x13
@@ -1798,7 +1920,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1549 005e 38       		.uleb128 0x38
  1550 005f 0B       		.uleb128 0xb
  1551 0060 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 31
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 31
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1552 0061 00       		.byte	0
@@ -1858,7 +1984,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1606 0098 00       		.byte	0
  1607 0099 00       		.byte	0
  1608 009a 0C       		.uleb128 0xc
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 32
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 32
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1609 009b 05       		.uleb128 0x5
@@ -1918,7 +2048,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1663 00d2 0F       		.uleb128 0xf
  1664 00d3 34       		.uleb128 0x34
  1665 00d4 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 33
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 33
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1666 00d5 03       		.uleb128 0x3
@@ -1978,7 +2112,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1720 0018 00000000 		.4byte	.LFB72
  1721 001c 2A000000 		.4byte	.LFE72
  1722 0020 00000000 		.4byte	.LFB73
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 34
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 34
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1723 0024 48000000 		.4byte	.LFE73
@@ -1995,6 +2133,265 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1732      00000201 
  1732      FB0E0D00 
  1732      01010101 
+<<<<<<< HEAD
+ 1733              	.LASF53:
+ 1734 0000 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
+ 1734      2E6D6F6E 
+ 1734      6173682E 
+ 1734      6564755C 
+ 1734      686F6D65 
+ 1735 002d 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
+ 1735      4875625C 
+ 1735      4659505F 
+ 1735      504F5343 
+ 1735      43726561 
+ 1736 005d 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
+ 1736      725C434F 
+ 1736      52544558 
+ 1736      5F435938 
+ 1736      43353538 
+ 1737 008e 656D6F2E 		.ascii	"emo.cydsn\000"
+ 1737      63796473 
+ 1737      6E00
+ 1738              	.LASF31:
+ 1739 0098 7475726E 		.ascii	"turn_wheel\000"
+ 1739      5F776865 
+ 1739      656C00
+ 1740              	.LASF36:
+ 1741 00a3 6D6F765F 		.ascii	"mov_Adj_Volt\000"
+ 1741      41646A5F 
+ 1741      566F6C74 
+ 1741      00
+ 1742              	.LASF5:
+ 1743 00b0 5F5F696E 		.ascii	"__int32_t\000"
+ 1743      7433325F 
+ 1743      7400
+ 1744              	.LASF18:
+ 1745 00ba 78436F6D 		.ascii	"xComPortHandle\000"
+ 1745      506F7274 
+ 1745      48616E64 
+ 1745      6C6500
+ 1746              	.LASF33:
+ 1747 00c9 6C656674 		.ascii	"left\000"
+ 1747      00
+ 1748              	.LASF49:
+ 1749 00ce 75706461 		.ascii	"update_k\000"
+ 1749      74655F6B 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 35
+
+
+ 1749      00
+ 1750              	.LASF3:
+ 1751 00d7 73686F72 		.ascii	"short unsigned int\000"
+ 1751      7420756E 
+ 1751      7369676E 
+ 1751      65642069 
+ 1751      6E7400
+ 1752              	.LASF20:
+ 1753 00ea 6375725F 		.ascii	"cur_dest\000"
+ 1753      64657374 
+ 1753      00
+ 1754              	.LASF27:
+ 1755 00f3 77686565 		.ascii	"wheel_data\000"
+ 1755      6C5F6461 
+ 1755      746100
+ 1756              	.LASF35:
+ 1757 00fe 6D6F765F 		.ascii	"mov_get_PID\000"
+ 1757      6765745F 
+ 1757      50494400 
+ 1758              	.LASF13:
+ 1759 010a 666C6F61 		.ascii	"float\000"
+ 1759      7400
+ 1760              	.LASF0:
+ 1761 0110 7369676E 		.ascii	"signed char\000"
+ 1761      65642063 
+ 1761      68617200 
+ 1762              	.LASF1:
+ 1763 011c 756E7369 		.ascii	"unsigned char\000"
+ 1763      676E6564 
+ 1763      20636861 
+ 1763      7200
+ 1764              	.LASF50:
+ 1765 012a 7078506F 		.ascii	"pxPort\000"
+ 1765      727400
+ 1766              	.LASF6:
+ 1767 0131 5F5F7569 		.ascii	"__uint32_t\000"
+ 1767      6E743332 
+ 1767      5F7400
+ 1768              	.LASF34:
+ 1769 013c 72696768 		.ascii	"right\000"
+ 1769      7400
+ 1770              	.LASF26:
+ 1771 0142 74696D65 		.ascii	"time_prev\000"
+ 1771      5F707265 
+ 1771      7600
+ 1772              	.LASF28:
+ 1773 014c 5049445F 		.ascii	"PID_data\000"
+ 1773      64617461 
+ 1773      00
+ 1774              	.LASF54:
+ 1775 0155 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1775      52784275 
+ 1775      66666572 
+ 1775      00
+ 1776              	.LASF41:
+ 1777 0162 696E7430 		.ascii	"int0\000"
+ 1777      00
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 36
+
+
+ 1778              	.LASF42:
+ 1779 0167 696E7431 		.ascii	"int1\000"
+ 1779      00
+ 1780              	.LASF43:
+ 1781 016c 696E7432 		.ascii	"int2\000"
+ 1781      00
+ 1782              	.LASF44:
+ 1783 0171 696E7433 		.ascii	"int3\000"
+ 1783      00
+ 1784              	.LASF45:
+ 1785 0176 696E7434 		.ascii	"int4\000"
+ 1785      00
+ 1786              	.LASF46:
+ 1787 017b 696E7435 		.ascii	"int5\000"
+ 1787      00
+ 1788              	.LASF47:
+ 1789 0180 696E7436 		.ascii	"int6\000"
+ 1789      00
+ 1790              	.LASF48:
+ 1791 0185 696E7437 		.ascii	"int7\000"
+ 1791      00
+ 1792              	.LASF7:
+ 1793 018a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1793      20756E73 
+ 1793      69676E65 
+ 1793      6420696E 
+ 1793      7400
+ 1794              	.LASF10:
+ 1795 019c 756E7369 		.ascii	"unsigned int\000"
+ 1795      676E6564 
+ 1795      20696E74 
+ 1795      00
+ 1796              	.LASF9:
+ 1797 01a9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1797      206C6F6E 
+ 1797      6720756E 
+ 1797      7369676E 
+ 1797      65642069 
+ 1798              	.LASF37:
+ 1799 01c0 696E6974 		.ascii	"initialise_wheel_data\000"
+ 1799      69616C69 
+ 1799      73655F77 
+ 1799      6865656C 
+ 1799      5F646174 
+ 1800              	.LASF32:
+ 1801 01d6 6D6F765F 		.ascii	"mov_update_error\000"
+ 1801      75706461 
+ 1801      74655F65 
+ 1801      72726F72 
+ 1801      00
+ 1802              	.LASF25:
+ 1803 01e7 74696D65 		.ascii	"time\000"
+ 1803      00
+ 1804              	.LASF52:
+ 1805 01ec 6D6F7665 		.ascii	"movement.c\000"
+ 1805      6D656E74 
+ 1805      2E6300
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 37
+
+
+ 1806              	.LASF11:
+ 1807 01f7 696E7433 		.ascii	"int32_t\000"
+ 1807      325F7400 
+ 1808              	.LASF17:
+ 1809 01ff 73697A65 		.ascii	"sizetype\000"
+ 1809      74797065 
+ 1809      00
+ 1810              	.LASF29:
+ 1811 0208 73696465 		.ascii	"side\000"
+ 1811      00
+ 1812              	.LASF22:
+ 1813 020d 6572726F 		.ascii	"error\000"
+ 1813      7200
+ 1814              	.LASF8:
+ 1815 0213 6C6F6E67 		.ascii	"long long int\000"
+ 1815      206C6F6E 
+ 1815      6720696E 
+ 1815      7400
+ 1816              	.LASF23:
+ 1817 0221 6572726F 		.ascii	"error_sum\000"
+ 1817      725F7375 
+ 1817      6D00
+ 1818              	.LASF15:
+ 1819 022b 63686172 		.ascii	"char\000"
+ 1819      00
+ 1820              	.LASF30:
+ 1821 0230 766F6C74 		.ascii	"volt\000"
+ 1821      00
+ 1822              	.LASF2:
+ 1823 0235 73686F72 		.ascii	"short int\000"
+ 1823      7420696E 
+ 1823      7400
+ 1824              	.LASF39:
+ 1825 023f 62756666 		.ascii	"buffer\000"
+ 1825      657200
+ 1826              	.LASF24:
+ 1827 0246 6D6F746F 		.ascii	"motor_volt\000"
+ 1827      725F766F 
+ 1827      6C7400
+ 1828              	.LASF19:
+ 1829 0251 70726576 		.ascii	"prev_dest\000"
+ 1829      5F646573 
+ 1829      7400
+ 1830              	.LASF38:
+ 1831 025b 75706461 		.ascii	"update_inc\000"
+ 1831      74655F69 
+ 1831      6E6300
+ 1832              	.LASF12:
+ 1833 0266 75696E74 		.ascii	"uint32_t\000"
+ 1833      33325F74 
+ 1833      00
+ 1834              	.LASF4:
+ 1835 026f 6C6F6E67 		.ascii	"long int\000"
+ 1835      20696E74 
+ 1835      00
+ 1836              	.LASF16:
+ 1837 0278 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc0kJseb.s 			page 38
+
+
+ 1837      20646F75 
+ 1837      626C6500 
+ 1838              	.LASF40:
+ 1839 0284 6D6F746F 		.ascii	"motor_voltage\000"
+ 1839      725F766F 
+ 1839      6C746167 
+ 1839      6500
+ 1840              	.LASF14:
+ 1841 0292 646F7562 		.ascii	"double\000"
+ 1841      6C6500
+ 1842              	.LASF21:
+ 1843 0299 6572726F 		.ascii	"error_prev\000"
+ 1843      725F7072 
+ 1843      657600
+ 1844              	.LASF51:
+ 1845 02a4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1845      43313120 
+ 1845      352E342E 
+ 1845      31203230 
+ 1845      31363036 
+ 1846 02d7 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1846      20726576 
+ 1846      6973696F 
+ 1846      6E203233 
+ 1846      37373135 
+ 1847 030a 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1847      66756E63 
+ 1847      74696F6E 
+ 1847      2D736563 
+ 1847      74696F6E 
+ 1848              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
  1733              	.LASF31:
  1734 0000 7475726E 		.ascii	"turn_wheel\000"
  1734      5F776865 
@@ -2249,3 +2646,4 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPKVKOc.s 			page 1
  1846      2D736563 
  1846      74696F6E 
  1847              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304

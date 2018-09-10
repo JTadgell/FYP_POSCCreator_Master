@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 1
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
   23:Generated_Source\PSoC5/PWM_1_PM.c **** /*******************************************************************************
   24:Generated_Source\PSoC5/PWM_1_PM.c **** * Function Name: PWM_1_SaveConfig
   25:Generated_Source\PSoC5/PWM_1_PM.c **** ********************************************************************************
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 2
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 2
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   26:Generated_Source\PSoC5/PWM_1_PM.c **** *
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
   52:Generated_Source\PSoC5/PWM_1_PM.c ****         #endif /* (PWM_1_UseStatus) */
   53:Generated_Source\PSoC5/PWM_1_PM.c **** 
   54:Generated_Source\PSoC5/PWM_1_PM.c ****         #if(PWM_1_DeadBandMode == PWM_1__B_PWM__DBM_256_CLOCKS || \
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 3
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 3
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   55:Generated_Source\PSoC5/PWM_1_PM.c ****             PWM_1_DeadBandMode == PWM_1__B_PWM__DBM_2_4_CLOCKS)
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
   84:Generated_Source\PSoC5/PWM_1_PM.c **** *  PWM_1_backup:  Variables of this global structure are used to
   85:Generated_Source\PSoC5/PWM_1_PM.c **** *  restore the values of non retention registers on wakeup from sleep mode.
   86:Generated_Source\PSoC5/PWM_1_PM.c **** *
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 4
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 4
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   87:Generated_Source\PSoC5/PWM_1_PM.c **** *******************************************************************************/
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  114 0026 FFF7FEFF 		bl	PWM_1_WriteControlRegister
  112:Generated_Source\PSoC5/PWM_1_PM.c ****             #endif /* (PWM_1_UseControl) */
  113:Generated_Source\PSoC5/PWM_1_PM.c ****         #endif  /* (!PWM_1_UsingFixedFunction) */
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 5
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 5
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  114:Generated_Source\PSoC5/PWM_1_PM.c ****     }
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  139:Generated_Source\PSoC5/PWM_1_PM.c ****         if(PWM_1_CTRL_ENABLE == (PWM_1_CONTROL & PWM_1_CTRL_ENABLE))
  144              		.loc 1 139 0
  145 0004 094B     		ldr	r3, .L10
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 6
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 6
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  146 0006 1B78     		ldrb	r3, [r3]
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  183              	PWM_1_Wakeup:
  184              	.LFB3:
  157:Generated_Source\PSoC5/PWM_1_PM.c **** 
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 7
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 7
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  158:Generated_Source\PSoC5/PWM_1_PM.c **** 
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  207 0016 80BD     		pop	{r7, pc}
  208              	.L16:
  209              		.align	2
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 8
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 8
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  210              	.L15:
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  264 0059 7C010000 		.4byte	.LASF7
  265 005d 03       		.uleb128 0x3
  266 005e 04       		.byte	0x4
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 9
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 9
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  267 005f 05       		.byte	0x5
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  321 00cb 07       		.uleb128 0x7
  322 00cc 00000000 		.4byte	.LASF18
  323 00d0 03       		.byte	0x3
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 10
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 10
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  324 00d1 71       		.byte	0x71
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  378 0140 B2       		.byte	0xb2
  379 0141 00000000 		.4byte	.LFB3
  380 0145 1C000000 		.4byte	.LFE3-.LFB3
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 11
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 11
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  381 0149 01       		.uleb128 0x1
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  435 0029 04       		.uleb128 0x4
  436 002a 16       		.uleb128 0x16
  437 002b 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 12
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 12
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  438 002c 03       		.uleb128 0x3
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  492 0062 49       		.uleb128 0x49
  493 0063 13       		.uleb128 0x13
  494 0064 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 13
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 13
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  495 0065 00       		.byte	0
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  549 0028 00000000 		.4byte	.LFB3
  550 002c 1C000000 		.4byte	.LFE3-.LFB3
  551 0030 00000000 		.4byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 14
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 14
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  552 0034 00000000 		.4byte	0
@@ -801,6 +857,186 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  567      00000201 
  567      FB0E0D00 
  567      01010101 
+<<<<<<< HEAD
+ 568              	.LASF29:
+ 569 0000 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
+ 569      2E6D6F6E 
+ 569      6173682E 
+ 569      6564755C 
+ 569      686F6D65 
+ 570 002d 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
+ 570      4875625C 
+ 570      4659505F 
+ 570      504F5343 
+ 570      43726561 
+ 571 005d 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
+ 571      725C434F 
+ 571      52544558 
+ 571      5F435938 
+ 571      43353538 
+ 572 008e 656D6F2E 		.ascii	"emo.cydsn\000"
+ 572      63796473 
+ 572      6E00
+ 573              	.LASF18:
+ 574 0098 50574D55 		.ascii	"PWMUdb\000"
+ 574      646200
+ 575              	.LASF19:
+ 576 009f 50574D50 		.ascii	"PWMPeriod\000"
+ 576      6572696F 
+ 576      6400
+ 577              	.LASF3:
+ 578 00a9 73686F72 		.ascii	"short unsigned int\000"
+ 578      7420756E 
+ 578      7369676E 
+ 578      65642069 
+ 578      6E7400
+ 579              	.LASF23:
+ 580 00bc 50574D5F 		.ascii	"PWM_1_SaveConfig\000"
+ 580      315F5361 
+ 580      7665436F 
+ 580      6E666967 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 15
+
+
+ 580      00
+ 581              	.LASF25:
+ 582 00cd 50574D5F 		.ascii	"PWM_1_Sleep\000"
+ 582      315F536C 
+ 582      65657000 
+ 583              	.LASF11:
+ 584 00d9 666C6F61 		.ascii	"float\000"
+ 584      7400
+ 585              	.LASF1:
+ 586 00df 756E7369 		.ascii	"unsigned char\000"
+ 586      676E6564 
+ 586      20636861 
+ 586      7200
+ 587              	.LASF17:
+ 588 00ed 50574D45 		.ascii	"PWMEnableState\000"
+ 588      6E61626C 
+ 588      65537461 
+ 588      746500
+ 589              	.LASF30:
+ 590 00fc 50574D5F 		.ascii	"PWM_1_backup\000"
+ 590      315F6261 
+ 590      636B7570 
+ 590      00
+ 591              	.LASF9:
+ 592 0109 75696E74 		.ascii	"uint8\000"
+ 592      3800
+ 593              	.LASF28:
+ 594 010f 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_1_PM.c\000"
+ 594      72617465 
+ 594      645F536F 
+ 594      75726365 
+ 594      5C50536F 
+ 595              	.LASF21:
+ 596 0131 50574D43 		.ascii	"PWMControlRegister\000"
+ 596      6F6E7472 
+ 596      6F6C5265 
+ 596      67697374 
+ 596      657200
+ 597              	.LASF12:
+ 598 0144 646F7562 		.ascii	"double\000"
+ 598      6C6500
+ 599              	.LASF22:
+ 600 014b 50574D5F 		.ascii	"PWM_1_backupStruct\000"
+ 600      315F6261 
+ 600      636B7570 
+ 600      53747275 
+ 600      637400
+ 601              	.LASF10:
+ 602 015e 75696E74 		.ascii	"uint16\000"
+ 602      313600
+ 603              	.LASF5:
+ 604 0165 6C6F6E67 		.ascii	"long unsigned int\000"
+ 604      20756E73 
+ 604      69676E65 
+ 604      6420696E 
+ 604      7400
+ 605              	.LASF8:
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 16
+
+
+ 606 0177 756E7369 		.ascii	"unsigned int\000"
+ 606      676E6564 
+ 606      20696E74 
+ 606      00
+ 607              	.LASF26:
+ 608 0184 50574D5F 		.ascii	"PWM_1_Wakeup\000"
+ 608      315F5761 
+ 608      6B657570 
+ 608      00
+ 609              	.LASF7:
+ 610 0191 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 610      206C6F6E 
+ 610      6720756E 
+ 610      7369676E 
+ 610      65642069 
+ 611              	.LASF24:
+ 612 01a8 50574D5F 		.ascii	"PWM_1_RestoreConfig\000"
+ 612      315F5265 
+ 612      73746F72 
+ 612      65436F6E 
+ 612      66696700 
+ 613              	.LASF14:
+ 614 01bc 72656738 		.ascii	"reg8\000"
+ 614      00
+ 615              	.LASF16:
+ 616 01c1 73697A65 		.ascii	"sizetype\000"
+ 616      74797065 
+ 616      00
+ 617              	.LASF6:
+ 618 01ca 6C6F6E67 		.ascii	"long long int\000"
+ 618      206C6F6E 
+ 618      6720696E 
+ 618      7400
+ 619              	.LASF13:
+ 620 01d8 63686172 		.ascii	"char\000"
+ 620      00
+ 621              	.LASF2:
+ 622 01dd 73686F72 		.ascii	"short int\000"
+ 622      7420696E 
+ 622      7400
+ 623              	.LASF4:
+ 624 01e7 6C6F6E67 		.ascii	"long int\000"
+ 624      20696E74 
+ 624      00
+ 625              	.LASF15:
+ 626 01f0 6C6F6E67 		.ascii	"long double\000"
+ 626      20646F75 
+ 626      626C6500 
+ 627              	.LASF0:
+ 628 01fc 7369676E 		.ascii	"signed char\000"
+ 628      65642063 
+ 628      68617200 
+ 629              	.LASF20:
+ 630 0208 496E7465 		.ascii	"InterruptMaskValue\000"
+ 630      72727570 
+ 630      744D6173 
+ 630      6B56616C 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cccYLEyX.s 			page 17
+
+
+ 630      756500
+ 631              	.LASF27:
+ 632 021b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 632      43313120 
+ 632      352E342E 
+ 632      31203230 
+ 632      31363036 
+ 633 024e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 633      20726576 
+ 633      6973696F 
+ 633      6E203233 
+ 633      37373135 
+ 634 0281 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 634      66756E63 
+ 634      74696F6E 
+ 634      2D736563 
+ 634      74696F6E 
+ 635              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
  568              	.LASF18:
  569 0000 50574D55 		.ascii	"PWMUdb\000"
  569      646200
@@ -976,3 +1212,4 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccGy4SV4.s 			page 1
  633      2D736563 
  633      74696F6E 
  634              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304

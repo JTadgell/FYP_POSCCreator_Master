@@ -84,23 +84,48 @@ wheel_data left_wheel;
 wheel_data right_wheel;
 PID_data k;
 
+<<<<<<< HEAD
 int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
+=======
+<<<<<<< HEAD
+int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
+
+=======
+int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
 int first_run=1;
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 // START OF FUNCTIONS
 int main( void ) {
 	const signed char * run[64];
     if (isMaster){
     /* This is the for loop for the master system */
+<<<<<<< HEAD
+      Laser_Write(1);  
+        
+        
+=======
         sprintf((char *) run, "\n=== Master ===\n\n");
         vSerialPutString(pxPort, (const signed char *) run, 64);
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
     }
     if (~isMaster){
     /* This is the for loop for the slave system */
         sprintf((char *) run, "\n=== Slave ===\n\n");
         vSerialPutString(pxPort, (const signed char *) run, 64);
       }  
+<<<<<<< HEAD
+    prvHardwareSetup(); 
+    //Laser_Write(1);
+    LED_GREEN_Write(1);
+    //LED_BLUE_Write(1);
+    sprintf((char *) run, "\n=== Master ===\n\n");
+    vSerialPutString(pxPort, (const signed char *) run, 64);
+    
+=======
     prvHardwareSetup();     
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
     sprintf((char *) run, "\n=== NEW RUN ===\n\n");
     vSerialPutString(pxPort, (const signed char *) run, 64);
     
@@ -110,7 +135,6 @@ int main( void ) {
     xTaskCreate( receive_data, (const char*) "waiting for a serial bus to come in", 1024, NULL, 1, NULL );
     
 	vTaskStartScheduler();
-
 	for( ;; );  // You won't actually reach this for loop.
 }
 
@@ -215,7 +239,11 @@ void PID_initialise( void *p ) {
             }
                 
             mov_update_error(&left_wheel, &right_wheel);    // update error values
+<<<<<<< HEAD
                 sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
+=======
+                sprintf((char *) local_write, "left dest: %li pos: %i, right dest: %li, pos: %i\n", left_wheel.cur_dest, -64*M1QuadDec_GetCounter(), right_wheel.cur_dest, -64*M2QuadDec_GetCounter());
+>>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
                 vSerialPutString(pxPort, (signed char *) local_write, 64);
             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors using PID
             

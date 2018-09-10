@@ -2,7 +2,11 @@
 --	Conversion of FreeRTOS_Demo.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
+<<<<<<< HEAD
+--	Fri Sep 07 15:07:24 2018
+=======
 --	Sun Sep 09 14:32:45 2018
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 --
 
 USE cypress.cypress.all;
@@ -2492,11 +2496,19 @@ SIGNAL tmpFB_0__pwm_net_0 : bit;
 SIGNAL tmpIO_0__pwm_net_0 : bit;
 TERMINAL tmpSIOVREF__pwm_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__pwm_net_0 : bit;
+<<<<<<< HEAD
+SIGNAL tmpOE__LED_GREEN_net_0 : bit;
+SIGNAL tmpFB_0__LED_GREEN_net_0 : bit;
+SIGNAL tmpIO_0__LED_GREEN_net_0 : bit;
+TERMINAL tmpSIOVREF__LED_GREEN_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__LED_GREEN_net_0 : bit;
+=======
 SIGNAL tmpOE__LED_RED_net_0 : bit;
 SIGNAL tmpFB_0__LED_RED_net_0 : bit;
 SIGNAL tmpIO_0__LED_RED_net_0 : bit;
 TERMINAL tmpSIOVREF__LED_RED_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__LED_RED_net_0 : bit;
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 SIGNAL tmpOE__LED_BLUE_net_0 : bit;
 SIGNAL tmpFB_0__LED_BLUE_net_0 : bit;
 SIGNAL tmpIO_0__LED_BLUE_net_0 : bit;
@@ -5789,8 +5801,13 @@ pwm:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>Net_170,
 		interrupt=>tmpINTERRUPT_0__pwm_net_0);
+<<<<<<< HEAD
+LED_GREEN:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"cf0afffa-ca9c-4df3-9f99-1beeafe0f8d9",
+=======
 LED_RED:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"1cb71e8a-904f-4382-9dfb-46878da4a8d4",
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
 		init_dr_st=>"0",
@@ -5847,10 +5864,17 @@ LED_RED:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(Net_170),
+<<<<<<< HEAD
+		fb=>(tmpFB_0__LED_GREEN_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__LED_GREEN_net_0),
+		siovref=>(tmpSIOVREF__LED_GREEN_net_0),
+=======
 		fb=>(tmpFB_0__LED_RED_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__LED_RED_net_0),
 		siovref=>(tmpSIOVREF__LED_RED_net_0),
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 		annotation=>(open),
 		in_clock=>Net_170,
 		in_clock_en=>one,
@@ -5858,9 +5882,15 @@ LED_RED:cy_psoc3_pins_v1_10
 		out_clock=>Net_170,
 		out_clock_en=>one,
 		out_reset=>Net_170,
+<<<<<<< HEAD
+		interrupt=>tmpINTERRUPT_0__LED_GREEN_net_0);
+LED_BLUE:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"5cbd88cd-3ffb-44a1-bffe-931b3bb7652f",
+=======
 		interrupt=>tmpINTERRUPT_0__LED_RED_net_0);
 LED_BLUE:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"4420f4c7-9afd-4351-a2e3-845bc8bd23fd",
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
 		init_dr_st=>"0",

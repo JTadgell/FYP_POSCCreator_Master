@@ -1,6 +1,10 @@
 // ======================================================================
 // FreeRTOS_Demo.v generated from TopDesign.cysch
+<<<<<<< HEAD
+// 09/07/2018 at 15:07
+=======
 // 09/09/2018 at 14:32
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -2521,6 +2525,16 @@ module top ;
 
 	assign tmpOE__pwm_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
+<<<<<<< HEAD
+	wire [0:0] tmpOE__LED_GREEN_net;
+	wire [0:0] tmpFB_0__LED_GREEN_net;
+	wire [0:0] tmpIO_0__LED_GREEN_net;
+	wire [0:0] tmpINTERRUPT_0__LED_GREEN_net;
+	electrical [0:0] tmpSIOVREF__LED_GREEN_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("cf0afffa-ca9c-4df3-9f99-1beeafe0f8d9"),
+=======
 	wire [0:0] tmpOE__LED_RED_net;
 	wire [0:0] tmpFB_0__LED_RED_net;
 	wire [0:0] tmpIO_0__LED_RED_net;
@@ -2529,6 +2543,7 @@ module top ;
 
 	cy_psoc3_pins_v1_10
 		#(.id("1cb71e8a-904f-4382-9dfb-46878da4a8d4"),
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 		  .drive_mode(3'b110),
 		  .ibuf_enabled(1'b1),
 		  .init_dr_st(1'b0),
@@ -2580,6 +2595,15 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
+<<<<<<< HEAD
+		LED_GREEN
+		 (.oe(tmpOE__LED_GREEN_net),
+		  .y({1'b0}),
+		  .fb({tmpFB_0__LED_GREEN_net[0:0]}),
+		  .io({tmpIO_0__LED_GREEN_net[0:0]}),
+		  .siovref(tmpSIOVREF__LED_GREEN_net),
+		  .interrupt({tmpINTERRUPT_0__LED_GREEN_net[0:0]}),
+=======
 		LED_RED
 		 (.oe(tmpOE__LED_RED_net),
 		  .y({1'b0}),
@@ -2587,6 +2611,7 @@ module top ;
 		  .io({tmpIO_0__LED_RED_net[0:0]}),
 		  .siovref(tmpSIOVREF__LED_RED_net),
 		  .interrupt({tmpINTERRUPT_0__LED_RED_net[0:0]}),
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -2594,7 +2619,11 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
+<<<<<<< HEAD
+	assign tmpOE__LED_GREEN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+=======
 	assign tmpOE__LED_RED_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 	wire [0:0] tmpOE__LED_BLUE_net;
 	wire [0:0] tmpFB_0__LED_BLUE_net;
@@ -2603,7 +2632,11 @@ module top ;
 	electrical [0:0] tmpSIOVREF__LED_BLUE_net;
 
 	cy_psoc3_pins_v1_10
+<<<<<<< HEAD
+		#(.id("5cbd88cd-3ffb-44a1-bffe-931b3bb7652f"),
+=======
 		#(.id("4420f4c7-9afd-4351-a2e3-845bc8bd23fd"),
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 		  .drive_mode(3'b110),
 		  .ibuf_enabled(1'b1),
 		  .init_dr_st(1'b0),

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 1
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
    1              		.syntax unified
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
   22:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  * http://www.FreeRTOS.org
   23:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  * http://aws.amazon.com/freertos
   24:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  *
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 2
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 2
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   25:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  * 1 tab == 4 spaces!
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
   79:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** #define portVECTACTIVE_MASK					( 0xFFUL )
   80:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 
   81:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** /* Constants required to set up the initial stack. */
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 3
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 3
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   82:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** #define portINITIAL_XPSR					( 0x01000000UL )
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  136:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  * The number of SysTick increments that make up one tick period.
  137:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  */
  138:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** #if( configUSE_TICKLESS_IDLE == 1 )
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 4
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 4
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  139:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	static uint32_t ulTimerCountsForOneTick = 0;
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  178:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	pxTopOfStack--; /* Offset added to account for the way the MCU uses the stack on entry/exit of int
   49              		.loc 1 178 0
   50 000c FB68     		ldr	r3, [r7, #12]
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 5
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 5
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   51 000e 043B     		subs	r3, r3, #4
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
   94              		@ sp needed
   95 0050 80BC     		pop	{r7}
   96              		.cfi_restore 7
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 6
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 6
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   97              		.cfi_def_cfa_offset 0
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
   16:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
   17:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
   18:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 7
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 7
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   19:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
   73:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portSTACK_GROWTH			( -1 )
   74:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portTICK_PERIOD_MS			( ( TickType_t ) 1000 / configTICK_RATE_HZ )
   75:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portBYTE_ALIGNMENT			8
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 8
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 8
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
   76:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  130:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	__attribute__( ( always_inline ) ) static inline uint8_t ucPortCountLeadingZeros( uint32_t ulBitma
  131:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	{
  132:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	uint8_t ucReturn;
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 9
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 9
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  133:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  187:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** }
  188:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  189:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 10
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 10
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  190:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  159 002a 80BC     		pop	{r7}
  160              		.cfi_restore 7
  161              		.cfi_def_cfa_offset 0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 11
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 11
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  162 002c 7047     		bx	lr
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  234:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** }
  197              		.loc 1 234 0
  198              		.thumb
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 12
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 12
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  199              		.syntax unified
@@ -718,7 +766,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  236              	.LFE71:
  237              		.size	prvPortStartFirstTask, .-prvPortStartFirstTask
  238              		.section	.text.xPortStartScheduler,"ax",%progbits
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 13
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 13
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  239              		.align	2
@@ -778,7 +830,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  289:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		ulMaxPRIGROUPValue = portMAX_PRIGROUP_BITS;
  290:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		while( ( ucMaxPriorityValue & portTOP_BIT_OF_BYTE ) == portTOP_BIT_OF_BYTE )
  291:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		{
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 14
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 14
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  292:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 			ulMaxPRIGROUPValue--;
@@ -838,7 +894,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  332:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 
  333:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	/* Initialise the critical nesting count ready for the first task. */
  334:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	uxCriticalNesting = 0;
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 15
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 15
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  270              		.loc 1 334 0
@@ -898,7 +958,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  304              		@ frame_needed = 1, uses_anonymous_args = 0
  305              		@ link register save eliminated.
  306 0000 80B4     		push	{r7}
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 16
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 16
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  307              		.cfi_def_cfa_offset 4
@@ -958,7 +1022,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  353              	@ 0 "" 2
  354              		.thumb
  355              		.syntax unified
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 17
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 17
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  356 0016 7B60     		str	r3, [r7, #4]
@@ -1018,7 +1086,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  393              		@ args = 0, pretend = 0, frame = 8
  394              		@ frame_needed = 1, uses_anonymous_args = 0
  395              		@ link register save eliminated.
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 18
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 18
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  396 0000 80B4     		push	{r7}
@@ -1078,7 +1150,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  225:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
  226:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  227:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** portFORCE_INLINE static void vPortSetBASEPRI( uint32_t ulNewMaskValue )
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 19
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 19
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  228:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** {
@@ -1138,7 +1214,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  393:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	__asm volatile
  460              		.loc 1 393 0
  461              		.syntax unified
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 20
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 20
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  462              	@ 393 "..\..\FreeRTOS_Source\portable\GCC\ARM_CM3\port.c" 1
@@ -1198,7 +1278,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  419:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	"	.align 4							\n"
  420:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	"pxCurrentTCBConst: .word pxCurrentTCB	\n"
  421:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	::"i"(configMAX_SYSCALL_INTERRUPT_PRIORITY)
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 21
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 21
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  422:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	);
@@ -1258,7 +1342,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  432:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	portDISABLE_INTERRUPTS();
  433:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 	{
  434:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		/* Increment the RTOS tick. */
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 22
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 22
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  435:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		if( xTaskIncrementTick() != pdFALSE )
@@ -1318,7 +1406,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  579              	vPortSetupTimerInterrupt:
  580              	.LFB78:
  444:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** /*-----------------------------------------------------------*/
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 23
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 23
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  445:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 
@@ -1378,7 +1470,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  499:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		else
  500:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 		{
  501:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 			/* Set the new reload value. */
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 24
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 24
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  502:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 			portNVIC_SYSTICK_LOAD_REG = ulReloadValue;
@@ -1438,7 +1534,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  556:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 			{
  557:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 				uint32_t ulCalculatedLoadValue;
  558:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 25
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 25
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  559:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** 				/* The tick interrupt is already pending, and the SysTick count
@@ -1498,7 +1598,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  613:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c **** /*
  614:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  * Setup the systick timer to generate the tick interrupts at the required
  615:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  * frequency.
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 26
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 26
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  616:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/port.c ****  */
@@ -1558,7 +1662,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  615 0024 7047     		bx	lr
  616              	.L29:
  617 0026 00BF     		.align	2
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 27
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 27
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  618              	.L28:
@@ -1618,7 +1726,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  672 0052 05030000 		.4byte	.LASF5
  673 0056 03       		.uleb128 0x3
  674 0057 02       		.byte	0x2
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 28
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 28
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  675 0058 07       		.byte	0x7
@@ -1678,7 +1790,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  729 00c1 04       		.uleb128 0x4
  730 00c2 FD000000 		.4byte	.LASF18
  731 00c6 05       		.byte	0x5
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 29
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 29
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  732 00c7 23       		.byte	0x23
@@ -1738,7 +1854,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  786 0139 E3       		.byte	0xe3
  787 013a 93000000 		.4byte	0x93
  788 013e 00       		.byte	0
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 30
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 30
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  789 013f 0D       		.uleb128 0xd
@@ -1798,7 +1918,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  843 01ab 0A000000 		.4byte	.LBB12
  844 01af 12000000 		.4byte	.LBE12-.LBB12
  845 01b3 01       		.byte	0x1
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 31
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 31
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  846 01b4 CB       		.byte	0xcb
@@ -1858,7 +1982,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  900 0229 19       		.uleb128 0x19
  901 022a 0F010000 		.4byte	0x10f
  902 022e 06000000 		.4byte	.LBB14
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 32
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 32
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  903 0232 12000000 		.4byte	.LBE14-.LBB14
@@ -1918,7 +2046,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  957 02a6 0F010000 		.4byte	0x10f
  958 02aa 06000000 		.4byte	.LBB18
  959 02ae 12000000 		.4byte	.LBE18-.LBB18
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 33
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 33
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  960 02b2 01       		.byte	0x1
@@ -1978,7 +2110,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1014 0002 01       		.byte	0x1
  1015 0003 25       		.uleb128 0x25
  1016 0004 0E       		.uleb128 0xe
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 34
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 34
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1017 0005 13       		.uleb128 0x13
@@ -2038,7 +2174,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1071 003b 00       		.byte	0
  1072 003c 00       		.byte	0
  1073 003d 06       		.uleb128 0x6
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 35
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 35
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1074 003e 35       		.uleb128 0x35
@@ -2098,7 +2238,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1128 0074 0B       		.uleb128 0xb
  1129 0075 3B       		.uleb128 0x3b
  1130 0076 0B       		.uleb128 0xb
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 36
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 36
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1131 0077 49       		.uleb128 0x49
@@ -2158,7 +2302,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1185 00ae 13       		.uleb128 0x13
  1186 00af 02       		.uleb128 0x2
  1187 00b0 18       		.uleb128 0x18
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 37
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 37
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1188 00b1 00       		.byte	0
@@ -2218,7 +2366,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1242 00e8 00       		.byte	0
  1243 00e9 12       		.uleb128 0x12
  1244 00ea 0B       		.uleb128 0xb
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 38
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 38
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1245 00eb 01       		.byte	0x1
@@ -2278,7 +2430,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1299 0122 40       		.uleb128 0x40
  1300 0123 18       		.uleb128 0x18
  1301 0124 9742     		.uleb128 0x2117
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 39
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 39
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1302 0126 19       		.uleb128 0x19
@@ -2338,7 +2494,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1356 015e 3F       		.uleb128 0x3f
  1357 015f 19       		.uleb128 0x19
  1358 0160 03       		.uleb128 0x3
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 40
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 40
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1359 0161 0E       		.uleb128 0xe
@@ -2398,7 +2558,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1413 0198 27       		.uleb128 0x27
  1414 0199 19       		.uleb128 0x19
  1415 019a 11       		.uleb128 0x11
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 41
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 41
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1416 019b 01       		.uleb128 0x1
@@ -2458,7 +2622,11 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1470 0010 00000000 		.4byte	.LFB68
  1471 0014 58000000 		.4byte	.LFE68-.LFB68
  1472 0018 00000000 		.4byte	.LFB69
+<<<<<<< HEAD
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 42
+=======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 42
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
 
  1473 001c 2E000000 		.4byte	.LFE69-.LFB69
@@ -2515,6 +2683,278 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1522      00000201 
  1522      FB0E0D00 
  1522      01010101 
+<<<<<<< HEAD
+ 1523              	.LASF39:
+ 1524 0000 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
+ 1524      2E6D6F6E 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 43
+
+
+ 1524      6173682E 
+ 1524      6564755C 
+ 1524      686F6D65 
+ 1525 002d 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
+ 1525      4875625C 
+ 1525      4659505F 
+ 1525      504F5343 
+ 1525      43726561 
+ 1526 005d 61737465 		.ascii	"aster\\CORTEX_CY8C5588_PSoC_Creator_GCC\\FreeRTOS_D"
+ 1526      725C434F 
+ 1526      52544558 
+ 1526      5F435938 
+ 1526      43353538 
+ 1527 008e 656D6F2E 		.ascii	"emo.cydsn\000"
+ 1527      63796473 
+ 1527      6E00
+ 1528              	.LASF36:
+ 1529 0098 75784372 		.ascii	"uxCriticalNesting\000"
+ 1529      69746963 
+ 1529      616C4E65 
+ 1529      7374696E 
+ 1529      6700
+ 1530              	.LASF37:
+ 1531 00aa 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1531      43313120 
+ 1531      352E342E 
+ 1531      31203230 
+ 1531      31363036 
+ 1532 00dd 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1532      20726576 
+ 1532      6973696F 
+ 1532      6E203233 
+ 1532      37373135 
+ 1533 0110 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1533      66756E63 
+ 1533      74696F6E 
+ 1533      2D736563 
+ 1533      74696F6E 
+ 1534              	.LASF26:
+ 1535 0138 7078436F 		.ascii	"pxCode\000"
+ 1535      646500
+ 1536              	.LASF29:
+ 1537 013f 76506F72 		.ascii	"vPortEndScheduler\000"
+ 1537      74456E64 
+ 1537      53636865 
+ 1537      64756C65 
+ 1537      7200
+ 1538              	.LASF22:
+ 1539 0151 5469636B 		.ascii	"TickType_t\000"
+ 1539      54797065 
+ 1539      5F7400
+ 1540              	.LASF8:
+ 1541 015c 5F5F696E 		.ascii	"__int32_t\000"
+ 1541      7433325F 
+ 1541      7400
+ 1542              	.LASF7:
+ 1543 0166 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 44
+
+
+ 1543      20696E74 
+ 1543      00
+ 1544              	.LASF30:
+ 1545 016f 76506F72 		.ascii	"vPortEnterCritical\000"
+ 1545      74456E74 
+ 1545      65724372 
+ 1545      69746963 
+ 1545      616C00
+ 1546              	.LASF32:
+ 1547 0182 78506F72 		.ascii	"xPortPendSVHandler\000"
+ 1547      7450656E 
+ 1547      64535648 
+ 1547      616E646C 
+ 1547      657200
+ 1548              	.LASF18:
+ 1549 0195 5461736B 		.ascii	"TaskFunction_t\000"
+ 1549      46756E63 
+ 1549      74696F6E 
+ 1549      5F7400
+ 1550              	.LASF12:
+ 1551 01a4 696E7433 		.ascii	"int32_t\000"
+ 1551      325F7400 
+ 1552              	.LASF14:
+ 1553 01ac 666C6F61 		.ascii	"float\000"
+ 1553      7400
+ 1554              	.LASF35:
+ 1555 01b2 756C4475 		.ascii	"ulDummy\000"
+ 1555      6D6D7900 
+ 1556              	.LASF4:
+ 1557 01ba 756E7369 		.ascii	"unsigned char\000"
+ 1557      676E6564 
+ 1557      20636861 
+ 1557      7200
+ 1558              	.LASF9:
+ 1559 01c8 5F5F7569 		.ascii	"__uint32_t\000"
+ 1559      6E743332 
+ 1559      5F7400
+ 1560              	.LASF10:
+ 1561 01d3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1561      20756E73 
+ 1561      69676E65 
+ 1561      6420696E 
+ 1561      7400
+ 1562              	.LASF6:
+ 1563 01e5 73686F72 		.ascii	"short unsigned int\000"
+ 1563      7420756E 
+ 1563      7369676E 
+ 1563      65642069 
+ 1563      6E7400
+ 1564              	.LASF46:
+ 1565 01f8 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1565      52784275 
+ 1565      66666572 
+ 1565      00
+ 1566              	.LASF38:
+ 1567 0205 2E2E5C2E 		.ascii	"..\\..\\FreeRTOS_Source\\portable\\GCC\\ARM_CM3\\po"
+ 1567      2E5C4672 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 45
+
+
+ 1567      65655254 
+ 1567      4F535F53 
+ 1567      6F757263 
+ 1568 0232 72742E63 		.ascii	"rt.c\000"
+ 1568      00
+ 1569              	.LASF40:
+ 1570 0237 756C4E65 		.ascii	"ulNewBASEPRI\000"
+ 1570      77424153 
+ 1570      45505249 
+ 1570      00
+ 1571              	.LASF27:
+ 1572 0244 70765061 		.ascii	"pvParameters\000"
+ 1572      72616D65 
+ 1572      74657273 
+ 1572      00
+ 1573              	.LASF24:
+ 1574 0251 76506F72 		.ascii	"vPortSetBASEPRI\000"
+ 1574      74536574 
+ 1574      42415345 
+ 1574      50524900 
+ 1575              	.LASF33:
+ 1576 0261 78506F72 		.ascii	"xPortSysTickHandler\000"
+ 1576      74537973 
+ 1576      5469636B 
+ 1576      48616E64 
+ 1576      6C657200 
+ 1577              	.LASF0:
+ 1578 0275 756E7369 		.ascii	"unsigned int\000"
+ 1578      676E6564 
+ 1578      20696E74 
+ 1578      00
+ 1579              	.LASF25:
+ 1580 0282 7078546F 		.ascii	"pxTopOfStack\000"
+ 1580      704F6653 
+ 1580      7461636B 
+ 1580      00
+ 1581              	.LASF11:
+ 1582 028f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1582      206C6F6E 
+ 1582      6720756E 
+ 1582      7369676E 
+ 1582      65642069 
+ 1583              	.LASF23:
+ 1584 02a6 76506F72 		.ascii	"vPortRaiseBASEPRI\000"
+ 1584      74526169 
+ 1584      73654241 
+ 1584      53455052 
+ 1584      4900
+ 1585              	.LASF43:
+ 1586 02b8 70727654 		.ascii	"prvTaskExitError\000"
+ 1586      61736B45 
+ 1586      78697445 
+ 1586      72726F72 
+ 1586      00
+ 1587              	.LASF34:
+ 1588 02c9 76506F72 		.ascii	"vPortSetupTimerInterrupt\000"
+ 1588      74536574 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 46
+
+
+ 1588      75705469 
+ 1588      6D657249 
+ 1588      6E746572 
+ 1589              	.LASF17:
+ 1590 02e2 73697A65 		.ascii	"sizetype\000"
+ 1590      74797065 
+ 1590      00
+ 1591              	.LASF1:
+ 1592 02eb 6C6F6E67 		.ascii	"long long int\000"
+ 1592      206C6F6E 
+ 1592      6720696E 
+ 1592      7400
+ 1593              	.LASF16:
+ 1594 02f9 63686172 		.ascii	"char\000"
+ 1594      00
+ 1595              	.LASF19:
+ 1596 02fe 53746163 		.ascii	"StackType_t\000"
+ 1596      6B547970 
+ 1596      655F7400 
+ 1597              	.LASF28:
+ 1598 030a 76506F72 		.ascii	"vPortSVCHandler\000"
+ 1598      74535643 
+ 1598      48616E64 
+ 1598      6C657200 
+ 1599              	.LASF5:
+ 1600 031a 73686F72 		.ascii	"short int\000"
+ 1600      7420696E 
+ 1600      7400
+ 1601              	.LASF31:
+ 1602 0324 76506F72 		.ascii	"vPortExitCritical\000"
+ 1602      74457869 
+ 1602      74437269 
+ 1602      74696361 
+ 1602      6C00
+ 1603              	.LASF13:
+ 1604 0336 75696E74 		.ascii	"uint32_t\000"
+ 1604      33325F74 
+ 1604      00
+ 1605              	.LASF41:
+ 1606 033f 756C4E65 		.ascii	"ulNewMaskValue\000"
+ 1606      774D6173 
+ 1606      6B56616C 
+ 1606      756500
+ 1607              	.LASF20:
+ 1608 034e 42617365 		.ascii	"BaseType_t\000"
+ 1608      54797065 
+ 1608      5F7400
+ 1609              	.LASF44:
+ 1610 0359 70727650 		.ascii	"prvPortStartFirstTask\000"
+ 1610      6F727453 
+ 1610      74617274 
+ 1610      46697273 
+ 1610      74546173 
+ 1611              	.LASF2:
+ 1612 036f 6C6F6E67 		.ascii	"long double\000"
+ 1612      20646F75 
+ 1612      626C6500 
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cciCvebA.s 			page 47
+
+
+ 1613              	.LASF3:
+ 1614 037b 7369676E 		.ascii	"signed char\000"
+ 1614      65642063 
+ 1614      68617200 
+ 1615              	.LASF15:
+ 1616 0387 646F7562 		.ascii	"double\000"
+ 1616      6C6500
+ 1617              	.LASF45:
+ 1618 038e 78506F72 		.ascii	"xPortStartScheduler\000"
+ 1618      74537461 
+ 1618      72745363 
+ 1618      68656475 
+ 1618      6C657200 
+ 1619              	.LASF21:
+ 1620 03a2 55426173 		.ascii	"UBaseType_t\000"
+ 1620      65547970 
+ 1620      655F7400 
+ 1621              	.LASF42:
+ 1622 03ae 7078506F 		.ascii	"pxPortInitialiseStack\000"
+ 1622      7274496E 
+ 1622      69746961 
+ 1622      6C697365 
+ 1622      53746163 
+ 1623              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+=======
  1523              	.LASF36:
  1524 0000 75784372 		.ascii	"uxCriticalNesting\000"
  1524      69746963 
@@ -2782,3 +3222,4 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cckXJPZk.s 			page 1
  1621      6C697365 
  1621      53746163 
  1622              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+>>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304

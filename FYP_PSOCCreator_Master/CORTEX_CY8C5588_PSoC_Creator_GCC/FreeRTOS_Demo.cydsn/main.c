@@ -84,7 +84,7 @@ wheel_data left_wheel;
 wheel_data right_wheel;
 PID_data k;
 
-int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
+int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
 
 
 // START OF FUNCTIONS
@@ -92,7 +92,7 @@ int main( void ) {
 	const signed char * run[64];
     if (isMaster){
     /* This is the for loop for the master system */
-        
+      Laser_Write(1);  
         
         
     }
@@ -100,7 +100,9 @@ int main( void ) {
     /* This is the for loop for the slave system */
       }  
     prvHardwareSetup(); 
-    
+    //Laser_Write(1);
+    LED_GREEN_Write(1);
+    //LED_BLUE_Write(1);
     sprintf((char *) run, "\n=== Master ===\n\n");
     vSerialPutString(pxPort, (const signed char *) run, 64);
     
@@ -113,7 +115,6 @@ int main( void ) {
     xTaskCreate( receive_data, (const char*) "waiting for a serial bus to come in", 1024, NULL, 1, NULL );
     
 	vTaskStartScheduler();
-
 	for( ;; );  // You won't actually reach this for loop.
 }
 
@@ -203,8 +204,8 @@ void PID_initialise( void *p ) {
     while(1) {
     	if(xSemaphoreTake(gatekeeper, 50000)) {              // wait until semaphore is free:
             mov_update_error(&left_wheel, &right_wheel);    // update error values
-                sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
-                //vSerialPutString(pxPort, (signed char *) local_write, 64);
+                sprintf((char *) local_write, "left dest: %li pos: %i, right dest: %li, pos: %i\n", left_wheel.cur_dest, -64*M1QuadDec_GetCounter(), right_wheel.cur_dest, -64*M2QuadDec_GetCounter());
+                vSerialPutString(pxPort, (signed char *) local_write, 64);
             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors using PID
             
             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels

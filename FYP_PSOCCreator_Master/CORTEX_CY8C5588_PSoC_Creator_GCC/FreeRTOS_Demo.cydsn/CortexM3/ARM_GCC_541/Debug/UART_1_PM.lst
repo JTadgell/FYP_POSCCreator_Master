@@ -1,13 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
 >>>>>>> parent of cb49844... test
@@ -72,14 +68,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
   26:Generated_Source\PSoC5/UART_1_PM.c ****     /* enableState - disabled */
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 2
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 2
 >>>>>>> parent of cb49844... test
@@ -144,14 +136,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
   55              		.align	2
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 3
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 3
 >>>>>>> parent of cb49844... test
@@ -216,14 +204,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
   79              		.cfi_def_cfa_offset 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 4
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 4
 >>>>>>> parent of cb49844... test
@@ -288,14 +272,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  105 0008 DBB2     		uxtb	r3, r3
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 5
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 5
 >>>>>>> parent of cb49844... test
@@ -360,14 +340,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  141              	UART_1_Wakeup:
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 6
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 6
 >>>>>>> parent of cb49844... test
@@ -432,14 +408,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  160 0010 034B     		ldr	r3, .L11
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 7
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 7
 >>>>>>> parent of cb49844... test
@@ -504,14 +476,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  213 0043 05       		.byte	0x5
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 8
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 8
 >>>>>>> parent of cb49844... test
@@ -576,14 +544,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  270 00b1 03       		.byte	0x3
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 9
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 9
 >>>>>>> parent of cb49844... test
@@ -648,14 +612,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  327              	.Ldebug_abbrev0:
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 10
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 10
 >>>>>>> parent of cb49844... test
@@ -720,14 +680,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  384 0038 00       		.byte	0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 11
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 11
 >>>>>>> parent of cb49844... test
@@ -792,14 +748,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  441 0071 3B       		.uleb128 0x3b
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 12
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 12
 >>>>>>> parent of cb49844... test
@@ -864,14 +816,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 1
  498 000a 04       		.byte	0x4
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cctuzCCj.s 			page 13
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc5OPo6e.s 			page 13
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 13
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccWhlvOU.s 			page 13
 >>>>>>> parent of cb49844... test

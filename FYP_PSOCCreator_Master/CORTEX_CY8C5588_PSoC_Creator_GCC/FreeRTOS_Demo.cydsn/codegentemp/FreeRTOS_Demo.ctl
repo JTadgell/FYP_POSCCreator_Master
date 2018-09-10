@@ -2,14 +2,10 @@
 -- FreeRTOS_Demo.ctl generated from FreeRTOS_Demo
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 -- 09/07/2018 at 15:07
 =======
 -- 09/09/2018 at 14:32
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
--- 08/20/2018 at 18:14
->>>>>>> parent of cb49844... test
 =======
 -- 08/20/2018 at 18:14
 >>>>>>> parent of cb49844... test

@@ -11328,7 +11328,6 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
   31              	.set Clock_1__PM_STBY_MSK, 0x04
   32              	
 <<<<<<< HEAD
-<<<<<<< HEAD
   33              	/* LED_BLUE */
 <<<<<<< HEAD
   34              	.set LED_BLUE__0__INTTYPE, CYREG_PICU12_INTTYPE3
@@ -11466,22 +11465,6 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
 ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 190
 
 
-=======
-  33              	/* Laser */
-  34              	.set Laser__0__INTTYPE, CYREG_PICU3_INTTYPE3
-  35              	.set Laser__0__MASK, 0x08
-  36              	.set Laser__0__PC, CYREG_PRT3_PC3
-  37              	.set Laser__0__PORT, 3
-  38              	.set Laser__0__SHIFT, 3
-  39              	.set Laser__AG, CYREG_PRT3_AG
-  40              	.set Laser__AMUX, CYREG_PRT3_AMUX
-  41              	.set Laser__BIE, CYREG_PRT3_BIE
-  42              	.set Laser__BIT_MASK, CYREG_PRT3_BIT_MASK
-  43              	.set Laser__BYP, CYREG_PRT3_BYP
-ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 190
-
-
->>>>>>> parent of cb49844... test
   44              	.set Laser__CTL, CYREG_PRT3_CTL
   45              	.set Laser__DM0, CYREG_PRT3_DM0
   46              	.set Laser__DM1, CYREG_PRT3_DM1
@@ -11539,9 +11522,6 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
   98              	.set M1QuadDec_Cnt16_CounterUDB_sC16_counterdp_u0__16BIT_F0_REG, CYREG_B0_UDB14_15_F0
   99              	.set M1QuadDec_Cnt16_CounterUDB_sC16_counterdp_u0__16BIT_F1_REG, CYREG_B0_UDB14_15_F1
  100              	.set M1QuadDec_Cnt16_CounterUDB_sC16_counterdp_u0__A0_A1_REG, CYREG_B0_UDB14_A0_A1
-<<<<<<< HEAD
->>>>>>> parent of cb49844... test
-=======
 >>>>>>> parent of cb49844... test
 ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 191
 

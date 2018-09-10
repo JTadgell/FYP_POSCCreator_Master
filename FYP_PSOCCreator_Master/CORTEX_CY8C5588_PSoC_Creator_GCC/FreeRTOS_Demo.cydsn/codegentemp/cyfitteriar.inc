@@ -30,7 +30,6 @@ Clock_1__PM_STBY_CFG EQU CYREG_PM_STBY_CFG2
 Clock_1__PM_STBY_MSK EQU 0x04
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 /* LED_BLUE */
 <<<<<<< HEAD
 LED_BLUE__0__INTTYPE EQU CYREG_PICU12_INTTYPE3
@@ -148,8 +147,6 @@ LED_RED__SIO_REG_HIFREQ EQU CYREG_PRT12_SIO_REG_HIFREQ
 LED_RED__SLW EQU CYREG_PRT12_SLW
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
-=======
->>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
 /* Laser */

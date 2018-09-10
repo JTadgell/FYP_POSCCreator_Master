@@ -86,14 +86,10 @@ PID_data k;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
 =======
 <<<<<<< HEAD
 int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
-=======
-int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
->>>>>>> parent of cb49844... test
 =======
 int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
 >>>>>>> parent of cb49844... test
@@ -111,11 +107,7 @@ int main( void ) {
     /* This is the for loop for the master system */
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       Laser_Write(1);  
-=======
-        
->>>>>>> parent of cb49844... test
 =======
         
 >>>>>>> parent of cb49844... test
@@ -256,16 +248,11 @@ void PID_initialise( void *p ) {
             mov_update_error(&left_wheel, &right_wheel);    // update error values
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
                 sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
 =======
                 sprintf((char *) local_write, "left dest: %li pos: %i, right dest: %li, pos: %i\n", left_wheel.cur_dest, -64*M1QuadDec_GetCounter(), right_wheel.cur_dest, -64*M2QuadDec_GetCounter());
 >>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
                 vSerialPutString(pxPort, (signed char *) local_write, 64);
-=======
-                sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
-                //vSerialPutString(pxPort, (signed char *) local_write, 64);
->>>>>>> parent of cb49844... test
 =======
                 sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
                 //vSerialPutString(pxPort, (signed char *) local_write, 64);

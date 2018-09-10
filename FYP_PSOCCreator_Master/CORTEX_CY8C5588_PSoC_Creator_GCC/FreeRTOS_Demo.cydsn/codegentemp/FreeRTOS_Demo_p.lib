@@ -1111,7 +1111,6 @@ library (timing) {
         }
     }
 <<<<<<< HEAD
-<<<<<<< HEAD
     cell (iocell16) {
         pin (in_clock) {
             direction : input;
@@ -1288,8 +1287,6 @@ library (timing) {
             }
         }
     }
-=======
->>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
     cell (macrocell2) {

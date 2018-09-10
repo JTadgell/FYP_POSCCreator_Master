@@ -2,14 +2,10 @@
  (SDFVERSION "IEEE 1497 4.0")
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
  (DATE "2018-09-07T05:08:51Z")
 =======
  (DATE "2018-09-09T04:32:55Z")
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
- (DATE "2018-08-20T08:16:03Z")
->>>>>>> parent of cb49844... test
 =======
  (DATE "2018-08-20T08:16:03Z")
 >>>>>>> parent of cb49844... test
@@ -691,14 +687,11 @@
     (INTERCONNECT pwm\(0\)_PAD pwm\(0\).pad_in (0.000:0.000:0.000))
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     (INTERCONNECT LED_GREEN\(0\)_PAD LED_GREEN\(0\).pad_in (0.000:0.000:0.000))
 =======
     (INTERCONNECT LED_RED\(0\)_PAD LED_RED\(0\).pad_in (0.000:0.000:0.000))
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
     (INTERCONNECT LED_BLUE\(0\)_PAD LED_BLUE\(0\).pad_in (0.000:0.000:0.000))
-=======
->>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
    )

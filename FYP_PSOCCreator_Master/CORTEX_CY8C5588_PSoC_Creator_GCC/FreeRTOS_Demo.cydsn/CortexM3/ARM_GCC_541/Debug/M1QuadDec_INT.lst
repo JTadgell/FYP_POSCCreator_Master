@@ -1,13 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
 >>>>>>> parent of cb49844... test
@@ -72,14 +68,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
   23:Generated_Source\PSoC5/M1QuadDec_INT.c **** volatile int32 M1QuadDec_count32SoftPart = 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 2
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 2
 >>>>>>> parent of cb49844... test
@@ -144,14 +136,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
   53 000e 03F00103 		and	r3, r3, #1
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 3
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 3
 >>>>>>> parent of cb49844... test
@@ -216,14 +204,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
   85:Generated_Source\PSoC5/M1QuadDec_INT.c ****         M1QuadDec_ISR_ExitCallback();
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 4
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 4
 >>>>>>> parent of cb49844... test
@@ -288,14 +272,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  141 0043 06       		.byte	0x6
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 5
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 5
 >>>>>>> parent of cb49844... test
@@ -360,14 +340,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  198 00b2 05       		.uleb128 0x5
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 6
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 6
 >>>>>>> parent of cb49844... test
@@ -432,14 +408,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  255 0018 3E       		.uleb128 0x3e
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 7
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 7
 >>>>>>> parent of cb49844... test
@@ -504,14 +476,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  312 0052 19       		.uleb128 0x19
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 8
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 8
 >>>>>>> parent of cb49844... test
@@ -576,14 +544,10 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  369              	.Ldebug_line0:
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 9
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 9
 >>>>>>> parent of cb49844... test
@@ -708,7 +672,6 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  411      72617465 
  411      645F536F 
 <<<<<<< HEAD
-<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVfG9me.s 			page 11
 =======
  375              	.LASF20:
@@ -754,9 +717,6 @@ ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 1
  390 00de 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  390      66756E63 
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccAGZzUf.s 			page 10
-=======
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 11
->>>>>>> parent of cb49844... test
 =======
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc94quq2.s 			page 11
 >>>>>>> parent of cb49844... test

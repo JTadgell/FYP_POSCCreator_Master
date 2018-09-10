@@ -31,7 +31,6 @@
 #define Clock_1__PM_STBY_MSK 0x04u
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 /* LED_BLUE */
 <<<<<<< HEAD
 #define LED_BLUE__0__INTTYPE CYREG_PICU12_INTTYPE3
@@ -149,8 +148,6 @@
 #define LED_RED__SLW CYREG_PRT12_SLW
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
-=======
->>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
 /* Laser */

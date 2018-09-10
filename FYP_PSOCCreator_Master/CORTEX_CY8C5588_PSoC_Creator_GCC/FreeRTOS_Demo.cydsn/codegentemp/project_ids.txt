@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 \\ad.monash.edu\home\User041\sdsir3\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj|ede5c749-1338-4898-bc54-0fef820a8e5e
 \\ad.monash.edu\home\User041\sdsir3\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|58446328-0ca6-45b8-878a-3c5c70494a31
 C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|09ea5cd6-7606-4d2f-bf27-23eb6915e0cc
@@ -17,8 +16,6 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprim
 C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|926d51ac-fb50-4bad-bea8-0338ec72c3c1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 =======
-=======
->>>>>>> parent of cb49844... test
 C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a5f81321-f52c-4988-ba4a-ac11819904d1
 \\ad.monash.edu\home\User041\sdsir3\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|3b43a903-3691-4832-9543-c8737f01e481
 C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|23ee6928-59ff-4bdc-b523-300558a9ce9c
@@ -26,7 +23,4 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|592cae21-5c5b-4966-aa02-8fb298e0ae73
 C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|6948b3d8-67cb-43f0-bb2e-f4339113ee63
 \\ad.monash.edu\home\User041\sdsir3\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj|fbd35260-c83c-48ba-9b8d-3a83f55811a1
-<<<<<<< HEAD
->>>>>>> parent of cb49844... test
-=======
 >>>>>>> parent of cb49844... test

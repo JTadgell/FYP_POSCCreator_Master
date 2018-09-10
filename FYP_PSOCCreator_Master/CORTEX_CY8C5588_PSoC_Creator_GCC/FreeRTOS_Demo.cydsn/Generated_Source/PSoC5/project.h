@@ -63,7 +63,6 @@
 #include "pwm.h"
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 #include "LED_GREEN_aliases.h"
 #include "LED_GREEN.h"
 =======
@@ -72,8 +71,6 @@
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 #include "LED_BLUE_aliases.h"
 #include "LED_BLUE.h"
-=======
->>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
 #include "UART_1_IntClock.h"

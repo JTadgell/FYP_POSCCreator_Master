@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
   29:Generated_Source\PSoC5/M2_Phase2.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/M2_Phase2.c **** *  and shifting the bits appropriately. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   31:Generated_Source\PSoC5/M2_Phase2.c **** *
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
   53 001e 03F00803 		and	r3, r3, #8
   54 0022 DAB2     		uxtb	r2, r3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   55 0024 FB7B     		ldrb	r3, [r7, #15]
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
   86:Generated_Source\PSoC5/M2_Phase2.c **** *
   87:Generated_Source\PSoC5/M2_Phase2.c **** * \funcusage
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
   88:Generated_Source\PSoC5/M2_Phase2.c **** *  \snippet M2_Phase2_SUT.c usage_M2_Phase2_SetDriveMode
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  134              		.global	M2_Phase2_Read
  135              		.thumb
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
  136              		.thumb_func
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  168              	.L9:
  169 001c F1510040 		.word	1073762801
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  170              		.cfi_endproc
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  144:Generated_Source\PSoC5/M2_Phase2.c **** }
  198              		.loc 1 144 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  199 0012 1846     		mov	r0, r3
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  254 004b 56010000 		.4byte	.LASF5
  255 004f 02       		.uleb128 0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  256 0050 08       		.byte	0x8
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  311 00bf 6F       		.sleb128 -17
  312 00c0 08       		.uleb128 0x8
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  313 00c1 94000000 		.4byte	.LASF23
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  368 0008 0E       		.uleb128 0xe
  369 0009 1B       		.uleb128 0x1b
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  370 000a 0E       		.uleb128 0xe
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  425 0041 19       		.uleb128 0x19
  426 0042 03       		.uleb128 0x3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  427 0043 0E       		.uleb128 0xe
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  482 007b 0E       		.uleb128 0xe
  483 007c 3A       		.uleb128 0x3a
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  484 007d 0B       		.uleb128 0xb
@@ -767,7 +815,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
 <<<<<<< HEAD
  535              	.LASF22:
  536 0000 5C5C6164 		.ascii	"\\\\ad.monash.edu\\home\\User041\\sdsir3\\Documents"
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 13
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 13
 
 
  536      2E6D6F6E 
@@ -827,7 +875,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  555      676E6564 
  555      20636861 
  555      7200
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 14
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 14
 
 
  556              	.LASF13:
@@ -887,11 +935,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 1
  579      7400
  580              	.LASF12:
  581 0203 75696E74 		.ascii	"uint8\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccVbbPdw.s 			page 15
 =======
  535              	.LASF20:
  536 0000 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFSkdxu.s 			page 13
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccaICPUn.s 			page 15
+>>>>>>> parent of cb49844... test
 
 
  536      43313120 

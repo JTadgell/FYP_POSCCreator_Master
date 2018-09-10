@@ -158,6 +158,7 @@ set_io "M2_FWD(0)" iocell 0 1
 set_io "M2_BWD(0)" iocell 0 2
 set_io "Standby(0)" iocell 0 3
 set_io "Laser(0)" iocell 3 3
+<<<<<<< HEAD
 # Note: port 12 is the logical name for port 7
 <<<<<<< HEAD
 set_io "LED_GREEN(0)" iocell 12 2
@@ -168,4 +169,6 @@ set_io "LED_RED(0)" iocell 12 3
 # Note: port 12 is the logical name for port 7
 set_io "LED_BLUE(0)" iocell 12 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+>>>>>>> parent of cb49844... test
 set_io "PWM_Out_2(0)" iocell 0 0

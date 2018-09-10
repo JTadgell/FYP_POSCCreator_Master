@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
   25:Generated_Source\PSoC5/M2QuadDec_PM.c **** * Function Name: M2QuadDec_SaveConfig
   26:Generated_Source\PSoC5/M2QuadDec_PM.c **** ********************************************************************************
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   27:Generated_Source\PSoC5/M2QuadDec_PM.c **** * Summary:
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
   56:Generated_Source\PSoC5/M2QuadDec_PM.c **** * Parameters:
   57:Generated_Source\PSoC5/M2QuadDec_PM.c **** *  None.
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   58:Generated_Source\PSoC5/M2QuadDec_PM.c **** *
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
   87:Generated_Source\PSoC5/M2QuadDec_PM.c **** *  None.
   88:Generated_Source\PSoC5/M2QuadDec_PM.c **** *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
   89:Generated_Source\PSoC5/M2QuadDec_PM.c **** * Global Variables:
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  118 002a 80BD     		pop	{r7, pc}
  119              	.L7:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
  120              		.align	2
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  151 000e 03D0     		beq	.L10
  134:Generated_Source\PSoC5/M2QuadDec_PM.c ****     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  135:Generated_Source\PSoC5/M2QuadDec_PM.c ****         #if (M2QuadDec_COUNTER_SIZE == M2QuadDec_COUNTER_SIZE_8_BIT)
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  194 0034 08       		.byte	0x8
  195 0035 05       		.byte	0x5
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  196 0036 00000000 		.4byte	.LASF1
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  251 009b 62020000 		.4byte	.LASF15
  252 009f 02       		.byte	0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  253 00a0 3C02     		.2byte	0x23c
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  308 0114 01       		.byte	0x1
  309 0115 15       		.byte	0x15
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  310 0116 C0000000 		.4byte	0xc0
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  365 0030 3B       		.uleb128 0x3b
  366 0031 05       		.uleb128 0x5
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  367 0032 49       		.uleb128 0x49
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  422 0069 3F       		.uleb128 0x3f
  423 006a 19       		.uleb128 0x19
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  424 006b 03       		.uleb128 0x3
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  479 0004 0C000000 		.4byte	.LFE0
  480 0008 00000000 		.4byte	.LFB1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  481 000c 0C000000 		.4byte	.LFE1
@@ -767,7 +815,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  505 00d4 75696E74 		.ascii	"uint8\000"
  505      3800
  506              	.LASF8:
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 13
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 13
 
 
  507 00da 6C6F6E67 		.ascii	"long unsigned int\000"
@@ -827,6 +875,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  527 01d4 47656E65 		.ascii	"Generated_Source\\PSoC5\\M2QuadDec_PM.c\000"
  527      72617465 
  527      645F536F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccApNqIY.s 			page 14
 =======
  497              	.LASF17:
@@ -859,6 +908,9 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 1
  508      352E342E 
  508      31203230 
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc13rbCb.s 			page 13
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccP94bbw.s 			page 14
+>>>>>>> parent of cb49844... test
 
 
  508      31363036 

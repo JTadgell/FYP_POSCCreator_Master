@@ -30,6 +30,7 @@
 .set Clock_1__PM_STBY_CFG, CYREG_PM_STBY_CFG2
 .set Clock_1__PM_STBY_MSK, 0x04
 
+<<<<<<< HEAD
 /* LED_BLUE */
 <<<<<<< HEAD
 .set LED_BLUE__0__INTTYPE, CYREG_PICU12_INTTYPE3
@@ -147,6 +148,8 @@
 .set LED_RED__SLW, CYREG_PRT12_SLW
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 
+=======
+>>>>>>> parent of cb49844... test
 /* Laser */
 .set Laser__0__INTTYPE, CYREG_PICU3_INTTYPE3
 .set Laser__0__MASK, 0x08

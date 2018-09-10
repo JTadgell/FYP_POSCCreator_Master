@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
   16:Generated_Source\PSoC5/CyDmac.c **** * TD's are not being used.
   17:Generated_Source\PSoC5/CyDmac.c **** *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   18:Generated_Source\PSoC5/CyDmac.c **** * \note This code uses the first byte of each TD to manage the free list of
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
   55 0008 7F22     		movs	r2, #127
   56 000a 1A70     		strb	r2, [r3]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   59:Generated_Source\PSoC5/CyDmac.c ****     CyDmaTdCurrentNumber = CY_DMA_NUMBEROF_TDS;
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
   99              		.cfi_restore 7
  100              		.cfi_def_cfa_offset 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
  101 0050 7047     		bx	lr
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
   98:Generated_Source\PSoC5/CyDmac.c ****     return((uint8)(((uint32) 0x0Eu) & *CY_DMA_ERR_PTR));
  128              		.loc 1 98 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
  129 0004 044B     		ldr	r3, .L8
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  125:Generated_Source\PSoC5/CyDmac.c **** *
  126:Generated_Source\PSoC5/CyDmac.c **** *******************************************************************************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  127:Generated_Source\PSoC5/CyDmac.c **** void CyDmacClearError(uint8 error) 
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  137:Generated_Source\PSoC5/CyDmac.c **** *  When DMAC_BUS_TIMEOUT, DMAC_UNPOP_ACC, and DMAC_PERIPH_ERR occur the
  138:Generated_Source\PSoC5/CyDmac.c **** *  address of the error is written to the error address register and can be read
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  139:Generated_Source\PSoC5/CyDmac.c **** *  with this function.
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  157:Generated_Source\PSoC5/CyDmac.c **** *  channel handle.
  158:Generated_Source\PSoC5/CyDmac.c **** *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  159:Generated_Source\PSoC5/CyDmac.c **** * \return The allocated channel number. Zero is a valid channel number.
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  274 0028 BB68     		ldr	r3, [r7, #8]
  275 002a 1343     		orrs	r3, r3, r2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  276 002c 0C4A     		ldr	r2, .L24
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  313 005c BD46     		mov	sp, r7
  314              		.cfi_def_cfa_register 13
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  315              		@ sp needed
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  349              		.loc 1 216 0
  350 000e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  351 0010 172B     		cmp	r3, #23
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  392              		.section	.text.CyDmaChEnable,"ax",%progbits
  393              		.align	2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  394              		.global	CyDmaChEnable
@@ -767,10 +815,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  409              		.cfi_def_cfa_offset 24
  410 0004 00AF     		add	r7, sp, #0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 13
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 13
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 13
+>>>>>>> parent of cb49844... test
 
 
  411              		.cfi_def_cfa_register 7
@@ -831,10 +883,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  451 004a 0F4A     		ldr	r2, .L36
  452 004c 0A44     		add	r2, r2, r1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 14
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 14
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 14
+>>>>>>> parent of cb49844... test
 
 
  453 004e 1278     		ldrb	r2, [r2]
@@ -895,10 +951,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  498              		.align	2
  499              		.global	CyDmaChDisable
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 15
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 15
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 15
+>>>>>>> parent of cb49844... test
 
 
  500              		.thumb
@@ -959,10 +1019,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  325:Generated_Source\PSoC5/CyDmac.c ****         ***********************************************************************/
  326:Generated_Source\PSoC5/CyDmac.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 16
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 16
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 16
+>>>>>>> parent of cb49844... test
 
 
  327:Generated_Source\PSoC5/CyDmac.c ****         /* Disable channel */
@@ -1023,10 +1087,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  571              	.L42:
  572              		.align	2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 17
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 17
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 17
+>>>>>>> parent of cb49844... test
 
 
  573              	.L41:
@@ -1087,10 +1155,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  607              		.loc 1 357 0
  608 0014 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 18
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 18
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 18
+>>>>>>> parent of cb49844... test
 
 
  609 0016 1A01     		lsls	r2, r3, #4
@@ -1151,10 +1223,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  658              		.size	CyDmaClearPendingDrq, .-CyDmaClearPendingDrq
  659              		.section	.text.CyDmaChPriority,"ax",%progbits
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 19
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 19
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 19
+>>>>>>> parent of cb49844... test
 
 
  660              		.align	2
@@ -1215,10 +1291,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  690 0018 1BD8     		bhi	.L49
  389:Generated_Source\PSoC5/CyDmac.c ****     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 20
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 20
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 20
+>>>>>>> parent of cb49844... test
 
 
  390:Generated_Source\PSoC5/CyDmac.c ****         value = CY_DMA_CH_STRUCT_PTR[chHandle].basic_cfg[0u] & ((uint8)(~(0x0Eu)));
@@ -1279,10 +1359,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  737              		.cfi_endproc
  738              	.LFE9:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 21
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 21
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 21
+>>>>>>> parent of cb49844... test
 
 
  739              		.size	CyDmaChPriority, .-CyDmaChPriority
@@ -1343,10 +1427,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  424:Generated_Source\PSoC5/CyDmac.c **** 
  425:Generated_Source\PSoC5/CyDmac.c ****     #if(CY_PSOC5)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 22
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 22
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 22
+>>>>>>> parent of cb49844... test
 
 
  426:Generated_Source\PSoC5/CyDmac.c **** 
@@ -1407,10 +1495,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  448:Generated_Source\PSoC5/CyDmac.c ****         convert = (reg16 *) &CY_DMA_CFGMEM_STRUCT_PTR[chHandle].CFG1[2u];
  802              		.loc 1 448 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 23
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 23
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 23
+>>>>>>> parent of cb49844... test
 
 
  803 0052 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
@@ -1471,10 +1563,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  466:Generated_Source\PSoC5/CyDmac.c **** *
  467:Generated_Source\PSoC5/CyDmac.c **** * \param startTd Set the TD index as the first TD associated with the
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 24
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 24
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 24
+>>>>>>> parent of cb49844... test
 
 
  468:Generated_Source\PSoC5/CyDmac.c **** * channel. Zero is a valid TD index.
@@ -1535,10 +1631,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  878              		.loc 1 485 0
  879 002c 1846     		mov	r0, r3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 25
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 25
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 25
+>>>>>>> parent of cb49844... test
 
 
  880 002e 1437     		adds	r7, r7, #20
@@ -1599,10 +1699,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  911              		.cfi_offset 7, -4
  912 0002 85B0     		sub	sp, sp, #20
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 26
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 26
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 26
+>>>>>>> parent of cb49844... test
 
 
  913              		.cfi_def_cfa_offset 24
@@ -1663,10 +1767,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  958              		.cfi_def_cfa_register 13
  959              		@ sp needed
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 27
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 27
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 27
+>>>>>>> parent of cb49844... test
 
 
  960 004e 80BC     		pop	{r7}
@@ -1727,10 +1835,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  994 000a FF23     		movs	r3, #255
  995 000c FB60     		str	r3, [r7, #12]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 28
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 28
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 28
+>>>>>>> parent of cb49844... test
 
 
  541:Generated_Source\PSoC5/CyDmac.c **** 
@@ -1791,10 +1903,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  554:Generated_Source\PSoC5/CyDmac.c **** ****************************************************************************//**
  555:Generated_Source\PSoC5/CyDmac.c **** *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 29
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 29
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 29
+>>>>>>> parent of cb49844... test
 
 
  556:Generated_Source\PSoC5/CyDmac.c **** *  Determines the status of the DMA channel.
@@ -1855,10 +1971,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  588:Generated_Source\PSoC5/CyDmac.c ****     {
  589:Generated_Source\PSoC5/CyDmac.c ****         if(NULL != currentTd)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 30
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 30
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 30
+>>>>>>> parent of cb49844... test
 
 
  1061              		.loc 1 589 0
@@ -1919,10 +2039,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1102              		.cfi_def_cfa_register 13
  1103              		@ sp needed
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 31
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 31
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 31
+>>>>>>> parent of cb49844... test
 
 
  1104 0056 80BC     		pop	{r7}
@@ -1983,10 +2107,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  640:Generated_Source\PSoC5/CyDmac.c **** *   which TERMIN (termination request) is used.
  641:Generated_Source\PSoC5/CyDmac.c **** *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 32
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 32
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 32
+>>>>>>> parent of cb49844... test
 
 
  642:Generated_Source\PSoC5/CyDmac.c **** * \return
@@ -2047,10 +2175,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1165 0040 D2B2     		uxtb	r2, r2
  1166 0042 0A43     		orrs	r2, r2, r1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 33
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 33
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 33
+>>>>>>> parent of cb49844... test
 
 
  1167 0044 D2B2     		uxtb	r2, r2
@@ -2111,10 +2243,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1213              		.cfi_restore 7
  1214              		.cfi_restore 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 34
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 34
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 34
+>>>>>>> parent of cb49844... test
 
 
  1215              		.cfi_def_cfa_offset 0
@@ -2175,10 +2311,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  687:Generated_Source\PSoC5/CyDmac.c ****     if(CyDmaTdCurrentNumber > NUMBEROF_CHANNELS)
  1247              		.loc 1 687 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 35
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 35
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 35
+>>>>>>> parent of cb49844... test
 
 
  1248 0012 104B     		ldr	r3, .L86
@@ -2239,10 +2379,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1287              	.L87:
  1288 0052 00BF     		.align	2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 36
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 36
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 36
+>>>>>>> parent of cb49844... test
 
 
  1289              	.L86:
@@ -2303,10 +2447,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  722:Generated_Source\PSoC5/CyDmac.c **** 
  723:Generated_Source\PSoC5/CyDmac.c ****         /* Get pointer to Next available. */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 37
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 37
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 37
+>>>>>>> parent of cb49844... test
 
 
  724:Generated_Source\PSoC5/CyDmac.c ****         CY_DMA_TDMEM_STRUCT_PTR[tdHandle].TD0[0u] = CyDmaTdFreeIndex;
@@ -2367,10 +2515,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1369              		.global	CyDmaTdFreeCount
  1370              		.thumb
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 38
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 38
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 38
+>>>>>>> parent of cb49844... test
 
 
  1371              		.thumb_func
@@ -2431,10 +2583,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1410              		.thumb_func
  1411              		.type	CyDmaTdSetConfiguration, %function
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 39
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 39
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 39
+>>>>>>> parent of cb49844... test
 
 
  1412              	CyDmaTdSetConfiguration:
@@ -2495,10 +2651,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  805:Generated_Source\PSoC5/CyDmac.c **** *
  806:Generated_Source\PSoC5/CyDmac.c **** *******************************************************************************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 40
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 40
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 40
+>>>>>>> parent of cb49844... test
 
 
  807:Generated_Source\PSoC5/CyDmac.c **** cystatus CyDmaTdSetConfiguration(uint8 tdHandle, uint16 transferCount, uint8 nextTd, uint8 configur
@@ -2559,10 +2719,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  816:Generated_Source\PSoC5/CyDmac.c ****         CY_SET_REG16(convert, transferCount);
  1460              		.loc 1 816 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 41
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 41
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 41
+>>>>>>> parent of cb49844... test
 
 
  1461 0048 BB68     		ldr	r3, [r7, #8]
@@ -2623,10 +2787,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1504              		.thumb_func
  1505              		.type	CyDmaTdGetConfiguration, %function
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 42
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 42
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 42
+>>>>>>> parent of cb49844... test
 
 
  1506              	CyDmaTdGetConfiguration:
@@ -2687,10 +2855,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1522 000a 3B60     		str	r3, [r7]
  1523 000c 0346     		mov	r3, r0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 43
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 43
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 43
+>>>>>>> parent of cb49844... test
 
 
  1524 000e FB73     		strb	r3, [r7, #15]
@@ -2751,10 +2923,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1562 0052 9B78     		ldrb	r3, [r3, #2]
  1563 0054 DAB2     		uxtb	r2, r3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 44
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 44
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 44
+>>>>>>> parent of cb49844... test
 
 
  1564 0056 7B68     		ldr	r3, [r7, #4]
@@ -2815,10 +2991,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1605              		.thumb_func
  1606              		.type	CyDmaTdSetAddress, %function
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 45
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 45
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 45
+>>>>>>> parent of cb49844... test
 
 
  1607              	CyDmaTdSetAddress:
@@ -2879,10 +3059,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1633 001c 17DB     		blt	.L107
  928:Generated_Source\PSoC5/CyDmac.c ****     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 46
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 46
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 46
+>>>>>>> parent of cb49844... test
 
 
  929:Generated_Source\PSoC5/CyDmac.c ****         /* Set source address */
@@ -2943,10 +3127,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1676 005a 00BF     		.section	.text.CyDmaTdGetAddress,"ax",%progbits
  1677              		.align	2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 47
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 47
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 47
+>>>>>>> parent of cb49844... test
 
 
  1678              		.global	CyDmaTdGetAddress
@@ -3007,10 +3195,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  972:Generated_Source\PSoC5/CyDmac.c **** 
  973:Generated_Source\PSoC5/CyDmac.c ****     if(tdHandle < CY_DMA_NUMBEROF_TDS)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 48
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 48
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 48
+>>>>>>> parent of cb49844... test
 
 
  1703              		.loc 1 973 0
@@ -3071,10 +3263,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  989:Generated_Source\PSoC5/CyDmac.c ****         }
  990:Generated_Source\PSoC5/CyDmac.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 49
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 49
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 49
+>>>>>>> parent of cb49844... test
 
 
  991:Generated_Source\PSoC5/CyDmac.c ****         status = CYRET_SUCCESS;
@@ -3135,10 +3331,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
 1018:Generated_Source\PSoC5/CyDmac.c **** {
  1771              		.loc 1 1018 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 50
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 50
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 50
+>>>>>>> parent of cb49844... test
 
 
  1772              		.cfi_startproc
@@ -3199,10 +3399,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1816 003e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  1817 0040 1A01     		lsls	r2, r3, #4
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 51
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 51
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 51
+>>>>>>> parent of cb49844... test
 
 
  1818 0042 0A4B     		ldr	r3, .L119
@@ -3263,11 +3467,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1866 0010 0C       		.byte	0xc
 <<<<<<< HEAD
  1867 0011 16030000 		.4byte	.LASF87
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 52
 =======
  1867 0011 7E020000 		.4byte	.LASF87
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 52
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 52
+>>>>>>> parent of cb49844... test
 
 
  1868 0015 AD030000 		.4byte	.LASF88
@@ -3328,10 +3536,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1923 0084 AD010000 		.4byte	.LASF11
  1924 0088 02       		.byte	0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 53
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 53
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 53
+>>>>>>> parent of cb49844... test
 
 
  1925 0089 9401     		.2byte	0x194
@@ -3392,11 +3604,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  1980 00fd 07       		.uleb128 0x7
 <<<<<<< HEAD
  1981 00fe 4C020000 		.4byte	.LASF21
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 54
 =======
  1981 00fe B4010000 		.4byte	.LASF21
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 54
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 54
+>>>>>>> parent of cb49844... test
 
 
  1982 0102 03       		.byte	0x3
@@ -3457,10 +3673,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2037 0175 00       		.byte	0
  2038 0176 05       		.uleb128 0x5
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 55
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 55
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 55
+>>>>>>> parent of cb49844... test
 
 
  2039 0177 22010000 		.4byte	0x122
@@ -3521,10 +3741,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2094 01ea 72020000 		.4byte	.LASF34
  2095 01ee 01       		.byte	0x1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 56
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 56
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 56
+>>>>>>> parent of cb49844... test
 
 
  2096 01ef 60       		.byte	0x60
@@ -3585,10 +3809,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2151 0265 6B000000 		.4byte	0x6b
  2152 0269 02       		.uleb128 0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 57
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 57
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 57
+>>>>>>> parent of cb49844... test
 
 
  2153 026a 91       		.byte	0x91
@@ -3649,10 +3877,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2208 02d5 07030000 		.4byte	0x307
  2209 02d9 12       		.uleb128 0x12
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 58
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 58
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 58
+>>>>>>> parent of cb49844... test
 
 
  2210 02da A4030000 		.4byte	.LASF42
@@ -3713,10 +3945,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2265 0348 A4000000 		.4byte	0xa4
  2266 034c 00000000 		.4byte	.LFB8
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 59
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 59
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 59
+>>>>>>> parent of cb49844... test
 
 
  2267 0350 60000000 		.4byte	.LFE8-.LFB8
@@ -3777,11 +4013,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2322 03c0 13       		.uleb128 0x13
 <<<<<<< HEAD
  2323 03c1 09050000 		.4byte	.LASF43
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 60
 =======
  2323 03c1 EC040000 		.4byte	.LASF43
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 60
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 60
+>>>>>>> parent of cb49844... test
 
 
  2324 03c5 01       		.byte	0x1
@@ -3842,10 +4082,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2379 0433 91       		.byte	0x91
  2380 0434 70       		.sleb128 -16
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 61
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 61
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 61
+>>>>>>> parent of cb49844... test
 
 
  2381 0435 00       		.byte	0
@@ -3906,10 +4150,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2436 04ab 91       		.byte	0x91
  2437 04ac 6F       		.sleb128 -17
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 62
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 62
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 62
+>>>>>>> parent of cb49844... test
 
 
  2438 04ad 12       		.uleb128 0x12
@@ -3970,10 +4218,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2493 0520 A4030000 		.4byte	.LASF42
  2494 0524 01       		.byte	0x1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 63
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 63
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 63
+>>>>>>> parent of cb49844... test
 
 
  2495 0525 4702     		.2byte	0x247
@@ -4034,10 +4286,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2550 0593 6B000000 		.4byte	0x6b
  2551 0597 02       		.uleb128 0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 64
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 64
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 64
+>>>>>>> parent of cb49844... test
 
 
  2552 0598 91       		.byte	0x91
@@ -4098,10 +4354,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2607 0605 01       		.byte	0x1
  2608 0606 A902     		.2byte	0x2a9
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 65
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 65
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 65
+>>>>>>> parent of cb49844... test
 
 
  2609 0608 6B000000 		.4byte	0x6b
@@ -4162,10 +4422,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2664 067a 2703     		.2byte	0x327
  2665 067c A4000000 		.4byte	0xa4
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 66
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 66
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 66
+>>>>>>> parent of cb49844... test
 
 
  2666 0680 00000000 		.4byte	.LFB19
@@ -4226,10 +4490,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2721 06f0 70       		.sleb128 -16
  2722 06f1 00       		.byte	0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 67
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 67
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 67
+>>>>>>> parent of cb49844... test
 
 
  2723 06f2 00       		.byte	0
@@ -4290,10 +4558,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2778 0762 A8040000 		.4byte	.LASF54
  2779 0766 01       		.byte	0x1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 68
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 68
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 68
+>>>>>>> parent of cb49844... test
 
 
  2780 0767 6C03     		.2byte	0x36c
@@ -4354,10 +4626,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2835 07d4 9D03     		.2byte	0x39d
  2836 07d6 36040000 		.4byte	0x436
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 69
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 69
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 69
+>>>>>>> parent of cb49844... test
 
 
  2837 07da 02       		.uleb128 0x2
@@ -4418,11 +4694,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2892 0844 11       		.uleb128 0x11
 <<<<<<< HEAD
  2893 0845 76030000 		.4byte	.LASF81
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 70
 =======
  2893 0845 DE020000 		.4byte	.LASF81
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 70
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 70
+>>>>>>> parent of cb49844... test
 
 
  2894 0849 01       		.byte	0x1
@@ -4483,10 +4763,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  2949 08ba 03       		.byte	0x3
  2950 08bb 00000000 		.4byte	CyDmaChannels
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 71
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 71
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 71
+>>>>>>> parent of cb49844... test
 
 
  2951 08bf 00       		.byte	0
@@ -4547,10 +4831,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3006 0034 00       		.byte	0
  3007 0035 00       		.byte	0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 72
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 72
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 72
+>>>>>>> parent of cb49844... test
 
 
  3008 0036 05       		.uleb128 0x5
@@ -4611,10 +4899,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3063 006d 0A       		.uleb128 0xa
  3064 006e 16       		.uleb128 0x16
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 73
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 73
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 73
+>>>>>>> parent of cb49844... test
 
 
  3065 006f 00       		.byte	0
@@ -4675,10 +4967,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3120 00a7 0E       		.uleb128 0xe
  3121 00a8 3A       		.uleb128 0x3a
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 74
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 74
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 74
+>>>>>>> parent of cb49844... test
 
 
  3122 00a9 0B       		.uleb128 0xb
@@ -4739,10 +5035,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3177 00e1 0E       		.uleb128 0xe
  3178 00e2 3A       		.uleb128 0x3a
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 75
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 75
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 75
+>>>>>>> parent of cb49844... test
 
 
  3179 00e3 0B       		.uleb128 0xb
@@ -4803,10 +5103,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3234 011c 49       		.uleb128 0x49
  3235 011d 13       		.uleb128 0x13
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 76
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 76
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 76
+>>>>>>> parent of cb49844... test
 
 
  3236 011e 02       		.uleb128 0x2
@@ -4867,10 +5171,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3291 0156 16       		.uleb128 0x16
  3292 0157 2E       		.uleb128 0x2e
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 77
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 77
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 77
+>>>>>>> parent of cb49844... test
 
 
  3293 0158 01       		.byte	0x1
@@ -4931,10 +5239,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3348 0191 00       		.byte	0
  3349 0192 00       		.byte	0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 78
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 78
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 78
+>>>>>>> parent of cb49844... test
 
 
  3350 0193 00       		.byte	0
@@ -4995,10 +5307,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3405 00c8 00000000 		.4byte	.LFB23
  3406 00cc 70000000 		.4byte	.LFE23-.LFB23
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 79
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 79
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 79
+>>>>>>> parent of cb49844... test
 
 
  3407 00d0 00000000 		.4byte	0
@@ -5059,10 +5375,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3462              	.Ldebug_line0:
  3463 0000 B2020000 		.section	.debug_str,"MS",%progbits,1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 80
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 80
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 80
+>>>>>>> parent of cb49844... test
 
 
  3463      02004F00 
@@ -5123,10 +5443,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3483      206C6F6E 
  3483      6720756E 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 81
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 81
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 81
+>>>>>>> parent of cb49844... test
 
 
  3483      7369676E 
@@ -5187,7 +5511,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3509      3600
  3510              	.LASF9:
  3511 0199 75696E74 		.ascii	"uint8\000"
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 82
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 82
 
 
  3511      3800
@@ -5247,7 +5571,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3534      20756E73 
  3534      69676E65 
  3534      6420696E 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 83
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 83
 
 
  3534      7400
@@ -5307,7 +5631,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3556 034d 736F7572 		.ascii	"source\000"
  3556      636500
  3557              	.LASF22:
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 84
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 84
 
 
  3558 0354 62617369 		.ascii	"basic_status\000"
@@ -5367,7 +5691,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3582 03ee 4379446D 		.ascii	"CyDmaChSetRequest\000"
  3582      61436853 
  3582      65745265 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 85
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 85
 
 
  3582      71756573 
@@ -5427,7 +5751,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3608 0486 7072696F 		.ascii	"priority\000"
  3608      72697479 
  3608      00
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 86
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 86
 
 
  3609              	.LASF80:
@@ -5487,7 +5811,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccTF4WQr.s 			page 1
  3635              	.LASF58:
  3636 0522 72657175 		.ascii	"request\000"
  3636      65737400 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccjDcHPk.s 			page 87
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc2IfxSL.s 			page 87
 
 
  3637              	.LASF55:

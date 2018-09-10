@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
   23:Generated_Source\PSoC5/PWM_M1.c **** 
   24:Generated_Source\PSoC5/PWM_M1.c **** #include "PWM_M1.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   25:Generated_Source\PSoC5/PWM_M1.c **** 
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
   52 0010 034B     		ldr	r3, .L3
   53 0012 0122     		movs	r2, #1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   54 0014 1A70     		strb	r2, [r3]
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
   85              		.cfi_def_cfa_offset 16
   86 0004 00AF     		add	r7, sp, #0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
   87              		.cfi_def_cfa_register 7
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  128:Generated_Source\PSoC5/PWM_M1.c ****             /* Set FIFO 0 to 1 byte register for period */
  129:Generated_Source\PSoC5/PWM_M1.c ****             PWM_M1_AUX_CONTROLDP0 |= (PWM_M1_AUX_CTRL_FIFO0_CLR);
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
  100              		.loc 1 129 0
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  157:Generated_Source\PSoC5/PWM_M1.c ****     #if (PWM_M1_UsingFixedFunction)
  158:Generated_Source\PSoC5/PWM_M1.c ****         /* Globally Enable the Fixed Function Block chosen */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  159:Generated_Source\PSoC5/PWM_M1.c ****         PWM_M1_GLOBAL_ENABLE |= PWM_M1_BLOCK_EN_MASK;
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  162              	.LFE1:
  163              		.size	PWM_M1_Init, .-PWM_M1_Init
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  164              		.section	.text.PWM_M1_Enable,"ax",%progbits
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  189 0012 1370     		strb	r3, [r2]
  210:Generated_Source\PSoC5/PWM_M1.c ****     #endif /* (PWM_M1_UseControl || PWM_M1_UsingFixedFunction) */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  211:Generated_Source\PSoC5/PWM_M1.c **** }
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  221              		.cfi_offset 7, -4
  222 0002 00AF     		add	r7, sp, #0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  223              		.cfi_def_cfa_register 7
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  257:Generated_Source\PSoC5/PWM_M1.c ****         *
  258:Generated_Source\PSoC5/PWM_M1.c ****         * Parameters:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  259:Generated_Source\PSoC5/PWM_M1.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  314:Generated_Source\PSoC5/PWM_M1.c ****         *
  315:Generated_Source\PSoC5/PWM_M1.c ****         * Summary:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  316:Generated_Source\PSoC5/PWM_M1.c ****         *  This function writes the Compare Mode for the pwm or pwm1 output
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  371:Generated_Source\PSoC5/PWM_M1.c ****             PWM_M1_CONTROL &= ((uint8)(~PWM_M1_CTRL_CMPMODE2_MASK)); /*Clear existing mode */
  372:Generated_Source\PSoC5/PWM_M1.c ****             PWM_M1_CONTROL |= comparemodemasked;
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  373:Generated_Source\PSoC5/PWM_M1.c ****         #endif /* (PWM_M1_UseControl) */
@@ -767,10 +815,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  276 0012 0C37     		adds	r7, r7, #12
  277              		.cfi_def_cfa_offset 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 13
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 13
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 13
+>>>>>>> parent of cb49844... test
 
 
  278 0014 BD46     		mov	sp, r7
@@ -831,10 +883,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  310              		.loc 1 430 0
  311 0004 044B     		ldr	r3, .L19
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 14
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 14
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 14
+>>>>>>> parent of cb49844... test
 
 
  312 0006 1B78     		ldrb	r3, [r3]
@@ -895,10 +951,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  343              		.cfi_startproc
  344              		@ args = 0, pretend = 0, frame = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 15
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 15
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 15
+>>>>>>> parent of cb49844... test
 
 
  345              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -959,10 +1019,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  476:Generated_Source\PSoC5/PWM_M1.c **** *           will result in the counter remaining at zero.
  477:Generated_Source\PSoC5/PWM_M1.c **** *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 16
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 16
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 16
+>>>>>>> parent of cb49844... test
 
 
  478:Generated_Source\PSoC5/PWM_M1.c **** * Return:
@@ -1023,10 +1087,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  421              	.LFB8:
  490:Generated_Source\PSoC5/PWM_M1.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 17
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 17
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 17
+>>>>>>> parent of cb49844... test
 
 
  491:Generated_Source\PSoC5/PWM_M1.c **** #if (PWM_M1_UseOneCompareMode)
@@ -1087,10 +1155,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  528:Generated_Source\PSoC5/PWM_M1.c ****             #else
  529:Generated_Source\PSoC5/PWM_M1.c ****                 CY_SET_REG16(PWM_M1_COMPARE2_LSB_PTR, (compare + 1u));
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 18
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 18
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 18
+>>>>>>> parent of cb49844... test
 
 
  530:Generated_Source\PSoC5/PWM_M1.c ****             #endif /* (PWM_M1_UsingFixedFunction) */
@@ -1151,10 +1223,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  559:Generated_Source\PSoC5/PWM_M1.c ****             CY_SET_REG16(PWM_M1_COMPARE1_LSB_PTR, (uint16)compare);
  560:Generated_Source\PSoC5/PWM_M1.c ****         #else
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 19
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 19
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 19
+>>>>>>> parent of cb49844... test
 
 
  561:Generated_Source\PSoC5/PWM_M1.c ****             CY_SET_REG16(PWM_M1_COMPARE1_LSB_PTR, compare);
@@ -1215,10 +1291,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  616:Generated_Source\PSoC5/PWM_M1.c ****             CY_SET_REG8(PWM_M1_DEADBAND_COUNT_PTR, deadtime);
  617:Generated_Source\PSoC5/PWM_M1.c ****         #else
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 20
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 20
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 20
+>>>>>>> parent of cb49844... test
 
 
  618:Generated_Source\PSoC5/PWM_M1.c ****             /* Otherwise the data has to be masked and offset */
@@ -1279,10 +1359,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  673:Generated_Source\PSoC5/PWM_M1.c ****     * Summary:
  674:Generated_Source\PSoC5/PWM_M1.c ****     *  This function configures the interrupts mask control of theinterrupt
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 21
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 21
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 21
+>>>>>>> parent of cb49844... test
 
 
  675:Generated_Source\PSoC5/PWM_M1.c ****     *  source status register.
@@ -1343,10 +1427,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  508              	PWM_M1_ReadStatusRegister:
  509              	.LFB10:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 22
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 22
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 22
+>>>>>>> parent of cb49844... test
 
 
  688:Generated_Source\PSoC5/PWM_M1.c **** 
@@ -1407,10 +1495,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  538              	.LFE10:
  539              		.size	PWM_M1_ReadStatusRegister, .-PWM_M1_ReadStatusRegister
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 23
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 23
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 23
+>>>>>>> parent of cb49844... test
 
 
  540              		.section	.text.PWM_M1_ReadControlRegister,"ax",%progbits
@@ -1471,10 +1563,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  566              		.loc 1 743 0
  567 000e 1846     		mov	r0, r3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 24
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 24
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 24
+>>>>>>> parent of cb49844... test
 
 
  568 0010 0C37     		adds	r7, r7, #12
@@ -1535,10 +1631,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  600 0002 83B0     		sub	sp, sp, #12
  601              		.cfi_def_cfa_offset 16
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 25
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 25
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 25
+>>>>>>> parent of cb49844... test
 
 
  602 0004 00AF     		add	r7, sp, #0
@@ -1599,10 +1699,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  788:Generated_Source\PSoC5/PWM_M1.c ****     *
  789:Generated_Source\PSoC5/PWM_M1.c ****     *******************************************************************************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 26
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 26
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 26
+>>>>>>> parent of cb49844... test
 
 
  790:Generated_Source\PSoC5/PWM_M1.c ****     uint16 PWM_M1_ReadCapture(void) 
@@ -1663,10 +1767,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  807:Generated_Source\PSoC5/PWM_M1.c ****     *  set to Dither mode, Center Aligned mode, or One Output mode.
  808:Generated_Source\PSoC5/PWM_M1.c ****     *
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 27
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 27
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 27
+>>>>>>> parent of cb49844... test
 
 
  809:Generated_Source\PSoC5/PWM_M1.c ****     * Parameters:
@@ -1727,10 +1835,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  826:Generated_Source\PSoC5/PWM_M1.c **** 
  827:Generated_Source\PSoC5/PWM_M1.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 28
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 28
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 28
+>>>>>>> parent of cb49844... test
 
 
  828:Generated_Source\PSoC5/PWM_M1.c ****     /*******************************************************************************
@@ -1791,10 +1903,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  883:Generated_Source\PSoC5/PWM_M1.c **** *******************************************************************************/
  884:Generated_Source\PSoC5/PWM_M1.c **** uint16 PWM_M1_ReadPeriod(void) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 29
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 29
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 29
+>>>>>>> parent of cb49844... test
 
 
  885:Generated_Source\PSoC5/PWM_M1.c **** {
@@ -1855,10 +1971,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  760 0026 01       		.byte	0x1
  761 0027 06       		.byte	0x6
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 30
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 30
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 30
+>>>>>>> parent of cb49844... test
 
 
  762 0028 4E030000 		.4byte	.LASF0
@@ -1919,10 +2039,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  817 0091 02       		.uleb128 0x2
  818 0092 01       		.byte	0x1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 31
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 31
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 31
+>>>>>>> parent of cb49844... test
 
 
  819 0093 08       		.byte	0x8
@@ -1983,10 +2107,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  874 0108 91       		.byte	0x91
  875 0109 76       		.sleb128 -10
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 32
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 32
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 32
+>>>>>>> parent of cb49844... test
 
 
  876 010a 00       		.byte	0
@@ -2047,10 +2175,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  931 0181 E201     		.2byte	0x1e2
  932 0183 00000000 		.4byte	.LFB7
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 33
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 33
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 33
+>>>>>>> parent of cb49844... test
 
 
  933 0187 20000000 		.4byte	.LFE7-.LFB7
@@ -2111,10 +2243,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  988 01fd 18000000 		.4byte	.LFE10-.LFB10
  989 0201 01       		.uleb128 0x1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 34
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 34
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 34
+>>>>>>> parent of cb49844... test
 
 
  990 0202 9C       		.byte	0x9c
@@ -2175,10 +2311,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1045 027e 9C       		.byte	0x9c
  1046 027f 0C       		.uleb128 0xc
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 35
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 35
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 35
+>>>>>>> parent of cb49844... test
 
 
  1047 0280 93020000 		.4byte	.LASF40
@@ -2239,10 +2379,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1102 0024 0B       		.uleb128 0xb
  1103 0025 03       		.uleb128 0x3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 36
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 36
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 36
+>>>>>>> parent of cb49844... test
 
 
  1104 0026 08       		.uleb128 0x8
@@ -2303,10 +2447,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1159 005e 3B       		.uleb128 0x3b
  1160 005f 0B       		.uleb128 0xb
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 37
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 37
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 37
+>>>>>>> parent of cb49844... test
 
 
  1161 0060 27       		.uleb128 0x27
@@ -2367,10 +2515,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1216 0099 3F       		.uleb128 0x3f
  1217 009a 19       		.uleb128 0x19
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 38
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 38
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 38
+>>>>>>> parent of cb49844... test
 
 
  1218 009b 03       		.uleb128 0x3
@@ -2431,10 +2583,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1273 00d3 18       		.uleb128 0x18
  1274 00d4 9742     		.uleb128 0x2117
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 39
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 39
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 39
+>>>>>>> parent of cb49844... test
 
 
  1275 00d6 19       		.uleb128 0x19
@@ -2495,10 +2651,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1330 010f 00       		.byte	0
  1331 0110 03       		.uleb128 0x3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 40
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 40
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 40
+>>>>>>> parent of cb49844... test
 
 
  1332 0111 0E       		.uleb128 0xe
@@ -2559,10 +2719,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1387 0058 00000000 		.4byte	.LFB9
  1388 005c 20000000 		.4byte	.LFE9-.LFB9
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 41
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 41
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 41
+>>>>>>> parent of cb49844... test
 
 
  1389 0060 00000000 		.4byte	.LFB10
@@ -2623,10 +2787,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1441      FB0E0D00 
  1441      01010101 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 42
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 42
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 42
+>>>>>>> parent of cb49844... test
 
 
  1442              	.LASF15:
@@ -2687,7 +2855,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1460      436F756E 
  1460      74657200 
  1461              	.LASF34:
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 43
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 43
 
 
  1462 0162 50574D5F 		.ascii	"PWM_M1_ReadStatusRegister\000"
@@ -2747,7 +2915,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1483              	.LASF9:
  1484 020d 75696E74 		.ascii	"uint8\000"
  1484      3800
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 44
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 44
 
 
  1485              	.LASF37:
@@ -2807,7 +2975,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1508      00
  1509              	.LASF16:
  1510 02c6 6C6F6E67 		.ascii	"long double\000"
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 45
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 45
 
 
  1510      20646F75 
@@ -2867,7 +3035,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc6fDtDG.s 			page 1
  1534      65642063 
  1534      68617200 
  1535              	.LASF31:
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccioT6md.s 			page 46
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccJ7Yjnt.s 			page 46
 
 
  1536 036f 50574D5F 		.ascii	"PWM_M1_SetInterruptMode\000"

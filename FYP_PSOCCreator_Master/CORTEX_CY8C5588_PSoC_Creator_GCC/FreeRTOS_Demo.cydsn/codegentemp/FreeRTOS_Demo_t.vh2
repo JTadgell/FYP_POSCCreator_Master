@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 -- Project:   \\ad.monash.edu\home\User041\sdsir3\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj
+<<<<<<< HEAD
 -- Generated: 09/07/2018 15:08:51
 =======
 -- Project:   C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj
 -- Generated: 09/09/2018 14:32:55
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+-- Generated: 08/20/2018 18:16:02
+>>>>>>> parent of cb49844... test
 -- PSoC Creator  4.1
 
 ENTITY FreeRTOS_Demo IS
@@ -23,6 +27,7 @@ ENTITY FreeRTOS_Demo IS
         M1_Phase2(0)_PAD : IN std_ulogic;
         M1_Phase1(0)_PAD : IN std_ulogic;
         Laser(0)_PAD : OUT std_ulogic;
+<<<<<<< HEAD
         pwm(0)_PAD : OUT std_ulogic;
 <<<<<<< HEAD
         LED_GREEN(0)_PAD : OUT std_ulogic;
@@ -30,6 +35,9 @@ ENTITY FreeRTOS_Demo IS
         LED_RED(0)_PAD : OUT std_ulogic;
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
         LED_BLUE(0)_PAD : OUT std_ulogic);
+=======
+        pwm(0)_PAD : OUT std_ulogic);
+>>>>>>> parent of cb49844... test
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VUSB OF __DEFAULT__ : ENTITY IS 5e0;
@@ -53,12 +61,15 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     SIGNAL ClockBlock_PLL_OUT : bit;
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL \ClockBlock_XTAL 32kHz\ : bit;
+<<<<<<< HEAD
     SIGNAL LED_BLUE(0)__PA : bit;
 <<<<<<< HEAD
     SIGNAL LED_GREEN(0)__PA : bit;
 =======
     SIGNAL LED_RED(0)__PA : bit;
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+>>>>>>> parent of cb49844... test
     SIGNAL Laser(0)__PA : bit;
     SIGNAL M1_BWD(0)__PA : bit;
     SIGNAL M1_FWD(0)__PA : bit;
@@ -523,6 +534,7 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE lib_model OF pwm(0) : LABEL IS "iocell15";
     ATTRIBUTE Location OF pwm(0) : LABEL IS "P1[7]";
 <<<<<<< HEAD
+<<<<<<< HEAD
     ATTRIBUTE lib_model OF LED_GREEN(0) : LABEL IS "iocell16";
     ATTRIBUTE Location OF LED_GREEN(0) : LABEL IS "P12[2]";
     ATTRIBUTE lib_model OF LED_BLUE(0) : LABEL IS "iocell17";
@@ -533,6 +545,8 @@ ARCHITECTURE __DEFAULT__ OF FreeRTOS_Demo IS
     ATTRIBUTE lib_model OF LED_BLUE(0) : LABEL IS "iocell17";
     ATTRIBUTE Location OF LED_BLUE(0) : LABEL IS "P12[2]";
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+>>>>>>> parent of cb49844... test
     ATTRIBUTE lib_model OF Net_213 : LABEL IS "macrocell2";
     ATTRIBUTE Location OF Net_213 : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \UART_1:BUART:counter_load_not\ : LABEL IS "macrocell3";
@@ -2514,6 +2528,7 @@ BEGIN
             out_reset => '0');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     LED_GREEN:logicalport
         GENERIC MAP(
             drive_mode => "110",
@@ -2719,6 +2734,8 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
+=======
+>>>>>>> parent of cb49844... test
     Net_213:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0)",

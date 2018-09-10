@@ -85,10 +85,14 @@ wheel_data right_wheel;
 PID_data k;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
 =======
 <<<<<<< HEAD
 int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
+=======
+int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
+>>>>>>> parent of cb49844... test
 
 =======
 int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
@@ -102,7 +106,11 @@ int main( void ) {
     if (isMaster){
     /* This is the for loop for the master system */
 <<<<<<< HEAD
+<<<<<<< HEAD
       Laser_Write(1);  
+=======
+        
+>>>>>>> parent of cb49844... test
         
         
 =======
@@ -117,9 +125,7 @@ int main( void ) {
       }  
 <<<<<<< HEAD
     prvHardwareSetup(); 
-    //Laser_Write(1);
-    LED_GREEN_Write(1);
-    //LED_BLUE_Write(1);
+    
     sprintf((char *) run, "\n=== Master ===\n\n");
     vSerialPutString(pxPort, (const signed char *) run, 64);
     
@@ -135,6 +141,7 @@ int main( void ) {
     xTaskCreate( receive_data, (const char*) "waiting for a serial bus to come in", 1024, NULL, 1, NULL );
     
 	vTaskStartScheduler();
+
 	for( ;; );  // You won't actually reach this for loop.
 }
 
@@ -240,11 +247,16 @@ void PID_initialise( void *p ) {
                 
             mov_update_error(&left_wheel, &right_wheel);    // update error values
 <<<<<<< HEAD
+<<<<<<< HEAD
                 sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
 =======
                 sprintf((char *) local_write, "left dest: %li pos: %i, right dest: %li, pos: %i\n", left_wheel.cur_dest, -64*M1QuadDec_GetCounter(), right_wheel.cur_dest, -64*M2QuadDec_GetCounter());
 >>>>>>> 477ec7bbc14d269664e547f45035acf333f4eb07
                 vSerialPutString(pxPort, (signed char *) local_write, 64);
+=======
+                sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
+                //vSerialPutString(pxPort, (signed char *) local_write, 64);
+>>>>>>> parent of cb49844... test
             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors using PID
             
             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels

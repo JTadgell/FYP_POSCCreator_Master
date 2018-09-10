@@ -1,10 +1,14 @@
 // ======================================================================
 // FreeRTOS_Demo.v generated from TopDesign.cysch
 <<<<<<< HEAD
+<<<<<<< HEAD
 // 09/07/2018 at 15:07
 =======
 // 09/09/2018 at 14:32
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+// 08/20/2018 at 18:14
+>>>>>>> parent of cb49844... test
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -2526,6 +2530,7 @@ module top ;
 	assign tmpOE__pwm_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	wire [0:0] tmpOE__LED_GREEN_net;
 	wire [0:0] tmpFB_0__LED_GREEN_net;
 	wire [0:0] tmpIO_0__LED_GREEN_net;
@@ -2704,6 +2709,8 @@ module top ;
 
 	assign tmpOE__LED_BLUE_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
+=======
+>>>>>>> parent of cb49844... test
 
 
 endmodule

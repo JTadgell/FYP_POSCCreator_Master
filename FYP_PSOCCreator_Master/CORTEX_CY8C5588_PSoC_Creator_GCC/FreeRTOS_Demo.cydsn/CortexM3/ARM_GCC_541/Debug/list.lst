@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
   29:..\..\FreeRTOS_Source/list.c **** #include <stdlib.h>
   30:..\..\FreeRTOS_Source/list.c **** #include "FreeRTOS.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   31:..\..\FreeRTOS_Source/list.c **** #include "list.h"
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
   60              		.loc 1 53 0
   61 002e 7B68     		ldr	r3, [r7, #4]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   62 0030 0022     		movs	r2, #0
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
   68:..\..\FreeRTOS_Source/list.c **** 	configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES is set to 1. */
   69:..\..\FreeRTOS_Source/list.c **** 	listSET_FIRST_LIST_ITEM_INTEGRITY_CHECK_VALUE( pxItem );
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
   70:..\..\FreeRTOS_Source/list.c **** 	listSET_SECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE( pxItem );
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
   85:..\..\FreeRTOS_Source/list.c **** 	makes the new list item the last item to be removed by a call to
   86:..\..\FreeRTOS_Source/list.c **** 	listGET_OWNER_OF_NEXT_ENTRY(). */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
   87:..\..\FreeRTOS_Source/list.c **** 	pxNewListItem->pxNext = pxIndex;
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  184              		.size	vListInsertEnd, .-vListInsertEnd
  185 0046 00BF     		.section	.text.vListInsert,"ax",%progbits
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  186              		.align	2
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  217 001a 1B69     		ldr	r3, [r3, #16]
  218 001c FB60     		str	r3, [r7, #12]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  219 001e 0CE0     		b	.L6
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  241 003a FB68     		ldr	r3, [r7, #12]
  242 003c 5A68     		ldr	r2, [r3, #4]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  243 003e 3B68     		ldr	r3, [r7]
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  288              	uxListRemove:
  289              	.LFB72:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  168:..\..\FreeRTOS_Source/list.c **** /*-----------------------------------------------------------*/
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  327 002e 9A68     		ldr	r2, [r3, #8]
  328 0030 FB68     		ldr	r3, [r7, #12]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  329 0032 5A60     		str	r2, [r3, #4]
@@ -639,11 +679,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  373 0010 0C       		.byte	0xc
 <<<<<<< HEAD
  374 0011 8C010000 		.4byte	.LASF45
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 11
 =======
  374 0011 F4000000 		.4byte	.LASF45
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  375 0015 11010000 		.4byte	.LASF46
@@ -704,10 +748,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  430 0082 08       		.byte	0x8
  431 0083 07       		.byte	0x7
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  432 0084 63020000 		.4byte	.LASF11
@@ -768,10 +816,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  487 00f1 1B010000 		.4byte	0x11b
  488 00f5 04       		.byte	0x4
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 13
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 13
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 13
+>>>>>>> parent of cb49844... test
 
 
  489 00f6 07       		.uleb128 0x7
@@ -832,11 +884,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  544 0163 06       		.uleb128 0x6
 <<<<<<< HEAD
  545 0164 11030000 		.4byte	.LASF31
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 14
 =======
  545 0164 FC020000 		.4byte	.LASF31
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 14
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 14
+>>>>>>> parent of cb49844... test
 
 
  546 0168 0C       		.byte	0xc
@@ -897,10 +953,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  601 01d8 00       		.byte	0
  602 01d9 08       		.uleb128 0x8
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 15
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 15
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 15
+>>>>>>> parent of cb49844... test
 
 
  603 01da 04       		.byte	0x4
@@ -961,10 +1021,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  658 024a 91       		.byte	0x91
  659 024b 74       		.sleb128 -12
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 16
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 16
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 16
+>>>>>>> parent of cb49844... test
 
 
  660 024c 00       		.byte	0
@@ -1025,11 +1089,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  715 02b9 0B       		.uleb128 0xb
 <<<<<<< HEAD
  716 02ba CF010000 		.4byte	.LASF43
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 17
 =======
  716 02ba BA010000 		.4byte	.LASF43
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 17
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 17
+>>>>>>> parent of cb49844... test
 
 
  717 02be 01       		.byte	0x1
@@ -1090,10 +1158,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  772 001e 03       		.uleb128 0x3
  773 001f 24       		.uleb128 0x24
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 18
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 18
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 18
+>>>>>>> parent of cb49844... test
 
 
  774 0020 00       		.byte	0
@@ -1154,10 +1226,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  829 0057 38       		.uleb128 0x38
  830 0058 0B       		.uleb128 0xb
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 19
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 19
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 19
+>>>>>>> parent of cb49844... test
 
 
  831 0059 00       		.byte	0
@@ -1218,10 +1294,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  886 0091 18       		.uleb128 0x18
  887 0092 00       		.byte	0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 20
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 20
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 20
+>>>>>>> parent of cb49844... test
 
 
  888 0093 00       		.byte	0
@@ -1282,10 +1362,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  943 00cb 3A       		.uleb128 0x3a
  944 00cc 0B       		.uleb128 0xb
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 21
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 21
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 21
+>>>>>>> parent of cb49844... test
 
 
  945 00cd 3B       		.uleb128 0x3b
@@ -1346,7 +1430,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  994      2E6D6F6E 
  994      6173682E 
  994      6564755C 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 22
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 22
 
 
  994      686F6D65 
@@ -1406,7 +1490,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  1013      65642069 
  1013      6E7400
  1014              	.LASF29:
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 23
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 23
 
 
  1015 0170 784C6973 		.ascii	"xListEnd\000"
@@ -1466,7 +1550,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  1039 0211 646F7562 		.ascii	"double\000"
  1039      6C6500
  1040              	.LASF9:
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 24
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 24
 
 
  1041 0218 5F5F7569 		.ascii	"__uint32_t\000"
@@ -1526,7 +1610,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  1065 02b6 6C6F6E67 		.ascii	"long long int\000"
  1065      206C6F6E 
  1065      6720696E 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 25
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 25
 
 
  1065      7400
@@ -1586,6 +1670,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  1093      74497465 
  1093      6D00
  1094              	.LASF40:
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccbQZ9gi.s 			page 26
 =======
  993              	.LASF19:
@@ -1594,6 +1679,9 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 1
  994      5F7400
  995              	.LASF44:
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccL70sOq.s 			page 22
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccp8Rfjr.s 			page 26
+>>>>>>> parent of cb49844... test
 
 
  996 000b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"

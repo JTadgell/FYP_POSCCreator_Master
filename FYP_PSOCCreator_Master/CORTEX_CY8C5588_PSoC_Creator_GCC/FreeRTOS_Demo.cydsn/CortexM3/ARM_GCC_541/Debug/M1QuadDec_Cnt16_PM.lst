@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
   24:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c **** /*******************************************************************************
   25:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c **** * Function Name: M1QuadDec_Cnt16_SaveConfig
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   26:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c **** ********************************************************************************
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
   59              	.L2:
   60 0020 00000000 		.word	M1QuadDec_Cnt16_backup
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   61              		.cfi_endproc
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
   88 000e 034B     		ldr	r3, .L5
   89 0010 1B79     		ldrb	r3, [r3, #4]	@ zero_extendqisi2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
   90 0012 1846     		mov	r0, r3
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  107:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c ****     #if(!M1QuadDec_Cnt16_ControlRegRemoved)
  108:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c ****         /* Save Counter's enable state */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
  109:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c ****         if(M1QuadDec_Cnt16_CTRL_ENABLE == (M1QuadDec_Cnt16_CONTROL & M1QuadDec_Cnt16_CTRL_ENABLE))
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  154              		.align	2
  155              		.global	M1QuadDec_Cnt16_Wakeup
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  156              		.thumb
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  160:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c ****     
  161:Generated_Source\PSoC5/M1QuadDec_Cnt16_PM.c **** }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  181              		.loc 1 161 0
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  236 0052 00000000 		.4byte	.LASF6
  237 0056 02       		.uleb128 0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  238 0057 08       		.byte	0x8
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  293 00c4 03       		.byte	0x3
  294 00c5 42       		.byte	0x42
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  295 00c6 6B000000 		.4byte	0x6b
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  350 0139 15       		.byte	0x15
  351 013a E4000000 		.4byte	0xe4
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  352 013e 05       		.uleb128 0x5
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  407 0031 05       		.uleb128 0x5
  408 0032 49       		.uleb128 0x49
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  409 0033 13       		.uleb128 0x13
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  464 006a 19       		.uleb128 0x19
  465 006b 03       		.uleb128 0x3
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  466 006c 0E       		.uleb128 0xe
@@ -767,10 +815,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  521 0008 00000000 		.4byte	.LFB1
  522 000c 20000000 		.4byte	.LFE1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 13
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 13
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 13
+>>>>>>> parent of cb49844... test
 
 
  523 0010 00000000 		.4byte	.LFB2
@@ -831,7 +883,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  546      645F536F 
  546      75726365 
  546      5C50536F 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 14
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 14
 
 
  547              	.LASF28:
@@ -891,7 +943,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  568      74657243 
  568      6F6E7472 
  568      6F6C5265 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 15
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 15
 
 
  568      67697374 
@@ -951,7 +1003,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccFOvEyZ.s 			page 1
  592 02ba 73697A65 		.ascii	"sizetype\000"
  592      74797065 
  592      00
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cc5tidMa.s 			page 16
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\cchmfe5b.s 			page 16
 
 
  593              	.LASF21:

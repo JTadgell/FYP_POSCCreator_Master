@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 1
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 1
+>>>>>>> parent of cb49844... test
 
 
    1              		.syntax unified
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
   29:Generated_Source\PSoC5/PWM_Out_2.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/PWM_Out_2.c **** *  and shifting the bits appropriately. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 2
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 2
+>>>>>>> parent of cb49844... test
 
 
   31:Generated_Source\PSoC5/PWM_Out_2.c **** *
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
   53 0020 FB7B     		ldrb	r3, [r7, #15]
   54 0022 1343     		orrs	r3, r3, r2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 3
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 3
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 3
+>>>>>>> parent of cb49844... test
 
 
   55 0024 DBB2     		uxtb	r3, r3
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
   88:Generated_Source\PSoC5/PWM_Out_2.c **** *  \snippet PWM_Out_2_SUT.c usage_PWM_Out_2_SetDriveMode
   89:Generated_Source\PSoC5/PWM_Out_2.c **** *******************************************************************************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 4
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 4
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 4
+>>>>>>> parent of cb49844... test
 
 
   90:Generated_Source\PSoC5/PWM_Out_2.c **** void PWM_Out_2_SetDriveMode(uint8 mode)
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  134              		.thumb_func
  135              		.type	PWM_Out_2_Read, %function
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 5
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 5
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 5
+>>>>>>> parent of cb49844... test
 
 
  136              	PWM_Out_2_Read:
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  168              	.LFE2:
  169              		.size	PWM_Out_2_Read, .-PWM_Out_2_Read
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 6
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 6
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 6
+>>>>>>> parent of cb49844... test
 
 
  170              		.section	.text.PWM_Out_2_ReadDataReg,"ax",%progbits
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  197              		.cfi_def_cfa_register 13
  198              		@ sp needed
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 7
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 7
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 7
+>>>>>>> parent of cb49844... test
 
 
  199 0014 80BC     		pop	{r7}
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  254 0052 D9010000 		.4byte	.LASF6
  255 0056 02       		.uleb128 0x2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 8
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 8
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 8
+>>>>>>> parent of cb49844... test
 
 
  256 0057 08       		.byte	0x8
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  311 00c6 3B       		.byte	0x3b
  312 00c7 6B000000 		.4byte	0x6b
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 9
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 9
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 9
+>>>>>>> parent of cb49844... test
 
 
  313 00cb 02       		.uleb128 0x2
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  368 000c 17       		.uleb128 0x17
  369 000d 11       		.uleb128 0x11
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 10
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 10
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 10
+>>>>>>> parent of cb49844... test
 
 
  370 000e 01       		.uleb128 0x1
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  425 0045 0B       		.uleb128 0xb
  426 0046 3B       		.uleb128 0x3b
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 11
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 11
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 11
+>>>>>>> parent of cb49844... test
 
 
  427 0047 0B       		.uleb128 0xb
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  482 007f 0B       		.uleb128 0xb
  483 0080 27       		.uleb128 0x27
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 12
 =======
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 12
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 12
+>>>>>>> parent of cb49844... test
 
 
  484 0081 19       		.uleb128 0x19
@@ -767,7 +815,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  532      6173682E 
  532      6564755C 
  532      686F6D65 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 13
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 13
 
 
  533 002d 5C476974 		.ascii	"\\GitHub\\FYP_POSCCreator_Master\\FYP_PSOCCreator_M"
@@ -827,7 +875,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  553 0173 6C6F6E67 		.ascii	"long unsigned int\000"
  553      20756E73 
  553      69676E65 
-ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 14
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 14
 
 
  553      6420696E 
@@ -887,6 +935,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  577      325F5265 
  577      616400
  578              	.LASF4:
+<<<<<<< HEAD
 ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccmEkAX3.s 			page 15
 =======
  531              	.LASF20:
@@ -896,6 +945,9 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 1
  532      31203230 
  532      31363036 
 ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccP6eCMV.s 			page 13
+=======
+ARM GAS  C:\Users\sdsir3\AppData\Local\Temp\ccDd7utf.s 			page 15
+>>>>>>> parent of cb49844... test
 
 
  533 0033 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"

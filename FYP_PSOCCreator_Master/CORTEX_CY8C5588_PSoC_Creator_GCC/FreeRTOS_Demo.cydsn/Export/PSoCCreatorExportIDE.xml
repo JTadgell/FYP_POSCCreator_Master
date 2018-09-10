@@ -53,7 +53,7 @@
           <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\stream_buffer.h</File>
           <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\task.h</File>
           <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\timers.h</File>
-          <File BuildType="BUILD" Toolchain="">..\..\..\FreeRTOS\freertos-code-2543-trunk\freertos-code-2543-trunk\FreeRTOS\Demo\Common\include\serial.h</File>
+          <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\serial.h</File>
           <File BuildType="BUILD" Toolchain="">device.h</File>
           <File BuildType="BUILD" Toolchain="">FreeRTOSConfig.h</File>
           <File BuildType="BUILD" Toolchain="">IntQueueTimer.h</File>

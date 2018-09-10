@@ -84,7 +84,7 @@ wheel_data left_wheel;
 wheel_data right_wheel;
 PID_data k;
 
-int isMaster = 0;           // use 1 if it is the master, 0 if it is the slave.
+int isMaster = 1;           // use 1 if it is the master, 0 if it is the slave.
 int first_run=1;
 
 // START OF FUNCTIONS
@@ -216,7 +216,7 @@ void PID_initialise( void *p ) {
                 
             mov_update_error(&left_wheel, &right_wheel);    // update error values
                 sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
-                //vSerialPutString(pxPort, (signed char *) local_write, 64);
+                vSerialPutString(pxPort, (signed char *) local_write, 64);
             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors using PID
             
             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels

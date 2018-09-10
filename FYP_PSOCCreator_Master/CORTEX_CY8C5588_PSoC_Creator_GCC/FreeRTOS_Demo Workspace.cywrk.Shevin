@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\movement.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\message_buffer.h">
 <ExpandedNodeIds>
 <v>FreeRTOS_Demo Workspace</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo</v>
@@ -69,44 +69,44 @@
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>FreeRTOS_Demo Workspace</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\TopDesign</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Pins</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Analog</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Clocks</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Interrupts</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\DMA</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\System</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Directives</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\Flash Security</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\FreeRTOS_Demo.cydwr\EEPROM</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\croutine.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\deprecated_definitions.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\event_groups.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\FreeRTOS.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\list.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\message_buffer.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\mpu_prototypes.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\mpu_wrappers.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\portable.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\projdefs.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\queue.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\semphr.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\serial.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\stack_macros.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\StackMacros.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\stream_buffer.h</v>
+<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\task.h</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\Kernel\timers.h</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\device.h</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\FreeRTOSConfig.h</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\IntQueueTimer.h</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Header Files\movement.h</v>
 <v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel\croutine.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel\heap_2.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel\list.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel\port.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel\queue.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Kernel\tasks.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\comtest.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\IntQueueTimer.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\main.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\movement.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Source Files\Serial.c</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\Clock_1</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\cy_boot</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\isr_UART1_RX_BYTE_RECEIVED</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\isr_UART1_TX_BYTE_COMPLETE</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\Laser</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\LED_BLUE</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\LED_RED</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1_BWD</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1_FWD</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1_Phase1</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1_Phase2</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1Clock</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1QuadDec</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1QuadDec_Cnt16</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M1QuadDec_isr</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M2_BWD</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M2_FWD</v>
-<v>FreeRTOS_Demo Workspace\FreeRTOS_Demo\Generated_Source\PSoC5\M2_Phase1</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -308,21 +308,14 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs>
-<name v=".\FreeRTOS_Demo.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cydwr" />
-<name v=".\FreeRTOS_Demo.cydsn\main.c" />
-<name v=".\FreeRTOS_Demo.cydsn\movement.c" />
-<name v=".\FreeRTOS_Demo.cydsn\movement.h" />
-<name v=".\FreeRTOS_Demo.cydsn\Serial.c" />
-</OpenDocs>
+<OpenDocs />
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="812, 544" SelectedTabbedMdiWindow="f62d0431-6ea9-470b-9af7-f2ecee1f6a0a"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="2185b81d-c41d-4651-b3a0-16b1b3e4a127" /><DocumentWindow Key="C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\TopDesign\TopDesign.cysch" Guid="f62d0431-6ea9-470b-9af7-f2ecee1f6a0a" /><DocumentWindow Key="C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cydwr" Guid="b4496310-bca5-4db9-a184-b68b9ccdebc5" /><DocumentWindow Key="C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\main.c" Guid="f9bb05dc-2e63-49dc-94f8-2d93afe7f8c6" /><DocumentWindow Key="C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\movement.c" Guid="027f18e8-25a2-49b1-8e3a-114e6586d1bf" /><DocumentWindow Key="C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\movement.h" Guid="6fe27be8-48eb-45d8-aca8-3c8aba2e1849" /><DocumentWindow Key="C:\Users\shevi\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Serial.c" Guid="cfd1a8da-443b-4f57-9e48-e246f9408e31" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer /><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Loading plugins phase: Elapsed time ==> 0s.169ms
 =======
 Loading plugins phase: Elapsed time ==> 0s.655ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Loading plugins phase: Elapsed time ==> 0s.168ms
+>>>>>>> parent of cb49844... test
 =======
 Loading plugins phase: Elapsed time ==> 0s.168ms
 >>>>>>> parent of cb49844... test
@@ -12,6 +16,7 @@ cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabd
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Elaboration phase: Elapsed time ==> 1s.358ms
@@ -24,6 +29,12 @@ Elaboration phase: Elapsed time ==> 2s.537ms
 </CYPRESSTAG>
 HDL generation phase: Elapsed time ==> 0s.153ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Elaboration phase: Elapsed time ==> 1s.382ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.160ms
+>>>>>>> parent of cb49844... test
 =======
 Elaboration phase: Elapsed time ==> 1s.382ms
 <CYPRESSTAG name="HDL generation results...">
@@ -65,10 +76,14 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\shevi
 vlogfe V6.3 IR 41:  Verilog parser
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Sep 07 15:07:20 2018
 =======
 Sun Sep 09 14:32:39 2018
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Mon Aug 20 18:14:12 2018
+>>>>>>> parent of cb49844... test
 =======
 Mon Aug 20 18:14:12 2018
 >>>>>>> parent of cb49844... test
@@ -83,10 +98,14 @@ Options  :    -yv2 -q10 FreeRTOS_Demo.v
 vpp V6.3 IR 41:  Verilog Pre-Processor
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Sep 07 15:07:20 2018
 =======
 Sun Sep 09 14:32:40 2018
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Mon Aug 20 18:14:12 2018
+>>>>>>> parent of cb49844... test
 =======
 Mon Aug 20 18:14:12 2018
 >>>>>>> parent of cb49844... test
@@ -150,10 +169,14 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\shevi
 tovif V6.3 IR 41:  High-level synthesis
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Sep 07 15:07:21 2018
 =======
 Sun Sep 09 14:32:41 2018
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Mon Aug 20 18:14:13 2018
+>>>>>>> parent of cb49844... test
 =======
 Mon Aug 20 18:14:13 2018
 >>>>>>> parent of cb49844... test
@@ -198,10 +221,14 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\shevi
 topld V6.3 IR 41:  Synthesis and optimization
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Sep 07 15:07:23 2018
 =======
 Sun Sep 09 14:32:44 2018
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Mon Aug 20 18:14:15 2018
+>>>>>>> parent of cb49844... test
 =======
 Mon Aug 20 18:14:15 2018
 >>>>>>> parent of cb49844... test
@@ -1017,11 +1044,14 @@ Aliasing \PWM_1:PWMUDB:MODULE_8:g2:a0:g1:z1:s0:g1:u0:b_0\ to one
 Aliasing tmpOE__pwm_net_0 to one
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Aliasing tmpOE__LED_GREEN_net_0 to one
 =======
 Aliasing tmpOE__LED_RED_net_0 to one
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 Aliasing tmpOE__LED_BLUE_net_0 to one
+=======
+>>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
 Aliasing \UART_1:BUART:rx_break_status\\D\ to Net_170
@@ -1472,6 +1502,7 @@ Removing Rhs of wire Net_26[2138] = \PWM_1:Net_96\[1935]
 Removing Lhs of wire tmpOE__pwm_net_0[2145] = one[6]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Removing Lhs of wire tmpOE__LED_GREEN_net_0[2151] = one[6]
 =======
 Removing Lhs of wire tmpOE__LED_RED_net_0[2151] = one[6]
@@ -1533,6 +1564,8 @@ Removing Lhs of wire \PWM_1:PWMUDB:pwm1_i_reg\\D\[2270] = Net_170[9]
 Removing Lhs of wire \PWM_1:PWMUDB:pwm2_i_reg\\D\[2271] = Net_170[9]
 Removing Lhs of wire \PWM_1:PWMUDB:tc_i_reg\\D\[2272] = \PWM_1:PWMUDB:status_2\[1823]
 =======
+=======
+>>>>>>> parent of cb49844... test
 Removing Lhs of wire \UART_1:BUART:reset_reg\\D\[2150] = Net_170[9]
 Removing Lhs of wire \UART_1:BUART:rx_bitclk\\D\[2165] = \UART_1:BUART:rx_bitclk_pre\[131]
 Removing Lhs of wire \UART_1:BUART:rx_parity_error_pre\\D\[2174] = \UART_1:BUART:rx_parity_error_pre\[208]
@@ -1588,6 +1621,9 @@ Removing Lhs of wire \PWM_1:PWMUDB:pwm_i_reg\\D\[2257] = \PWM_1:PWMUDB:pwm_i\[19
 Removing Lhs of wire \PWM_1:PWMUDB:pwm1_i_reg\\D\[2258] = Net_170[9]
 Removing Lhs of wire \PWM_1:PWMUDB:pwm2_i_reg\\D\[2259] = Net_170[9]
 Removing Lhs of wire \PWM_1:PWMUDB:tc_i_reg\\D\[2260] = \PWM_1:PWMUDB:status_2\[1823]
+<<<<<<< HEAD
+>>>>>>> parent of cb49844... test
+=======
 >>>>>>> parent of cb49844... test
 
 ------------------------------------------------------
@@ -2118,7 +2154,11 @@ Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\sh
 </CYPRESSTAG>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Warp synthesis phase: Elapsed time ==> 7s.741ms
+=======
+Warp synthesis phase: Elapsed time ==> 8s.012ms
+>>>>>>> parent of cb49844... test
 =======
 Warp synthesis phase: Elapsed time ==> 8s.012ms
 >>>>>>> parent of cb49844... test
@@ -2128,6 +2168,7 @@ cyp3fit: V4.1.0.2686, Family: PSoC3, Started at: Monday, 20 August 2018 18:14:20
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\ad.monash.edu\home\User041\sdsir3\Documents\GitHub\FYP_POSCCreator_Master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\FreeRTOS_Demo.cyprj -d CY8C5888LTI-LP097 FreeRTOS_Demo.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
+<<<<<<< HEAD
 <<<<<<< HEAD
 Design parsing phase: Elapsed time ==> 0s.040ms
 =======
@@ -2140,6 +2181,9 @@ Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\shevi\Docu
 <CYPRESSTAG name="Design parsing">
 Design parsing phase: Elapsed time ==> 0s.144ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Design parsing phase: Elapsed time ==> 0s.035ms
+>>>>>>> parent of cb49844... test
 =======
 Design parsing phase: Elapsed time ==> 0s.035ms
 >>>>>>> parent of cb49844... test
@@ -2980,6 +3024,7 @@ Design Equations
         {
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     Pin : Name = LED_GREEN(0)
@@ -3067,6 +3112,8 @@ Design Equations
         Properties:
         {
         }
+=======
+>>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
     </CYPRESSTAG>
@@ -5568,6 +5615,7 @@ DAC                           :      :      :      :
 </CYPRESSTAG>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Technology Mapping: Elapsed time ==> 35s.612ms
 Tech Mapping phase: Elapsed time ==> 35s.674ms
 </CYPRESSTAG>
@@ -5584,6 +5632,13 @@ Initial Analog Placement Results:
 IO_2@[IOP=(12)][IoId=(2)] : LED_BLUE(0) (fixed)
 IO_3@[IOP=(12)][IoId=(3)] : LED_RED(0) (fixed)
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Technology Mapping: Elapsed time ==> 33s.728ms
+Tech Mapping phase: Elapsed time ==> 33s.785ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Placement">
+Initial Analog Placement Results:
+>>>>>>> parent of cb49844... test
 =======
 Technology Mapping: Elapsed time ==> 33s.728ms
 Tech Mapping phase: Elapsed time ==> 33s.785ms
@@ -5608,10 +5663,14 @@ IO_7@[IOP=(12)][IoId=(7)] : Tx_1(0) (fixed)
 IO_7@[IOP=(1)][IoId=(7)] : pwm(0) (fixed)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analog Placement phase: Elapsed time ==> 0s.035ms
 =======
 Analog Placement phase: Elapsed time ==> 0s.156ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Analog Placement phase: Elapsed time ==> 0s.029ms
+>>>>>>> parent of cb49844... test
 =======
 Analog Placement phase: Elapsed time ==> 0s.029ms
 >>>>>>> parent of cb49844... test
@@ -5634,10 +5693,14 @@ IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analog Code Generation phase: Elapsed time ==> 0s.293ms
 =======
 Analog Code Generation phase: Elapsed time ==> 0s.370ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Analog Code Generation phase: Elapsed time ==> 0s.322ms
+>>>>>>> parent of cb49844... test
 =======
 Analog Code Generation phase: Elapsed time ==> 0s.322ms
 >>>>>>> parent of cb49844... test
@@ -5670,10 +5733,14 @@ Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 PLD Packing: Elapsed time ==> 0s.189ms
 =======
 PLD Packing: Elapsed time ==> 0s.035ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+PLD Packing: Elapsed time ==> 0s.105ms
+>>>>>>> parent of cb49844... test
 =======
 PLD Packing: Elapsed time ==> 0s.105ms
 >>>>>>> parent of cb49844... test
@@ -5685,10 +5752,14 @@ Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Partitioning: Elapsed time ==> 0s.125ms
 =======
 Partitioning: Elapsed time ==> 0s.370ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+Partitioning: Elapsed time ==> 0s.120ms
+>>>>>>> parent of cb49844... test
 =======
 Partitioning: Elapsed time ==> 0s.120ms
 >>>>>>> parent of cb49844... test
@@ -9032,6 +9103,7 @@ Pin : Name = Laser(0)
 
 Port 12 contains the following IO cells:
 <<<<<<< HEAD
+<<<<<<< HEAD
 [IoId=2]: 
 <<<<<<< HEAD
 Pin : Name = LED_GREEN(0)
@@ -9130,6 +9202,8 @@ Pin : Name = LED_RED(0)
     {
     }
 
+=======
+>>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test
 [IoId=6]: 
@@ -9454,6 +9528,7 @@ Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
 -----+-----+-------+-----------+------------------+--------------+------------
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   12 |   2 |     * |      NONE |         CMOS_OUT | LED_GREEN(0) | 
      |   3 |     * |      NONE |         CMOS_OUT |  LED_BLUE(0) | 
 =======
@@ -9461,6 +9536,9 @@ Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
      |   3 |     * |      NONE |         CMOS_OUT |   LED_RED(0) | 
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
      |   6 |     * |      NONE |     HI_Z_DIGITAL |      Rx_1(0) | FB(Net_217)
+=======
+  12 |   6 |     * |      NONE |     HI_Z_DIGITAL |      Rx_1(0) | FB(Net_217)
+>>>>>>> parent of cb49844... test
 =======
   12 |   6 |     * |      NONE |     HI_Z_DIGITAL |      Rx_1(0) | FB(Net_217)
 >>>>>>> parent of cb49844... test
@@ -9476,6 +9554,7 @@ Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
 </CYPRESSTAG>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Digital component placer commit/Report: Elapsed time ==> 34s.721ms
 Digital Placement phase: Elapsed time ==> 38s.322ms
 =======
@@ -9486,13 +9565,21 @@ Digital Placement phase: Elapsed time ==> 4s.346ms
 Digital component placer commit/Report: Elapsed time ==> 52s.567ms
 Digital Placement phase: Elapsed time ==> 56s.160ms
 >>>>>>> parent of cb49844... test
+=======
+Digital component placer commit/Report: Elapsed time ==> 52s.567ms
+Digital Placement phase: Elapsed time ==> 56s.160ms
+>>>>>>> parent of cb49844... test
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata" --vh2-path "FreeRTOS_Demo_r.vh2" --pcf-path "FreeRTOS_Demo.pco" --des-name "FreeRTOS_Demo" --dsf-path "FreeRTOS_Demo.dsf" --sdc-path "FreeRTOS_Demo.sdc" --lib-path "FreeRTOS_Demo_r.lib"
 Routing successful.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Digital Routing phase: Elapsed time ==> 8s.146ms
+=======
+Digital Routing phase: Elapsed time ==> 9s.866ms
+>>>>>>> parent of cb49844... test
 =======
 Digital Routing phase: Elapsed time ==> 9s.866ms
 >>>>>>> parent of cb49844... test
@@ -9515,6 +9602,7 @@ Design database save phase: Elapsed time ==> 0s.338ms
 </CYPRESSTAG>
 cydsfit: Elapsed time ==> 104s.112ms
 </CYPRESSTAG>
+<<<<<<< HEAD
 <<<<<<< HEAD
 Fitter phase: Elapsed time ==> 85s.667ms
 API generation phase: Elapsed time ==> 5s.303ms
@@ -9547,8 +9635,13 @@ Dependency generation phase: Elapsed time ==> 0s.049ms
 Cleanup phase: Elapsed time ==> 0s.002ms
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
 =======
+=======
+>>>>>>> parent of cb49844... test
 Fitter phase: Elapsed time ==> 104s.114ms
 API generation phase: Elapsed time ==> 6s.160ms
 Dependency generation phase: Elapsed time ==> 0s.104ms
 Cleanup phase: Elapsed time ==> 0s.221ms
+<<<<<<< HEAD
+>>>>>>> parent of cb49844... test
+=======
 >>>>>>> parent of cb49844... test

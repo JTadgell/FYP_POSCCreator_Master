@@ -1,10 +1,14 @@
 # FreeRTOS_Demo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 2018-09-07 05:08:04Z
 =======
 # 2018-09-09 04:32:47Z
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+# 2018-08-20 08:14:55Z
+>>>>>>> parent of cb49844... test
 =======
 # 2018-08-20 08:14:55Z
 >>>>>>> parent of cb49844... test
@@ -32,11 +36,14 @@ set_io "Laser(0)" iocell 3 3
 set_io "pwm(0)" iocell 1 7
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 set_io "LED_GREEN(0)" iocell 12 2
 set_io "LED_BLUE(0)" iocell 12 3
 =======
 set_io "LED_RED(0)" iocell 12 3
 set_io "LED_BLUE(0)" iocell 12 2
 >>>>>>> c9b510a773d88c725b10924e41e3b58e459a6304
+=======
+>>>>>>> parent of cb49844... test
 =======
 >>>>>>> parent of cb49844... test

@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="FreeRTOS_Demo" Path="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" Version="5.50" Type="Normal">
+  <Project Name="FreeRTOS_Demo" Path="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" Version="5.50" Type="Normal">
     <CMSIS_SVD_File>FreeRTOS_Demo.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,8 +34,8 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
           <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\croutine.h</File>
           <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\deprecated_definitions.h</File>
           <File BuildType="BUILD" Toolchain="">..\..\FreeRTOS_Source\include\event_groups.h</File>
@@ -71,8 +71,8 @@
           <File BuildType="BUILD" Toolchain="">comtest.c</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cymetadata.c</File>
@@ -216,52 +216,60 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_BLUE_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_BLUE.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_BLUE.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pwm_3.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="C:\Users\shevi\Documents\FYP\FYP_POSCCreator_Master-cb49844c11f80dd632253a3ce6c772ad769288bc\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
+        <Files Root="C:\Users\shevi\Downloads\FYP_POSCCreator_Master-master\FYP_POSCCreator_Master-master\FYP_PSOCCreator_Master\CORTEX_CY8C5588_PSoC_Creator_GCC\FreeRTOS_Demo.cydsn" />
       </Folder>
     </Folders>
   </Project>

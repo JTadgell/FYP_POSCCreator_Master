@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 1
 
 
    1              		.syntax unified
@@ -41,24 +41,24 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
   38              		.comm	right_wheel,36,4
   39              		.comm	k,24,8
   40              		.global	isMaster
-  41              		.data
-  42              		.align	2
-  43              		.type	isMaster, %object
-  44              		.size	isMaster, 4
-  45              	isMaster:
-  46 0000 01000000 		.word	1
-  47              		.global	first_run
+  41              		.align	2
+  42              		.type	isMaster, %object
+  43              		.size	isMaster, 4
+  44              	isMaster:
+  45 000c 00000000 		.space	4
+  46              		.global	first_run
+  47              		.data
   48              		.align	2
   49              		.type	first_run, %object
   50              		.size	first_run, 4
   51              	first_run:
-  52 0004 01000000 		.word	1
+  52 0000 01000000 		.word	1
   53              		.section	.rodata
   54              		.align	2
   55              	.LC0:
   56 0000 0A3D3D3D 		.ascii	"\012=== Master ===\012\012\000"
   56      204D6173 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 2
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 2
 
 
   56      74657220 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
   15:main.c        ****  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   16:main.c        ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
   17:main.c        ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 3
 
 
   18:main.c        ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
   72:main.c        **** 
   73:main.c        **** static xComPortHandle pxPort = NULL;
   74:main.c        **** xSemaphoreHandle gatekeeper = 0;
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 4
 
 
   75:main.c        **** xQueueHandle queue_handle = NULL;
@@ -193,7 +193,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
   84:main.c        **** wheel_data right_wheel;
   85:main.c        **** PID_data k;
   86:main.c        **** 
-  87:main.c        **** int isMaster=1;          // use 1 if it is the master, 0 if it is the slave.
+  87:main.c        **** int isMaster=0;          // use 1 if it is the master, 0 if it is the slave.
   88:main.c        **** int first_run=1;
   89:main.c        **** 
   90:main.c        **** // START OF FUNCTIONS
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
   99:main.c        ****         vSerialPutString(pxPort, (const signed char *) run, 64);
  108              		.loc 1 99 0
  109 0022 284B     		ldr	r3, .L5+8
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 5
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 5
 
 
  110 0024 1B68     		ldr	r3, [r3]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
  156 0076 1846     		mov	r0, r3
  157 0078 FFF7FEFF 		bl	vSerialPutString
  108:main.c        ****     
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 6
 
 
  109:main.c        ****     gatekeeper = xSemaphoreCreateMutex();
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
  204              		.size	main, .-main
  205              		.section	.rodata
  206              		.align	2
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 7
 
 
  207              	.LC5:
@@ -381,886 +381,1012 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
  214      200A00
  215 00af 00       		.align	2
  216              	.LC8:
- 217 00b0 484F5249 		.ascii	"HORIZONTAL \012\000"
- 217      5A4F4E54 
- 217      414C200A 
- 217      00
- 218 00bd 000000   		.align	2
+ 217 00b0 4C617365 		.ascii	"Laser UP \012\000"
+ 217      72205550 
+ 217      200A00
+ 218 00bb 00       		.align	2
  219              	.LC9:
- 220 00c0 4C454420 		.ascii	"LED BLUE TURN ON\012\000"
- 220      424C5545 
- 220      20545552 
- 220      4E204F4E 
- 220      0A00
- 221 00d2 0000     		.align	2
+ 220 00bc 484F5249 		.ascii	"HORIZONTAL \012\000"
+ 220      5A4F4E54 
+ 220      414C200A 
+ 220      00
+ 221 00c9 000000   		.align	2
  222              	.LC10:
- 223 00d4 4C454420 		.ascii	"LED RED TURN ON\012\000"
- 223      52454420 
- 223      5455524E 
- 223      204F4E0A 
+ 223 00cc 4C617365 		.ascii	"Laser DOWN \012\000"
+ 223      7220444F 
+ 223      574E200A 
  223      00
- 224 00e5 000000   		.align	2
+ 224 00d9 000000   		.align	2
  225              	.LC11:
- 226 00e8 4C454420 		.ascii	"LED BLUE TURN OFF\012\000"
+ 226 00dc 4C454420 		.ascii	"LED BLUE TURN ON\012\000"
  226      424C5545 
  226      20545552 
- 226      4E204F46 
- 226      460A00
- 227 00fb 00       		.align	2
+ 226      4E204F4E 
+ 226      0A00
+ 227 00ee 0000     		.align	2
  228              	.LC12:
- 229 00fc 4C454420 		.ascii	"LED RED TURN OFF\012\000"
+ 229 00f0 4C454420 		.ascii	"LED RED TURN ON\012\000"
  229      52454420 
  229      5455524E 
- 229      204F4646 
- 229      0A00
- 230              		.section	.text.receive_data,"ax",%progbits
- 231              		.align	2
- 232              		.global	receive_data
- 233              		.thumb
- 234              		.thumb_func
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 8
+ 229      204F4E0A 
+ 229      00
+ 230 0101 000000   		.align	2
+ 231              	.LC13:
+ 232 0104 4C454420 		.ascii	"LED BLUE TURN OFF\012\000"
+ 232      424C5545 
+ 232      20545552 
+ 232      4E204F46 
+ 232      460A00
+ 233 0117 00       		.align	2
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 8
 
 
- 235              		.type	receive_data, %function
- 236              	receive_data:
- 237              	.LFB70:
+ 234              	.LC14:
+ 235 0118 4C454420 		.ascii	"LED RED TURN OFF\012\000"
+ 235      52454420 
+ 235      5455524E 
+ 235      204F4646 
+ 235      0A00
+ 236              		.section	.text.receive_data,"ax",%progbits
+ 237              		.align	2
+ 238              		.global	receive_data
+ 239              		.thumb
+ 240              		.thumb_func
+ 241              		.type	receive_data, %function
+ 242              	receive_data:
+ 243              	.LFB70:
  117:main.c        **** }
  118:main.c        **** 
  119:main.c        **** void receive_data( void *p ) {
- 238              		.loc 1 119 0
- 239              		.cfi_startproc
- 240              		@ args = 0, pretend = 0, frame = 288
- 241              		@ frame_needed = 1, uses_anonymous_args = 0
- 242 0000 B0B5     		push	{r4, r5, r7, lr}
- 243              		.cfi_def_cfa_offset 16
- 244              		.cfi_offset 4, -16
- 245              		.cfi_offset 5, -12
- 246              		.cfi_offset 7, -8
- 247              		.cfi_offset 14, -4
- 248 0002 C8B0     		sub	sp, sp, #288
- 249              		.cfi_def_cfa_offset 304
- 250 0004 00AF     		add	r7, sp, #0
- 251              		.cfi_def_cfa_register 7
- 252 0006 3B1D     		adds	r3, r7, #4
- 253 0008 1860     		str	r0, [r3]
+ 244              		.loc 1 119 0
+ 245              		.cfi_startproc
+ 246              		@ args = 0, pretend = 0, frame = 288
+ 247              		@ frame_needed = 1, uses_anonymous_args = 0
+ 248 0000 B0B5     		push	{r4, r5, r7, lr}
+ 249              		.cfi_def_cfa_offset 16
+ 250              		.cfi_offset 4, -16
+ 251              		.cfi_offset 5, -12
+ 252              		.cfi_offset 7, -8
+ 253              		.cfi_offset 14, -4
+ 254 0002 C8B0     		sub	sp, sp, #288
+ 255              		.cfi_def_cfa_offset 304
+ 256 0004 00AF     		add	r7, sp, #0
+ 257              		.cfi_def_cfa_register 7
+ 258 0006 3B1D     		adds	r3, r7, #4
+ 259 0008 1860     		str	r0, [r3]
  120:main.c        ****     
  121:main.c        ****     p = NULL;
- 254              		.loc 1 121 0
- 255 000a 3B1D     		adds	r3, r7, #4
- 256 000c 0022     		movs	r2, #0
- 257 000e 1A60     		str	r2, [r3]
+ 260              		.loc 1 121 0
+ 261 000a 3B1D     		adds	r3, r7, #4
+ 262 000c 0022     		movs	r2, #0
+ 263 000e 1A60     		str	r2, [r3]
  122:main.c        ****     
  123:main.c        ****     const signed char * local_write[64];
  124:main.c        ****     int i = 0;
- 258              		.loc 1 124 0
- 259 0010 0023     		movs	r3, #0
- 260 0012 C7F81C31 		str	r3, [r7, #284]
+ 264              		.loc 1 124 0
+ 265 0010 0023     		movs	r3, #0
+ 266 0012 C7F81C31 		str	r3, [r7, #284]
  125:main.c        ****     int go = 0;
- 261              		.loc 1 125 0
- 262 0016 0023     		movs	r3, #0
- 263 0018 C7F81831 		str	r3, [r7, #280]
+ 267              		.loc 1 125 0
+ 268 0016 0023     		movs	r3, #0
+ 269 0018 C7F81831 		str	r3, [r7, #280]
  126:main.c        ****     signed char type = 0;
- 264              		.loc 1 126 0
- 265 001c 0023     		movs	r3, #0
- 266 001e 87F81731 		strb	r3, [r7, #279]
- 267              	.L21:
+ 270              		.loc 1 126 0
+ 271 001c 0023     		movs	r3, #0
+ 272 001e 87F81731 		strb	r3, [r7, #279]
+ 273              	.L23:
  127:main.c        ****     char temp[10];
  128:main.c        ****     
  129:main.c        ****     while(1) {
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 9
+
+
  130:main.c        ****         if (pdTRUE == xSerialGetChar(pxPort, &rx_receive, comRX_BLOCK_TIME)) {
- 268              		.loc 1 130 0
- 269 0022 A54B     		ldr	r3, .L22
- 270 0024 1B68     		ldr	r3, [r3]
- 271 0026 4FF6FF72 		movw	r2, #65535
- 272 002a A449     		ldr	r1, .L22+4
- 273 002c 1846     		mov	r0, r3
- 274 002e FFF7FEFF 		bl	xSerialGetChar
- 275 0032 0346     		mov	r3, r0
- 276 0034 012B     		cmp	r3, #1
- 277 0036 F4D1     		bne	.L21
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 9
-
-
+ 274              		.loc 1 130 0
+ 275 0022 B44B     		ldr	r3, .L24
+ 276 0024 1B68     		ldr	r3, [r3]
+ 277 0026 4FF6FF72 		movw	r2, #65535
+ 278 002a B349     		ldr	r1, .L24+4
+ 279 002c 1846     		mov	r0, r3
+ 280 002e FFF7FEFF 		bl	xSerialGetChar
+ 281 0032 0346     		mov	r3, r0
+ 282 0034 012B     		cmp	r3, #1
+ 283 0036 F4D1     		bne	.L23
  131:main.c        ****             type = rx_receive;
- 278              		.loc 1 131 0
- 279 0038 A04B     		ldr	r3, .L22+4
- 280 003a 1B78     		ldrb	r3, [r3]
- 281 003c 87F81731 		strb	r3, [r7, #279]
+ 284              		.loc 1 131 0
+ 285 0038 AF4B     		ldr	r3, .L24+4
+ 286 003a 1B78     		ldrb	r3, [r3]
+ 287 003c 87F81731 		strb	r3, [r7, #279]
  132:main.c        ****             if(xSemaphoreTake(gatekeeper, 50000)) {
- 282              		.loc 1 132 0
- 283 0040 9F4B     		ldr	r3, .L22+8
- 284 0042 1B68     		ldr	r3, [r3]
- 285 0044 4CF25031 		movw	r1, #50000
- 286 0048 1846     		mov	r0, r3
- 287 004a FFF7FEFF 		bl	xQueueSemaphoreTake
- 288 004e 0346     		mov	r3, r0
- 289 0050 002B     		cmp	r3, #0
- 290 0052 E6D0     		beq	.L21
+ 288              		.loc 1 132 0
+ 289 0040 AE4B     		ldr	r3, .L24+8
+ 290 0042 1B68     		ldr	r3, [r3]
+ 291 0044 4CF25031 		movw	r1, #50000
+ 292 0048 1846     		mov	r0, r3
+ 293 004a FFF7FEFF 		bl	xQueueSemaphoreTake
+ 294 004e 0346     		mov	r3, r0
+ 295 0050 002B     		cmp	r3, #0
+ 296 0052 E6D0     		beq	.L23
  133:main.c        ****                 if(type=='1'){//
- 291              		.loc 1 133 0
- 292 0054 97F91731 		ldrsb	r3, [r7, #279]
- 293 0058 312B     		cmp	r3, #49
- 294 005a 43D1     		bne	.L9
+ 297              		.loc 1 133 0
+ 298 0054 97F91731 		ldrsb	r3, [r7, #279]
+ 299 0058 312B     		cmp	r3, #49
+ 300 005a 43D1     		bne	.L9
  134:main.c        ****                     for(i=0;i<8;i++){
- 295              		.loc 1 134 0
- 296 005c 0023     		movs	r3, #0
- 297 005e C7F81C31 		str	r3, [r7, #284]
- 298 0062 16E0     		b	.L10
- 299              	.L11:
+ 301              		.loc 1 134 0
+ 302 005c 0023     		movs	r3, #0
+ 303 005e C7F81C31 		str	r3, [r7, #284]
+ 304 0062 16E0     		b	.L10
+ 305              	.L11:
  135:main.c        ****                         xSerialGetChar(pxPort, &rx_receive, comRX_BLOCK_TIME);
- 300              		.loc 1 135 0 discriminator 3
- 301 0064 944B     		ldr	r3, .L22
- 302 0066 1B68     		ldr	r3, [r3]
- 303 0068 4FF6FF72 		movw	r2, #65535
- 304 006c 9349     		ldr	r1, .L22+4
- 305 006e 1846     		mov	r0, r3
- 306 0070 FFF7FEFF 		bl	xSerialGetChar
+ 306              		.loc 1 135 0 discriminator 3
+ 307 0064 A34B     		ldr	r3, .L24
+ 308 0066 1B68     		ldr	r3, [r3]
+ 309 0068 4FF6FF72 		movw	r2, #65535
+ 310 006c A249     		ldr	r1, .L24+4
+ 311 006e 1846     		mov	r0, r3
+ 312 0070 FFF7FEFF 		bl	xSerialGetChar
  136:main.c        ****                         buffer[i] = rx_receive;
- 307              		.loc 1 136 0 discriminator 3
- 308 0074 914B     		ldr	r3, .L22+4
- 309 0076 93F90030 		ldrsb	r3, [r3]
- 310 007a D9B2     		uxtb	r1, r3
- 311 007c 914A     		ldr	r2, .L22+12
- 312 007e D7F81C31 		ldr	r3, [r7, #284]
- 313 0082 1344     		add	r3, r3, r2
- 314 0084 0A46     		mov	r2, r1
- 315 0086 1A70     		strb	r2, [r3]
+ 313              		.loc 1 136 0 discriminator 3
+ 314 0074 A04B     		ldr	r3, .L24+4
+ 315 0076 93F90030 		ldrsb	r3, [r3]
+ 316 007a D9B2     		uxtb	r1, r3
+ 317 007c A04A     		ldr	r2, .L24+12
+ 318 007e D7F81C31 		ldr	r3, [r7, #284]
+ 319 0082 1344     		add	r3, r3, r2
+ 320 0084 0A46     		mov	r2, r1
+ 321 0086 1A70     		strb	r2, [r3]
  134:main.c        ****                     for(i=0;i<8;i++){
- 316              		.loc 1 134 0 discriminator 3
- 317 0088 D7F81C31 		ldr	r3, [r7, #284]
- 318 008c 0133     		adds	r3, r3, #1
- 319 008e C7F81C31 		str	r3, [r7, #284]
- 320              	.L10:
+ 322              		.loc 1 134 0 discriminator 3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 10
+
+
+ 323 0088 D7F81C31 		ldr	r3, [r7, #284]
+ 324 008c 0133     		adds	r3, r3, #1
+ 325 008e C7F81C31 		str	r3, [r7, #284]
+ 326              	.L10:
  134:main.c        ****                     for(i=0;i<8;i++){
- 321              		.loc 1 134 0 is_stmt 0 discriminator 1
- 322 0092 D7F81C31 		ldr	r3, [r7, #284]
- 323 0096 072B     		cmp	r3, #7
- 324 0098 E4DD     		ble	.L11
+ 327              		.loc 1 134 0 is_stmt 0 discriminator 1
+ 328 0092 D7F81C31 		ldr	r3, [r7, #284]
+ 329 0096 072B     		cmp	r3, #7
+ 330 0098 E4DD     		ble	.L11
  137:main.c        ****                     }
  138:main.c        ****                     sprintf((char *) local_write, "buffer read as %s\n", buffer);
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 10
-
-
- 325              		.loc 1 138 0 is_stmt 1
- 326 009a 07F11403 		add	r3, r7, #20
- 327 009e 894A     		ldr	r2, .L22+12
- 328 00a0 8949     		ldr	r1, .L22+16
- 329 00a2 1846     		mov	r0, r3
- 330 00a4 FFF7FEFF 		bl	sprintf
+ 331              		.loc 1 138 0 is_stmt 1
+ 332 009a 07F11403 		add	r3, r7, #20
+ 333 009e 984A     		ldr	r2, .L24+12
+ 334 00a0 9849     		ldr	r1, .L24+16
+ 335 00a2 1846     		mov	r0, r3
+ 336 00a4 FFF7FEFF 		bl	sprintf
  139:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 331              		.loc 1 139 0
- 332 00a8 834B     		ldr	r3, .L22
- 333 00aa 1B68     		ldr	r3, [r3]
- 334 00ac 07F11401 		add	r1, r7, #20
- 335 00b0 4022     		movs	r2, #64
- 336 00b2 1846     		mov	r0, r3
- 337 00b4 FFF7FEFF 		bl	vSerialPutString
+ 337              		.loc 1 139 0
+ 338 00a8 924B     		ldr	r3, .L24
+ 339 00aa 1B68     		ldr	r3, [r3]
+ 340 00ac 07F11401 		add	r1, r7, #20
+ 341 00b0 4022     		movs	r2, #64
+ 342 00b2 1846     		mov	r0, r3
+ 343 00b4 FFF7FEFF 		bl	vSerialPutString
  140:main.c        ****                     update_inc( &left_wheel, &right_wheel, buffer);
- 338              		.loc 1 140 0
- 339 00b8 824A     		ldr	r2, .L22+12
- 340 00ba 8449     		ldr	r1, .L22+20
- 341 00bc 8448     		ldr	r0, .L22+24
- 342 00be FFF7FEFF 		bl	update_inc
+ 344              		.loc 1 140 0
+ 345 00b8 914A     		ldr	r2, .L24+12
+ 346 00ba 9349     		ldr	r1, .L24+20
+ 347 00bc 9348     		ldr	r0, .L24+24
+ 348 00be FFF7FEFF 		bl	update_inc
  141:main.c        ****                     sprintf((char *) local_write, "left inc: %i\nright inc: %i\n", left_wheel.inc, 
- 343              		.loc 1 141 0
- 344 00c2 834B     		ldr	r3, .L22+24
- 345 00c4 9A69     		ldr	r2, [r3, #24]
- 346 00c6 814B     		ldr	r3, .L22+20
- 347 00c8 9B69     		ldr	r3, [r3, #24]
- 348 00ca 07F11400 		add	r0, r7, #20
- 349 00ce 8149     		ldr	r1, .L22+28
- 350 00d0 FFF7FEFF 		bl	sprintf
+ 349              		.loc 1 141 0
+ 350 00c2 924B     		ldr	r3, .L24+24
+ 351 00c4 9A69     		ldr	r2, [r3, #24]
+ 352 00c6 904B     		ldr	r3, .L24+20
+ 353 00c8 9B69     		ldr	r3, [r3, #24]
+ 354 00ca 07F11400 		add	r0, r7, #20
+ 355 00ce 9049     		ldr	r1, .L24+28
+ 356 00d0 FFF7FEFF 		bl	sprintf
  142:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 351              		.loc 1 142 0
- 352 00d4 784B     		ldr	r3, .L22
- 353 00d6 1B68     		ldr	r3, [r3]
- 354 00d8 07F11401 		add	r1, r7, #20
- 355 00dc 4022     		movs	r2, #64
- 356 00de 1846     		mov	r0, r3
- 357 00e0 FFF7FEFF 		bl	vSerialPutString
- 358              	.L9:
+ 357              		.loc 1 142 0
+ 358 00d4 874B     		ldr	r3, .L24
+ 359 00d6 1B68     		ldr	r3, [r3]
+ 360 00d8 07F11401 		add	r1, r7, #20
+ 361 00dc 4022     		movs	r2, #64
+ 362 00de 1846     		mov	r0, r3
+ 363 00e0 FFF7FEFF 		bl	vSerialPutString
+ 364              	.L9:
  143:main.c        ****                 }
  144:main.c        ****                 if(type=='2'){
- 359              		.loc 1 144 0
- 360 00e4 97F91731 		ldrsb	r3, [r7, #279]
- 361 00e8 322B     		cmp	r3, #50
- 362 00ea 01D1     		bne	.L12
+ 365              		.loc 1 144 0
+ 366 00e4 97F91731 		ldrsb	r3, [r7, #279]
+ 367 00e8 322B     		cmp	r3, #50
+ 368 00ea 01D1     		bne	.L12
  145:main.c        ****                     CySoftwareReset();
- 363              		.loc 1 145 0
- 364 00ec FFF7FEFF 		bl	CySoftwareReset
- 365              	.L12:
+ 369              		.loc 1 145 0
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 11
+
+
+ 370 00ec FFF7FEFF 		bl	CySoftwareReset
+ 371              	.L12:
  146:main.c        ****                 }  
  147:main.c        ****             
- 148:main.c        ****                 if (type=='4' && ~isMaster){//Camera position for LED CV
- 366              		.loc 1 148 0
- 367 00f0 97F91731 		ldrsb	r3, [r7, #279]
- 368 00f4 342B     		cmp	r3, #52
- 369 00f6 21D1     		bne	.L13
- 370              		.loc 1 148 0 is_stmt 0 discriminator 1
- 371 00f8 774B     		ldr	r3, .L22+32
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 11
+ 148:main.c        ****                 if (type=='4'){//Camera position for LED CV
+ 372              		.loc 1 148 0
+ 373 00f0 97F91731 		ldrsb	r3, [r7, #279]
+ 374 00f4 342B     		cmp	r3, #52
+ 375 00f6 41D1     		bne	.L13
+ 149:main.c        ****                     if(isMaster==0){
+ 376              		.loc 1 149 0
+ 377 00f8 864B     		ldr	r3, .L24+32
+ 378 00fa 1B68     		ldr	r3, [r3]
+ 379 00fc 002B     		cmp	r3, #0
+ 380 00fe 1CD1     		bne	.L14
+ 150:main.c        ****                     sprintf((char *) local_write, "VERTICAL \n");
+ 381              		.loc 1 150 0
+ 382 0100 07F11403 		add	r3, r7, #20
+ 383 0104 844A     		ldr	r2, .L24+36
+ 384 0106 07CA     		ldmia	r2, {r0, r1, r2}
+ 385 0108 03C3     		stmia	r3!, {r0, r1}
+ 386 010a 1A80     		strh	r2, [r3]	@ movhi
+ 387 010c 0233     		adds	r3, r3, #2
+ 388 010e 120C     		lsrs	r2, r2, #16
+ 389 0110 1A70     		strb	r2, [r3]
+ 151:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 390              		.loc 1 151 0
+ 391 0112 784B     		ldr	r3, .L24
+ 392 0114 1B68     		ldr	r3, [r3]
+ 393 0116 07F11401 		add	r1, r7, #20
+ 394 011a 4022     		movs	r2, #64
+ 395 011c 1846     		mov	r0, r3
+ 396 011e FFF7FEFF 		bl	vSerialPutString
+ 152:main.c        ****                     PWM_1_Wakeup();                 
+ 397              		.loc 1 152 0
+ 398 0122 FFF7FEFF 		bl	PWM_1_Wakeup
+ 153:main.c        ****                     PWM_1_WriteCompare(1200);
+ 399              		.loc 1 153 0
+ 400 0126 4FF49660 		mov	r0, #1200
+ 401 012a FFF7FEFF 		bl	PWM_1_WriteCompare
+ 154:main.c        ****                     CyDelay(1000);
+ 402              		.loc 1 154 0
+ 403 012e 4FF47A70 		mov	r0, #1000
+ 404 0132 FFF7FEFF 		bl	CyDelay
+ 155:main.c        ****                     PWM_1_Sleep();}
+ 405              		.loc 1 155 0
+ 406 0136 FFF7FEFF 		bl	PWM_1_Sleep
+ 407              	.L14:
+ 156:main.c        ****                     if(isMaster==1){
+ 408              		.loc 1 156 0
+ 409 013a 764B     		ldr	r3, .L24+32
+ 410 013c 1B68     		ldr	r3, [r3]
+ 411 013e 012B     		cmp	r3, #1
+ 412 0140 1CD1     		bne	.L13
+ 157:main.c        ****                     sprintf((char *) local_write, "Laser UP \n");
+ 413              		.loc 1 157 0
+ 414 0142 07F11403 		add	r3, r7, #20
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 12
 
 
- 372 00fa 1B68     		ldr	r3, [r3]
- 373 00fc B3F1FF3F 		cmp	r3, #-1
- 374 0100 1CD0     		beq	.L13
- 149:main.c        ****                     sprintf((char *) local_write, "VERTICAL \n");
- 375              		.loc 1 149 0 is_stmt 1
- 376 0102 07F11403 		add	r3, r7, #20
- 377 0106 754A     		ldr	r2, .L22+36
- 378 0108 07CA     		ldmia	r2, {r0, r1, r2}
- 379 010a 03C3     		stmia	r3!, {r0, r1}
- 380 010c 1A80     		strh	r2, [r3]	@ movhi
- 381 010e 0233     		adds	r3, r3, #2
- 382 0110 120C     		lsrs	r2, r2, #16
- 383 0112 1A70     		strb	r2, [r3]
- 150:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 384              		.loc 1 150 0
- 385 0114 684B     		ldr	r3, .L22
- 386 0116 1B68     		ldr	r3, [r3]
- 387 0118 07F11401 		add	r1, r7, #20
- 388 011c 4022     		movs	r2, #64
- 389 011e 1846     		mov	r0, r3
- 390 0120 FFF7FEFF 		bl	vSerialPutString
- 151:main.c        ****                     PWM_1_Wakeup();                 
- 391              		.loc 1 151 0
- 392 0124 FFF7FEFF 		bl	PWM_1_Wakeup
- 152:main.c        ****                     PWM_1_WriteCompare(1200);
- 393              		.loc 1 152 0
- 394 0128 4FF49660 		mov	r0, #1200
- 395 012c FFF7FEFF 		bl	PWM_1_WriteCompare
- 153:main.c        ****                     CyDelay(1000);
- 396              		.loc 1 153 0
- 397 0130 4FF47A70 		mov	r0, #1000
- 398 0134 FFF7FEFF 		bl	CyDelay
- 154:main.c        ****                     PWM_1_Sleep();
- 399              		.loc 1 154 0
- 400 0138 FFF7FEFF 		bl	PWM_1_Sleep
- 401              	.L13:
- 155:main.c        ****                     
- 156:main.c        ****                 }
- 157:main.c        ****                 if (type=='5' && ~isMaster){//Causes position for Laser DOT CV
- 402              		.loc 1 157 0
- 403 013c 97F91731 		ldrsb	r3, [r7, #279]
- 404 0140 352B     		cmp	r3, #53
- 405 0142 20D1     		bne	.L14
- 406              		.loc 1 157 0 is_stmt 0 discriminator 1
- 407 0144 644B     		ldr	r3, .L22+32
- 408 0146 1B68     		ldr	r3, [r3]
- 409 0148 B3F1FF3F 		cmp	r3, #-1
- 410 014c 1BD0     		beq	.L14
- 158:main.c        ****                     sprintf((char *) local_write, "HORIZONTAL \n");
- 411              		.loc 1 158 0 is_stmt 1
- 412 014e 07F11403 		add	r3, r7, #20
- 413 0152 634A     		ldr	r2, .L22+40
- 414 0154 1C46     		mov	r4, r3
- 415 0156 1346     		mov	r3, r2
- 416 0158 0FCB     		ldmia	r3, {r0, r1, r2, r3}
- 417 015a 07C4     		stmia	r4!, {r0, r1, r2}
- 418 015c 2370     		strb	r3, [r4]
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 12
-
-
- 159:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 419              		.loc 1 159 0
- 420 015e 564B     		ldr	r3, .L22
- 421 0160 1B68     		ldr	r3, [r3]
- 422 0162 07F11401 		add	r1, r7, #20
- 423 0166 4022     		movs	r2, #64
- 424 0168 1846     		mov	r0, r3
- 425 016a FFF7FEFF 		bl	vSerialPutString
- 160:main.c        ****                     PWM_1_Wakeup();
- 426              		.loc 1 160 0
- 427 016e FFF7FEFF 		bl	PWM_1_Wakeup
- 161:main.c        ****                     PWM_1_WriteCompare(2100);//0 deg;
- 428              		.loc 1 161 0
- 429 0172 40F63400 		movw	r0, #2100
- 430 0176 FFF7FEFF 		bl	PWM_1_WriteCompare
- 162:main.c        ****                     CyDelay(1000);
- 431              		.loc 1 162 0
- 432 017a 4FF47A70 		mov	r0, #1000
- 433 017e FFF7FEFF 		bl	CyDelay
- 163:main.c        ****                     PWM_1_Sleep();
- 434              		.loc 1 163 0
- 435 0182 FFF7FEFF 		bl	PWM_1_Sleep
- 436              	.L14:
+ 415 0146 754A     		ldr	r2, .L24+40
+ 416 0148 07CA     		ldmia	r2, {r0, r1, r2}
+ 417 014a 03C3     		stmia	r3!, {r0, r1}
+ 418 014c 1A80     		strh	r2, [r3]	@ movhi
+ 419 014e 0233     		adds	r3, r3, #2
+ 420 0150 120C     		lsrs	r2, r2, #16
+ 421 0152 1A70     		strb	r2, [r3]
+ 158:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 422              		.loc 1 158 0
+ 423 0154 674B     		ldr	r3, .L24
+ 424 0156 1B68     		ldr	r3, [r3]
+ 425 0158 07F11401 		add	r1, r7, #20
+ 426 015c 4022     		movs	r2, #64
+ 427 015e 1846     		mov	r0, r3
+ 428 0160 FFF7FEFF 		bl	vSerialPutString
+ 159:main.c        ****                     PWM_2_Wakeup();                 
+ 429              		.loc 1 159 0
+ 430 0164 FFF7FEFF 		bl	PWM_2_Wakeup
+ 160:main.c        ****                     PWM_2_WriteCompare(1850); //DONT GO Below 1800 
+ 431              		.loc 1 160 0
+ 432 0168 40F23A70 		movw	r0, #1850
+ 433 016c FFF7FEFF 		bl	PWM_2_WriteCompare
+ 161:main.c        ****                     CyDelay(1000);
+ 434              		.loc 1 161 0
+ 435 0170 4FF47A70 		mov	r0, #1000
+ 436 0174 FFF7FEFF 		bl	CyDelay
+ 162:main.c        ****                     PWM_2_Sleep();}
+ 437              		.loc 1 162 0
+ 438 0178 FFF7FEFF 		bl	PWM_2_Sleep
+ 439              	.L13:
+ 163:main.c        ****                         
  164:main.c        ****                     
  165:main.c        ****                 }
- 166:main.c        ****                  if (type=='6' && isMaster){//TURN ON LED_BLUE
- 437              		.loc 1 166 0
- 438 0186 97F91731 		ldrsb	r3, [r7, #279]
- 439 018a 362B     		cmp	r3, #54
- 440 018c 17D1     		bne	.L15
- 441              		.loc 1 166 0 is_stmt 0 discriminator 1
- 442 018e 524B     		ldr	r3, .L22+32
- 443 0190 1B68     		ldr	r3, [r3]
- 444 0192 002B     		cmp	r3, #0
- 445 0194 13D0     		beq	.L15
- 167:main.c        ****                     sprintf((char *) local_write, "LED BLUE TURN ON\n");
- 446              		.loc 1 167 0 is_stmt 1
- 447 0196 07F11403 		add	r3, r7, #20
- 448 019a 524A     		ldr	r2, .L22+44
- 449 019c 1C46     		mov	r4, r3
- 450 019e 1546     		mov	r5, r2
- 451 01a0 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 452 01a2 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 453 01a4 2B68     		ldr	r3, [r5]
- 454 01a6 2380     		strh	r3, [r4]	@ movhi
- 168:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 455              		.loc 1 168 0
- 456 01a8 434B     		ldr	r3, .L22
- 457 01aa 1B68     		ldr	r3, [r3]
- 458 01ac 07F11401 		add	r1, r7, #20
- 459 01b0 4022     		movs	r2, #64
- 460 01b2 1846     		mov	r0, r3
- 461 01b4 FFF7FEFF 		bl	vSerialPutString
- 169:main.c        ****                     LED_BLUE_Write(1);                    
- 462              		.loc 1 169 0
- 463 01b8 0120     		movs	r0, #1
- 464 01ba FFF7FEFF 		bl	LED_BLUE_Write
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 13
+ 166:main.c        ****                 if (type=='5'){//Causes position for Laser DOT CV
+ 440              		.loc 1 166 0
+ 441 017c 97F91731 		ldrsb	r3, [r7, #279]
+ 442 0180 352B     		cmp	r3, #53
+ 443 0182 3FD1     		bne	.L15
+ 167:main.c        ****                     if(isMaster==0){
+ 444              		.loc 1 167 0
+ 445 0184 634B     		ldr	r3, .L24+32
+ 446 0186 1B68     		ldr	r3, [r3]
+ 447 0188 002B     		cmp	r3, #0
+ 448 018a 1BD1     		bne	.L16
+ 168:main.c        ****                     sprintf((char *) local_write, "HORIZONTAL \n");
+ 449              		.loc 1 168 0
+ 450 018c 07F11403 		add	r3, r7, #20
+ 451 0190 634A     		ldr	r2, .L24+44
+ 452 0192 1C46     		mov	r4, r3
+ 453 0194 1346     		mov	r3, r2
+ 454 0196 0FCB     		ldmia	r3, {r0, r1, r2, r3}
+ 455 0198 07C4     		stmia	r4!, {r0, r1, r2}
+ 456 019a 2370     		strb	r3, [r4]
+ 169:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 457              		.loc 1 169 0
+ 458 019c 554B     		ldr	r3, .L24
+ 459 019e 1B68     		ldr	r3, [r3]
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 13
 
 
- 465              	.L15:
- 170:main.c        ****                 }
- 171:main.c        ****                 if (type=='7' && isMaster){//TURN ON LED_RED
+ 460 01a0 07F11401 		add	r1, r7, #20
+ 461 01a4 4022     		movs	r2, #64
+ 462 01a6 1846     		mov	r0, r3
+ 463 01a8 FFF7FEFF 		bl	vSerialPutString
+ 170:main.c        ****                     PWM_1_Wakeup();
+ 464              		.loc 1 170 0
+ 465 01ac FFF7FEFF 		bl	PWM_1_Wakeup
+ 171:main.c        ****                     PWM_1_WriteCompare(2100);//0 deg;
  466              		.loc 1 171 0
- 467 01be 97F91731 		ldrsb	r3, [r7, #279]
- 468 01c2 372B     		cmp	r3, #55
- 469 01c4 17D1     		bne	.L16
- 470              		.loc 1 171 0 is_stmt 0 discriminator 1
- 471 01c6 444B     		ldr	r3, .L22+32
- 472 01c8 1B68     		ldr	r3, [r3]
- 473 01ca 002B     		cmp	r3, #0
- 474 01cc 13D0     		beq	.L16
- 172:main.c        ****                     sprintf((char *) local_write, "LED RED TURN ON\n");
- 475              		.loc 1 172 0 is_stmt 1
- 476 01ce 07F11403 		add	r3, r7, #20
- 477 01d2 454A     		ldr	r2, .L22+48
- 478 01d4 1C46     		mov	r4, r3
- 479 01d6 1546     		mov	r5, r2
- 480 01d8 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 481 01da 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 482 01dc 2B68     		ldr	r3, [r5]
- 483 01de 2370     		strb	r3, [r4]
- 173:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 484              		.loc 1 173 0
- 485 01e0 354B     		ldr	r3, .L22
- 486 01e2 1B68     		ldr	r3, [r3]
- 487 01e4 07F11401 		add	r1, r7, #20
- 488 01e8 4022     		movs	r2, #64
- 489 01ea 1846     		mov	r0, r3
- 490 01ec FFF7FEFF 		bl	vSerialPutString
- 174:main.c        ****                     LED_RED_Write(1);                    
- 491              		.loc 1 174 0
- 492 01f0 0120     		movs	r0, #1
- 493 01f2 FFF7FEFF 		bl	LED_RED_Write
- 494              	.L16:
- 175:main.c        ****                 }
- 176:main.c        ****                  if (type=='8' && isMaster){//TURN OFF LED_BLUE
- 495              		.loc 1 176 0
- 496 01f6 97F91731 		ldrsb	r3, [r7, #279]
- 497 01fa 382B     		cmp	r3, #56
- 498 01fc 1BD1     		bne	.L17
- 499              		.loc 1 176 0 is_stmt 0 discriminator 1
- 500 01fe 364B     		ldr	r3, .L22+32
- 501 0200 1B68     		ldr	r3, [r3]
- 502 0202 002B     		cmp	r3, #0
- 503 0204 17D0     		beq	.L17
- 177:main.c        ****                     sprintf((char *) local_write, "LED BLUE TURN OFF\n");
- 504              		.loc 1 177 0 is_stmt 1
- 505 0206 07F11403 		add	r3, r7, #20
- 506 020a 384A     		ldr	r2, .L22+52
- 507 020c 1C46     		mov	r4, r3
- 508 020e 1546     		mov	r5, r2
- 509 0210 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 510 0212 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 511 0214 2B68     		ldr	r3, [r5]
- 512 0216 1A46     		mov	r2, r3	@ movhi
- 513 0218 2280     		strh	r2, [r4]	@ movhi
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 14
+ 467 01b0 40F63400 		movw	r0, #2100
+ 468 01b4 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 172:main.c        ****                     CyDelay(1000);
+ 469              		.loc 1 172 0
+ 470 01b8 4FF47A70 		mov	r0, #1000
+ 471 01bc FFF7FEFF 		bl	CyDelay
+ 173:main.c        ****                     PWM_1_Sleep();}
+ 472              		.loc 1 173 0
+ 473 01c0 FFF7FEFF 		bl	PWM_1_Sleep
+ 474              	.L16:
+ 174:main.c        ****                     if(isMaster==1){
+ 475              		.loc 1 174 0
+ 476 01c4 534B     		ldr	r3, .L24+32
+ 477 01c6 1B68     		ldr	r3, [r3]
+ 478 01c8 012B     		cmp	r3, #1
+ 479 01ca 1BD1     		bne	.L15
+ 175:main.c        ****                     sprintf((char *) local_write, "Laser DOWN \n");
+ 480              		.loc 1 175 0
+ 481 01cc 07F11403 		add	r3, r7, #20
+ 482 01d0 544A     		ldr	r2, .L24+48
+ 483 01d2 1C46     		mov	r4, r3
+ 484 01d4 1346     		mov	r3, r2
+ 485 01d6 0FCB     		ldmia	r3, {r0, r1, r2, r3}
+ 486 01d8 07C4     		stmia	r4!, {r0, r1, r2}
+ 487 01da 2370     		strb	r3, [r4]
+ 176:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 488              		.loc 1 176 0
+ 489 01dc 454B     		ldr	r3, .L24
+ 490 01de 1B68     		ldr	r3, [r3]
+ 491 01e0 07F11401 		add	r1, r7, #20
+ 492 01e4 4022     		movs	r2, #64
+ 493 01e6 1846     		mov	r0, r3
+ 494 01e8 FFF7FEFF 		bl	vSerialPutString
+ 177:main.c        ****                     PWM_2_Wakeup();                 
+ 495              		.loc 1 177 0
+ 496 01ec FFF7FEFF 		bl	PWM_2_Wakeup
+ 178:main.c        ****                     PWM_2_WriteCompare(2100); //DONT GO ABOVE 2100
+ 497              		.loc 1 178 0
+ 498 01f0 40F63400 		movw	r0, #2100
+ 499 01f4 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 179:main.c        ****                     CyDelay(1000);
+ 500              		.loc 1 179 0
+ 501 01f8 4FF47A70 		mov	r0, #1000
+ 502 01fc FFF7FEFF 		bl	CyDelay
+ 180:main.c        ****                     PWM_2_Sleep();}
+ 503              		.loc 1 180 0
+ 504 0200 FFF7FEFF 		bl	PWM_2_Sleep
+ 505              	.L15:
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 14
 
 
- 514 021a 0234     		adds	r4, r4, #2
- 515 021c 1B0C     		lsrs	r3, r3, #16
- 516 021e 2370     		strb	r3, [r4]
- 178:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 517              		.loc 1 178 0
- 518 0220 254B     		ldr	r3, .L22
- 519 0222 1B68     		ldr	r3, [r3]
- 520 0224 07F11401 		add	r1, r7, #20
- 521 0228 4022     		movs	r2, #64
- 522 022a 1846     		mov	r0, r3
- 523 022c FFF7FEFF 		bl	vSerialPutString
- 179:main.c        ****                     LED_BLUE_Write(0);                    
- 524              		.loc 1 179 0
- 525 0230 0020     		movs	r0, #0
- 526 0232 FFF7FEFF 		bl	LED_BLUE_Write
- 527              	.L17:
- 180:main.c        ****                 }
- 181:main.c        ****                 if (type=='9' && isMaster){//TURN OFF LED_RED
- 528              		.loc 1 181 0
- 529 0236 97F91731 		ldrsb	r3, [r7, #279]
- 530 023a 392B     		cmp	r3, #57
- 531 023c 17D1     		bne	.L18
- 532              		.loc 1 181 0 is_stmt 0 discriminator 1
- 533 023e 264B     		ldr	r3, .L22+32
- 534 0240 1B68     		ldr	r3, [r3]
- 535 0242 002B     		cmp	r3, #0
- 536 0244 13D0     		beq	.L18
- 182:main.c        ****                     sprintf((char *) local_write, "LED RED TURN OFF\n");
- 537              		.loc 1 182 0 is_stmt 1
- 538 0246 07F11403 		add	r3, r7, #20
- 539 024a 294A     		ldr	r2, .L22+56
- 540 024c 1C46     		mov	r4, r3
- 541 024e 1546     		mov	r5, r2
- 542 0250 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
- 543 0252 0FC4     		stmia	r4!, {r0, r1, r2, r3}
- 544 0254 2B68     		ldr	r3, [r5]
- 545 0256 2380     		strh	r3, [r4]	@ movhi
- 183:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
- 546              		.loc 1 183 0
- 547 0258 174B     		ldr	r3, .L22
- 548 025a 1B68     		ldr	r3, [r3]
- 549 025c 07F11401 		add	r1, r7, #20
- 550 0260 4022     		movs	r2, #64
- 551 0262 1846     		mov	r0, r3
- 552 0264 FFF7FEFF 		bl	vSerialPutString
- 184:main.c        ****                     LED_RED_Write(0);                    
- 553              		.loc 1 184 0
- 554 0268 0020     		movs	r0, #0
- 555 026a FFF7FEFF 		bl	LED_RED_Write
- 556              	.L18:
- 185:main.c        ****                 }
- 186:main.c        ****                 for (i=0; i<65; i++) {
- 557              		.loc 1 186 0
- 558 026e 0023     		movs	r3, #0
- 559 0270 C7F81C31 		str	r3, [r7, #284]
- 560 0274 0AE0     		b	.L19
- 561              	.L20:
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 15
+ 181:main.c        ****                     
+ 182:main.c        ****                 }
+ 183:main.c        ****                  if (type=='6' && isMaster){//TURN ON LED_BLUE
+ 506              		.loc 1 183 0
+ 507 0204 97F91731 		ldrsb	r3, [r7, #279]
+ 508 0208 362B     		cmp	r3, #54
+ 509 020a 17D1     		bne	.L17
+ 510              		.loc 1 183 0 is_stmt 0 discriminator 1
+ 511 020c 414B     		ldr	r3, .L24+32
+ 512 020e 1B68     		ldr	r3, [r3]
+ 513 0210 002B     		cmp	r3, #0
+ 514 0212 13D0     		beq	.L17
+ 184:main.c        ****                     sprintf((char *) local_write, "LED BLUE TURN ON\n");
+ 515              		.loc 1 184 0 is_stmt 1
+ 516 0214 07F11403 		add	r3, r7, #20
+ 517 0218 434A     		ldr	r2, .L24+52
+ 518 021a 1C46     		mov	r4, r3
+ 519 021c 1546     		mov	r5, r2
+ 520 021e 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
+ 521 0220 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 522 0222 2B68     		ldr	r3, [r5]
+ 523 0224 2380     		strh	r3, [r4]	@ movhi
+ 185:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 524              		.loc 1 185 0
+ 525 0226 334B     		ldr	r3, .L24
+ 526 0228 1B68     		ldr	r3, [r3]
+ 527 022a 07F11401 		add	r1, r7, #20
+ 528 022e 4022     		movs	r2, #64
+ 529 0230 1846     		mov	r0, r3
+ 530 0232 FFF7FEFF 		bl	vSerialPutString
+ 186:main.c        ****                     LED_BLUE_Write(1);                    
+ 531              		.loc 1 186 0
+ 532 0236 0120     		movs	r0, #1
+ 533 0238 FFF7FEFF 		bl	LED_BLUE_Write
+ 534              	.L17:
+ 187:main.c        ****                 }
+ 188:main.c        ****                 if (type=='7' && isMaster){//TURN ON LED_RED
+ 535              		.loc 1 188 0
+ 536 023c 97F91731 		ldrsb	r3, [r7, #279]
+ 537 0240 372B     		cmp	r3, #55
+ 538 0242 17D1     		bne	.L18
+ 539              		.loc 1 188 0 is_stmt 0 discriminator 1
+ 540 0244 334B     		ldr	r3, .L24+32
+ 541 0246 1B68     		ldr	r3, [r3]
+ 542 0248 002B     		cmp	r3, #0
+ 543 024a 13D0     		beq	.L18
+ 189:main.c        ****                     sprintf((char *) local_write, "LED RED TURN ON\n");
+ 544              		.loc 1 189 0 is_stmt 1
+ 545 024c 07F11403 		add	r3, r7, #20
+ 546 0250 364A     		ldr	r2, .L24+56
+ 547 0252 1C46     		mov	r4, r3
+ 548 0254 1546     		mov	r5, r2
+ 549 0256 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
+ 550 0258 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 551 025a 2B68     		ldr	r3, [r5]
+ 552 025c 2370     		strb	r3, [r4]
+ 190:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 15
 
 
- 187:main.c        ****                     buffer[i] = ' ';
- 562              		.loc 1 187 0 discriminator 3
- 563 0276 134A     		ldr	r2, .L22+12
- 564 0278 D7F81C31 		ldr	r3, [r7, #284]
- 565 027c 1344     		add	r3, r3, r2
- 566 027e 2022     		movs	r2, #32
- 567 0280 1A70     		strb	r2, [r3]
- 186:main.c        ****                     buffer[i] = ' ';
- 568              		.loc 1 186 0 discriminator 3
- 569 0282 D7F81C31 		ldr	r3, [r7, #284]
- 570 0286 0133     		adds	r3, r3, #1
- 571 0288 C7F81C31 		str	r3, [r7, #284]
- 572              	.L19:
- 186:main.c        ****                     buffer[i] = ' ';
- 573              		.loc 1 186 0 is_stmt 0 discriminator 1
- 574 028c D7F81C31 		ldr	r3, [r7, #284]
- 575 0290 402B     		cmp	r3, #64
- 576 0292 F0DD     		ble	.L20
- 188:main.c        ****                 }
- 189:main.c        ****                 go = 0;
- 577              		.loc 1 189 0 is_stmt 1
- 578 0294 0023     		movs	r3, #0
- 579 0296 C7F81831 		str	r3, [r7, #280]
- 190:main.c        ****                 i = 0;
- 580              		.loc 1 190 0
- 581 029a 0023     		movs	r3, #0
- 582 029c C7F81C31 		str	r3, [r7, #284]
- 191:main.c        ****                 type=0;                   
- 583              		.loc 1 191 0
- 584 02a0 0023     		movs	r3, #0
- 585 02a2 87F81731 		strb	r3, [r7, #279]
- 192:main.c        ****                 xSemaphoreGive(gatekeeper);
- 586              		.loc 1 192 0
- 587 02a6 064B     		ldr	r3, .L22+8
- 588 02a8 1868     		ldr	r0, [r3]
- 589 02aa 0023     		movs	r3, #0
- 590 02ac 0022     		movs	r2, #0
- 591 02ae 0021     		movs	r1, #0
- 592 02b0 FFF7FEFF 		bl	xQueueGenericSend
- 193:main.c        ****             }
- 194:main.c        ****         }
- 195:main.c        ****     }
- 593              		.loc 1 195 0
- 594 02b4 B5E6     		b	.L21
- 595              	.L23:
- 596 02b6 00BF     		.align	2
- 597              	.L22:
- 598 02b8 00000000 		.word	pxPort
- 599 02bc 00000000 		.word	rx_receive
- 600 02c0 00000000 		.word	gatekeeper
- 601 02c4 00000000 		.word	buffer
- 602 02c8 74000000 		.word	.LC5
- 603 02cc 00000000 		.word	right_wheel
- 604 02d0 00000000 		.word	left_wheel
- 605 02d4 88000000 		.word	.LC6
- 606 02d8 00000000 		.word	isMaster
- 607 02dc A4000000 		.word	.LC7
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 16
+ 553              		.loc 1 190 0
+ 554 025e 254B     		ldr	r3, .L24
+ 555 0260 1B68     		ldr	r3, [r3]
+ 556 0262 07F11401 		add	r1, r7, #20
+ 557 0266 4022     		movs	r2, #64
+ 558 0268 1846     		mov	r0, r3
+ 559 026a FFF7FEFF 		bl	vSerialPutString
+ 191:main.c        ****                     LED_RED_Write(1);                    
+ 560              		.loc 1 191 0
+ 561 026e 0120     		movs	r0, #1
+ 562 0270 FFF7FEFF 		bl	LED_RED_Write
+ 563              	.L18:
+ 192:main.c        ****                 }
+ 193:main.c        ****                  if (type=='8' && isMaster){//TURN OFF LED_BLUE
+ 564              		.loc 1 193 0
+ 565 0274 97F91731 		ldrsb	r3, [r7, #279]
+ 566 0278 382B     		cmp	r3, #56
+ 567 027a 1BD1     		bne	.L19
+ 568              		.loc 1 193 0 is_stmt 0 discriminator 1
+ 569 027c 254B     		ldr	r3, .L24+32
+ 570 027e 1B68     		ldr	r3, [r3]
+ 571 0280 002B     		cmp	r3, #0
+ 572 0282 17D0     		beq	.L19
+ 194:main.c        ****                     sprintf((char *) local_write, "LED BLUE TURN OFF\n");
+ 573              		.loc 1 194 0 is_stmt 1
+ 574 0284 07F11403 		add	r3, r7, #20
+ 575 0288 294A     		ldr	r2, .L24+60
+ 576 028a 1C46     		mov	r4, r3
+ 577 028c 1546     		mov	r5, r2
+ 578 028e 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
+ 579 0290 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 580 0292 2B68     		ldr	r3, [r5]
+ 581 0294 1A46     		mov	r2, r3	@ movhi
+ 582 0296 2280     		strh	r2, [r4]	@ movhi
+ 583 0298 0234     		adds	r4, r4, #2
+ 584 029a 1B0C     		lsrs	r3, r3, #16
+ 585 029c 2370     		strb	r3, [r4]
+ 195:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 586              		.loc 1 195 0
+ 587 029e 154B     		ldr	r3, .L24
+ 588 02a0 1B68     		ldr	r3, [r3]
+ 589 02a2 07F11401 		add	r1, r7, #20
+ 590 02a6 4022     		movs	r2, #64
+ 591 02a8 1846     		mov	r0, r3
+ 592 02aa FFF7FEFF 		bl	vSerialPutString
+ 196:main.c        ****                     LED_BLUE_Write(0);                    
+ 593              		.loc 1 196 0
+ 594 02ae 0020     		movs	r0, #0
+ 595 02b0 FFF7FEFF 		bl	LED_BLUE_Write
+ 596              	.L19:
+ 197:main.c        ****                 }
+ 198:main.c        ****                 if (type=='9' && isMaster){//TURN OFF LED_RED
+ 597              		.loc 1 198 0
+ 598 02b4 97F91731 		ldrsb	r3, [r7, #279]
+ 599 02b8 392B     		cmp	r3, #57
+ 600 02ba 17D1     		bne	.L20
+ 601              		.loc 1 198 0 is_stmt 0 discriminator 1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 16
 
 
- 608 02e0 B0000000 		.word	.LC8
- 609 02e4 C0000000 		.word	.LC9
- 610 02e8 D4000000 		.word	.LC10
- 611 02ec E8000000 		.word	.LC11
- 612 02f0 FC000000 		.word	.LC12
- 613              		.cfi_endproc
- 614              	.LFE70:
- 615              		.size	receive_data, .-receive_data
- 616              		.section	.rodata
- 617 010e 0000     		.align	2
- 618              	.LC13:
- 619 0110 6C656674 		.ascii	"left wheel inc: %li\012\000"
- 619      20776865 
- 619      656C2069 
- 619      6E633A20 
- 619      256C690A 
- 620              		.section	.text.PID_initialise,"ax",%progbits
- 621              		.align	2
- 622              		.global	PID_initialise
- 623              		.thumb
- 624              		.thumb_func
- 625              		.type	PID_initialise, %function
- 626              	PID_initialise:
- 627              	.LFB71:
- 196:main.c        **** }
- 197:main.c        **** 
- 198:main.c        **** void PID_initialise( void *p ) {
- 628              		.loc 1 198 0
- 629              		.cfi_startproc
- 630              		@ args = 0, pretend = 0, frame = 264
- 631              		@ frame_needed = 1, uses_anonymous_args = 0
- 632 0000 90B5     		push	{r4, r7, lr}
- 633              		.cfi_def_cfa_offset 12
- 634              		.cfi_offset 4, -12
- 635              		.cfi_offset 7, -8
- 636              		.cfi_offset 14, -4
- 637 0002 C3B0     		sub	sp, sp, #268
- 638              		.cfi_def_cfa_offset 280
- 639 0004 00AF     		add	r7, sp, #0
- 640              		.cfi_def_cfa_register 7
- 641 0006 3B1D     		adds	r3, r7, #4
- 642 0008 1860     		str	r0, [r3]
- 199:main.c        ****     
- 200:main.c        ****     p = NULL;
- 643              		.loc 1 200 0
- 644 000a 3B1D     		adds	r3, r7, #4
- 645 000c 0022     		movs	r2, #0
- 646 000e 1A60     		str	r2, [r3]
- 201:main.c        ****         
- 202:main.c        ****     initialise_wheel_data(&left_wheel);
- 647              		.loc 1 202 0
- 648 0010 2748     		ldr	r0, .L28
- 649 0012 FFF7FEFF 		bl	initialise_wheel_data
- 203:main.c        ****     initialise_wheel_data(&right_wheel);
- 650              		.loc 1 203 0
- 651 0016 2748     		ldr	r0, .L28+4
- 652 0018 FFF7FEFF 		bl	initialise_wheel_data
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 17
+ 602 02bc 154B     		ldr	r3, .L24+32
+ 603 02be 1B68     		ldr	r3, [r3]
+ 604 02c0 002B     		cmp	r3, #0
+ 605 02c2 13D0     		beq	.L20
+ 199:main.c        ****                     sprintf((char *) local_write, "LED RED TURN OFF\n");
+ 606              		.loc 1 199 0 is_stmt 1
+ 607 02c4 07F11403 		add	r3, r7, #20
+ 608 02c8 1A4A     		ldr	r2, .L24+64
+ 609 02ca 1C46     		mov	r4, r3
+ 610 02cc 1546     		mov	r5, r2
+ 611 02ce 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
+ 612 02d0 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 613 02d2 2B68     		ldr	r3, [r5]
+ 614 02d4 2380     		strh	r3, [r4]	@ movhi
+ 200:main.c        ****                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
+ 615              		.loc 1 200 0
+ 616 02d6 074B     		ldr	r3, .L24
+ 617 02d8 1B68     		ldr	r3, [r3]
+ 618 02da 07F11401 		add	r1, r7, #20
+ 619 02de 4022     		movs	r2, #64
+ 620 02e0 1846     		mov	r0, r3
+ 621 02e2 FFF7FEFF 		bl	vSerialPutString
+ 201:main.c        ****                     LED_RED_Write(0);                    
+ 622              		.loc 1 201 0
+ 623 02e6 0020     		movs	r0, #0
+ 624 02e8 FFF7FEFF 		bl	LED_RED_Write
+ 625              	.L20:
+ 202:main.c        ****                 }
+ 203:main.c        ****                 for (i=0; i<65; i++) {
+ 626              		.loc 1 203 0
+ 627 02ec 0023     		movs	r3, #0
+ 628 02ee C7F81C31 		str	r3, [r7, #284]
+ 629 02f2 2CE0     		b	.L21
+ 630              	.L25:
+ 631              		.align	2
+ 632              	.L24:
+ 633 02f4 00000000 		.word	pxPort
+ 634 02f8 00000000 		.word	rx_receive
+ 635 02fc 00000000 		.word	gatekeeper
+ 636 0300 00000000 		.word	buffer
+ 637 0304 74000000 		.word	.LC5
+ 638 0308 00000000 		.word	right_wheel
+ 639 030c 00000000 		.word	left_wheel
+ 640 0310 88000000 		.word	.LC6
+ 641 0314 00000000 		.word	isMaster
+ 642 0318 A4000000 		.word	.LC7
+ 643 031c B0000000 		.word	.LC8
+ 644 0320 BC000000 		.word	.LC9
+ 645 0324 CC000000 		.word	.LC10
+ 646 0328 DC000000 		.word	.LC11
+ 647 032c F0000000 		.word	.LC12
+ 648 0330 04010000 		.word	.LC13
+ 649 0334 18010000 		.word	.LC14
+ 650              	.L22:
+ 204:main.c        ****                     buffer[i] = ' ';
+ 651              		.loc 1 204 0 discriminator 3
+ 652 0338 0F4A     		ldr	r2, .L26
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 17
 
 
- 204:main.c        ****     
- 205:main.c        ****     k.Kp = 40;
- 653              		.loc 1 205 0
- 654 001c 264A     		ldr	r2, .L28+8
- 655 001e 4FF00003 		mov	r3, #0
- 656 0022 264C     		ldr	r4, .L28+12
- 657 0024 C2E90234 		strd	r3, [r2, #8]
- 206:main.c        ****     k.Ki = 0;
- 658              		.loc 1 206 0
- 659 0028 234A     		ldr	r2, .L28+8
- 660 002a 4FF00003 		mov	r3, #0
- 661 002e 4FF00004 		mov	r4, #0
- 662 0032 C2E90034 		strd	r3, [r2]
- 207:main.c        ****     k.Kd = 20;
- 663              		.loc 1 207 0
- 664 0036 204A     		ldr	r2, .L28+8
- 665 0038 4FF00003 		mov	r3, #0
- 666 003c 204C     		ldr	r4, .L28+16
- 667 003e C2E90434 		strd	r3, [r2, #16]
- 668              	.L27:
- 208:main.c        ****     
- 209:main.c        ****     signed char *local_write[64];  
- 210:main.c        ****     
- 211:main.c        ****     while(1) {
- 212:main.c        ****     	if(xSemaphoreTake(gatekeeper, 50000)) {              // wait until semaphore is free:
- 669              		.loc 1 212 0
- 670 0042 204B     		ldr	r3, .L28+20
- 671 0044 1B68     		ldr	r3, [r3]
- 672 0046 4CF25031 		movw	r1, #50000
- 673 004a 1846     		mov	r0, r3
- 674 004c FFF7FEFF 		bl	xQueueSemaphoreTake
- 675 0050 0346     		mov	r3, r0
- 676 0052 002B     		cmp	r3, #0
- 677 0054 28D0     		beq	.L25
- 213:main.c        ****             if (first_run==1){
- 678              		.loc 1 213 0
- 679 0056 1C4B     		ldr	r3, .L28+24
- 680 0058 1B68     		ldr	r3, [r3]
- 681 005a 012B     		cmp	r3, #1
- 682 005c 08D1     		bne	.L26
- 214:main.c        ****                 M1QuadDec_SetCounter(0);
- 683              		.loc 1 214 0
- 684 005e 0020     		movs	r0, #0
- 685 0060 FFF7FEFF 		bl	M1QuadDec_SetCounter
- 215:main.c        ****                 M2QuadDec_SetCounter(0);
- 686              		.loc 1 215 0
- 687 0064 0020     		movs	r0, #0
- 688 0066 FFF7FEFF 		bl	M2QuadDec_SetCounter
- 216:main.c        ****                 first_run=0;
- 689              		.loc 1 216 0
- 690 006a 174B     		ldr	r3, .L28+24
- 691 006c 0022     		movs	r2, #0
- 692 006e 1A60     		str	r2, [r3]
- 693              	.L26:
- 217:main.c        ****             }
- 218:main.c        ****                 
- 219:main.c        ****             mov_update_error(&left_wheel, &right_wheel);    // update error values
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 18
+ 653 033a D7F81C31 		ldr	r3, [r7, #284]
+ 654 033e 1344     		add	r3, r3, r2
+ 655 0340 2022     		movs	r2, #32
+ 656 0342 1A70     		strb	r2, [r3]
+ 203:main.c        ****                     buffer[i] = ' ';
+ 657              		.loc 1 203 0 discriminator 3
+ 658 0344 D7F81C31 		ldr	r3, [r7, #284]
+ 659 0348 0133     		adds	r3, r3, #1
+ 660 034a C7F81C31 		str	r3, [r7, #284]
+ 661              	.L21:
+ 203:main.c        ****                     buffer[i] = ' ';
+ 662              		.loc 1 203 0 is_stmt 0 discriminator 1
+ 663 034e D7F81C31 		ldr	r3, [r7, #284]
+ 664 0352 402B     		cmp	r3, #64
+ 665 0354 F0DD     		ble	.L22
+ 205:main.c        ****                 }
+ 206:main.c        ****                 go = 0;
+ 666              		.loc 1 206 0 is_stmt 1
+ 667 0356 0023     		movs	r3, #0
+ 668 0358 C7F81831 		str	r3, [r7, #280]
+ 207:main.c        ****                 i = 0;
+ 669              		.loc 1 207 0
+ 670 035c 0023     		movs	r3, #0
+ 671 035e C7F81C31 		str	r3, [r7, #284]
+ 208:main.c        ****                 type=0;                   
+ 672              		.loc 1 208 0
+ 673 0362 0023     		movs	r3, #0
+ 674 0364 87F81731 		strb	r3, [r7, #279]
+ 209:main.c        ****                 xSemaphoreGive(gatekeeper);
+ 675              		.loc 1 209 0
+ 676 0368 044B     		ldr	r3, .L26+4
+ 677 036a 1868     		ldr	r0, [r3]
+ 678 036c 0023     		movs	r3, #0
+ 679 036e 0022     		movs	r2, #0
+ 680 0370 0021     		movs	r1, #0
+ 681 0372 FFF7FEFF 		bl	xQueueGenericSend
+ 210:main.c        ****             }
+ 211:main.c        ****         }
+ 212:main.c        ****     }
+ 682              		.loc 1 212 0
+ 683 0376 54E6     		b	.L23
+ 684              	.L27:
+ 685              		.align	2
+ 686              	.L26:
+ 687 0378 00000000 		.word	buffer
+ 688 037c 00000000 		.word	gatekeeper
+ 689              		.cfi_endproc
+ 690              	.LFE70:
+ 691              		.size	receive_data, .-receive_data
+ 692              		.section	.rodata
+ 693 012a 0000     		.align	2
+ 694              	.LC15:
+ 695 012c 6C656674 		.ascii	"left wheel inc: %li\012\000"
+ 695      20776865 
+ 695      656C2069 
+ 695      6E633A20 
+ 695      256C690A 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 18
 
 
- 694              		.loc 1 219 0
- 695 0070 1049     		ldr	r1, .L28+4
- 696 0072 0F48     		ldr	r0, .L28
- 697 0074 FFF7FEFF 		bl	mov_update_error
- 220:main.c        ****             sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
- 698              		.loc 1 220 0
- 699 0078 0D4B     		ldr	r3, .L28
- 700 007a 5A68     		ldr	r2, [r3, #4]
- 701 007c 07F10803 		add	r3, r7, #8
- 702 0080 1249     		ldr	r1, .L28+28
- 703 0082 1846     		mov	r0, r3
- 704 0084 FFF7FEFF 		bl	sprintf
- 221:main.c        ****             //vSerialPutString(pxPort, (signed char *) local_write, 64);
- 222:main.c        ****             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors 
- 705              		.loc 1 222 0
- 706 0088 0B4A     		ldr	r2, .L28+8
- 707 008a 0A49     		ldr	r1, .L28+4
- 708 008c 0848     		ldr	r0, .L28
- 709 008e FFF7FEFF 		bl	mov_get_PID
- 223:main.c        ****             
- 224:main.c        ****             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels
- 710              		.loc 1 224 0
- 711 0092 0849     		ldr	r1, .L28+4
- 712 0094 0648     		ldr	r0, .L28
- 713 0096 FFF7FEFF 		bl	mov_Adj_Volt
- 225:main.c        **** 			xSemaphoreGive(gatekeeper);                     // give the semaphore back
- 714              		.loc 1 225 0
- 715 009a 0A4B     		ldr	r3, .L28+20
- 716 009c 1868     		ldr	r0, [r3]
- 717 009e 0023     		movs	r3, #0
- 718 00a0 0022     		movs	r2, #0
- 719 00a2 0021     		movs	r1, #0
- 720 00a4 FFF7FEFF 		bl	xQueueGenericSend
- 721              	.L25:
- 226:main.c        ****     	}
- 227:main.c        ****         vTaskDelay(10);                                     // wait 10ms before going again
- 722              		.loc 1 227 0
- 723 00a8 0A20     		movs	r0, #10
- 724 00aa FFF7FEFF 		bl	vTaskDelay
- 228:main.c        ****     }
- 725              		.loc 1 228 0
- 726 00ae C8E7     		b	.L27
- 727              	.L29:
- 728              		.align	2
- 729              	.L28:
- 730 00b0 00000000 		.word	left_wheel
- 731 00b4 00000000 		.word	right_wheel
- 732 00b8 00000000 		.word	k
- 733 00bc 00004440 		.word	1078198272
- 734 00c0 00003440 		.word	1077149696
- 735 00c4 00000000 		.word	gatekeeper
- 736 00c8 00000000 		.word	first_run
- 737 00cc 10010000 		.word	.LC13
- 738              		.cfi_endproc
- 739              	.LFE71:
- 740              		.size	PID_initialise, .-PID_initialise
- 741              		.section	.text.prvHardwareSetup,"ax",%progbits
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 19
+ 696              		.section	.text.PID_initialise,"ax",%progbits
+ 697              		.align	2
+ 698              		.global	PID_initialise
+ 699              		.thumb
+ 700              		.thumb_func
+ 701              		.type	PID_initialise, %function
+ 702              	PID_initialise:
+ 703              	.LFB71:
+ 213:main.c        **** }
+ 214:main.c        **** 
+ 215:main.c        **** void PID_initialise( void *p ) {
+ 704              		.loc 1 215 0
+ 705              		.cfi_startproc
+ 706              		@ args = 0, pretend = 0, frame = 264
+ 707              		@ frame_needed = 1, uses_anonymous_args = 0
+ 708 0000 90B5     		push	{r4, r7, lr}
+ 709              		.cfi_def_cfa_offset 12
+ 710              		.cfi_offset 4, -12
+ 711              		.cfi_offset 7, -8
+ 712              		.cfi_offset 14, -4
+ 713 0002 C3B0     		sub	sp, sp, #268
+ 714              		.cfi_def_cfa_offset 280
+ 715 0004 00AF     		add	r7, sp, #0
+ 716              		.cfi_def_cfa_register 7
+ 717 0006 3B1D     		adds	r3, r7, #4
+ 718 0008 1860     		str	r0, [r3]
+ 216:main.c        ****     
+ 217:main.c        ****     p = NULL;
+ 719              		.loc 1 217 0
+ 720 000a 3B1D     		adds	r3, r7, #4
+ 721 000c 0022     		movs	r2, #0
+ 722 000e 1A60     		str	r2, [r3]
+ 218:main.c        ****         
+ 219:main.c        ****     initialise_wheel_data(&left_wheel);
+ 723              		.loc 1 219 0
+ 724 0010 2748     		ldr	r0, .L32
+ 725 0012 FFF7FEFF 		bl	initialise_wheel_data
+ 220:main.c        ****     initialise_wheel_data(&right_wheel);
+ 726              		.loc 1 220 0
+ 727 0016 2748     		ldr	r0, .L32+4
+ 728 0018 FFF7FEFF 		bl	initialise_wheel_data
+ 221:main.c        ****     
+ 222:main.c        ****     k.Kp = 40;
+ 729              		.loc 1 222 0
+ 730 001c 264A     		ldr	r2, .L32+8
+ 731 001e 4FF00003 		mov	r3, #0
+ 732 0022 264C     		ldr	r4, .L32+12
+ 733 0024 C2E90234 		strd	r3, [r2, #8]
+ 223:main.c        ****     k.Ki = 0;
+ 734              		.loc 1 223 0
+ 735 0028 234A     		ldr	r2, .L32+8
+ 736 002a 4FF00003 		mov	r3, #0
+ 737 002e 4FF00004 		mov	r4, #0
+ 738 0032 C2E90034 		strd	r3, [r2]
+ 224:main.c        ****     k.Kd = 20;
+ 739              		.loc 1 224 0
+ 740 0036 204A     		ldr	r2, .L32+8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 19
 
 
- 742              		.align	2
- 743              		.thumb
- 744              		.thumb_func
- 745              		.type	prvHardwareSetup, %function
- 746              	prvHardwareSetup:
- 747              	.LFB72:
- 229:main.c        **** }
- 230:main.c        **** 
- 231:main.c        **** void prvHardwareSetup( void ) {
- 748              		.loc 1 231 0
- 749              		.cfi_startproc
- 750              		@ args = 0, pretend = 0, frame = 0
- 751              		@ frame_needed = 1, uses_anonymous_args = 0
- 752 0000 80B5     		push	{r7, lr}
- 753              		.cfi_def_cfa_offset 8
- 754              		.cfi_offset 7, -8
- 755              		.cfi_offset 14, -4
- 756 0002 00AF     		add	r7, sp, #0
- 757              		.cfi_def_cfa_register 7
- 232:main.c        ****     
- 233:main.c        ****     /* Port layer functions that need to be copied into the vector table. */
- 234:main.c        ****     extern void xPortPendSVHandler( void );
- 235:main.c        ****     extern void xPortSysTickHandler( void );
- 236:main.c        ****     extern void vPortSVCHandler( void );
- 237:main.c        ****     extern cyisraddress CyRamVectors[];
- 238:main.c        **** 
- 239:main.c        **** 	/* Install the OS Interrupt Handlers. */
- 240:main.c        **** 	CyRamVectors[ 11 ] = ( cyisraddress ) vPortSVCHandler;
- 758              		.loc 1 240 0
- 759 0004 1D4B     		ldr	r3, .L33
- 760 0006 1E4A     		ldr	r2, .L33+4
- 761 0008 DA62     		str	r2, [r3, #44]
- 241:main.c        **** 	CyRamVectors[ 14 ] = ( cyisraddress ) xPortPendSVHandler;
- 762              		.loc 1 241 0
- 763 000a 1C4B     		ldr	r3, .L33
- 764 000c 1D4A     		ldr	r2, .L33+8
- 765 000e 9A63     		str	r2, [r3, #56]
- 242:main.c        **** 	CyRamVectors[ 15 ] = ( cyisraddress ) xPortSysTickHandler;
- 766              		.loc 1 242 0
- 767 0010 1A4B     		ldr	r3, .L33
- 768 0012 1D4A     		ldr	r2, .L33+12
- 769 0014 DA63     		str	r2, [r3, #60]
- 243:main.c        **** 
- 244:main.c        **** 	/* Start-up the shared peripherals. */
- 245:main.c        ****     PWM_M1_Start();
- 770              		.loc 1 245 0
- 771 0016 FFF7FEFF 		bl	PWM_M1_Start
- 246:main.c        ****     PWM_M2_Start();
- 772              		.loc 1 246 0
- 773 001a FFF7FEFF 		bl	PWM_M2_Start
- 247:main.c        ****     M1Clock_Start();
- 774              		.loc 1 247 0
- 775 001e FFF7FEFF 		bl	M1Clock_Start
- 248:main.c        ****     MClock_Start();
- 776              		.loc 1 248 0
- 777 0022 FFF7FEFF 		bl	MClock_Start
+ 741 0038 4FF00003 		mov	r3, #0
+ 742 003c 204C     		ldr	r4, .L32+16
+ 743 003e C2E90434 		strd	r3, [r2, #16]
+ 744              	.L31:
+ 225:main.c        ****     
+ 226:main.c        ****     signed char *local_write[64];  
+ 227:main.c        ****     
+ 228:main.c        ****     while(1) {
+ 229:main.c        ****     	if(xSemaphoreTake(gatekeeper, 50000)) {              // wait until semaphore is free:
+ 745              		.loc 1 229 0
+ 746 0042 204B     		ldr	r3, .L32+20
+ 747 0044 1B68     		ldr	r3, [r3]
+ 748 0046 4CF25031 		movw	r1, #50000
+ 749 004a 1846     		mov	r0, r3
+ 750 004c FFF7FEFF 		bl	xQueueSemaphoreTake
+ 751 0050 0346     		mov	r3, r0
+ 752 0052 002B     		cmp	r3, #0
+ 753 0054 28D0     		beq	.L29
+ 230:main.c        ****             if (first_run==1){
+ 754              		.loc 1 230 0
+ 755 0056 1C4B     		ldr	r3, .L32+24
+ 756 0058 1B68     		ldr	r3, [r3]
+ 757 005a 012B     		cmp	r3, #1
+ 758 005c 08D1     		bne	.L30
+ 231:main.c        ****                 M1QuadDec_SetCounter(0);
+ 759              		.loc 1 231 0
+ 760 005e 0020     		movs	r0, #0
+ 761 0060 FFF7FEFF 		bl	M1QuadDec_SetCounter
+ 232:main.c        ****                 M2QuadDec_SetCounter(0);
+ 762              		.loc 1 232 0
+ 763 0064 0020     		movs	r0, #0
+ 764 0066 FFF7FEFF 		bl	M2QuadDec_SetCounter
+ 233:main.c        ****                 first_run=0;
+ 765              		.loc 1 233 0
+ 766 006a 174B     		ldr	r3, .L32+24
+ 767 006c 0022     		movs	r2, #0
+ 768 006e 1A60     		str	r2, [r3]
+ 769              	.L30:
+ 234:main.c        ****             }
+ 235:main.c        ****                 
+ 236:main.c        ****             mov_update_error(&left_wheel, &right_wheel);    // update error values
+ 770              		.loc 1 236 0
+ 771 0070 1049     		ldr	r1, .L32+4
+ 772 0072 0F48     		ldr	r0, .L32
+ 773 0074 FFF7FEFF 		bl	mov_update_error
+ 237:main.c        ****             sprintf((char *) local_write, "left wheel inc: %li\n", left_wheel.cur_dest);
+ 774              		.loc 1 237 0
+ 775 0078 0D4B     		ldr	r3, .L32
+ 776 007a 5A68     		ldr	r2, [r3, #4]
+ 777 007c 07F10803 		add	r3, r7, #8
+ 778 0080 1249     		ldr	r1, .L32+28
+ 779 0082 1846     		mov	r0, r3
+ 780 0084 FFF7FEFF 		bl	sprintf
+ 238:main.c        ****             //vSerialPutString(pxPort, (signed char *) local_write, 64);
+ 239:main.c        ****             mov_get_PID(&left_wheel, &right_wheel, &k);     // calculate wheel voltage from errors 
+ 781              		.loc 1 239 0
+ 782 0088 0B4A     		ldr	r2, .L32+8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 20
+
+
+ 783 008a 0A49     		ldr	r1, .L32+4
+ 784 008c 0848     		ldr	r0, .L32
+ 785 008e FFF7FEFF 		bl	mov_get_PID
+ 240:main.c        ****             
+ 241:main.c        ****             mov_Adj_Volt(&left_wheel, &right_wheel);        // adjust the voltage of the wheels
+ 786              		.loc 1 241 0
+ 787 0092 0849     		ldr	r1, .L32+4
+ 788 0094 0648     		ldr	r0, .L32
+ 789 0096 FFF7FEFF 		bl	mov_Adj_Volt
+ 242:main.c        **** 			xSemaphoreGive(gatekeeper);                     // give the semaphore back
+ 790              		.loc 1 242 0
+ 791 009a 0A4B     		ldr	r3, .L32+20
+ 792 009c 1868     		ldr	r0, [r3]
+ 793 009e 0023     		movs	r3, #0
+ 794 00a0 0022     		movs	r2, #0
+ 795 00a2 0021     		movs	r1, #0
+ 796 00a4 FFF7FEFF 		bl	xQueueGenericSend
+ 797              	.L29:
+ 243:main.c        ****     	}
+ 244:main.c        ****         vTaskDelay(10);                                     // wait 10ms before going again
+ 798              		.loc 1 244 0
+ 799 00a8 0A20     		movs	r0, #10
+ 800 00aa FFF7FEFF 		bl	vTaskDelay
+ 245:main.c        ****     }
+ 801              		.loc 1 245 0
+ 802 00ae C8E7     		b	.L31
+ 803              	.L33:
+ 804              		.align	2
+ 805              	.L32:
+ 806 00b0 00000000 		.word	left_wheel
+ 807 00b4 00000000 		.word	right_wheel
+ 808 00b8 00000000 		.word	k
+ 809 00bc 00004440 		.word	1078198272
+ 810 00c0 00003440 		.word	1077149696
+ 811 00c4 00000000 		.word	gatekeeper
+ 812 00c8 00000000 		.word	first_run
+ 813 00cc 2C010000 		.word	.LC15
+ 814              		.cfi_endproc
+ 815              	.LFE71:
+ 816              		.size	PID_initialise, .-PID_initialise
+ 817              		.section	.text.prvHardwareSetup,"ax",%progbits
+ 818              		.align	2
+ 819              		.thumb
+ 820              		.thumb_func
+ 821              		.type	prvHardwareSetup, %function
+ 822              	prvHardwareSetup:
+ 823              	.LFB72:
+ 246:main.c        **** }
+ 247:main.c        **** 
+ 248:main.c        **** void prvHardwareSetup( void ) {
+ 824              		.loc 1 248 0
+ 825              		.cfi_startproc
+ 826              		@ args = 0, pretend = 0, frame = 0
+ 827              		@ frame_needed = 1, uses_anonymous_args = 0
+ 828 0000 80B5     		push	{r7, lr}
+ 829              		.cfi_def_cfa_offset 8
+ 830              		.cfi_offset 7, -8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 21
+
+
+ 831              		.cfi_offset 14, -4
+ 832 0002 00AF     		add	r7, sp, #0
+ 833              		.cfi_def_cfa_register 7
  249:main.c        ****     
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 20
+ 250:main.c        ****     /* Port layer functions that need to be copied into the vector table. */
+ 251:main.c        ****     extern void xPortPendSVHandler( void );
+ 252:main.c        ****     extern void xPortSysTickHandler( void );
+ 253:main.c        ****     extern void vPortSVCHandler( void );
+ 254:main.c        ****     extern cyisraddress CyRamVectors[];
+ 255:main.c        **** 
+ 256:main.c        **** 	/* Install the OS Interrupt Handlers. */
+ 257:main.c        **** 	CyRamVectors[ 11 ] = ( cyisraddress ) vPortSVCHandler;
+ 834              		.loc 1 257 0
+ 835 0004 264B     		ldr	r3, .L38
+ 836 0006 274A     		ldr	r2, .L38+4
+ 837 0008 DA62     		str	r2, [r3, #44]
+ 258:main.c        **** 	CyRamVectors[ 14 ] = ( cyisraddress ) xPortPendSVHandler;
+ 838              		.loc 1 258 0
+ 839 000a 254B     		ldr	r3, .L38
+ 840 000c 264A     		ldr	r2, .L38+8
+ 841 000e 9A63     		str	r2, [r3, #56]
+ 259:main.c        **** 	CyRamVectors[ 15 ] = ( cyisraddress ) xPortSysTickHandler;
+ 842              		.loc 1 259 0
+ 843 0010 234B     		ldr	r3, .L38
+ 844 0012 264A     		ldr	r2, .L38+12
+ 845 0014 DA63     		str	r2, [r3, #60]
+ 260:main.c        **** 
+ 261:main.c        **** 	/* Start-up the shared peripherals. */
+ 262:main.c        ****     PWM_M1_Start();
+ 846              		.loc 1 262 0
+ 847 0016 FFF7FEFF 		bl	PWM_M1_Start
+ 263:main.c        ****     PWM_M2_Start();
+ 848              		.loc 1 263 0
+ 849 001a FFF7FEFF 		bl	PWM_M2_Start
+ 264:main.c        ****     M1Clock_Start();
+ 850              		.loc 1 264 0
+ 851 001e FFF7FEFF 		bl	M1Clock_Start
+ 265:main.c        ****     MClock_Start();
+ 852              		.loc 1 265 0
+ 853 0022 FFF7FEFF 		bl	MClock_Start
+ 266:main.c        ****     
+ 267:main.c        ****     M1QuadDec_Start();
+ 854              		.loc 1 267 0
+ 855 0026 FFF7FEFF 		bl	M1QuadDec_Start
+ 268:main.c        ****     M1QuadDec_Enable();
+ 856              		.loc 1 268 0
+ 857 002a FFF7FEFF 		bl	M1QuadDec_Enable
+ 269:main.c        ****     M1QuadDec_SetCounter(0);
+ 858              		.loc 1 269 0
+ 859 002e 0020     		movs	r0, #0
+ 860 0030 FFF7FEFF 		bl	M1QuadDec_SetCounter
+ 270:main.c        ****     
+ 271:main.c        ****     M2QuadDec_Start();
+ 861              		.loc 1 271 0
+ 862 0034 FFF7FEFF 		bl	M2QuadDec_Start
+ 272:main.c        ****     M2QuadDec_Enable();
+ 863              		.loc 1 272 0
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 22
 
 
- 250:main.c        ****     M1QuadDec_Start();
- 778              		.loc 1 250 0
- 779 0026 FFF7FEFF 		bl	M1QuadDec_Start
- 251:main.c        ****     M1QuadDec_Enable();
- 780              		.loc 1 251 0
- 781 002a FFF7FEFF 		bl	M1QuadDec_Enable
- 252:main.c        ****     M1QuadDec_SetCounter(0);
- 782              		.loc 1 252 0
- 783 002e 0020     		movs	r0, #0
- 784 0030 FFF7FEFF 		bl	M1QuadDec_SetCounter
- 253:main.c        ****     
- 254:main.c        ****     M2QuadDec_Start();
- 785              		.loc 1 254 0
- 786 0034 FFF7FEFF 		bl	M2QuadDec_Start
- 255:main.c        ****     M2QuadDec_Enable();
- 787              		.loc 1 255 0
- 788 0038 FFF7FEFF 		bl	M2QuadDec_Enable
- 256:main.c        ****     M2QuadDec_SetCounter(0);
- 789              		.loc 1 256 0
- 790 003c 0020     		movs	r0, #0
- 791 003e FFF7FEFF 		bl	M2QuadDec_SetCounter
- 257:main.c        **** 
- 258:main.c        **** 	UART_1_Start();                         // Start the UART
- 792              		.loc 1 258 0
- 793 0042 FFF7FEFF 		bl	UART_1_Start
- 259:main.c        ****     xSerialPortInitMinimal( 57600, 64 );    // Set the serial baud rate and buffer size in bytes
- 794              		.loc 1 259 0
- 795 0046 4021     		movs	r1, #64
- 796 0048 4FF46140 		mov	r0, #57600
- 797 004c FFF7FEFF 		bl	xSerialPortInitMinimal
- 260:main.c        ****     
- 261:main.c        ****     Timer_1_Start();
- 798              		.loc 1 261 0
- 799 0050 FFF7FEFF 		bl	Timer_1_Start
- 262:main.c        **** 
- 263:main.c        ****     /* Start up the master peripherals. */
- 264:main.c        ****     if (isMaster){
- 265:main.c        ****          
- 266:main.c        ****     }
- 267:main.c        ****     
- 268:main.c        ****     /* Start up the slave peripherals. */
- 269:main.c        ****     if (isMaster==0){
- 800              		.loc 1 269 0
- 801 0054 0D4B     		ldr	r3, .L33+16
- 802 0056 1B68     		ldr	r3, [r3]
- 803 0058 002B     		cmp	r3, #0
- 804 005a 0DD1     		bne	.L32
- 270:main.c        ****         
- 271:main.c        ****         Clock_1_Start();
- 805              		.loc 1 271 0
- 806 005c FFF7FEFF 		bl	Clock_1_Start
- 272:main.c        ****         PWM_1_Start();
- 807              		.loc 1 272 0
- 808 0060 FFF7FEFF 		bl	PWM_1_Start
- 273:main.c        ****         PWM_1_WriteCompare(2100);//90 deg Camera;
- 809              		.loc 1 273 0
- 810 0064 40F63400 		movw	r0, #2100
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 21
+ 864 0038 FFF7FEFF 		bl	M2QuadDec_Enable
+ 273:main.c        ****     M2QuadDec_SetCounter(0);
+ 865              		.loc 1 273 0
+ 866 003c 0020     		movs	r0, #0
+ 867 003e FFF7FEFF 		bl	M2QuadDec_SetCounter
+ 274:main.c        **** 
+ 275:main.c        **** 	UART_1_Start();                         // Start the UART
+ 868              		.loc 1 275 0
+ 869 0042 FFF7FEFF 		bl	UART_1_Start
+ 276:main.c        ****     xSerialPortInitMinimal( 57600, 64 );    // Set the serial baud rate and buffer size in bytes
+ 870              		.loc 1 276 0
+ 871 0046 4021     		movs	r1, #64
+ 872 0048 4FF46140 		mov	r0, #57600
+ 873 004c FFF7FEFF 		bl	xSerialPortInitMinimal
+ 277:main.c        ****     
+ 278:main.c        ****     Timer_1_Start();
+ 874              		.loc 1 278 0
+ 875 0050 FFF7FEFF 		bl	Timer_1_Start
+ 279:main.c        **** 
+ 280:main.c        ****     /* Start up the master peripherals. */
+ 281:main.c        ****     if (isMaster==1){
+ 876              		.loc 1 281 0
+ 877 0054 164B     		ldr	r3, .L38+16
+ 878 0056 1B68     		ldr	r3, [r3]
+ 879 0058 012B     		cmp	r3, #1
+ 880 005a 0DD1     		bne	.L35
+ 282:main.c        ****         Clock_2_Start();
+ 881              		.loc 1 282 0
+ 882 005c FFF7FEFF 		bl	Clock_2_Start
+ 283:main.c        ****         PWM_2_Start();
+ 883              		.loc 1 283 0
+ 884 0060 FFF7FEFF 		bl	PWM_2_Start
+ 284:main.c        ****         PWM_2_WriteCompare(1850);//90 deg Camera;
+ 885              		.loc 1 284 0
+ 886 0064 40F23A70 		movw	r0, #1850
+ 887 0068 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 285:main.c        ****         CyDelay(1000);
+ 888              		.loc 1 285 0
+ 889 006c 4FF47A70 		mov	r0, #1000
+ 890 0070 FFF7FEFF 		bl	CyDelay
+ 286:main.c        ****         PWM_2_Sleep();
+ 891              		.loc 1 286 0
+ 892 0074 FFF7FEFF 		bl	PWM_2_Sleep
+ 893              	.L35:
+ 287:main.c        ****     }
+ 288:main.c        ****     
+ 289:main.c        ****     /* Start up the slave peripherals. */
+ 290:main.c        ****     if (isMaster==0){
+ 894              		.loc 1 290 0
+ 895 0078 0D4B     		ldr	r3, .L38+16
+ 896 007a 1B68     		ldr	r3, [r3]
+ 897 007c 002B     		cmp	r3, #0
+ 898 007e 0DD1     		bne	.L37
+ 291:main.c        ****         
+ 292:main.c        ****         Clock_1_Start();
+ 899              		.loc 1 292 0
+ 900 0080 FFF7FEFF 		bl	Clock_1_Start
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 23
 
 
- 811 0068 FFF7FEFF 		bl	PWM_1_WriteCompare
- 274:main.c        ****         CyDelay(1000);
- 812              		.loc 1 274 0
- 813 006c 4FF47A70 		mov	r0, #1000
- 814 0070 FFF7FEFF 		bl	CyDelay
- 275:main.c        ****         PWM_1_Sleep();
- 815              		.loc 1 275 0
- 816 0074 FFF7FEFF 		bl	PWM_1_Sleep
- 817              	.L32:
- 276:main.c        ****         
- 277:main.c        ****         
- 278:main.c        ****         
- 279:main.c        ****     }
- 280:main.c        **** }
- 818              		.loc 1 280 0
- 819 0078 00BF     		nop
- 820 007a 80BD     		pop	{r7, pc}
- 821              	.L34:
- 822              		.align	2
- 823              	.L33:
- 824 007c 00000000 		.word	CyRamVectors
- 825 0080 00000000 		.word	vPortSVCHandler
- 826 0084 00000000 		.word	xPortPendSVHandler
- 827 0088 00000000 		.word	xPortSysTickHandler
- 828 008c 00000000 		.word	isMaster
- 829              		.cfi_endproc
- 830              	.LFE72:
- 831              		.size	prvHardwareSetup, .-prvHardwareSetup
- 832              		.section	.text.vApplicationStackOverflowHook,"ax",%progbits
- 833              		.align	2
- 834              		.global	vApplicationStackOverflowHook
- 835              		.thumb
- 836              		.thumb_func
- 837              		.type	vApplicationStackOverflowHook, %function
- 838              	vApplicationStackOverflowHook:
- 839              	.LFB73:
- 281:main.c        **** 
- 282:main.c        **** 
- 283:main.c        **** // DON'T TOUCH THESE (PART OF FREERTOS)
- 284:main.c        **** void vApplicationStackOverflowHook( TaskHandle_t pxTask, char *pcTaskName ) {
- 840              		.loc 1 284 0
- 841              		.cfi_startproc
- 842              		@ args = 0, pretend = 0, frame = 16
- 843              		@ frame_needed = 1, uses_anonymous_args = 0
- 844              		@ link register save eliminated.
- 845 0000 80B4     		push	{r7}
- 846              		.cfi_def_cfa_offset 4
- 847              		.cfi_offset 7, -4
- 848 0002 85B0     		sub	sp, sp, #20
- 849              		.cfi_def_cfa_offset 24
- 850 0004 00AF     		add	r7, sp, #0
- 851              		.cfi_def_cfa_register 7
- 852 0006 7860     		str	r0, [r7, #4]
- 853 0008 3960     		str	r1, [r7]
- 854              	.LBB6:
- 855              	.LBB7:
- 856              		.file 2 "..\\..\\FreeRTOS_Source\\portable\\GCC\\ARM_CM3/portmacro.h"
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 22
+ 293:main.c        ****         PWM_1_Start();
+ 901              		.loc 1 293 0
+ 902 0084 FFF7FEFF 		bl	PWM_1_Start
+ 294:main.c        ****         PWM_1_WriteCompare(2100);//90 deg Camera;
+ 903              		.loc 1 294 0
+ 904 0088 40F63400 		movw	r0, #2100
+ 905 008c FFF7FEFF 		bl	PWM_1_WriteCompare
+ 295:main.c        ****         CyDelay(1000);
+ 906              		.loc 1 295 0
+ 907 0090 4FF47A70 		mov	r0, #1000
+ 908 0094 FFF7FEFF 		bl	CyDelay
+ 296:main.c        ****         PWM_1_Sleep();
+ 909              		.loc 1 296 0
+ 910 0098 FFF7FEFF 		bl	PWM_1_Sleep
+ 911              	.L37:
+ 297:main.c        ****         
+ 298:main.c        ****         
+ 299:main.c        ****         
+ 300:main.c        ****     }
+ 301:main.c        **** }
+ 912              		.loc 1 301 0
+ 913 009c 00BF     		nop
+ 914 009e 80BD     		pop	{r7, pc}
+ 915              	.L39:
+ 916              		.align	2
+ 917              	.L38:
+ 918 00a0 00000000 		.word	CyRamVectors
+ 919 00a4 00000000 		.word	vPortSVCHandler
+ 920 00a8 00000000 		.word	xPortPendSVHandler
+ 921 00ac 00000000 		.word	xPortSysTickHandler
+ 922 00b0 00000000 		.word	isMaster
+ 923              		.cfi_endproc
+ 924              	.LFE72:
+ 925              		.size	prvHardwareSetup, .-prvHardwareSetup
+ 926              		.section	.text.vApplicationStackOverflowHook,"ax",%progbits
+ 927              		.align	2
+ 928              		.global	vApplicationStackOverflowHook
+ 929              		.thumb
+ 930              		.thumb_func
+ 931              		.type	vApplicationStackOverflowHook, %function
+ 932              	vApplicationStackOverflowHook:
+ 933              	.LFB73:
+ 302:main.c        **** 
+ 303:main.c        **** 
+ 304:main.c        **** // DON'T TOUCH THESE (PART OF FREERTOS)
+ 305:main.c        **** void vApplicationStackOverflowHook( TaskHandle_t pxTask, char *pcTaskName ) {
+ 934              		.loc 1 305 0
+ 935              		.cfi_startproc
+ 936              		@ args = 0, pretend = 0, frame = 16
+ 937              		@ frame_needed = 1, uses_anonymous_args = 0
+ 938              		@ link register save eliminated.
+ 939 0000 80B4     		push	{r7}
+ 940              		.cfi_def_cfa_offset 4
+ 941              		.cfi_offset 7, -4
+ 942 0002 85B0     		sub	sp, sp, #20
+ 943              		.cfi_def_cfa_offset 24
+ 944 0004 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 24
 
 
+ 945              		.cfi_def_cfa_register 7
+ 946 0006 7860     		str	r0, [r7, #4]
+ 947 0008 3960     		str	r1, [r7]
+ 948              	.LBB6:
+ 949              	.LBB7:
+ 950              		.file 2 "..\\..\\FreeRTOS_Source\\portable\\GCC\\ARM_CM3/portmacro.h"
    1:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*
    2:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * FreeRTOS Kernel V10.0.1
    3:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h ****  * Copyright (C) 2017 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
@@ -1312,15 +1438,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
   49:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portDOUBLE		double
   50:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portLONG		long
   51:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portSHORT		short
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 25
+
+
   52:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portSTACK_TYPE	uint32_t
   53:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portBASE_TYPE	long
   54:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
   55:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** typedef portSTACK_TYPE StackType_t;
   56:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** typedef long BaseType_t;
   57:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** typedef unsigned long UBaseType_t;
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 23
-
-
   58:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
   59:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #if( configUSE_16_BIT_TICKS == 1 )
   60:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	typedef uint16_t TickType_t;
@@ -1372,15 +1498,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
  106:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
  107:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  108:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /* Task function macros as described on the FreeRTOS.org WEB site.  These are
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 26
+
+
  109:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** not necessary for to use this port.  They are defined so the common demo files
  110:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** (which build with all the ports) will build. */
  111:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portTASK_FUNCTION_PROTO( vFunction, pvParameters ) void vFunction( void *pvParameters )
  112:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portTASK_FUNCTION( vFunction, pvParameters ) void vFunction( void *pvParameters )
  113:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
  114:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 24
-
-
  115:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** /* Tickless idle/low power functionality. */
  116:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #ifndef portSUPPRESS_TICKS_AND_SLEEP
  117:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	extern void vPortSuppressTicksAndSleep( TickType_t xExpectedIdleTime );
@@ -1432,15 +1558,15 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
  163:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #define portINLINE	__inline
  164:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  165:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #ifndef portFORCE_INLINE
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 27
+
+
  166:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	#define portFORCE_INLINE inline __attribute__(( always_inline))
  167:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** #endif
  168:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  169:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** portFORCE_INLINE static BaseType_t xPortIsInsideInterrupt( void )
  170:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** {
  171:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** uint32_t ulCurrentInterrupt;
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 25
-
-
  172:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** BaseType_t xReturn;
  173:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  174:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	/* Obtain the number of the currently executing interrupt. */
@@ -1465,1615 +1591,1614 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 1
  193:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** uint32_t ulNewBASEPRI;
  194:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 
  195:..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h **** 	__asm volatile
- 857              		.loc 2 195 0
- 858              		.syntax unified
- 859              	@ 195 "..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h" 1
- 860 000a 4FF0A003 			mov r3, #160												
- 861 000e 83F31188 		msr basepri, r3											
- 862 0012 BFF36F8F 		isb														
- 863 0016 BFF34F8F 		dsb														
- 864              	
- 865              	@ 0 "" 2
- 866              		.thumb
- 867              		.syntax unified
- 868 001a FB60     		str	r3, [r7, #12]
- 869              	.L36:
- 870              	.LBE7:
- 871              	.LBE6:
- 285:main.c        **** 	/* The stack space has been execeeded for a task, considering allocating more. */
- 286:main.c        **** 	taskDISABLE_INTERRUPTS();
- 287:main.c        **** 	for( ;; );
- 872              		.loc 1 287 0 discriminator 1
- 873 001c FEE7     		b	.L36
- 874              		.cfi_endproc
- 875              	.LFE73:
- 876              		.size	vApplicationStackOverflowHook, .-vApplicationStackOverflowHook
- 877 001e 00BF     		.section	.text.vApplicationMallocFailedHook,"ax",%progbits
- 878              		.align	2
- 879              		.global	vApplicationMallocFailedHook
- 880              		.thumb
- 881              		.thumb_func
- 882              		.type	vApplicationMallocFailedHook, %function
- 883              	vApplicationMallocFailedHook:
- 884              	.LFB74:
- 288:main.c        **** }
- 289:main.c        **** void vApplicationMallocFailedHook( void ) {
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 26
+ 951              		.loc 2 195 0
+ 952              		.syntax unified
+ 953              	@ 195 "..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h" 1
+ 954 000a 4FF0A003 			mov r3, #160												
+ 955 000e 83F31188 		msr basepri, r3											
+ 956 0012 BFF36F8F 		isb														
+ 957 0016 BFF34F8F 		dsb														
+ 958              	
+ 959              	@ 0 "" 2
+ 960              		.thumb
+ 961              		.syntax unified
+ 962 001a FB60     		str	r3, [r7, #12]
+ 963              	.L41:
+ 964              	.LBE7:
+ 965              	.LBE6:
+ 306:main.c        **** 	/* The stack space has been execeeded for a task, considering allocating more. */
+ 307:main.c        **** 	taskDISABLE_INTERRUPTS();
+ 308:main.c        **** 	for( ;; );
+ 966              		.loc 1 308 0 discriminator 1
+ 967 001c FEE7     		b	.L41
+ 968              		.cfi_endproc
+ 969              	.LFE73:
+ 970              		.size	vApplicationStackOverflowHook, .-vApplicationStackOverflowHook
+ 971 001e 00BF     		.section	.text.vApplicationMallocFailedHook,"ax",%progbits
+ 972              		.align	2
+ 973              		.global	vApplicationMallocFailedHook
+ 974              		.thumb
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 28
 
 
- 885              		.loc 1 289 0
- 886              		.cfi_startproc
- 887              		@ args = 0, pretend = 0, frame = 8
- 888              		@ frame_needed = 1, uses_anonymous_args = 0
- 889              		@ link register save eliminated.
- 890 0000 80B4     		push	{r7}
- 891              		.cfi_def_cfa_offset 4
- 892              		.cfi_offset 7, -4
- 893 0002 83B0     		sub	sp, sp, #12
- 894              		.cfi_def_cfa_offset 16
- 895 0004 00AF     		add	r7, sp, #0
- 896              		.cfi_def_cfa_register 7
- 897              	.LBB8:
- 898              	.LBB9:
- 899              		.loc 2 195 0
- 900              		.syntax unified
- 901              	@ 195 "..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h" 1
- 902 0006 4FF0A003 			mov r3, #160												
- 903 000a 83F31188 		msr basepri, r3											
- 904 000e BFF36F8F 		isb														
- 905 0012 BFF34F8F 		dsb														
- 906              	
- 907              	@ 0 "" 2
- 908              		.thumb
- 909              		.syntax unified
- 910 0016 7B60     		str	r3, [r7, #4]
- 911              	.L38:
- 912              	.LBE9:
- 913              	.LBE8:
- 290:main.c        **** 	/* The heap space has been execeeded. */
- 291:main.c        **** 	taskDISABLE_INTERRUPTS();
- 292:main.c        **** 	for( ;; );
- 914              		.loc 1 292 0 discriminator 1
- 915 0018 FEE7     		b	.L38
- 916              		.cfi_endproc
- 917              	.LFE74:
- 918              		.size	vApplicationMallocFailedHook, .-vApplicationMallocFailedHook
- 919 001a 00BF     		.text
- 920              	.Letext0:
- 921              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 922              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 923              		.file 5 "Generated_Source\\PSoC5/cytypes.h"
- 924              		.file 6 "..\\..\\FreeRTOS_Source\\include/task.h"
- 925              		.file 7 "..\\..\\FreeRTOS_Source\\include/queue.h"
- 926              		.file 8 "..\\..\\FreeRTOS_Source\\include/semphr.h"
- 927              		.file 9 "..\\..\\FreeRTOS_Source\\include/serial.h"
- 928              		.file 10 "movement.h"
- 929              		.file 11 "Generated_Source\\PSoC5/core_cm3.h"
- 930              		.section	.debug_info,"",%progbits
- 931              	.Ldebug_info0:
- 932 0000 AD040000 		.4byte	0x4ad
- 933 0004 0400     		.2byte	0x4
- 934 0006 00000000 		.4byte	.Ldebug_abbrev0
- 935 000a 04       		.byte	0x4
- 936 000b 01       		.uleb128 0x1
- 937 000c FB000000 		.4byte	.LASF60
- 938 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 27
+ 975              		.thumb_func
+ 976              		.type	vApplicationMallocFailedHook, %function
+ 977              	vApplicationMallocFailedHook:
+ 978              	.LFB74:
+ 309:main.c        **** }
+ 310:main.c        **** void vApplicationMallocFailedHook( void ) {
+ 979              		.loc 1 310 0
+ 980              		.cfi_startproc
+ 981              		@ args = 0, pretend = 0, frame = 8
+ 982              		@ frame_needed = 1, uses_anonymous_args = 0
+ 983              		@ link register save eliminated.
+ 984 0000 80B4     		push	{r7}
+ 985              		.cfi_def_cfa_offset 4
+ 986              		.cfi_offset 7, -4
+ 987 0002 83B0     		sub	sp, sp, #12
+ 988              		.cfi_def_cfa_offset 16
+ 989 0004 00AF     		add	r7, sp, #0
+ 990              		.cfi_def_cfa_register 7
+ 991              	.LBB8:
+ 992              	.LBB9:
+ 993              		.loc 2 195 0
+ 994              		.syntax unified
+ 995              	@ 195 "..\..\FreeRTOS_Source\portable\GCC\ARM_CM3/portmacro.h" 1
+ 996 0006 4FF0A003 			mov r3, #160												
+ 997 000a 83F31188 		msr basepri, r3											
+ 998 000e BFF36F8F 		isb														
+ 999 0012 BFF34F8F 		dsb														
+ 1000              	
+ 1001              	@ 0 "" 2
+ 1002              		.thumb
+ 1003              		.syntax unified
+ 1004 0016 7B60     		str	r3, [r7, #4]
+ 1005              	.L43:
+ 1006              	.LBE9:
+ 1007              	.LBE8:
+ 311:main.c        **** 	/* The heap space has been execeeded. */
+ 312:main.c        **** 	taskDISABLE_INTERRUPTS();
+ 313:main.c        **** 	for( ;; );
+ 1008              		.loc 1 313 0 discriminator 1
+ 1009 0018 FEE7     		b	.L43
+ 1010              		.cfi_endproc
+ 1011              	.LFE74:
+ 1012              		.size	vApplicationMallocFailedHook, .-vApplicationMallocFailedHook
+ 1013 001a 00BF     		.text
+ 1014              	.Letext0:
+ 1015              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1016              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1017              		.file 5 "Generated_Source\\PSoC5/cytypes.h"
+ 1018              		.file 6 "..\\..\\FreeRTOS_Source\\include/task.h"
+ 1019              		.file 7 "..\\..\\FreeRTOS_Source\\include/queue.h"
+ 1020              		.file 8 "..\\..\\FreeRTOS_Source\\include/semphr.h"
+ 1021              		.file 9 "..\\..\\FreeRTOS_Source\\include/serial.h"
+ 1022              		.file 10 "movement.h"
+ 1023              		.file 11 "Generated_Source\\PSoC5/core_cm3.h"
+ 1024              		.section	.debug_info,"",%progbits
+ 1025              	.Ldebug_info0:
+ 1026 0000 AD040000 		.4byte	0x4ad
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 29
 
 
- 939 0011 A9030000 		.4byte	.LASF61
- 940 0015 00000000 		.4byte	.LASF62
- 941 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 942 001d 00000000 		.4byte	0
- 943 0021 00000000 		.4byte	.Ldebug_line0
- 944 0025 02       		.uleb128 0x2
- 945 0026 01       		.byte	0x1
- 946 0027 06       		.byte	0x6
- 947 0028 DB020000 		.4byte	.LASF0
- 948 002c 03       		.uleb128 0x3
- 949 002d 65020000 		.4byte	.LASF4
- 950 0031 03       		.byte	0x3
- 951 0032 1D       		.byte	0x1d
- 952 0033 37000000 		.4byte	0x37
- 953 0037 02       		.uleb128 0x2
- 954 0038 01       		.byte	0x1
- 955 0039 08       		.byte	0x8
- 956 003a 9C020000 		.4byte	.LASF1
- 957 003e 02       		.uleb128 0x2
- 958 003f 02       		.byte	0x2
- 959 0040 05       		.byte	0x5
- 960 0041 B6010000 		.4byte	.LASF2
- 961 0045 02       		.uleb128 0x2
- 962 0046 02       		.byte	0x2
- 963 0047 07       		.byte	0x7
- 964 0048 3A030000 		.4byte	.LASF3
- 965 004c 03       		.uleb128 0x3
- 966 004d D4030000 		.4byte	.LASF5
- 967 0051 03       		.byte	0x3
- 968 0052 3F       		.byte	0x3f
- 969 0053 57000000 		.4byte	0x57
- 970 0057 02       		.uleb128 0x2
- 971 0058 04       		.byte	0x4
- 972 0059 05       		.byte	0x5
- 973 005a 34020000 		.4byte	.LASF6
- 974 005e 03       		.uleb128 0x3
- 975 005f 95010000 		.4byte	.LASF7
- 976 0063 03       		.byte	0x3
- 977 0064 41       		.byte	0x41
- 978 0065 69000000 		.4byte	0x69
- 979 0069 02       		.uleb128 0x2
- 980 006a 04       		.byte	0x4
- 981 006b 07       		.byte	0x7
- 982 006c B0030000 		.4byte	.LASF8
- 983 0070 02       		.uleb128 0x2
- 984 0071 08       		.byte	0x8
- 985 0072 05       		.byte	0x5
- 986 0073 0D020000 		.4byte	.LASF9
- 987 0077 02       		.uleb128 0x2
- 988 0078 08       		.byte	0x8
- 989 0079 07       		.byte	0x7
- 990 007a E7020000 		.4byte	.LASF10
- 991 007e 04       		.uleb128 0x4
- 992 007f 04       		.byte	0x4
- 993 0080 05       		.byte	0x5
- 994 0081 696E7400 		.ascii	"int\000"
- 995 0085 02       		.uleb128 0x2
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 28
+ 1027 0004 0400     		.2byte	0x4
+ 1028 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1029 000a 04       		.byte	0x4
+ 1030 000b 01       		.uleb128 0x1
+ 1031 000c 52000000 		.4byte	.LASF60
+ 1032 0010 0C       		.byte	0xc
+ 1033 0011 00030000 		.4byte	.LASF61
+ 1034 0015 49030000 		.4byte	.LASF62
+ 1035 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 1036 001d 00000000 		.4byte	0
+ 1037 0021 00000000 		.4byte	.Ldebug_line0
+ 1038 0025 02       		.uleb128 0x2
+ 1039 0026 01       		.byte	0x1
+ 1040 0027 06       		.byte	0x6
+ 1041 0028 32020000 		.4byte	.LASF0
+ 1042 002c 03       		.uleb128 0x3
+ 1043 002d BC010000 		.4byte	.LASF4
+ 1044 0031 03       		.byte	0x3
+ 1045 0032 1D       		.byte	0x1d
+ 1046 0033 37000000 		.4byte	0x37
+ 1047 0037 02       		.uleb128 0x2
+ 1048 0038 01       		.byte	0x1
+ 1049 0039 08       		.byte	0x8
+ 1050 003a F3010000 		.4byte	.LASF1
+ 1051 003e 02       		.uleb128 0x2
+ 1052 003f 02       		.byte	0x2
+ 1053 0040 05       		.byte	0x5
+ 1054 0041 0D010000 		.4byte	.LASF2
+ 1055 0045 02       		.uleb128 0x2
+ 1056 0046 02       		.byte	0x2
+ 1057 0047 07       		.byte	0x7
+ 1058 0048 91020000 		.4byte	.LASF3
+ 1059 004c 03       		.uleb128 0x3
+ 1060 004d 2B030000 		.4byte	.LASF5
+ 1061 0051 03       		.byte	0x3
+ 1062 0052 3F       		.byte	0x3f
+ 1063 0053 57000000 		.4byte	0x57
+ 1064 0057 02       		.uleb128 0x2
+ 1065 0058 04       		.byte	0x4
+ 1066 0059 05       		.byte	0x5
+ 1067 005a 8B010000 		.4byte	.LASF6
+ 1068 005e 03       		.uleb128 0x3
+ 1069 005f EC000000 		.4byte	.LASF7
+ 1070 0063 03       		.byte	0x3
+ 1071 0064 41       		.byte	0x41
+ 1072 0065 69000000 		.4byte	0x69
+ 1073 0069 02       		.uleb128 0x2
+ 1074 006a 04       		.byte	0x4
+ 1075 006b 07       		.byte	0x7
+ 1076 006c 07030000 		.4byte	.LASF8
+ 1077 0070 02       		.uleb128 0x2
+ 1078 0071 08       		.byte	0x8
+ 1079 0072 05       		.byte	0x5
+ 1080 0073 64010000 		.4byte	.LASF9
+ 1081 0077 02       		.uleb128 0x2
+ 1082 0078 08       		.byte	0x8
+ 1083 0079 07       		.byte	0x7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 30
 
 
- 996 0086 04       		.byte	0x4
- 997 0087 07       		.byte	0x7
- 998 0088 07030000 		.4byte	.LASF11
- 999 008c 03       		.uleb128 0x3
- 1000 008d CA010000 		.4byte	.LASF12
- 1001 0091 04       		.byte	0x4
- 1002 0092 18       		.byte	0x18
- 1003 0093 2C000000 		.4byte	0x2c
- 1004 0097 03       		.uleb128 0x3
- 1005 0098 67030000 		.4byte	.LASF13
- 1006 009c 04       		.byte	0x4
- 1007 009d 2C       		.byte	0x2c
- 1008 009e 4C000000 		.4byte	0x4c
- 1009 00a2 03       		.uleb128 0x3
- 1010 00a3 FE020000 		.4byte	.LASF14
- 1011 00a7 04       		.byte	0x4
- 1012 00a8 30       		.byte	0x30
- 1013 00a9 5E000000 		.4byte	0x5e
- 1014 00ad 02       		.uleb128 0x2
- 1015 00ae 04       		.byte	0x4
- 1016 00af 04       		.byte	0x4
- 1017 00b0 07020000 		.4byte	.LASF15
- 1018 00b4 02       		.uleb128 0x2
- 1019 00b5 08       		.byte	0x8
- 1020 00b6 04       		.byte	0x4
- 1021 00b7 C2030000 		.4byte	.LASF16
- 1022 00bb 02       		.uleb128 0x2
- 1023 00bc 01       		.byte	0x1
- 1024 00bd 08       		.byte	0x8
- 1025 00be 4D030000 		.4byte	.LASF17
- 1026 00c2 05       		.uleb128 0x5
- 1027 00c3 A9010000 		.4byte	.LASF18
- 1028 00c7 05       		.byte	0x5
- 1029 00c8 4E02     		.2byte	0x24e
- 1030 00ca CE000000 		.4byte	0xce
- 1031 00ce 06       		.uleb128 0x6
- 1032 00cf 04       		.byte	0x4
- 1033 00d0 D4000000 		.4byte	0xd4
- 1034 00d4 07       		.uleb128 0x7
- 1035 00d5 02       		.uleb128 0x2
- 1036 00d6 08       		.byte	0x8
- 1037 00d7 04       		.byte	0x4
- 1038 00d8 89010000 		.4byte	.LASF19
- 1039 00dc 02       		.uleb128 0x2
- 1040 00dd 04       		.byte	0x4
- 1041 00de 07       		.byte	0x7
- 1042 00df D1000000 		.4byte	.LASF20
- 1043 00e3 08       		.uleb128 0x8
- 1044 00e4 04       		.byte	0x4
- 1045 00e5 06       		.uleb128 0x6
- 1046 00e6 04       		.byte	0x4
- 1047 00e7 BB000000 		.4byte	0xbb
- 1048 00eb 03       		.uleb128 0x3
- 1049 00ec 14030000 		.4byte	.LASF21
- 1050 00f0 02       		.byte	0x2
- 1051 00f1 38       		.byte	0x38
- 1052 00f2 57000000 		.4byte	0x57
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 29
+ 1084 007a 3E020000 		.4byte	.LASF10
+ 1085 007e 04       		.uleb128 0x4
+ 1086 007f 04       		.byte	0x4
+ 1087 0080 05       		.byte	0x5
+ 1088 0081 696E7400 		.ascii	"int\000"
+ 1089 0085 02       		.uleb128 0x2
+ 1090 0086 04       		.byte	0x4
+ 1091 0087 07       		.byte	0x7
+ 1092 0088 5E020000 		.4byte	.LASF11
+ 1093 008c 03       		.uleb128 0x3
+ 1094 008d 21010000 		.4byte	.LASF12
+ 1095 0091 04       		.byte	0x4
+ 1096 0092 18       		.byte	0x18
+ 1097 0093 2C000000 		.4byte	0x2c
+ 1098 0097 03       		.uleb128 0x3
+ 1099 0098 BE020000 		.4byte	.LASF13
+ 1100 009c 04       		.byte	0x4
+ 1101 009d 2C       		.byte	0x2c
+ 1102 009e 4C000000 		.4byte	0x4c
+ 1103 00a2 03       		.uleb128 0x3
+ 1104 00a3 55020000 		.4byte	.LASF14
+ 1105 00a7 04       		.byte	0x4
+ 1106 00a8 30       		.byte	0x30
+ 1107 00a9 5E000000 		.4byte	0x5e
+ 1108 00ad 02       		.uleb128 0x2
+ 1109 00ae 04       		.byte	0x4
+ 1110 00af 04       		.byte	0x4
+ 1111 00b0 5E010000 		.4byte	.LASF15
+ 1112 00b4 02       		.uleb128 0x2
+ 1113 00b5 08       		.byte	0x8
+ 1114 00b6 04       		.byte	0x4
+ 1115 00b7 19030000 		.4byte	.LASF16
+ 1116 00bb 02       		.uleb128 0x2
+ 1117 00bc 01       		.byte	0x1
+ 1118 00bd 08       		.byte	0x8
+ 1119 00be A4020000 		.4byte	.LASF17
+ 1120 00c2 05       		.uleb128 0x5
+ 1121 00c3 00010000 		.4byte	.LASF18
+ 1122 00c7 05       		.byte	0x5
+ 1123 00c8 4E02     		.2byte	0x24e
+ 1124 00ca CE000000 		.4byte	0xce
+ 1125 00ce 06       		.uleb128 0x6
+ 1126 00cf 04       		.byte	0x4
+ 1127 00d0 D4000000 		.4byte	0xd4
+ 1128 00d4 07       		.uleb128 0x7
+ 1129 00d5 02       		.uleb128 0x2
+ 1130 00d6 08       		.byte	0x8
+ 1131 00d7 04       		.byte	0x4
+ 1132 00d8 E0000000 		.4byte	.LASF19
+ 1133 00dc 02       		.uleb128 0x2
+ 1134 00dd 04       		.byte	0x4
+ 1135 00de 07       		.byte	0x7
+ 1136 00df 28000000 		.4byte	.LASF20
+ 1137 00e3 08       		.uleb128 0x8
+ 1138 00e4 04       		.byte	0x4
+ 1139 00e5 06       		.uleb128 0x6
+ 1140 00e6 04       		.byte	0x4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 31
 
 
- 1053 00f6 03       		.uleb128 0x3
- 1054 00f7 AA020000 		.4byte	.LASF22
- 1055 00fb 02       		.byte	0x2
- 1056 00fc 3F       		.byte	0x3f
- 1057 00fd A2000000 		.4byte	0xa2
- 1058 0101 03       		.uleb128 0x3
- 1059 0102 EE000000 		.4byte	.LASF23
- 1060 0106 06       		.byte	0x6
- 1061 0107 3E       		.byte	0x3e
- 1062 0108 0C010000 		.4byte	0x10c
- 1063 010c 06       		.uleb128 0x6
- 1064 010d 04       		.byte	0x4
- 1065 010e 12010000 		.4byte	0x112
- 1066 0112 09       		.uleb128 0x9
- 1067 0113 52020000 		.4byte	.LASF63
- 1068 0117 03       		.uleb128 0x3
- 1069 0118 DE030000 		.4byte	.LASF24
- 1070 011c 07       		.byte	0x7
- 1071 011d 2E       		.byte	0x2e
- 1072 011e E3000000 		.4byte	0xe3
- 1073 0122 03       		.uleb128 0x3
- 1074 0123 BF020000 		.4byte	.LASF25
- 1075 0127 08       		.byte	0x8
- 1076 0128 25       		.byte	0x25
- 1077 0129 17010000 		.4byte	0x117
- 1078 012d 03       		.uleb128 0x3
- 1079 012e 82030000 		.4byte	.LASF26
- 1080 0132 09       		.byte	0x9
- 1081 0133 1F       		.byte	0x1f
- 1082 0134 E3000000 		.4byte	0xe3
- 1083 0138 0A       		.uleb128 0xa
- 1084 0139 24       		.byte	0x24
- 1085 013a 0A       		.byte	0xa
- 1086 013b 03       		.byte	0x3
- 1087 013c AD010000 		.4byte	0x1ad
- 1088 0140 0B       		.uleb128 0xb
- 1089 0141 D1020000 		.4byte	.LASF27
- 1090 0145 0A       		.byte	0xa
- 1091 0146 04       		.byte	0x4
- 1092 0147 57000000 		.4byte	0x57
- 1093 014b 00       		.byte	0
- 1094 014c 0B       		.uleb128 0xb
- 1095 014d C8000000 		.4byte	.LASF28
- 1096 0151 0A       		.byte	0xa
- 1097 0152 05       		.byte	0x5
- 1098 0153 57000000 		.4byte	0x57
- 1099 0157 04       		.byte	0x4
- 1100 0158 0B       		.uleb128 0xb
- 1101 0159 2F030000 		.4byte	.LASF29
- 1102 015d 0A       		.byte	0xa
- 1103 015e 06       		.byte	0x6
- 1104 015f 7E000000 		.4byte	0x7e
- 1105 0163 08       		.byte	0x8
- 1106 0164 0B       		.uleb128 0xb
- 1107 0165 EC030000 		.4byte	.LASF30
- 1108 0169 0A       		.byte	0xa
- 1109 016a 07       		.byte	0x7
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 30
+ 1141 00e7 BB000000 		.4byte	0xbb
+ 1142 00eb 03       		.uleb128 0x3
+ 1143 00ec 6B020000 		.4byte	.LASF21
+ 1144 00f0 02       		.byte	0x2
+ 1145 00f1 38       		.byte	0x38
+ 1146 00f2 57000000 		.4byte	0x57
+ 1147 00f6 03       		.uleb128 0x3
+ 1148 00f7 01020000 		.4byte	.LASF22
+ 1149 00fb 02       		.byte	0x2
+ 1150 00fc 3F       		.byte	0x3f
+ 1151 00fd A2000000 		.4byte	0xa2
+ 1152 0101 03       		.uleb128 0x3
+ 1153 0102 45000000 		.4byte	.LASF23
+ 1154 0106 06       		.byte	0x6
+ 1155 0107 3E       		.byte	0x3e
+ 1156 0108 0C010000 		.4byte	0x10c
+ 1157 010c 06       		.uleb128 0x6
+ 1158 010d 04       		.byte	0x4
+ 1159 010e 12010000 		.4byte	0x112
+ 1160 0112 09       		.uleb128 0x9
+ 1161 0113 A9010000 		.4byte	.LASF63
+ 1162 0117 03       		.uleb128 0x3
+ 1163 0118 35030000 		.4byte	.LASF24
+ 1164 011c 07       		.byte	0x7
+ 1165 011d 2E       		.byte	0x2e
+ 1166 011e E3000000 		.4byte	0xe3
+ 1167 0122 03       		.uleb128 0x3
+ 1168 0123 16020000 		.4byte	.LASF25
+ 1169 0127 08       		.byte	0x8
+ 1170 0128 25       		.byte	0x25
+ 1171 0129 17010000 		.4byte	0x117
+ 1172 012d 03       		.uleb128 0x3
+ 1173 012e D9020000 		.4byte	.LASF26
+ 1174 0132 09       		.byte	0x9
+ 1175 0133 1F       		.byte	0x1f
+ 1176 0134 E3000000 		.4byte	0xe3
+ 1177 0138 0A       		.uleb128 0xa
+ 1178 0139 24       		.byte	0x24
+ 1179 013a 0A       		.byte	0xa
+ 1180 013b 03       		.byte	0x3
+ 1181 013c AD010000 		.4byte	0x1ad
+ 1182 0140 0B       		.uleb128 0xb
+ 1183 0141 28020000 		.4byte	.LASF27
+ 1184 0145 0A       		.byte	0xa
+ 1185 0146 04       		.byte	0x4
+ 1186 0147 57000000 		.4byte	0x57
+ 1187 014b 00       		.byte	0
+ 1188 014c 0B       		.uleb128 0xb
+ 1189 014d 1F000000 		.4byte	.LASF28
+ 1190 0151 0A       		.byte	0xa
+ 1191 0152 05       		.byte	0x5
+ 1192 0153 57000000 		.4byte	0x57
+ 1193 0157 04       		.byte	0x4
+ 1194 0158 0B       		.uleb128 0xb
+ 1195 0159 86020000 		.4byte	.LASF29
+ 1196 015d 0A       		.byte	0xa
+ 1197 015e 06       		.byte	0x6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 32
 
 
- 1110 016b 7E000000 		.4byte	0x7e
- 1111 016f 0C       		.byte	0xc
- 1112 0170 0B       		.uleb128 0xb
- 1113 0171 B5020000 		.4byte	.LASF31
- 1114 0175 0A       		.byte	0xa
- 1115 0176 08       		.byte	0x8
- 1116 0177 7E000000 		.4byte	0x7e
- 1117 017b 10       		.byte	0x10
- 1118 017c 0B       		.uleb128 0xb
- 1119 017d 52030000 		.4byte	.LASF32
- 1120 0181 0A       		.byte	0xa
- 1121 0182 09       		.byte	0x9
- 1122 0183 7E000000 		.4byte	0x7e
- 1123 0187 14       		.byte	0x14
- 1124 0188 0C       		.uleb128 0xc
- 1125 0189 696E6300 		.ascii	"inc\000"
- 1126 018d 0A       		.byte	0xa
- 1127 018e 0A       		.byte	0xa
- 1128 018f 7E000000 		.4byte	0x7e
- 1129 0193 18       		.byte	0x18
- 1130 0194 0B       		.uleb128 0xb
- 1131 0195 2A030000 		.4byte	.LASF33
- 1132 0199 0A       		.byte	0xa
- 1133 019a 0B       		.byte	0xb
- 1134 019b A2000000 		.4byte	0xa2
- 1135 019f 1C       		.byte	0x1c
- 1136 01a0 0B       		.uleb128 0xb
- 1137 01a1 48020000 		.4byte	.LASF34
- 1138 01a5 0A       		.byte	0xa
- 1139 01a6 0C       		.byte	0xc
- 1140 01a7 A2000000 		.4byte	0xa2
- 1141 01ab 20       		.byte	0x20
- 1142 01ac 00       		.byte	0
- 1143 01ad 03       		.uleb128 0x3
- 1144 01ae 3D020000 		.4byte	.LASF35
- 1145 01b2 0A       		.byte	0xa
- 1146 01b3 0D       		.byte	0xd
- 1147 01b4 38010000 		.4byte	0x138
- 1148 01b8 0A       		.uleb128 0xa
- 1149 01b9 18       		.byte	0x18
- 1150 01ba 0A       		.byte	0xa
- 1151 01bb 0F       		.byte	0xf
- 1152 01bc E2010000 		.4byte	0x1e2
- 1153 01c0 0C       		.uleb128 0xc
- 1154 01c1 4B6900   		.ascii	"Ki\000"
- 1155 01c4 0A       		.byte	0xa
- 1156 01c5 10       		.byte	0x10
- 1157 01c6 B4000000 		.4byte	0xb4
- 1158 01ca 00       		.byte	0
- 1159 01cb 0C       		.uleb128 0xc
- 1160 01cc 4B7000   		.ascii	"Kp\000"
- 1161 01cf 0A       		.byte	0xa
- 1162 01d0 11       		.byte	0x11
- 1163 01d1 B4000000 		.4byte	0xb4
- 1164 01d5 08       		.byte	0x8
- 1165 01d6 0C       		.uleb128 0xc
- 1166 01d7 4B6400   		.ascii	"Kd\000"
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 31
+ 1198 015f 7E000000 		.4byte	0x7e
+ 1199 0163 08       		.byte	0x8
+ 1200 0164 0B       		.uleb128 0xb
+ 1201 0165 43030000 		.4byte	.LASF30
+ 1202 0169 0A       		.byte	0xa
+ 1203 016a 07       		.byte	0x7
+ 1204 016b 7E000000 		.4byte	0x7e
+ 1205 016f 0C       		.byte	0xc
+ 1206 0170 0B       		.uleb128 0xb
+ 1207 0171 0C020000 		.4byte	.LASF31
+ 1208 0175 0A       		.byte	0xa
+ 1209 0176 08       		.byte	0x8
+ 1210 0177 7E000000 		.4byte	0x7e
+ 1211 017b 10       		.byte	0x10
+ 1212 017c 0B       		.uleb128 0xb
+ 1213 017d A9020000 		.4byte	.LASF32
+ 1214 0181 0A       		.byte	0xa
+ 1215 0182 09       		.byte	0x9
+ 1216 0183 7E000000 		.4byte	0x7e
+ 1217 0187 14       		.byte	0x14
+ 1218 0188 0C       		.uleb128 0xc
+ 1219 0189 696E6300 		.ascii	"inc\000"
+ 1220 018d 0A       		.byte	0xa
+ 1221 018e 0A       		.byte	0xa
+ 1222 018f 7E000000 		.4byte	0x7e
+ 1223 0193 18       		.byte	0x18
+ 1224 0194 0B       		.uleb128 0xb
+ 1225 0195 81020000 		.4byte	.LASF33
+ 1226 0199 0A       		.byte	0xa
+ 1227 019a 0B       		.byte	0xb
+ 1228 019b A2000000 		.4byte	0xa2
+ 1229 019f 1C       		.byte	0x1c
+ 1230 01a0 0B       		.uleb128 0xb
+ 1231 01a1 9F010000 		.4byte	.LASF34
+ 1232 01a5 0A       		.byte	0xa
+ 1233 01a6 0C       		.byte	0xc
+ 1234 01a7 A2000000 		.4byte	0xa2
+ 1235 01ab 20       		.byte	0x20
+ 1236 01ac 00       		.byte	0
+ 1237 01ad 03       		.uleb128 0x3
+ 1238 01ae 94010000 		.4byte	.LASF35
+ 1239 01b2 0A       		.byte	0xa
+ 1240 01b3 0D       		.byte	0xd
+ 1241 01b4 38010000 		.4byte	0x138
+ 1242 01b8 0A       		.uleb128 0xa
+ 1243 01b9 18       		.byte	0x18
+ 1244 01ba 0A       		.byte	0xa
+ 1245 01bb 0F       		.byte	0xf
+ 1246 01bc E2010000 		.4byte	0x1e2
+ 1247 01c0 0C       		.uleb128 0xc
+ 1248 01c1 4B6900   		.ascii	"Ki\000"
+ 1249 01c4 0A       		.byte	0xa
+ 1250 01c5 10       		.byte	0x10
+ 1251 01c6 B4000000 		.4byte	0xb4
+ 1252 01ca 00       		.byte	0
+ 1253 01cb 0C       		.uleb128 0xc
+ 1254 01cc 4B7000   		.ascii	"Kp\000"
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 33
 
 
- 1167 01da 0A       		.byte	0xa
- 1168 01db 12       		.byte	0x12
- 1169 01dc B4000000 		.4byte	0xb4
- 1170 01e0 10       		.byte	0x10
- 1171 01e1 00       		.byte	0
- 1172 01e2 03       		.uleb128 0x3
- 1173 01e3 A0010000 		.4byte	.LASF36
- 1174 01e7 0A       		.byte	0xa
- 1175 01e8 13       		.byte	0x13
- 1176 01e9 B8010000 		.4byte	0x1b8
- 1177 01ed 0D       		.uleb128 0xd
- 1178 01ee F2030000 		.4byte	.LASF64
- 1179 01f2 02       		.byte	0x2
- 1180 01f3 BF       		.byte	0xbf
- 1181 01f4 03       		.byte	0x3
- 1182 01f5 05020000 		.4byte	0x205
- 1183 01f9 0E       		.uleb128 0xe
- 1184 01fa 37040000 		.4byte	.LASF65
- 1185 01fe 02       		.byte	0x2
- 1186 01ff C1       		.byte	0xc1
- 1187 0200 A2000000 		.4byte	0xa2
- 1188 0204 00       		.byte	0
- 1189 0205 0F       		.uleb128 0xf
- 1190 0206 5D030000 		.4byte	.LASF66
- 1191 020a 01       		.byte	0x1
- 1192 020b 5B       		.byte	0x5b
- 1193 020c 7E000000 		.4byte	0x7e
- 1194 0210 00000000 		.4byte	.LFB69
- 1195 0214 E4000000 		.4byte	.LFE69-.LFB69
- 1196 0218 01       		.uleb128 0x1
- 1197 0219 9C       		.byte	0x9c
- 1198 021a 2E020000 		.4byte	0x22e
- 1199 021e 10       		.uleb128 0x10
- 1200 021f 72756E00 		.ascii	"run\000"
- 1201 0223 01       		.byte	0x1
- 1202 0224 5C       		.byte	0x5c
- 1203 0225 2E020000 		.4byte	0x22e
- 1204 0229 03       		.uleb128 0x3
- 1205 022a 91       		.byte	0x91
- 1206 022b F07D     		.sleb128 -272
- 1207 022d 00       		.byte	0
- 1208 022e 11       		.uleb128 0x11
- 1209 022f 3E020000 		.4byte	0x23e
- 1210 0233 3E020000 		.4byte	0x23e
- 1211 0237 12       		.uleb128 0x12
- 1212 0238 DC000000 		.4byte	0xdc
- 1213 023c 3F       		.byte	0x3f
- 1214 023d 00       		.byte	0
- 1215 023e 06       		.uleb128 0x6
- 1216 023f 04       		.byte	0x4
- 1217 0240 44020000 		.4byte	0x244
- 1218 0244 13       		.uleb128 0x13
- 1219 0245 25000000 		.4byte	0x25
- 1220 0249 14       		.uleb128 0x14
- 1221 024a B6000000 		.4byte	.LASF40
- 1222 024e 01       		.byte	0x1
- 1223 024f 77       		.byte	0x77
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 32
+ 1255 01cf 0A       		.byte	0xa
+ 1256 01d0 11       		.byte	0x11
+ 1257 01d1 B4000000 		.4byte	0xb4
+ 1258 01d5 08       		.byte	0x8
+ 1259 01d6 0C       		.uleb128 0xc
+ 1260 01d7 4B6400   		.ascii	"Kd\000"
+ 1261 01da 0A       		.byte	0xa
+ 1262 01db 12       		.byte	0x12
+ 1263 01dc B4000000 		.4byte	0xb4
+ 1264 01e0 10       		.byte	0x10
+ 1265 01e1 00       		.byte	0
+ 1266 01e2 03       		.uleb128 0x3
+ 1267 01e3 F7000000 		.4byte	.LASF36
+ 1268 01e7 0A       		.byte	0xa
+ 1269 01e8 13       		.byte	0x13
+ 1270 01e9 B8010000 		.4byte	0x1b8
+ 1271 01ed 0D       		.uleb128 0xd
+ 1272 01ee EA030000 		.4byte	.LASF64
+ 1273 01f2 02       		.byte	0x2
+ 1274 01f3 BF       		.byte	0xbf
+ 1275 01f4 03       		.byte	0x3
+ 1276 01f5 05020000 		.4byte	0x205
+ 1277 01f9 0E       		.uleb128 0xe
+ 1278 01fa 2F040000 		.4byte	.LASF65
+ 1279 01fe 02       		.byte	0x2
+ 1280 01ff C1       		.byte	0xc1
+ 1281 0200 A2000000 		.4byte	0xa2
+ 1282 0204 00       		.byte	0
+ 1283 0205 0F       		.uleb128 0xf
+ 1284 0206 B4020000 		.4byte	.LASF66
+ 1285 020a 01       		.byte	0x1
+ 1286 020b 5B       		.byte	0x5b
+ 1287 020c 7E000000 		.4byte	0x7e
+ 1288 0210 00000000 		.4byte	.LFB69
+ 1289 0214 E4000000 		.4byte	.LFE69-.LFB69
+ 1290 0218 01       		.uleb128 0x1
+ 1291 0219 9C       		.byte	0x9c
+ 1292 021a 2E020000 		.4byte	0x22e
+ 1293 021e 10       		.uleb128 0x10
+ 1294 021f 72756E00 		.ascii	"run\000"
+ 1295 0223 01       		.byte	0x1
+ 1296 0224 5C       		.byte	0x5c
+ 1297 0225 2E020000 		.4byte	0x22e
+ 1298 0229 03       		.uleb128 0x3
+ 1299 022a 91       		.byte	0x91
+ 1300 022b F07D     		.sleb128 -272
+ 1301 022d 00       		.byte	0
+ 1302 022e 11       		.uleb128 0x11
+ 1303 022f 3E020000 		.4byte	0x23e
+ 1304 0233 3E020000 		.4byte	0x23e
+ 1305 0237 12       		.uleb128 0x12
+ 1306 0238 DC000000 		.4byte	0xdc
+ 1307 023c 3F       		.byte	0x3f
+ 1308 023d 00       		.byte	0
+ 1309 023e 06       		.uleb128 0x6
+ 1310 023f 04       		.byte	0x4
+ 1311 0240 44020000 		.4byte	0x244
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 34
 
 
- 1224 0250 00000000 		.4byte	.LFB70
- 1225 0254 F4020000 		.4byte	.LFE70-.LFB70
- 1226 0258 01       		.uleb128 0x1
- 1227 0259 9C       		.byte	0x9c
- 1228 025a B1020000 		.4byte	0x2b1
- 1229 025e 15       		.uleb128 0x15
- 1230 025f 7000     		.ascii	"p\000"
- 1231 0261 01       		.byte	0x1
- 1232 0262 77       		.byte	0x77
- 1233 0263 E3000000 		.4byte	0xe3
- 1234 0267 03       		.uleb128 0x3
- 1235 0268 91       		.byte	0x91
- 1236 0269 D47D     		.sleb128 -300
- 1237 026b 16       		.uleb128 0x16
- 1238 026c 28020000 		.4byte	.LASF37
- 1239 0270 01       		.byte	0x1
- 1240 0271 7B       		.byte	0x7b
- 1241 0272 2E020000 		.4byte	0x22e
- 1242 0276 03       		.uleb128 0x3
- 1243 0277 91       		.byte	0x91
- 1244 0278 E47D     		.sleb128 -284
- 1245 027a 10       		.uleb128 0x10
- 1246 027b 6900     		.ascii	"i\000"
- 1247 027d 01       		.byte	0x1
- 1248 027e 7C       		.byte	0x7c
- 1249 027f 7E000000 		.4byte	0x7e
- 1250 0283 02       		.uleb128 0x2
- 1251 0284 91       		.byte	0x91
- 1252 0285 6C       		.sleb128 -20
- 1253 0286 10       		.uleb128 0x10
- 1254 0287 676F00   		.ascii	"go\000"
- 1255 028a 01       		.byte	0x1
- 1256 028b 7D       		.byte	0x7d
- 1257 028c 7E000000 		.4byte	0x7e
- 1258 0290 02       		.uleb128 0x2
- 1259 0291 91       		.byte	0x91
- 1260 0292 68       		.sleb128 -24
- 1261 0293 16       		.uleb128 0x16
- 1262 0294 62030000 		.4byte	.LASF38
- 1263 0298 01       		.byte	0x1
- 1264 0299 7E       		.byte	0x7e
- 1265 029a 25000000 		.4byte	0x25
- 1266 029e 02       		.uleb128 0x2
- 1267 029f 91       		.byte	0x91
- 1268 02a0 67       		.sleb128 -25
- 1269 02a1 16       		.uleb128 0x16
- 1270 02a2 C3000000 		.4byte	.LASF39
- 1271 02a6 01       		.byte	0x1
- 1272 02a7 7F       		.byte	0x7f
- 1273 02a8 B1020000 		.4byte	0x2b1
- 1274 02ac 03       		.uleb128 0x3
- 1275 02ad 91       		.byte	0x91
- 1276 02ae D87D     		.sleb128 -296
- 1277 02b0 00       		.byte	0
- 1278 02b1 11       		.uleb128 0x11
- 1279 02b2 BB000000 		.4byte	0xbb
- 1280 02b6 C1020000 		.4byte	0x2c1
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 33
+ 1312 0244 13       		.uleb128 0x13
+ 1313 0245 25000000 		.4byte	0x25
+ 1314 0249 14       		.uleb128 0x14
+ 1315 024a 0D000000 		.4byte	.LASF40
+ 1316 024e 01       		.byte	0x1
+ 1317 024f 77       		.byte	0x77
+ 1318 0250 00000000 		.4byte	.LFB70
+ 1319 0254 80030000 		.4byte	.LFE70-.LFB70
+ 1320 0258 01       		.uleb128 0x1
+ 1321 0259 9C       		.byte	0x9c
+ 1322 025a B1020000 		.4byte	0x2b1
+ 1323 025e 15       		.uleb128 0x15
+ 1324 025f 7000     		.ascii	"p\000"
+ 1325 0261 01       		.byte	0x1
+ 1326 0262 77       		.byte	0x77
+ 1327 0263 E3000000 		.4byte	0xe3
+ 1328 0267 03       		.uleb128 0x3
+ 1329 0268 91       		.byte	0x91
+ 1330 0269 D47D     		.sleb128 -300
+ 1331 026b 16       		.uleb128 0x16
+ 1332 026c 7F010000 		.4byte	.LASF37
+ 1333 0270 01       		.byte	0x1
+ 1334 0271 7B       		.byte	0x7b
+ 1335 0272 2E020000 		.4byte	0x22e
+ 1336 0276 03       		.uleb128 0x3
+ 1337 0277 91       		.byte	0x91
+ 1338 0278 E47D     		.sleb128 -284
+ 1339 027a 10       		.uleb128 0x10
+ 1340 027b 6900     		.ascii	"i\000"
+ 1341 027d 01       		.byte	0x1
+ 1342 027e 7C       		.byte	0x7c
+ 1343 027f 7E000000 		.4byte	0x7e
+ 1344 0283 02       		.uleb128 0x2
+ 1345 0284 91       		.byte	0x91
+ 1346 0285 6C       		.sleb128 -20
+ 1347 0286 10       		.uleb128 0x10
+ 1348 0287 676F00   		.ascii	"go\000"
+ 1349 028a 01       		.byte	0x1
+ 1350 028b 7D       		.byte	0x7d
+ 1351 028c 7E000000 		.4byte	0x7e
+ 1352 0290 02       		.uleb128 0x2
+ 1353 0291 91       		.byte	0x91
+ 1354 0292 68       		.sleb128 -24
+ 1355 0293 16       		.uleb128 0x16
+ 1356 0294 B9020000 		.4byte	.LASF38
+ 1357 0298 01       		.byte	0x1
+ 1358 0299 7E       		.byte	0x7e
+ 1359 029a 25000000 		.4byte	0x25
+ 1360 029e 02       		.uleb128 0x2
+ 1361 029f 91       		.byte	0x91
+ 1362 02a0 67       		.sleb128 -25
+ 1363 02a1 16       		.uleb128 0x16
+ 1364 02a2 1A000000 		.4byte	.LASF39
+ 1365 02a6 01       		.byte	0x1
+ 1366 02a7 7F       		.byte	0x7f
+ 1367 02a8 B1020000 		.4byte	0x2b1
+ 1368 02ac 03       		.uleb128 0x3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 35
 
 
- 1281 02ba 12       		.uleb128 0x12
- 1282 02bb DC000000 		.4byte	0xdc
- 1283 02bf 09       		.byte	0x9
- 1284 02c0 00       		.byte	0
- 1285 02c1 14       		.uleb128 0x14
- 1286 02c2 28040000 		.4byte	.LASF41
- 1287 02c6 01       		.byte	0x1
- 1288 02c7 C6       		.byte	0xc6
- 1289 02c8 00000000 		.4byte	.LFB71
- 1290 02cc D0000000 		.4byte	.LFE71-.LFB71
- 1291 02d0 01       		.uleb128 0x1
- 1292 02d1 9C       		.byte	0x9c
- 1293 02d2 F3020000 		.4byte	0x2f3
- 1294 02d6 15       		.uleb128 0x15
- 1295 02d7 7000     		.ascii	"p\000"
- 1296 02d9 01       		.byte	0x1
- 1297 02da C6       		.byte	0xc6
- 1298 02db E3000000 		.4byte	0xe3
- 1299 02df 03       		.uleb128 0x3
- 1300 02e0 91       		.byte	0x91
- 1301 02e1 EC7D     		.sleb128 -276
- 1302 02e3 16       		.uleb128 0x16
- 1303 02e4 28020000 		.4byte	.LASF37
- 1304 02e8 01       		.byte	0x1
- 1305 02e9 D1       		.byte	0xd1
- 1306 02ea F3020000 		.4byte	0x2f3
- 1307 02ee 03       		.uleb128 0x3
- 1308 02ef 91       		.byte	0x91
- 1309 02f0 F07D     		.sleb128 -272
- 1310 02f2 00       		.byte	0
- 1311 02f3 11       		.uleb128 0x11
- 1312 02f4 03030000 		.4byte	0x303
- 1313 02f8 03030000 		.4byte	0x303
- 1314 02fc 12       		.uleb128 0x12
- 1315 02fd DC000000 		.4byte	0xdc
- 1316 0301 3F       		.byte	0x3f
- 1317 0302 00       		.byte	0
- 1318 0303 06       		.uleb128 0x6
- 1319 0304 04       		.byte	0x4
- 1320 0305 25000000 		.4byte	0x25
- 1321 0309 17       		.uleb128 0x17
- 1322 030a 91030000 		.4byte	.LASF67
- 1323 030e 01       		.byte	0x1
- 1324 030f E7       		.byte	0xe7
- 1325 0310 00000000 		.4byte	.LFB72
- 1326 0314 90000000 		.4byte	.LFE72-.LFB72
- 1327 0318 01       		.uleb128 0x1
- 1328 0319 9C       		.byte	0x9c
- 1329 031a 3F030000 		.4byte	0x33f
- 1330 031e 18       		.uleb128 0x18
- 1331 031f 6F030000 		.4byte	.LASF42
- 1332 0323 01       		.byte	0x1
- 1333 0324 EA       		.byte	0xea
- 1334 0325 18       		.uleb128 0x18
- 1335 0326 DA000000 		.4byte	.LASF43
- 1336 032a 01       		.byte	0x1
- 1337 032b EB       		.byte	0xeb
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 34
+ 1369 02ad 91       		.byte	0x91
+ 1370 02ae D87D     		.sleb128 -296
+ 1371 02b0 00       		.byte	0
+ 1372 02b1 11       		.uleb128 0x11
+ 1373 02b2 BB000000 		.4byte	0xbb
+ 1374 02b6 C1020000 		.4byte	0x2c1
+ 1375 02ba 12       		.uleb128 0x12
+ 1376 02bb DC000000 		.4byte	0xdc
+ 1377 02bf 09       		.byte	0x9
+ 1378 02c0 00       		.byte	0
+ 1379 02c1 14       		.uleb128 0x14
+ 1380 02c2 20040000 		.4byte	.LASF41
+ 1381 02c6 01       		.byte	0x1
+ 1382 02c7 D7       		.byte	0xd7
+ 1383 02c8 00000000 		.4byte	.LFB71
+ 1384 02cc D0000000 		.4byte	.LFE71-.LFB71
+ 1385 02d0 01       		.uleb128 0x1
+ 1386 02d1 9C       		.byte	0x9c
+ 1387 02d2 F3020000 		.4byte	0x2f3
+ 1388 02d6 15       		.uleb128 0x15
+ 1389 02d7 7000     		.ascii	"p\000"
+ 1390 02d9 01       		.byte	0x1
+ 1391 02da D7       		.byte	0xd7
+ 1392 02db E3000000 		.4byte	0xe3
+ 1393 02df 03       		.uleb128 0x3
+ 1394 02e0 91       		.byte	0x91
+ 1395 02e1 EC7D     		.sleb128 -276
+ 1396 02e3 16       		.uleb128 0x16
+ 1397 02e4 7F010000 		.4byte	.LASF37
+ 1398 02e8 01       		.byte	0x1
+ 1399 02e9 E2       		.byte	0xe2
+ 1400 02ea F3020000 		.4byte	0x2f3
+ 1401 02ee 03       		.uleb128 0x3
+ 1402 02ef 91       		.byte	0x91
+ 1403 02f0 F07D     		.sleb128 -272
+ 1404 02f2 00       		.byte	0
+ 1405 02f3 11       		.uleb128 0x11
+ 1406 02f4 03030000 		.4byte	0x303
+ 1407 02f8 03030000 		.4byte	0x303
+ 1408 02fc 12       		.uleb128 0x12
+ 1409 02fd DC000000 		.4byte	0xdc
+ 1410 0301 3F       		.byte	0x3f
+ 1411 0302 00       		.byte	0
+ 1412 0303 06       		.uleb128 0x6
+ 1413 0304 04       		.byte	0x4
+ 1414 0305 25000000 		.4byte	0x25
+ 1415 0309 17       		.uleb128 0x17
+ 1416 030a E8020000 		.4byte	.LASF67
+ 1417 030e 01       		.byte	0x1
+ 1418 030f F8       		.byte	0xf8
+ 1419 0310 00000000 		.4byte	.LFB72
+ 1420 0314 B4000000 		.4byte	.LFE72-.LFB72
+ 1421 0318 01       		.uleb128 0x1
+ 1422 0319 9C       		.byte	0x9c
+ 1423 031a 3F030000 		.4byte	0x33f
+ 1424 031e 18       		.uleb128 0x18
+ 1425 031f C6020000 		.4byte	.LASF42
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 36
 
 
- 1338 032c 18       		.uleb128 0x18
- 1339 032d D2010000 		.4byte	.LASF44
- 1340 0331 01       		.byte	0x1
- 1341 0332 EC       		.byte	0xec
- 1342 0333 19       		.uleb128 0x19
- 1343 0334 A9000000 		.4byte	.LASF50
- 1344 0338 01       		.byte	0x1
- 1345 0339 ED       		.byte	0xed
- 1346 033a 3F030000 		.4byte	0x33f
- 1347 033e 00       		.byte	0
- 1348 033f 11       		.uleb128 0x11
- 1349 0340 C2000000 		.4byte	0xc2
- 1350 0344 4A030000 		.4byte	0x34a
- 1351 0348 1A       		.uleb128 0x1a
- 1352 0349 00       		.byte	0
- 1353 034a 1B       		.uleb128 0x1b
- 1354 034b E2010000 		.4byte	.LASF45
- 1355 034f 01       		.byte	0x1
- 1356 0350 1C01     		.2byte	0x11c
- 1357 0352 00000000 		.4byte	.LFB73
- 1358 0356 1E000000 		.4byte	.LFE73-.LFB73
- 1359 035a 01       		.uleb128 0x1
- 1360 035b 9C       		.byte	0x9c
- 1361 035c A2030000 		.4byte	0x3a2
- 1362 0360 1C       		.uleb128 0x1c
- 1363 0361 00020000 		.4byte	.LASF46
- 1364 0365 01       		.byte	0x1
- 1365 0366 1C01     		.2byte	0x11c
- 1366 0368 01010000 		.4byte	0x101
- 1367 036c 02       		.uleb128 0x2
- 1368 036d 91       		.byte	0x91
- 1369 036e 6C       		.sleb128 -20
- 1370 036f 1C       		.uleb128 0x1c
- 1371 0370 44040000 		.4byte	.LASF47
- 1372 0374 01       		.byte	0x1
- 1373 0375 1C01     		.2byte	0x11c
- 1374 0377 E5000000 		.4byte	0xe5
- 1375 037b 02       		.uleb128 0x2
- 1376 037c 91       		.byte	0x91
- 1377 037d 68       		.sleb128 -24
- 1378 037e 1D       		.uleb128 0x1d
- 1379 037f ED010000 		.4byte	0x1ed
- 1380 0383 0A000000 		.4byte	.LBB6
- 1381 0387 12000000 		.4byte	.LBE6-.LBB6
- 1382 038b 01       		.byte	0x1
- 1383 038c 1E01     		.2byte	0x11e
- 1384 038e 1E       		.uleb128 0x1e
- 1385 038f 0A000000 		.4byte	.LBB7
- 1386 0393 12000000 		.4byte	.LBE7-.LBB7
- 1387 0397 1F       		.uleb128 0x1f
- 1388 0398 F9010000 		.4byte	0x1f9
- 1389 039c 02       		.uleb128 0x2
- 1390 039d 91       		.byte	0x91
- 1391 039e 74       		.sleb128 -12
- 1392 039f 00       		.byte	0
- 1393 03a0 00       		.byte	0
- 1394 03a1 00       		.byte	0
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 35
+ 1426 0323 01       		.byte	0x1
+ 1427 0324 FB       		.byte	0xfb
+ 1428 0325 18       		.uleb128 0x18
+ 1429 0326 31000000 		.4byte	.LASF43
+ 1430 032a 01       		.byte	0x1
+ 1431 032b FC       		.byte	0xfc
+ 1432 032c 18       		.uleb128 0x18
+ 1433 032d 29010000 		.4byte	.LASF44
+ 1434 0331 01       		.byte	0x1
+ 1435 0332 FD       		.byte	0xfd
+ 1436 0333 19       		.uleb128 0x19
+ 1437 0334 00000000 		.4byte	.LASF50
+ 1438 0338 01       		.byte	0x1
+ 1439 0339 FE       		.byte	0xfe
+ 1440 033a 3F030000 		.4byte	0x33f
+ 1441 033e 00       		.byte	0
+ 1442 033f 11       		.uleb128 0x11
+ 1443 0340 C2000000 		.4byte	0xc2
+ 1444 0344 4A030000 		.4byte	0x34a
+ 1445 0348 1A       		.uleb128 0x1a
+ 1446 0349 00       		.byte	0
+ 1447 034a 1B       		.uleb128 0x1b
+ 1448 034b 39010000 		.4byte	.LASF45
+ 1449 034f 01       		.byte	0x1
+ 1450 0350 3101     		.2byte	0x131
+ 1451 0352 00000000 		.4byte	.LFB73
+ 1452 0356 1E000000 		.4byte	.LFE73-.LFB73
+ 1453 035a 01       		.uleb128 0x1
+ 1454 035b 9C       		.byte	0x9c
+ 1455 035c A2030000 		.4byte	0x3a2
+ 1456 0360 1C       		.uleb128 0x1c
+ 1457 0361 57010000 		.4byte	.LASF46
+ 1458 0365 01       		.byte	0x1
+ 1459 0366 3101     		.2byte	0x131
+ 1460 0368 01010000 		.4byte	0x101
+ 1461 036c 02       		.uleb128 0x2
+ 1462 036d 91       		.byte	0x91
+ 1463 036e 6C       		.sleb128 -20
+ 1464 036f 1C       		.uleb128 0x1c
+ 1465 0370 3C040000 		.4byte	.LASF47
+ 1466 0374 01       		.byte	0x1
+ 1467 0375 3101     		.2byte	0x131
+ 1468 0377 E5000000 		.4byte	0xe5
+ 1469 037b 02       		.uleb128 0x2
+ 1470 037c 91       		.byte	0x91
+ 1471 037d 68       		.sleb128 -24
+ 1472 037e 1D       		.uleb128 0x1d
+ 1473 037f ED010000 		.4byte	0x1ed
+ 1474 0383 0A000000 		.4byte	.LBB6
+ 1475 0387 12000000 		.4byte	.LBE6-.LBB6
+ 1476 038b 01       		.byte	0x1
+ 1477 038c 3301     		.2byte	0x133
+ 1478 038e 1E       		.uleb128 0x1e
+ 1479 038f 0A000000 		.4byte	.LBB7
+ 1480 0393 12000000 		.4byte	.LBE7-.LBB7
+ 1481 0397 1F       		.uleb128 0x1f
+ 1482 0398 F9010000 		.4byte	0x1f9
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 37
 
 
- 1395 03a2 1B       		.uleb128 0x1b
- 1396 03a3 76020000 		.4byte	.LASF48
- 1397 03a7 01       		.byte	0x1
- 1398 03a8 2101     		.2byte	0x121
- 1399 03aa 00000000 		.4byte	.LFB74
- 1400 03ae 1A000000 		.4byte	.LFE74-.LFB74
- 1401 03b2 01       		.uleb128 0x1
- 1402 03b3 9C       		.byte	0x9c
- 1403 03b4 DC030000 		.4byte	0x3dc
- 1404 03b8 1D       		.uleb128 0x1d
- 1405 03b9 ED010000 		.4byte	0x1ed
- 1406 03bd 06000000 		.4byte	.LBB8
- 1407 03c1 12000000 		.4byte	.LBE8-.LBB8
- 1408 03c5 01       		.byte	0x1
- 1409 03c6 2301     		.2byte	0x123
- 1410 03c8 1E       		.uleb128 0x1e
- 1411 03c9 06000000 		.4byte	.LBB9
- 1412 03cd 12000000 		.4byte	.LBE9-.LBB9
- 1413 03d1 1F       		.uleb128 0x1f
- 1414 03d2 F9010000 		.4byte	0x1f9
- 1415 03d6 02       		.uleb128 0x2
- 1416 03d7 91       		.byte	0x91
- 1417 03d8 74       		.sleb128 -12
- 1418 03d9 00       		.byte	0
- 1419 03da 00       		.byte	0
- 1420 03db 00       		.byte	0
- 1421 03dc 16       		.uleb128 0x16
- 1422 03dd 6F020000 		.4byte	.LASF49
- 1423 03e1 01       		.byte	0x1
- 1424 03e2 49       		.byte	0x49
- 1425 03e3 2D010000 		.4byte	0x12d
- 1426 03e7 05       		.uleb128 0x5
- 1427 03e8 03       		.byte	0x3
- 1428 03e9 00000000 		.4byte	pxPort
- 1429 03ed 20       		.uleb128 0x20
- 1430 03ee 10040000 		.4byte	.LASF51
- 1431 03f2 0B       		.byte	0xb
- 1432 03f3 9606     		.2byte	0x696
- 1433 03f5 F9030000 		.4byte	0x3f9
- 1434 03f9 21       		.uleb128 0x21
- 1435 03fa 97000000 		.4byte	0x97
- 1436 03fe 22       		.uleb128 0x22
- 1437 03ff 1F030000 		.4byte	.LASF52
- 1438 0403 01       		.byte	0x1
- 1439 0404 4A       		.byte	0x4a
- 1440 0405 22010000 		.4byte	0x122
- 1441 0409 05       		.uleb128 0x5
- 1442 040a 03       		.byte	0x3
- 1443 040b 00000000 		.4byte	gatekeeper
- 1444 040f 22       		.uleb128 0x22
- 1445 0410 1B020000 		.4byte	.LASF53
- 1446 0414 01       		.byte	0x1
- 1447 0415 4B       		.byte	0x4b
- 1448 0416 17010000 		.4byte	0x117
- 1449 041a 05       		.uleb128 0x5
- 1450 041b 03       		.byte	0x3
- 1451 041c 00000000 		.4byte	queue_handle
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 36
+ 1483 039c 02       		.uleb128 0x2
+ 1484 039d 91       		.byte	0x91
+ 1485 039e 74       		.sleb128 -12
+ 1486 039f 00       		.byte	0
+ 1487 03a0 00       		.byte	0
+ 1488 03a1 00       		.byte	0
+ 1489 03a2 1B       		.uleb128 0x1b
+ 1490 03a3 CD010000 		.4byte	.LASF48
+ 1491 03a7 01       		.byte	0x1
+ 1492 03a8 3601     		.2byte	0x136
+ 1493 03aa 00000000 		.4byte	.LFB74
+ 1494 03ae 1A000000 		.4byte	.LFE74-.LFB74
+ 1495 03b2 01       		.uleb128 0x1
+ 1496 03b3 9C       		.byte	0x9c
+ 1497 03b4 DC030000 		.4byte	0x3dc
+ 1498 03b8 1D       		.uleb128 0x1d
+ 1499 03b9 ED010000 		.4byte	0x1ed
+ 1500 03bd 06000000 		.4byte	.LBB8
+ 1501 03c1 12000000 		.4byte	.LBE8-.LBB8
+ 1502 03c5 01       		.byte	0x1
+ 1503 03c6 3801     		.2byte	0x138
+ 1504 03c8 1E       		.uleb128 0x1e
+ 1505 03c9 06000000 		.4byte	.LBB9
+ 1506 03cd 12000000 		.4byte	.LBE9-.LBB9
+ 1507 03d1 1F       		.uleb128 0x1f
+ 1508 03d2 F9010000 		.4byte	0x1f9
+ 1509 03d6 02       		.uleb128 0x2
+ 1510 03d7 91       		.byte	0x91
+ 1511 03d8 74       		.sleb128 -12
+ 1512 03d9 00       		.byte	0
+ 1513 03da 00       		.byte	0
+ 1514 03db 00       		.byte	0
+ 1515 03dc 16       		.uleb128 0x16
+ 1516 03dd C6010000 		.4byte	.LASF49
+ 1517 03e1 01       		.byte	0x1
+ 1518 03e2 49       		.byte	0x49
+ 1519 03e3 2D010000 		.4byte	0x12d
+ 1520 03e7 05       		.uleb128 0x5
+ 1521 03e8 03       		.byte	0x3
+ 1522 03e9 00000000 		.4byte	pxPort
+ 1523 03ed 20       		.uleb128 0x20
+ 1524 03ee 08040000 		.4byte	.LASF51
+ 1525 03f2 0B       		.byte	0xb
+ 1526 03f3 9606     		.2byte	0x696
+ 1527 03f5 F9030000 		.4byte	0x3f9
+ 1528 03f9 21       		.uleb128 0x21
+ 1529 03fa 97000000 		.4byte	0x97
+ 1530 03fe 22       		.uleb128 0x22
+ 1531 03ff 76020000 		.4byte	.LASF52
+ 1532 0403 01       		.byte	0x1
+ 1533 0404 4A       		.byte	0x4a
+ 1534 0405 22010000 		.4byte	0x122
+ 1535 0409 05       		.uleb128 0x5
+ 1536 040a 03       		.byte	0x3
+ 1537 040b 00000000 		.4byte	gatekeeper
+ 1538 040f 22       		.uleb128 0x22
+ 1539 0410 72010000 		.4byte	.LASF53
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 38
 
 
- 1452 0420 22       		.uleb128 0x22
- 1453 0421 C9030000 		.4byte	.LASF54
- 1454 0425 01       		.byte	0x1
- 1455 0426 4F       		.byte	0x4f
- 1456 0427 25000000 		.4byte	0x25
- 1457 042b 05       		.uleb128 0x5
- 1458 042c 03       		.byte	0x3
- 1459 042d 00000000 		.4byte	rx_receive
- 1460 0431 11       		.uleb128 0x11
- 1461 0432 37000000 		.4byte	0x37
- 1462 0436 41040000 		.4byte	0x441
- 1463 043a 12       		.uleb128 0x12
- 1464 043b DC000000 		.4byte	0xdc
- 1465 043f 3F       		.byte	0x3f
- 1466 0440 00       		.byte	0
- 1467 0441 22       		.uleb128 0x22
- 1468 0442 A2030000 		.4byte	.LASF55
- 1469 0446 01       		.byte	0x1
- 1470 0447 50       		.byte	0x50
- 1471 0448 31040000 		.4byte	0x431
- 1472 044c 05       		.uleb128 0x5
- 1473 044d 03       		.byte	0x3
- 1474 044e 00000000 		.4byte	buffer
- 1475 0452 22       		.uleb128 0x22
- 1476 0453 1D040000 		.4byte	.LASF56
- 1477 0457 01       		.byte	0x1
- 1478 0458 53       		.byte	0x53
- 1479 0459 AD010000 		.4byte	0x1ad
- 1480 045d 05       		.uleb128 0x5
- 1481 045e 03       		.byte	0x3
- 1482 045f 00000000 		.4byte	left_wheel
- 1483 0463 22       		.uleb128 0x22
- 1484 0464 04040000 		.4byte	.LASF57
- 1485 0468 01       		.byte	0x1
- 1486 0469 54       		.byte	0x54
- 1487 046a AD010000 		.4byte	0x1ad
- 1488 046e 05       		.uleb128 0x5
- 1489 046f 03       		.byte	0x3
- 1490 0470 00000000 		.4byte	right_wheel
- 1491 0474 23       		.uleb128 0x23
- 1492 0475 6B00     		.ascii	"k\000"
- 1493 0477 01       		.byte	0x1
- 1494 0478 55       		.byte	0x55
- 1495 0479 E2010000 		.4byte	0x1e2
- 1496 047d 05       		.uleb128 0x5
- 1497 047e 03       		.byte	0x3
- 1498 047f 00000000 		.4byte	k
- 1499 0483 22       		.uleb128 0x22
- 1500 0484 93020000 		.4byte	.LASF58
- 1501 0488 01       		.byte	0x1
- 1502 0489 57       		.byte	0x57
- 1503 048a 7E000000 		.4byte	0x7e
- 1504 048e 05       		.uleb128 0x5
- 1505 048f 03       		.byte	0x3
- 1506 0490 00000000 		.4byte	isMaster
- 1507 0494 22       		.uleb128 0x22
- 1508 0495 C0010000 		.4byte	.LASF59
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 37
+ 1540 0414 01       		.byte	0x1
+ 1541 0415 4B       		.byte	0x4b
+ 1542 0416 17010000 		.4byte	0x117
+ 1543 041a 05       		.uleb128 0x5
+ 1544 041b 03       		.byte	0x3
+ 1545 041c 00000000 		.4byte	queue_handle
+ 1546 0420 22       		.uleb128 0x22
+ 1547 0421 20030000 		.4byte	.LASF54
+ 1548 0425 01       		.byte	0x1
+ 1549 0426 4F       		.byte	0x4f
+ 1550 0427 25000000 		.4byte	0x25
+ 1551 042b 05       		.uleb128 0x5
+ 1552 042c 03       		.byte	0x3
+ 1553 042d 00000000 		.4byte	rx_receive
+ 1554 0431 11       		.uleb128 0x11
+ 1555 0432 37000000 		.4byte	0x37
+ 1556 0436 41040000 		.4byte	0x441
+ 1557 043a 12       		.uleb128 0x12
+ 1558 043b DC000000 		.4byte	0xdc
+ 1559 043f 3F       		.byte	0x3f
+ 1560 0440 00       		.byte	0
+ 1561 0441 22       		.uleb128 0x22
+ 1562 0442 F9020000 		.4byte	.LASF55
+ 1563 0446 01       		.byte	0x1
+ 1564 0447 50       		.byte	0x50
+ 1565 0448 31040000 		.4byte	0x431
+ 1566 044c 05       		.uleb128 0x5
+ 1567 044d 03       		.byte	0x3
+ 1568 044e 00000000 		.4byte	buffer
+ 1569 0452 22       		.uleb128 0x22
+ 1570 0453 15040000 		.4byte	.LASF56
+ 1571 0457 01       		.byte	0x1
+ 1572 0458 53       		.byte	0x53
+ 1573 0459 AD010000 		.4byte	0x1ad
+ 1574 045d 05       		.uleb128 0x5
+ 1575 045e 03       		.byte	0x3
+ 1576 045f 00000000 		.4byte	left_wheel
+ 1577 0463 22       		.uleb128 0x22
+ 1578 0464 FC030000 		.4byte	.LASF57
+ 1579 0468 01       		.byte	0x1
+ 1580 0469 54       		.byte	0x54
+ 1581 046a AD010000 		.4byte	0x1ad
+ 1582 046e 05       		.uleb128 0x5
+ 1583 046f 03       		.byte	0x3
+ 1584 0470 00000000 		.4byte	right_wheel
+ 1585 0474 23       		.uleb128 0x23
+ 1586 0475 6B00     		.ascii	"k\000"
+ 1587 0477 01       		.byte	0x1
+ 1588 0478 55       		.byte	0x55
+ 1589 0479 E2010000 		.4byte	0x1e2
+ 1590 047d 05       		.uleb128 0x5
+ 1591 047e 03       		.byte	0x3
+ 1592 047f 00000000 		.4byte	k
+ 1593 0483 22       		.uleb128 0x22
+ 1594 0484 EA010000 		.4byte	.LASF58
+ 1595 0488 01       		.byte	0x1
+ 1596 0489 57       		.byte	0x57
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 39
 
 
- 1509 0499 01       		.byte	0x1
- 1510 049a 58       		.byte	0x58
- 1511 049b 7E000000 		.4byte	0x7e
- 1512 049f 05       		.uleb128 0x5
- 1513 04a0 03       		.byte	0x3
- 1514 04a1 00000000 		.4byte	first_run
- 1515 04a5 19       		.uleb128 0x19
- 1516 04a6 A9000000 		.4byte	.LASF50
- 1517 04aa 01       		.byte	0x1
- 1518 04ab ED       		.byte	0xed
- 1519 04ac 3F030000 		.4byte	0x33f
- 1520 04b0 00       		.byte	0
- 1521              		.section	.debug_abbrev,"",%progbits
- 1522              	.Ldebug_abbrev0:
- 1523 0000 01       		.uleb128 0x1
- 1524 0001 11       		.uleb128 0x11
- 1525 0002 01       		.byte	0x1
- 1526 0003 25       		.uleb128 0x25
- 1527 0004 0E       		.uleb128 0xe
- 1528 0005 13       		.uleb128 0x13
- 1529 0006 0B       		.uleb128 0xb
- 1530 0007 03       		.uleb128 0x3
- 1531 0008 0E       		.uleb128 0xe
- 1532 0009 1B       		.uleb128 0x1b
- 1533 000a 0E       		.uleb128 0xe
- 1534 000b 55       		.uleb128 0x55
- 1535 000c 17       		.uleb128 0x17
- 1536 000d 11       		.uleb128 0x11
- 1537 000e 01       		.uleb128 0x1
- 1538 000f 10       		.uleb128 0x10
- 1539 0010 17       		.uleb128 0x17
- 1540 0011 00       		.byte	0
- 1541 0012 00       		.byte	0
- 1542 0013 02       		.uleb128 0x2
- 1543 0014 24       		.uleb128 0x24
- 1544 0015 00       		.byte	0
- 1545 0016 0B       		.uleb128 0xb
- 1546 0017 0B       		.uleb128 0xb
- 1547 0018 3E       		.uleb128 0x3e
- 1548 0019 0B       		.uleb128 0xb
- 1549 001a 03       		.uleb128 0x3
- 1550 001b 0E       		.uleb128 0xe
- 1551 001c 00       		.byte	0
- 1552 001d 00       		.byte	0
- 1553 001e 03       		.uleb128 0x3
- 1554 001f 16       		.uleb128 0x16
- 1555 0020 00       		.byte	0
- 1556 0021 03       		.uleb128 0x3
- 1557 0022 0E       		.uleb128 0xe
- 1558 0023 3A       		.uleb128 0x3a
- 1559 0024 0B       		.uleb128 0xb
- 1560 0025 3B       		.uleb128 0x3b
- 1561 0026 0B       		.uleb128 0xb
- 1562 0027 49       		.uleb128 0x49
- 1563 0028 13       		.uleb128 0x13
- 1564 0029 00       		.byte	0
- 1565 002a 00       		.byte	0
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 38
+ 1597 048a 7E000000 		.4byte	0x7e
+ 1598 048e 05       		.uleb128 0x5
+ 1599 048f 03       		.byte	0x3
+ 1600 0490 00000000 		.4byte	isMaster
+ 1601 0494 22       		.uleb128 0x22
+ 1602 0495 17010000 		.4byte	.LASF59
+ 1603 0499 01       		.byte	0x1
+ 1604 049a 58       		.byte	0x58
+ 1605 049b 7E000000 		.4byte	0x7e
+ 1606 049f 05       		.uleb128 0x5
+ 1607 04a0 03       		.byte	0x3
+ 1608 04a1 00000000 		.4byte	first_run
+ 1609 04a5 19       		.uleb128 0x19
+ 1610 04a6 00000000 		.4byte	.LASF50
+ 1611 04aa 01       		.byte	0x1
+ 1612 04ab FE       		.byte	0xfe
+ 1613 04ac 3F030000 		.4byte	0x33f
+ 1614 04b0 00       		.byte	0
+ 1615              		.section	.debug_abbrev,"",%progbits
+ 1616              	.Ldebug_abbrev0:
+ 1617 0000 01       		.uleb128 0x1
+ 1618 0001 11       		.uleb128 0x11
+ 1619 0002 01       		.byte	0x1
+ 1620 0003 25       		.uleb128 0x25
+ 1621 0004 0E       		.uleb128 0xe
+ 1622 0005 13       		.uleb128 0x13
+ 1623 0006 0B       		.uleb128 0xb
+ 1624 0007 03       		.uleb128 0x3
+ 1625 0008 0E       		.uleb128 0xe
+ 1626 0009 1B       		.uleb128 0x1b
+ 1627 000a 0E       		.uleb128 0xe
+ 1628 000b 55       		.uleb128 0x55
+ 1629 000c 17       		.uleb128 0x17
+ 1630 000d 11       		.uleb128 0x11
+ 1631 000e 01       		.uleb128 0x1
+ 1632 000f 10       		.uleb128 0x10
+ 1633 0010 17       		.uleb128 0x17
+ 1634 0011 00       		.byte	0
+ 1635 0012 00       		.byte	0
+ 1636 0013 02       		.uleb128 0x2
+ 1637 0014 24       		.uleb128 0x24
+ 1638 0015 00       		.byte	0
+ 1639 0016 0B       		.uleb128 0xb
+ 1640 0017 0B       		.uleb128 0xb
+ 1641 0018 3E       		.uleb128 0x3e
+ 1642 0019 0B       		.uleb128 0xb
+ 1643 001a 03       		.uleb128 0x3
+ 1644 001b 0E       		.uleb128 0xe
+ 1645 001c 00       		.byte	0
+ 1646 001d 00       		.byte	0
+ 1647 001e 03       		.uleb128 0x3
+ 1648 001f 16       		.uleb128 0x16
+ 1649 0020 00       		.byte	0
+ 1650 0021 03       		.uleb128 0x3
+ 1651 0022 0E       		.uleb128 0xe
+ 1652 0023 3A       		.uleb128 0x3a
+ 1653 0024 0B       		.uleb128 0xb
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 40
 
 
- 1566 002b 04       		.uleb128 0x4
- 1567 002c 24       		.uleb128 0x24
- 1568 002d 00       		.byte	0
- 1569 002e 0B       		.uleb128 0xb
- 1570 002f 0B       		.uleb128 0xb
- 1571 0030 3E       		.uleb128 0x3e
- 1572 0031 0B       		.uleb128 0xb
- 1573 0032 03       		.uleb128 0x3
- 1574 0033 08       		.uleb128 0x8
- 1575 0034 00       		.byte	0
- 1576 0035 00       		.byte	0
- 1577 0036 05       		.uleb128 0x5
- 1578 0037 16       		.uleb128 0x16
- 1579 0038 00       		.byte	0
- 1580 0039 03       		.uleb128 0x3
- 1581 003a 0E       		.uleb128 0xe
- 1582 003b 3A       		.uleb128 0x3a
- 1583 003c 0B       		.uleb128 0xb
- 1584 003d 3B       		.uleb128 0x3b
- 1585 003e 05       		.uleb128 0x5
- 1586 003f 49       		.uleb128 0x49
- 1587 0040 13       		.uleb128 0x13
- 1588 0041 00       		.byte	0
- 1589 0042 00       		.byte	0
- 1590 0043 06       		.uleb128 0x6
- 1591 0044 0F       		.uleb128 0xf
- 1592 0045 00       		.byte	0
- 1593 0046 0B       		.uleb128 0xb
- 1594 0047 0B       		.uleb128 0xb
- 1595 0048 49       		.uleb128 0x49
- 1596 0049 13       		.uleb128 0x13
- 1597 004a 00       		.byte	0
- 1598 004b 00       		.byte	0
- 1599 004c 07       		.uleb128 0x7
- 1600 004d 15       		.uleb128 0x15
- 1601 004e 00       		.byte	0
- 1602 004f 27       		.uleb128 0x27
- 1603 0050 19       		.uleb128 0x19
- 1604 0051 00       		.byte	0
- 1605 0052 00       		.byte	0
- 1606 0053 08       		.uleb128 0x8
- 1607 0054 0F       		.uleb128 0xf
- 1608 0055 00       		.byte	0
- 1609 0056 0B       		.uleb128 0xb
- 1610 0057 0B       		.uleb128 0xb
- 1611 0058 00       		.byte	0
- 1612 0059 00       		.byte	0
- 1613 005a 09       		.uleb128 0x9
- 1614 005b 13       		.uleb128 0x13
- 1615 005c 00       		.byte	0
- 1616 005d 03       		.uleb128 0x3
- 1617 005e 0E       		.uleb128 0xe
- 1618 005f 3C       		.uleb128 0x3c
- 1619 0060 19       		.uleb128 0x19
- 1620 0061 00       		.byte	0
- 1621 0062 00       		.byte	0
- 1622 0063 0A       		.uleb128 0xa
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 39
+ 1654 0025 3B       		.uleb128 0x3b
+ 1655 0026 0B       		.uleb128 0xb
+ 1656 0027 49       		.uleb128 0x49
+ 1657 0028 13       		.uleb128 0x13
+ 1658 0029 00       		.byte	0
+ 1659 002a 00       		.byte	0
+ 1660 002b 04       		.uleb128 0x4
+ 1661 002c 24       		.uleb128 0x24
+ 1662 002d 00       		.byte	0
+ 1663 002e 0B       		.uleb128 0xb
+ 1664 002f 0B       		.uleb128 0xb
+ 1665 0030 3E       		.uleb128 0x3e
+ 1666 0031 0B       		.uleb128 0xb
+ 1667 0032 03       		.uleb128 0x3
+ 1668 0033 08       		.uleb128 0x8
+ 1669 0034 00       		.byte	0
+ 1670 0035 00       		.byte	0
+ 1671 0036 05       		.uleb128 0x5
+ 1672 0037 16       		.uleb128 0x16
+ 1673 0038 00       		.byte	0
+ 1674 0039 03       		.uleb128 0x3
+ 1675 003a 0E       		.uleb128 0xe
+ 1676 003b 3A       		.uleb128 0x3a
+ 1677 003c 0B       		.uleb128 0xb
+ 1678 003d 3B       		.uleb128 0x3b
+ 1679 003e 05       		.uleb128 0x5
+ 1680 003f 49       		.uleb128 0x49
+ 1681 0040 13       		.uleb128 0x13
+ 1682 0041 00       		.byte	0
+ 1683 0042 00       		.byte	0
+ 1684 0043 06       		.uleb128 0x6
+ 1685 0044 0F       		.uleb128 0xf
+ 1686 0045 00       		.byte	0
+ 1687 0046 0B       		.uleb128 0xb
+ 1688 0047 0B       		.uleb128 0xb
+ 1689 0048 49       		.uleb128 0x49
+ 1690 0049 13       		.uleb128 0x13
+ 1691 004a 00       		.byte	0
+ 1692 004b 00       		.byte	0
+ 1693 004c 07       		.uleb128 0x7
+ 1694 004d 15       		.uleb128 0x15
+ 1695 004e 00       		.byte	0
+ 1696 004f 27       		.uleb128 0x27
+ 1697 0050 19       		.uleb128 0x19
+ 1698 0051 00       		.byte	0
+ 1699 0052 00       		.byte	0
+ 1700 0053 08       		.uleb128 0x8
+ 1701 0054 0F       		.uleb128 0xf
+ 1702 0055 00       		.byte	0
+ 1703 0056 0B       		.uleb128 0xb
+ 1704 0057 0B       		.uleb128 0xb
+ 1705 0058 00       		.byte	0
+ 1706 0059 00       		.byte	0
+ 1707 005a 09       		.uleb128 0x9
+ 1708 005b 13       		.uleb128 0x13
+ 1709 005c 00       		.byte	0
+ 1710 005d 03       		.uleb128 0x3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 41
 
 
- 1623 0064 13       		.uleb128 0x13
- 1624 0065 01       		.byte	0x1
- 1625 0066 0B       		.uleb128 0xb
- 1626 0067 0B       		.uleb128 0xb
- 1627 0068 3A       		.uleb128 0x3a
- 1628 0069 0B       		.uleb128 0xb
- 1629 006a 3B       		.uleb128 0x3b
- 1630 006b 0B       		.uleb128 0xb
- 1631 006c 01       		.uleb128 0x1
- 1632 006d 13       		.uleb128 0x13
- 1633 006e 00       		.byte	0
- 1634 006f 00       		.byte	0
- 1635 0070 0B       		.uleb128 0xb
- 1636 0071 0D       		.uleb128 0xd
- 1637 0072 00       		.byte	0
- 1638 0073 03       		.uleb128 0x3
- 1639 0074 0E       		.uleb128 0xe
- 1640 0075 3A       		.uleb128 0x3a
- 1641 0076 0B       		.uleb128 0xb
- 1642 0077 3B       		.uleb128 0x3b
- 1643 0078 0B       		.uleb128 0xb
- 1644 0079 49       		.uleb128 0x49
- 1645 007a 13       		.uleb128 0x13
- 1646 007b 38       		.uleb128 0x38
- 1647 007c 0B       		.uleb128 0xb
- 1648 007d 00       		.byte	0
- 1649 007e 00       		.byte	0
- 1650 007f 0C       		.uleb128 0xc
- 1651 0080 0D       		.uleb128 0xd
- 1652 0081 00       		.byte	0
- 1653 0082 03       		.uleb128 0x3
- 1654 0083 08       		.uleb128 0x8
- 1655 0084 3A       		.uleb128 0x3a
- 1656 0085 0B       		.uleb128 0xb
- 1657 0086 3B       		.uleb128 0x3b
- 1658 0087 0B       		.uleb128 0xb
- 1659 0088 49       		.uleb128 0x49
- 1660 0089 13       		.uleb128 0x13
- 1661 008a 38       		.uleb128 0x38
- 1662 008b 0B       		.uleb128 0xb
- 1663 008c 00       		.byte	0
- 1664 008d 00       		.byte	0
- 1665 008e 0D       		.uleb128 0xd
- 1666 008f 2E       		.uleb128 0x2e
- 1667 0090 01       		.byte	0x1
- 1668 0091 03       		.uleb128 0x3
- 1669 0092 0E       		.uleb128 0xe
- 1670 0093 3A       		.uleb128 0x3a
- 1671 0094 0B       		.uleb128 0xb
- 1672 0095 3B       		.uleb128 0x3b
- 1673 0096 0B       		.uleb128 0xb
- 1674 0097 27       		.uleb128 0x27
- 1675 0098 19       		.uleb128 0x19
- 1676 0099 20       		.uleb128 0x20
- 1677 009a 0B       		.uleb128 0xb
- 1678 009b 01       		.uleb128 0x1
- 1679 009c 13       		.uleb128 0x13
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 40
+ 1711 005e 0E       		.uleb128 0xe
+ 1712 005f 3C       		.uleb128 0x3c
+ 1713 0060 19       		.uleb128 0x19
+ 1714 0061 00       		.byte	0
+ 1715 0062 00       		.byte	0
+ 1716 0063 0A       		.uleb128 0xa
+ 1717 0064 13       		.uleb128 0x13
+ 1718 0065 01       		.byte	0x1
+ 1719 0066 0B       		.uleb128 0xb
+ 1720 0067 0B       		.uleb128 0xb
+ 1721 0068 3A       		.uleb128 0x3a
+ 1722 0069 0B       		.uleb128 0xb
+ 1723 006a 3B       		.uleb128 0x3b
+ 1724 006b 0B       		.uleb128 0xb
+ 1725 006c 01       		.uleb128 0x1
+ 1726 006d 13       		.uleb128 0x13
+ 1727 006e 00       		.byte	0
+ 1728 006f 00       		.byte	0
+ 1729 0070 0B       		.uleb128 0xb
+ 1730 0071 0D       		.uleb128 0xd
+ 1731 0072 00       		.byte	0
+ 1732 0073 03       		.uleb128 0x3
+ 1733 0074 0E       		.uleb128 0xe
+ 1734 0075 3A       		.uleb128 0x3a
+ 1735 0076 0B       		.uleb128 0xb
+ 1736 0077 3B       		.uleb128 0x3b
+ 1737 0078 0B       		.uleb128 0xb
+ 1738 0079 49       		.uleb128 0x49
+ 1739 007a 13       		.uleb128 0x13
+ 1740 007b 38       		.uleb128 0x38
+ 1741 007c 0B       		.uleb128 0xb
+ 1742 007d 00       		.byte	0
+ 1743 007e 00       		.byte	0
+ 1744 007f 0C       		.uleb128 0xc
+ 1745 0080 0D       		.uleb128 0xd
+ 1746 0081 00       		.byte	0
+ 1747 0082 03       		.uleb128 0x3
+ 1748 0083 08       		.uleb128 0x8
+ 1749 0084 3A       		.uleb128 0x3a
+ 1750 0085 0B       		.uleb128 0xb
+ 1751 0086 3B       		.uleb128 0x3b
+ 1752 0087 0B       		.uleb128 0xb
+ 1753 0088 49       		.uleb128 0x49
+ 1754 0089 13       		.uleb128 0x13
+ 1755 008a 38       		.uleb128 0x38
+ 1756 008b 0B       		.uleb128 0xb
+ 1757 008c 00       		.byte	0
+ 1758 008d 00       		.byte	0
+ 1759 008e 0D       		.uleb128 0xd
+ 1760 008f 2E       		.uleb128 0x2e
+ 1761 0090 01       		.byte	0x1
+ 1762 0091 03       		.uleb128 0x3
+ 1763 0092 0E       		.uleb128 0xe
+ 1764 0093 3A       		.uleb128 0x3a
+ 1765 0094 0B       		.uleb128 0xb
+ 1766 0095 3B       		.uleb128 0x3b
+ 1767 0096 0B       		.uleb128 0xb
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 42
 
 
- 1680 009d 00       		.byte	0
- 1681 009e 00       		.byte	0
- 1682 009f 0E       		.uleb128 0xe
- 1683 00a0 34       		.uleb128 0x34
- 1684 00a1 00       		.byte	0
- 1685 00a2 03       		.uleb128 0x3
- 1686 00a3 0E       		.uleb128 0xe
- 1687 00a4 3A       		.uleb128 0x3a
- 1688 00a5 0B       		.uleb128 0xb
- 1689 00a6 3B       		.uleb128 0x3b
- 1690 00a7 0B       		.uleb128 0xb
- 1691 00a8 49       		.uleb128 0x49
- 1692 00a9 13       		.uleb128 0x13
- 1693 00aa 00       		.byte	0
- 1694 00ab 00       		.byte	0
- 1695 00ac 0F       		.uleb128 0xf
- 1696 00ad 2E       		.uleb128 0x2e
- 1697 00ae 01       		.byte	0x1
- 1698 00af 3F       		.uleb128 0x3f
- 1699 00b0 19       		.uleb128 0x19
- 1700 00b1 03       		.uleb128 0x3
- 1701 00b2 0E       		.uleb128 0xe
- 1702 00b3 3A       		.uleb128 0x3a
- 1703 00b4 0B       		.uleb128 0xb
- 1704 00b5 3B       		.uleb128 0x3b
- 1705 00b6 0B       		.uleb128 0xb
- 1706 00b7 27       		.uleb128 0x27
- 1707 00b8 19       		.uleb128 0x19
- 1708 00b9 49       		.uleb128 0x49
- 1709 00ba 13       		.uleb128 0x13
- 1710 00bb 11       		.uleb128 0x11
- 1711 00bc 01       		.uleb128 0x1
- 1712 00bd 12       		.uleb128 0x12
- 1713 00be 06       		.uleb128 0x6
- 1714 00bf 40       		.uleb128 0x40
- 1715 00c0 18       		.uleb128 0x18
- 1716 00c1 9642     		.uleb128 0x2116
- 1717 00c3 19       		.uleb128 0x19
- 1718 00c4 01       		.uleb128 0x1
- 1719 00c5 13       		.uleb128 0x13
- 1720 00c6 00       		.byte	0
- 1721 00c7 00       		.byte	0
- 1722 00c8 10       		.uleb128 0x10
- 1723 00c9 34       		.uleb128 0x34
- 1724 00ca 00       		.byte	0
- 1725 00cb 03       		.uleb128 0x3
- 1726 00cc 08       		.uleb128 0x8
- 1727 00cd 3A       		.uleb128 0x3a
- 1728 00ce 0B       		.uleb128 0xb
- 1729 00cf 3B       		.uleb128 0x3b
- 1730 00d0 0B       		.uleb128 0xb
- 1731 00d1 49       		.uleb128 0x49
- 1732 00d2 13       		.uleb128 0x13
- 1733 00d3 02       		.uleb128 0x2
- 1734 00d4 18       		.uleb128 0x18
- 1735 00d5 00       		.byte	0
- 1736 00d6 00       		.byte	0
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 41
+ 1768 0097 27       		.uleb128 0x27
+ 1769 0098 19       		.uleb128 0x19
+ 1770 0099 20       		.uleb128 0x20
+ 1771 009a 0B       		.uleb128 0xb
+ 1772 009b 01       		.uleb128 0x1
+ 1773 009c 13       		.uleb128 0x13
+ 1774 009d 00       		.byte	0
+ 1775 009e 00       		.byte	0
+ 1776 009f 0E       		.uleb128 0xe
+ 1777 00a0 34       		.uleb128 0x34
+ 1778 00a1 00       		.byte	0
+ 1779 00a2 03       		.uleb128 0x3
+ 1780 00a3 0E       		.uleb128 0xe
+ 1781 00a4 3A       		.uleb128 0x3a
+ 1782 00a5 0B       		.uleb128 0xb
+ 1783 00a6 3B       		.uleb128 0x3b
+ 1784 00a7 0B       		.uleb128 0xb
+ 1785 00a8 49       		.uleb128 0x49
+ 1786 00a9 13       		.uleb128 0x13
+ 1787 00aa 00       		.byte	0
+ 1788 00ab 00       		.byte	0
+ 1789 00ac 0F       		.uleb128 0xf
+ 1790 00ad 2E       		.uleb128 0x2e
+ 1791 00ae 01       		.byte	0x1
+ 1792 00af 3F       		.uleb128 0x3f
+ 1793 00b0 19       		.uleb128 0x19
+ 1794 00b1 03       		.uleb128 0x3
+ 1795 00b2 0E       		.uleb128 0xe
+ 1796 00b3 3A       		.uleb128 0x3a
+ 1797 00b4 0B       		.uleb128 0xb
+ 1798 00b5 3B       		.uleb128 0x3b
+ 1799 00b6 0B       		.uleb128 0xb
+ 1800 00b7 27       		.uleb128 0x27
+ 1801 00b8 19       		.uleb128 0x19
+ 1802 00b9 49       		.uleb128 0x49
+ 1803 00ba 13       		.uleb128 0x13
+ 1804 00bb 11       		.uleb128 0x11
+ 1805 00bc 01       		.uleb128 0x1
+ 1806 00bd 12       		.uleb128 0x12
+ 1807 00be 06       		.uleb128 0x6
+ 1808 00bf 40       		.uleb128 0x40
+ 1809 00c0 18       		.uleb128 0x18
+ 1810 00c1 9642     		.uleb128 0x2116
+ 1811 00c3 19       		.uleb128 0x19
+ 1812 00c4 01       		.uleb128 0x1
+ 1813 00c5 13       		.uleb128 0x13
+ 1814 00c6 00       		.byte	0
+ 1815 00c7 00       		.byte	0
+ 1816 00c8 10       		.uleb128 0x10
+ 1817 00c9 34       		.uleb128 0x34
+ 1818 00ca 00       		.byte	0
+ 1819 00cb 03       		.uleb128 0x3
+ 1820 00cc 08       		.uleb128 0x8
+ 1821 00cd 3A       		.uleb128 0x3a
+ 1822 00ce 0B       		.uleb128 0xb
+ 1823 00cf 3B       		.uleb128 0x3b
+ 1824 00d0 0B       		.uleb128 0xb
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 43
 
 
- 1737 00d7 11       		.uleb128 0x11
- 1738 00d8 01       		.uleb128 0x1
- 1739 00d9 01       		.byte	0x1
- 1740 00da 49       		.uleb128 0x49
- 1741 00db 13       		.uleb128 0x13
- 1742 00dc 01       		.uleb128 0x1
- 1743 00dd 13       		.uleb128 0x13
- 1744 00de 00       		.byte	0
- 1745 00df 00       		.byte	0
- 1746 00e0 12       		.uleb128 0x12
- 1747 00e1 21       		.uleb128 0x21
- 1748 00e2 00       		.byte	0
- 1749 00e3 49       		.uleb128 0x49
- 1750 00e4 13       		.uleb128 0x13
- 1751 00e5 2F       		.uleb128 0x2f
- 1752 00e6 0B       		.uleb128 0xb
- 1753 00e7 00       		.byte	0
- 1754 00e8 00       		.byte	0
- 1755 00e9 13       		.uleb128 0x13
- 1756 00ea 26       		.uleb128 0x26
- 1757 00eb 00       		.byte	0
- 1758 00ec 49       		.uleb128 0x49
- 1759 00ed 13       		.uleb128 0x13
- 1760 00ee 00       		.byte	0
- 1761 00ef 00       		.byte	0
- 1762 00f0 14       		.uleb128 0x14
- 1763 00f1 2E       		.uleb128 0x2e
- 1764 00f2 01       		.byte	0x1
- 1765 00f3 3F       		.uleb128 0x3f
- 1766 00f4 19       		.uleb128 0x19
- 1767 00f5 03       		.uleb128 0x3
- 1768 00f6 0E       		.uleb128 0xe
- 1769 00f7 3A       		.uleb128 0x3a
- 1770 00f8 0B       		.uleb128 0xb
- 1771 00f9 3B       		.uleb128 0x3b
- 1772 00fa 0B       		.uleb128 0xb
- 1773 00fb 27       		.uleb128 0x27
- 1774 00fc 19       		.uleb128 0x19
- 1775 00fd 11       		.uleb128 0x11
- 1776 00fe 01       		.uleb128 0x1
- 1777 00ff 12       		.uleb128 0x12
- 1778 0100 06       		.uleb128 0x6
- 1779 0101 40       		.uleb128 0x40
- 1780 0102 18       		.uleb128 0x18
- 1781 0103 9642     		.uleb128 0x2116
- 1782 0105 19       		.uleb128 0x19
- 1783 0106 01       		.uleb128 0x1
- 1784 0107 13       		.uleb128 0x13
- 1785 0108 00       		.byte	0
- 1786 0109 00       		.byte	0
- 1787 010a 15       		.uleb128 0x15
- 1788 010b 05       		.uleb128 0x5
- 1789 010c 00       		.byte	0
- 1790 010d 03       		.uleb128 0x3
- 1791 010e 08       		.uleb128 0x8
- 1792 010f 3A       		.uleb128 0x3a
- 1793 0110 0B       		.uleb128 0xb
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 42
+ 1825 00d1 49       		.uleb128 0x49
+ 1826 00d2 13       		.uleb128 0x13
+ 1827 00d3 02       		.uleb128 0x2
+ 1828 00d4 18       		.uleb128 0x18
+ 1829 00d5 00       		.byte	0
+ 1830 00d6 00       		.byte	0
+ 1831 00d7 11       		.uleb128 0x11
+ 1832 00d8 01       		.uleb128 0x1
+ 1833 00d9 01       		.byte	0x1
+ 1834 00da 49       		.uleb128 0x49
+ 1835 00db 13       		.uleb128 0x13
+ 1836 00dc 01       		.uleb128 0x1
+ 1837 00dd 13       		.uleb128 0x13
+ 1838 00de 00       		.byte	0
+ 1839 00df 00       		.byte	0
+ 1840 00e0 12       		.uleb128 0x12
+ 1841 00e1 21       		.uleb128 0x21
+ 1842 00e2 00       		.byte	0
+ 1843 00e3 49       		.uleb128 0x49
+ 1844 00e4 13       		.uleb128 0x13
+ 1845 00e5 2F       		.uleb128 0x2f
+ 1846 00e6 0B       		.uleb128 0xb
+ 1847 00e7 00       		.byte	0
+ 1848 00e8 00       		.byte	0
+ 1849 00e9 13       		.uleb128 0x13
+ 1850 00ea 26       		.uleb128 0x26
+ 1851 00eb 00       		.byte	0
+ 1852 00ec 49       		.uleb128 0x49
+ 1853 00ed 13       		.uleb128 0x13
+ 1854 00ee 00       		.byte	0
+ 1855 00ef 00       		.byte	0
+ 1856 00f0 14       		.uleb128 0x14
+ 1857 00f1 2E       		.uleb128 0x2e
+ 1858 00f2 01       		.byte	0x1
+ 1859 00f3 3F       		.uleb128 0x3f
+ 1860 00f4 19       		.uleb128 0x19
+ 1861 00f5 03       		.uleb128 0x3
+ 1862 00f6 0E       		.uleb128 0xe
+ 1863 00f7 3A       		.uleb128 0x3a
+ 1864 00f8 0B       		.uleb128 0xb
+ 1865 00f9 3B       		.uleb128 0x3b
+ 1866 00fa 0B       		.uleb128 0xb
+ 1867 00fb 27       		.uleb128 0x27
+ 1868 00fc 19       		.uleb128 0x19
+ 1869 00fd 11       		.uleb128 0x11
+ 1870 00fe 01       		.uleb128 0x1
+ 1871 00ff 12       		.uleb128 0x12
+ 1872 0100 06       		.uleb128 0x6
+ 1873 0101 40       		.uleb128 0x40
+ 1874 0102 18       		.uleb128 0x18
+ 1875 0103 9642     		.uleb128 0x2116
+ 1876 0105 19       		.uleb128 0x19
+ 1877 0106 01       		.uleb128 0x1
+ 1878 0107 13       		.uleb128 0x13
+ 1879 0108 00       		.byte	0
+ 1880 0109 00       		.byte	0
+ 1881 010a 15       		.uleb128 0x15
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 44
 
 
- 1794 0111 3B       		.uleb128 0x3b
- 1795 0112 0B       		.uleb128 0xb
- 1796 0113 49       		.uleb128 0x49
- 1797 0114 13       		.uleb128 0x13
- 1798 0115 02       		.uleb128 0x2
- 1799 0116 18       		.uleb128 0x18
- 1800 0117 00       		.byte	0
- 1801 0118 00       		.byte	0
- 1802 0119 16       		.uleb128 0x16
- 1803 011a 34       		.uleb128 0x34
- 1804 011b 00       		.byte	0
- 1805 011c 03       		.uleb128 0x3
- 1806 011d 0E       		.uleb128 0xe
- 1807 011e 3A       		.uleb128 0x3a
- 1808 011f 0B       		.uleb128 0xb
- 1809 0120 3B       		.uleb128 0x3b
- 1810 0121 0B       		.uleb128 0xb
- 1811 0122 49       		.uleb128 0x49
- 1812 0123 13       		.uleb128 0x13
- 1813 0124 02       		.uleb128 0x2
- 1814 0125 18       		.uleb128 0x18
- 1815 0126 00       		.byte	0
- 1816 0127 00       		.byte	0
- 1817 0128 17       		.uleb128 0x17
- 1818 0129 2E       		.uleb128 0x2e
- 1819 012a 01       		.byte	0x1
- 1820 012b 03       		.uleb128 0x3
- 1821 012c 0E       		.uleb128 0xe
- 1822 012d 3A       		.uleb128 0x3a
- 1823 012e 0B       		.uleb128 0xb
- 1824 012f 3B       		.uleb128 0x3b
- 1825 0130 0B       		.uleb128 0xb
- 1826 0131 27       		.uleb128 0x27
- 1827 0132 19       		.uleb128 0x19
- 1828 0133 11       		.uleb128 0x11
- 1829 0134 01       		.uleb128 0x1
- 1830 0135 12       		.uleb128 0x12
- 1831 0136 06       		.uleb128 0x6
- 1832 0137 40       		.uleb128 0x40
- 1833 0138 18       		.uleb128 0x18
- 1834 0139 9642     		.uleb128 0x2116
- 1835 013b 19       		.uleb128 0x19
- 1836 013c 01       		.uleb128 0x1
- 1837 013d 13       		.uleb128 0x13
- 1838 013e 00       		.byte	0
- 1839 013f 00       		.byte	0
- 1840 0140 18       		.uleb128 0x18
- 1841 0141 2E       		.uleb128 0x2e
- 1842 0142 00       		.byte	0
- 1843 0143 3F       		.uleb128 0x3f
- 1844 0144 19       		.uleb128 0x19
- 1845 0145 03       		.uleb128 0x3
- 1846 0146 0E       		.uleb128 0xe
- 1847 0147 3A       		.uleb128 0x3a
- 1848 0148 0B       		.uleb128 0xb
- 1849 0149 3B       		.uleb128 0x3b
- 1850 014a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 43
+ 1882 010b 05       		.uleb128 0x5
+ 1883 010c 00       		.byte	0
+ 1884 010d 03       		.uleb128 0x3
+ 1885 010e 08       		.uleb128 0x8
+ 1886 010f 3A       		.uleb128 0x3a
+ 1887 0110 0B       		.uleb128 0xb
+ 1888 0111 3B       		.uleb128 0x3b
+ 1889 0112 0B       		.uleb128 0xb
+ 1890 0113 49       		.uleb128 0x49
+ 1891 0114 13       		.uleb128 0x13
+ 1892 0115 02       		.uleb128 0x2
+ 1893 0116 18       		.uleb128 0x18
+ 1894 0117 00       		.byte	0
+ 1895 0118 00       		.byte	0
+ 1896 0119 16       		.uleb128 0x16
+ 1897 011a 34       		.uleb128 0x34
+ 1898 011b 00       		.byte	0
+ 1899 011c 03       		.uleb128 0x3
+ 1900 011d 0E       		.uleb128 0xe
+ 1901 011e 3A       		.uleb128 0x3a
+ 1902 011f 0B       		.uleb128 0xb
+ 1903 0120 3B       		.uleb128 0x3b
+ 1904 0121 0B       		.uleb128 0xb
+ 1905 0122 49       		.uleb128 0x49
+ 1906 0123 13       		.uleb128 0x13
+ 1907 0124 02       		.uleb128 0x2
+ 1908 0125 18       		.uleb128 0x18
+ 1909 0126 00       		.byte	0
+ 1910 0127 00       		.byte	0
+ 1911 0128 17       		.uleb128 0x17
+ 1912 0129 2E       		.uleb128 0x2e
+ 1913 012a 01       		.byte	0x1
+ 1914 012b 03       		.uleb128 0x3
+ 1915 012c 0E       		.uleb128 0xe
+ 1916 012d 3A       		.uleb128 0x3a
+ 1917 012e 0B       		.uleb128 0xb
+ 1918 012f 3B       		.uleb128 0x3b
+ 1919 0130 0B       		.uleb128 0xb
+ 1920 0131 27       		.uleb128 0x27
+ 1921 0132 19       		.uleb128 0x19
+ 1922 0133 11       		.uleb128 0x11
+ 1923 0134 01       		.uleb128 0x1
+ 1924 0135 12       		.uleb128 0x12
+ 1925 0136 06       		.uleb128 0x6
+ 1926 0137 40       		.uleb128 0x40
+ 1927 0138 18       		.uleb128 0x18
+ 1928 0139 9642     		.uleb128 0x2116
+ 1929 013b 19       		.uleb128 0x19
+ 1930 013c 01       		.uleb128 0x1
+ 1931 013d 13       		.uleb128 0x13
+ 1932 013e 00       		.byte	0
+ 1933 013f 00       		.byte	0
+ 1934 0140 18       		.uleb128 0x18
+ 1935 0141 2E       		.uleb128 0x2e
+ 1936 0142 00       		.byte	0
+ 1937 0143 3F       		.uleb128 0x3f
+ 1938 0144 19       		.uleb128 0x19
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 45
 
 
- 1851 014b 27       		.uleb128 0x27
- 1852 014c 19       		.uleb128 0x19
- 1853 014d 3C       		.uleb128 0x3c
- 1854 014e 19       		.uleb128 0x19
- 1855 014f 00       		.byte	0
- 1856 0150 00       		.byte	0
- 1857 0151 19       		.uleb128 0x19
- 1858 0152 34       		.uleb128 0x34
- 1859 0153 00       		.byte	0
- 1860 0154 03       		.uleb128 0x3
- 1861 0155 0E       		.uleb128 0xe
- 1862 0156 3A       		.uleb128 0x3a
- 1863 0157 0B       		.uleb128 0xb
- 1864 0158 3B       		.uleb128 0x3b
- 1865 0159 0B       		.uleb128 0xb
- 1866 015a 49       		.uleb128 0x49
- 1867 015b 13       		.uleb128 0x13
- 1868 015c 3F       		.uleb128 0x3f
- 1869 015d 19       		.uleb128 0x19
- 1870 015e 3C       		.uleb128 0x3c
- 1871 015f 19       		.uleb128 0x19
- 1872 0160 00       		.byte	0
- 1873 0161 00       		.byte	0
- 1874 0162 1A       		.uleb128 0x1a
- 1875 0163 21       		.uleb128 0x21
- 1876 0164 00       		.byte	0
- 1877 0165 00       		.byte	0
- 1878 0166 00       		.byte	0
- 1879 0167 1B       		.uleb128 0x1b
- 1880 0168 2E       		.uleb128 0x2e
- 1881 0169 01       		.byte	0x1
- 1882 016a 3F       		.uleb128 0x3f
- 1883 016b 19       		.uleb128 0x19
- 1884 016c 03       		.uleb128 0x3
- 1885 016d 0E       		.uleb128 0xe
- 1886 016e 3A       		.uleb128 0x3a
- 1887 016f 0B       		.uleb128 0xb
- 1888 0170 3B       		.uleb128 0x3b
- 1889 0171 05       		.uleb128 0x5
- 1890 0172 27       		.uleb128 0x27
- 1891 0173 19       		.uleb128 0x19
- 1892 0174 11       		.uleb128 0x11
- 1893 0175 01       		.uleb128 0x1
- 1894 0176 12       		.uleb128 0x12
- 1895 0177 06       		.uleb128 0x6
- 1896 0178 40       		.uleb128 0x40
- 1897 0179 18       		.uleb128 0x18
- 1898 017a 9742     		.uleb128 0x2117
- 1899 017c 19       		.uleb128 0x19
- 1900 017d 01       		.uleb128 0x1
- 1901 017e 13       		.uleb128 0x13
- 1902 017f 00       		.byte	0
- 1903 0180 00       		.byte	0
- 1904 0181 1C       		.uleb128 0x1c
- 1905 0182 05       		.uleb128 0x5
- 1906 0183 00       		.byte	0
- 1907 0184 03       		.uleb128 0x3
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 44
+ 1939 0145 03       		.uleb128 0x3
+ 1940 0146 0E       		.uleb128 0xe
+ 1941 0147 3A       		.uleb128 0x3a
+ 1942 0148 0B       		.uleb128 0xb
+ 1943 0149 3B       		.uleb128 0x3b
+ 1944 014a 0B       		.uleb128 0xb
+ 1945 014b 27       		.uleb128 0x27
+ 1946 014c 19       		.uleb128 0x19
+ 1947 014d 3C       		.uleb128 0x3c
+ 1948 014e 19       		.uleb128 0x19
+ 1949 014f 00       		.byte	0
+ 1950 0150 00       		.byte	0
+ 1951 0151 19       		.uleb128 0x19
+ 1952 0152 34       		.uleb128 0x34
+ 1953 0153 00       		.byte	0
+ 1954 0154 03       		.uleb128 0x3
+ 1955 0155 0E       		.uleb128 0xe
+ 1956 0156 3A       		.uleb128 0x3a
+ 1957 0157 0B       		.uleb128 0xb
+ 1958 0158 3B       		.uleb128 0x3b
+ 1959 0159 0B       		.uleb128 0xb
+ 1960 015a 49       		.uleb128 0x49
+ 1961 015b 13       		.uleb128 0x13
+ 1962 015c 3F       		.uleb128 0x3f
+ 1963 015d 19       		.uleb128 0x19
+ 1964 015e 3C       		.uleb128 0x3c
+ 1965 015f 19       		.uleb128 0x19
+ 1966 0160 00       		.byte	0
+ 1967 0161 00       		.byte	0
+ 1968 0162 1A       		.uleb128 0x1a
+ 1969 0163 21       		.uleb128 0x21
+ 1970 0164 00       		.byte	0
+ 1971 0165 00       		.byte	0
+ 1972 0166 00       		.byte	0
+ 1973 0167 1B       		.uleb128 0x1b
+ 1974 0168 2E       		.uleb128 0x2e
+ 1975 0169 01       		.byte	0x1
+ 1976 016a 3F       		.uleb128 0x3f
+ 1977 016b 19       		.uleb128 0x19
+ 1978 016c 03       		.uleb128 0x3
+ 1979 016d 0E       		.uleb128 0xe
+ 1980 016e 3A       		.uleb128 0x3a
+ 1981 016f 0B       		.uleb128 0xb
+ 1982 0170 3B       		.uleb128 0x3b
+ 1983 0171 05       		.uleb128 0x5
+ 1984 0172 27       		.uleb128 0x27
+ 1985 0173 19       		.uleb128 0x19
+ 1986 0174 11       		.uleb128 0x11
+ 1987 0175 01       		.uleb128 0x1
+ 1988 0176 12       		.uleb128 0x12
+ 1989 0177 06       		.uleb128 0x6
+ 1990 0178 40       		.uleb128 0x40
+ 1991 0179 18       		.uleb128 0x18
+ 1992 017a 9742     		.uleb128 0x2117
+ 1993 017c 19       		.uleb128 0x19
+ 1994 017d 01       		.uleb128 0x1
+ 1995 017e 13       		.uleb128 0x13
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 46
 
 
- 1908 0185 0E       		.uleb128 0xe
- 1909 0186 3A       		.uleb128 0x3a
- 1910 0187 0B       		.uleb128 0xb
- 1911 0188 3B       		.uleb128 0x3b
- 1912 0189 05       		.uleb128 0x5
- 1913 018a 49       		.uleb128 0x49
- 1914 018b 13       		.uleb128 0x13
- 1915 018c 02       		.uleb128 0x2
- 1916 018d 18       		.uleb128 0x18
- 1917 018e 00       		.byte	0
- 1918 018f 00       		.byte	0
- 1919 0190 1D       		.uleb128 0x1d
- 1920 0191 1D       		.uleb128 0x1d
- 1921 0192 01       		.byte	0x1
- 1922 0193 31       		.uleb128 0x31
- 1923 0194 13       		.uleb128 0x13
- 1924 0195 11       		.uleb128 0x11
- 1925 0196 01       		.uleb128 0x1
- 1926 0197 12       		.uleb128 0x12
- 1927 0198 06       		.uleb128 0x6
- 1928 0199 58       		.uleb128 0x58
- 1929 019a 0B       		.uleb128 0xb
- 1930 019b 59       		.uleb128 0x59
- 1931 019c 05       		.uleb128 0x5
- 1932 019d 00       		.byte	0
- 1933 019e 00       		.byte	0
- 1934 019f 1E       		.uleb128 0x1e
- 1935 01a0 0B       		.uleb128 0xb
- 1936 01a1 01       		.byte	0x1
- 1937 01a2 11       		.uleb128 0x11
- 1938 01a3 01       		.uleb128 0x1
- 1939 01a4 12       		.uleb128 0x12
- 1940 01a5 06       		.uleb128 0x6
- 1941 01a6 00       		.byte	0
- 1942 01a7 00       		.byte	0
- 1943 01a8 1F       		.uleb128 0x1f
- 1944 01a9 34       		.uleb128 0x34
- 1945 01aa 00       		.byte	0
- 1946 01ab 31       		.uleb128 0x31
- 1947 01ac 13       		.uleb128 0x13
- 1948 01ad 02       		.uleb128 0x2
- 1949 01ae 18       		.uleb128 0x18
- 1950 01af 00       		.byte	0
- 1951 01b0 00       		.byte	0
- 1952 01b1 20       		.uleb128 0x20
- 1953 01b2 34       		.uleb128 0x34
- 1954 01b3 00       		.byte	0
- 1955 01b4 03       		.uleb128 0x3
- 1956 01b5 0E       		.uleb128 0xe
- 1957 01b6 3A       		.uleb128 0x3a
- 1958 01b7 0B       		.uleb128 0xb
- 1959 01b8 3B       		.uleb128 0x3b
- 1960 01b9 05       		.uleb128 0x5
- 1961 01ba 49       		.uleb128 0x49
- 1962 01bb 13       		.uleb128 0x13
- 1963 01bc 3F       		.uleb128 0x3f
- 1964 01bd 19       		.uleb128 0x19
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 45
+ 1996 017f 00       		.byte	0
+ 1997 0180 00       		.byte	0
+ 1998 0181 1C       		.uleb128 0x1c
+ 1999 0182 05       		.uleb128 0x5
+ 2000 0183 00       		.byte	0
+ 2001 0184 03       		.uleb128 0x3
+ 2002 0185 0E       		.uleb128 0xe
+ 2003 0186 3A       		.uleb128 0x3a
+ 2004 0187 0B       		.uleb128 0xb
+ 2005 0188 3B       		.uleb128 0x3b
+ 2006 0189 05       		.uleb128 0x5
+ 2007 018a 49       		.uleb128 0x49
+ 2008 018b 13       		.uleb128 0x13
+ 2009 018c 02       		.uleb128 0x2
+ 2010 018d 18       		.uleb128 0x18
+ 2011 018e 00       		.byte	0
+ 2012 018f 00       		.byte	0
+ 2013 0190 1D       		.uleb128 0x1d
+ 2014 0191 1D       		.uleb128 0x1d
+ 2015 0192 01       		.byte	0x1
+ 2016 0193 31       		.uleb128 0x31
+ 2017 0194 13       		.uleb128 0x13
+ 2018 0195 11       		.uleb128 0x11
+ 2019 0196 01       		.uleb128 0x1
+ 2020 0197 12       		.uleb128 0x12
+ 2021 0198 06       		.uleb128 0x6
+ 2022 0199 58       		.uleb128 0x58
+ 2023 019a 0B       		.uleb128 0xb
+ 2024 019b 59       		.uleb128 0x59
+ 2025 019c 05       		.uleb128 0x5
+ 2026 019d 00       		.byte	0
+ 2027 019e 00       		.byte	0
+ 2028 019f 1E       		.uleb128 0x1e
+ 2029 01a0 0B       		.uleb128 0xb
+ 2030 01a1 01       		.byte	0x1
+ 2031 01a2 11       		.uleb128 0x11
+ 2032 01a3 01       		.uleb128 0x1
+ 2033 01a4 12       		.uleb128 0x12
+ 2034 01a5 06       		.uleb128 0x6
+ 2035 01a6 00       		.byte	0
+ 2036 01a7 00       		.byte	0
+ 2037 01a8 1F       		.uleb128 0x1f
+ 2038 01a9 34       		.uleb128 0x34
+ 2039 01aa 00       		.byte	0
+ 2040 01ab 31       		.uleb128 0x31
+ 2041 01ac 13       		.uleb128 0x13
+ 2042 01ad 02       		.uleb128 0x2
+ 2043 01ae 18       		.uleb128 0x18
+ 2044 01af 00       		.byte	0
+ 2045 01b0 00       		.byte	0
+ 2046 01b1 20       		.uleb128 0x20
+ 2047 01b2 34       		.uleb128 0x34
+ 2048 01b3 00       		.byte	0
+ 2049 01b4 03       		.uleb128 0x3
+ 2050 01b5 0E       		.uleb128 0xe
+ 2051 01b6 3A       		.uleb128 0x3a
+ 2052 01b7 0B       		.uleb128 0xb
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 47
 
 
- 1965 01be 3C       		.uleb128 0x3c
- 1966 01bf 19       		.uleb128 0x19
- 1967 01c0 00       		.byte	0
- 1968 01c1 00       		.byte	0
- 1969 01c2 21       		.uleb128 0x21
- 1970 01c3 35       		.uleb128 0x35
- 1971 01c4 00       		.byte	0
- 1972 01c5 49       		.uleb128 0x49
- 1973 01c6 13       		.uleb128 0x13
- 1974 01c7 00       		.byte	0
- 1975 01c8 00       		.byte	0
- 1976 01c9 22       		.uleb128 0x22
- 1977 01ca 34       		.uleb128 0x34
- 1978 01cb 00       		.byte	0
- 1979 01cc 03       		.uleb128 0x3
- 1980 01cd 0E       		.uleb128 0xe
- 1981 01ce 3A       		.uleb128 0x3a
- 1982 01cf 0B       		.uleb128 0xb
- 1983 01d0 3B       		.uleb128 0x3b
- 1984 01d1 0B       		.uleb128 0xb
- 1985 01d2 49       		.uleb128 0x49
- 1986 01d3 13       		.uleb128 0x13
- 1987 01d4 3F       		.uleb128 0x3f
- 1988 01d5 19       		.uleb128 0x19
- 1989 01d6 02       		.uleb128 0x2
- 1990 01d7 18       		.uleb128 0x18
- 1991 01d8 00       		.byte	0
- 1992 01d9 00       		.byte	0
- 1993 01da 23       		.uleb128 0x23
- 1994 01db 34       		.uleb128 0x34
- 1995 01dc 00       		.byte	0
- 1996 01dd 03       		.uleb128 0x3
- 1997 01de 08       		.uleb128 0x8
- 1998 01df 3A       		.uleb128 0x3a
- 1999 01e0 0B       		.uleb128 0xb
- 2000 01e1 3B       		.uleb128 0x3b
- 2001 01e2 0B       		.uleb128 0xb
- 2002 01e3 49       		.uleb128 0x49
- 2003 01e4 13       		.uleb128 0x13
- 2004 01e5 3F       		.uleb128 0x3f
- 2005 01e6 19       		.uleb128 0x19
- 2006 01e7 02       		.uleb128 0x2
- 2007 01e8 18       		.uleb128 0x18
- 2008 01e9 00       		.byte	0
- 2009 01ea 00       		.byte	0
- 2010 01eb 00       		.byte	0
- 2011              		.section	.debug_aranges,"",%progbits
- 2012 0000 44000000 		.4byte	0x44
- 2013 0004 0200     		.2byte	0x2
- 2014 0006 00000000 		.4byte	.Ldebug_info0
- 2015 000a 04       		.byte	0x4
- 2016 000b 00       		.byte	0
- 2017 000c 0000     		.2byte	0
- 2018 000e 0000     		.2byte	0
- 2019 0010 00000000 		.4byte	.LFB69
- 2020 0014 E4000000 		.4byte	.LFE69-.LFB69
- 2021 0018 00000000 		.4byte	.LFB70
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 46
+ 2053 01b8 3B       		.uleb128 0x3b
+ 2054 01b9 05       		.uleb128 0x5
+ 2055 01ba 49       		.uleb128 0x49
+ 2056 01bb 13       		.uleb128 0x13
+ 2057 01bc 3F       		.uleb128 0x3f
+ 2058 01bd 19       		.uleb128 0x19
+ 2059 01be 3C       		.uleb128 0x3c
+ 2060 01bf 19       		.uleb128 0x19
+ 2061 01c0 00       		.byte	0
+ 2062 01c1 00       		.byte	0
+ 2063 01c2 21       		.uleb128 0x21
+ 2064 01c3 35       		.uleb128 0x35
+ 2065 01c4 00       		.byte	0
+ 2066 01c5 49       		.uleb128 0x49
+ 2067 01c6 13       		.uleb128 0x13
+ 2068 01c7 00       		.byte	0
+ 2069 01c8 00       		.byte	0
+ 2070 01c9 22       		.uleb128 0x22
+ 2071 01ca 34       		.uleb128 0x34
+ 2072 01cb 00       		.byte	0
+ 2073 01cc 03       		.uleb128 0x3
+ 2074 01cd 0E       		.uleb128 0xe
+ 2075 01ce 3A       		.uleb128 0x3a
+ 2076 01cf 0B       		.uleb128 0xb
+ 2077 01d0 3B       		.uleb128 0x3b
+ 2078 01d1 0B       		.uleb128 0xb
+ 2079 01d2 49       		.uleb128 0x49
+ 2080 01d3 13       		.uleb128 0x13
+ 2081 01d4 3F       		.uleb128 0x3f
+ 2082 01d5 19       		.uleb128 0x19
+ 2083 01d6 02       		.uleb128 0x2
+ 2084 01d7 18       		.uleb128 0x18
+ 2085 01d8 00       		.byte	0
+ 2086 01d9 00       		.byte	0
+ 2087 01da 23       		.uleb128 0x23
+ 2088 01db 34       		.uleb128 0x34
+ 2089 01dc 00       		.byte	0
+ 2090 01dd 03       		.uleb128 0x3
+ 2091 01de 08       		.uleb128 0x8
+ 2092 01df 3A       		.uleb128 0x3a
+ 2093 01e0 0B       		.uleb128 0xb
+ 2094 01e1 3B       		.uleb128 0x3b
+ 2095 01e2 0B       		.uleb128 0xb
+ 2096 01e3 49       		.uleb128 0x49
+ 2097 01e4 13       		.uleb128 0x13
+ 2098 01e5 3F       		.uleb128 0x3f
+ 2099 01e6 19       		.uleb128 0x19
+ 2100 01e7 02       		.uleb128 0x2
+ 2101 01e8 18       		.uleb128 0x18
+ 2102 01e9 00       		.byte	0
+ 2103 01ea 00       		.byte	0
+ 2104 01eb 00       		.byte	0
+ 2105              		.section	.debug_aranges,"",%progbits
+ 2106 0000 44000000 		.4byte	0x44
+ 2107 0004 0200     		.2byte	0x2
+ 2108 0006 00000000 		.4byte	.Ldebug_info0
+ 2109 000a 04       		.byte	0x4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 48
 
 
- 2022 001c F4020000 		.4byte	.LFE70-.LFB70
- 2023 0020 00000000 		.4byte	.LFB71
- 2024 0024 D0000000 		.4byte	.LFE71-.LFB71
- 2025 0028 00000000 		.4byte	.LFB72
- 2026 002c 90000000 		.4byte	.LFE72-.LFB72
- 2027 0030 00000000 		.4byte	.LFB73
- 2028 0034 1E000000 		.4byte	.LFE73-.LFB73
- 2029 0038 00000000 		.4byte	.LFB74
- 2030 003c 1A000000 		.4byte	.LFE74-.LFB74
- 2031 0040 00000000 		.4byte	0
- 2032 0044 00000000 		.4byte	0
- 2033              		.section	.debug_ranges,"",%progbits
- 2034              	.Ldebug_ranges0:
- 2035 0000 00000000 		.4byte	.LFB69
- 2036 0004 E4000000 		.4byte	.LFE69
- 2037 0008 00000000 		.4byte	.LFB70
- 2038 000c F4020000 		.4byte	.LFE70
- 2039 0010 00000000 		.4byte	.LFB71
- 2040 0014 D0000000 		.4byte	.LFE71
- 2041 0018 00000000 		.4byte	.LFB72
- 2042 001c 90000000 		.4byte	.LFE72
- 2043 0020 00000000 		.4byte	.LFB73
- 2044 0024 1E000000 		.4byte	.LFE73
- 2045 0028 00000000 		.4byte	.LFB74
- 2046 002c 1A000000 		.4byte	.LFE74
- 2047 0030 00000000 		.4byte	0
- 2048 0034 00000000 		.4byte	0
- 2049              		.section	.debug_line,"",%progbits
- 2050              	.Ldebug_line0:
- 2051 0000 26030000 		.section	.debug_str,"MS",%progbits,1
- 2051      0200DF01 
- 2051      00000201 
- 2051      FB0E0D00 
- 2051      01010101 
- 2052              	.LASF62:
- 2053 0000 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\FYP\\FYP_POSCCreator_M"
- 2053      73657273 
- 2053      5C736865 
- 2053      76695C44 
- 2053      6F63756D 
- 2054 002e 61737465 		.ascii	"aster-cb49844c11f80dd632253a3ce6c772ad769288bc\\FYP"
- 2054      722D6362 
- 2054      34393834 
- 2054      34633131 
- 2054      66383064 
- 2055 0060 5F50534F 		.ascii	"_PSOCCreator_Master\\CORTEX_CY8C5588_PSoC_Creator_G"
- 2055      43437265 
- 2055      61746F72 
- 2055      5F4D6173 
- 2055      7465725C 
- 2056 0092 43435C46 		.ascii	"CC\\FreeRTOS_Demo.cydsn\000"
- 2056      72656552 
- 2056      544F535F 
- 2056      44656D6F 
- 2056      2E637964 
- 2057              	.LASF50:
- 2058 00a9 43795261 		.ascii	"CyRamVectors\000"
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 47
+ 2110 000b 00       		.byte	0
+ 2111 000c 0000     		.2byte	0
+ 2112 000e 0000     		.2byte	0
+ 2113 0010 00000000 		.4byte	.LFB69
+ 2114 0014 E4000000 		.4byte	.LFE69-.LFB69
+ 2115 0018 00000000 		.4byte	.LFB70
+ 2116 001c 80030000 		.4byte	.LFE70-.LFB70
+ 2117 0020 00000000 		.4byte	.LFB71
+ 2118 0024 D0000000 		.4byte	.LFE71-.LFB71
+ 2119 0028 00000000 		.4byte	.LFB72
+ 2120 002c B4000000 		.4byte	.LFE72-.LFB72
+ 2121 0030 00000000 		.4byte	.LFB73
+ 2122 0034 1E000000 		.4byte	.LFE73-.LFB73
+ 2123 0038 00000000 		.4byte	.LFB74
+ 2124 003c 1A000000 		.4byte	.LFE74-.LFB74
+ 2125 0040 00000000 		.4byte	0
+ 2126 0044 00000000 		.4byte	0
+ 2127              		.section	.debug_ranges,"",%progbits
+ 2128              	.Ldebug_ranges0:
+ 2129 0000 00000000 		.4byte	.LFB69
+ 2130 0004 E4000000 		.4byte	.LFE69
+ 2131 0008 00000000 		.4byte	.LFB70
+ 2132 000c 80030000 		.4byte	.LFE70
+ 2133 0010 00000000 		.4byte	.LFB71
+ 2134 0014 D0000000 		.4byte	.LFE71
+ 2135 0018 00000000 		.4byte	.LFB72
+ 2136 001c B4000000 		.4byte	.LFE72
+ 2137 0020 00000000 		.4byte	.LFB73
+ 2138 0024 1E000000 		.4byte	.LFE73
+ 2139 0028 00000000 		.4byte	.LFB74
+ 2140 002c 1A000000 		.4byte	.LFE74
+ 2141 0030 00000000 		.4byte	0
+ 2142 0034 00000000 		.4byte	0
+ 2143              		.section	.debug_line,"",%progbits
+ 2144              	.Ldebug_line0:
+ 2145 0000 30030000 		.section	.debug_str,"MS",%progbits,1
+ 2145      0200DF01 
+ 2145      00000201 
+ 2145      FB0E0D00 
+ 2145      01010101 
+ 2146              	.LASF50:
+ 2147 0000 43795261 		.ascii	"CyRamVectors\000"
+ 2147      6D566563 
+ 2147      746F7273 
+ 2147      00
+ 2148              	.LASF40:
+ 2149 000d 72656365 		.ascii	"receive_data\000"
+ 2149      6976655F 
+ 2149      64617461 
+ 2149      00
+ 2150              	.LASF39:
+ 2151 001a 74656D70 		.ascii	"temp\000"
+ 2151      00
+ 2152              	.LASF28:
+ 2153 001f 6375725F 		.ascii	"cur_dest\000"
+ 2153      64657374 
+ 2153      00
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 49
 
 
- 2058      6D566563 
- 2058      746F7273 
- 2058      00
- 2059              	.LASF40:
- 2060 00b6 72656365 		.ascii	"receive_data\000"
- 2060      6976655F 
- 2060      64617461 
- 2060      00
- 2061              	.LASF39:
- 2062 00c3 74656D70 		.ascii	"temp\000"
- 2062      00
- 2063              	.LASF28:
- 2064 00c8 6375725F 		.ascii	"cur_dest\000"
- 2064      64657374 
- 2064      00
- 2065              	.LASF20:
- 2066 00d1 73697A65 		.ascii	"sizetype\000"
- 2066      74797065 
- 2066      00
- 2067              	.LASF43:
- 2068 00da 78506F72 		.ascii	"xPortSysTickHandler\000"
- 2068      74537973 
- 2068      5469636B 
- 2068      48616E64 
- 2068      6C657200 
- 2069              	.LASF23:
- 2070 00ee 5461736B 		.ascii	"TaskHandle_t\000"
- 2070      48616E64 
- 2070      6C655F74 
- 2070      00
- 2071              	.LASF60:
- 2072 00fb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2072      43313120 
- 2072      352E342E 
- 2072      31203230 
- 2072      31363036 
- 2073 012e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 2073      20726576 
- 2073      6973696F 
- 2073      6E203233 
- 2073      37373135 
- 2074 0161 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 2074      66756E63 
- 2074      74696F6E 
- 2074      2D736563 
- 2074      74696F6E 
- 2075              	.LASF19:
- 2076 0189 6C6F6E67 		.ascii	"long double\000"
- 2076      20646F75 
- 2076      626C6500 
- 2077              	.LASF7:
- 2078 0195 5F5F7569 		.ascii	"__uint32_t\000"
- 2078      6E743332 
- 2078      5F7400
- 2079              	.LASF36:
- 2080 01a0 5049445F 		.ascii	"PID_data\000"
- 2080      64617461 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 48
+ 2154              	.LASF20:
+ 2155 0028 73697A65 		.ascii	"sizetype\000"
+ 2155      74797065 
+ 2155      00
+ 2156              	.LASF43:
+ 2157 0031 78506F72 		.ascii	"xPortSysTickHandler\000"
+ 2157      74537973 
+ 2157      5469636B 
+ 2157      48616E64 
+ 2157      6C657200 
+ 2158              	.LASF23:
+ 2159 0045 5461736B 		.ascii	"TaskHandle_t\000"
+ 2159      48616E64 
+ 2159      6C655F74 
+ 2159      00
+ 2160              	.LASF60:
+ 2161 0052 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2161      43313120 
+ 2161      352E342E 
+ 2161      31203230 
+ 2161      31363036 
+ 2162 0085 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2162      20726576 
+ 2162      6973696F 
+ 2162      6E203233 
+ 2162      37373135 
+ 2163 00b8 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2163      66756E63 
+ 2163      74696F6E 
+ 2163      2D736563 
+ 2163      74696F6E 
+ 2164              	.LASF19:
+ 2165 00e0 6C6F6E67 		.ascii	"long double\000"
+ 2165      20646F75 
+ 2165      626C6500 
+ 2166              	.LASF7:
+ 2167 00ec 5F5F7569 		.ascii	"__uint32_t\000"
+ 2167      6E743332 
+ 2167      5F7400
+ 2168              	.LASF36:
+ 2169 00f7 5049445F 		.ascii	"PID_data\000"
+ 2169      64617461 
+ 2169      00
+ 2170              	.LASF18:
+ 2171 0100 63796973 		.ascii	"cyisraddress\000"
+ 2171      72616464 
+ 2171      72657373 
+ 2171      00
+ 2172              	.LASF2:
+ 2173 010d 73686F72 		.ascii	"short int\000"
+ 2173      7420696E 
+ 2173      7400
+ 2174              	.LASF59:
+ 2175 0117 66697273 		.ascii	"first_run\000"
+ 2175      745F7275 
+ 2175      6E00
+ 2176              	.LASF12:
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 50
 
 
- 2080      00
- 2081              	.LASF18:
- 2082 01a9 63796973 		.ascii	"cyisraddress\000"
- 2082      72616464 
- 2082      72657373 
- 2082      00
- 2083              	.LASF2:
- 2084 01b6 73686F72 		.ascii	"short int\000"
- 2084      7420696E 
- 2084      7400
- 2085              	.LASF59:
- 2086 01c0 66697273 		.ascii	"first_run\000"
- 2086      745F7275 
- 2086      6E00
- 2087              	.LASF12:
- 2088 01ca 75696E74 		.ascii	"uint8_t\000"
- 2088      385F7400 
- 2089              	.LASF44:
- 2090 01d2 76506F72 		.ascii	"vPortSVCHandler\000"
- 2090      74535643 
- 2090      48616E64 
- 2090      6C657200 
- 2091              	.LASF45:
- 2092 01e2 76417070 		.ascii	"vApplicationStackOverflowHook\000"
- 2092      6C696361 
- 2092      74696F6E 
- 2092      53746163 
- 2092      6B4F7665 
- 2093              	.LASF46:
- 2094 0200 70785461 		.ascii	"pxTask\000"
- 2094      736B00
- 2095              	.LASF15:
- 2096 0207 666C6F61 		.ascii	"float\000"
- 2096      7400
- 2097              	.LASF9:
- 2098 020d 6C6F6E67 		.ascii	"long long int\000"
- 2098      206C6F6E 
- 2098      6720696E 
- 2098      7400
- 2099              	.LASF53:
- 2100 021b 71756575 		.ascii	"queue_handle\000"
- 2100      655F6861 
- 2100      6E646C65 
- 2100      00
- 2101              	.LASF37:
- 2102 0228 6C6F6361 		.ascii	"local_write\000"
- 2102      6C5F7772 
- 2102      69746500 
- 2103              	.LASF6:
- 2104 0234 6C6F6E67 		.ascii	"long int\000"
- 2104      20696E74 
- 2104      00
- 2105              	.LASF35:
- 2106 023d 77686565 		.ascii	"wheel_data\000"
- 2106      6C5F6461 
- 2106      746100
- 2107              	.LASF34:
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 49
+ 2177 0121 75696E74 		.ascii	"uint8_t\000"
+ 2177      385F7400 
+ 2178              	.LASF44:
+ 2179 0129 76506F72 		.ascii	"vPortSVCHandler\000"
+ 2179      74535643 
+ 2179      48616E64 
+ 2179      6C657200 
+ 2180              	.LASF45:
+ 2181 0139 76417070 		.ascii	"vApplicationStackOverflowHook\000"
+ 2181      6C696361 
+ 2181      74696F6E 
+ 2181      53746163 
+ 2181      6B4F7665 
+ 2182              	.LASF46:
+ 2183 0157 70785461 		.ascii	"pxTask\000"
+ 2183      736B00
+ 2184              	.LASF15:
+ 2185 015e 666C6F61 		.ascii	"float\000"
+ 2185      7400
+ 2186              	.LASF9:
+ 2187 0164 6C6F6E67 		.ascii	"long long int\000"
+ 2187      206C6F6E 
+ 2187      6720696E 
+ 2187      7400
+ 2188              	.LASF53:
+ 2189 0172 71756575 		.ascii	"queue_handle\000"
+ 2189      655F6861 
+ 2189      6E646C65 
+ 2189      00
+ 2190              	.LASF37:
+ 2191 017f 6C6F6361 		.ascii	"local_write\000"
+ 2191      6C5F7772 
+ 2191      69746500 
+ 2192              	.LASF6:
+ 2193 018b 6C6F6E67 		.ascii	"long int\000"
+ 2193      20696E74 
+ 2193      00
+ 2194              	.LASF35:
+ 2195 0194 77686565 		.ascii	"wheel_data\000"
+ 2195      6C5F6461 
+ 2195      746100
+ 2196              	.LASF34:
+ 2197 019f 74696D65 		.ascii	"time_prev\000"
+ 2197      5F707265 
+ 2197      7600
+ 2198              	.LASF63:
+ 2199 01a9 5461736B 		.ascii	"TaskControlBlock_t\000"
+ 2199      436F6E74 
+ 2199      726F6C42 
+ 2199      6C6F636B 
+ 2199      5F7400
+ 2200              	.LASF4:
+ 2201 01bc 5F5F7569 		.ascii	"__uint8_t\000"
+ 2201      6E74385F 
+ 2201      7400
+ 2202              	.LASF49:
+ 2203 01c6 7078506F 		.ascii	"pxPort\000"
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 51
 
 
- 2108 0248 74696D65 		.ascii	"time_prev\000"
- 2108      5F707265 
- 2108      7600
- 2109              	.LASF63:
- 2110 0252 5461736B 		.ascii	"TaskControlBlock_t\000"
- 2110      436F6E74 
- 2110      726F6C42 
- 2110      6C6F636B 
- 2110      5F7400
- 2111              	.LASF4:
- 2112 0265 5F5F7569 		.ascii	"__uint8_t\000"
- 2112      6E74385F 
- 2112      7400
- 2113              	.LASF49:
- 2114 026f 7078506F 		.ascii	"pxPort\000"
- 2114      727400
- 2115              	.LASF48:
- 2116 0276 76417070 		.ascii	"vApplicationMallocFailedHook\000"
- 2116      6C696361 
- 2116      74696F6E 
- 2116      4D616C6C 
- 2116      6F634661 
- 2117              	.LASF58:
- 2118 0293 69734D61 		.ascii	"isMaster\000"
- 2118      73746572 
- 2118      00
- 2119              	.LASF1:
- 2120 029c 756E7369 		.ascii	"unsigned char\000"
- 2120      676E6564 
- 2120      20636861 
- 2120      7200
- 2121              	.LASF22:
- 2122 02aa 5469636B 		.ascii	"TickType_t\000"
- 2122      54797065 
- 2122      5F7400
- 2123              	.LASF31:
- 2124 02b5 6572726F 		.ascii	"error_sum\000"
- 2124      725F7375 
- 2124      6D00
- 2125              	.LASF25:
- 2126 02bf 53656D61 		.ascii	"SemaphoreHandle_t\000"
- 2126      70686F72 
- 2126      6548616E 
- 2126      646C655F 
- 2126      7400
- 2127              	.LASF27:
- 2128 02d1 70726576 		.ascii	"prev_dest\000"
- 2128      5F646573 
- 2128      7400
- 2129              	.LASF0:
- 2130 02db 7369676E 		.ascii	"signed char\000"
- 2130      65642063 
- 2130      68617200 
- 2131              	.LASF10:
- 2132 02e7 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2132      206C6F6E 
- 2132      6720756E 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 50
+ 2203      727400
+ 2204              	.LASF48:
+ 2205 01cd 76417070 		.ascii	"vApplicationMallocFailedHook\000"
+ 2205      6C696361 
+ 2205      74696F6E 
+ 2205      4D616C6C 
+ 2205      6F634661 
+ 2206              	.LASF58:
+ 2207 01ea 69734D61 		.ascii	"isMaster\000"
+ 2207      73746572 
+ 2207      00
+ 2208              	.LASF1:
+ 2209 01f3 756E7369 		.ascii	"unsigned char\000"
+ 2209      676E6564 
+ 2209      20636861 
+ 2209      7200
+ 2210              	.LASF22:
+ 2211 0201 5469636B 		.ascii	"TickType_t\000"
+ 2211      54797065 
+ 2211      5F7400
+ 2212              	.LASF31:
+ 2213 020c 6572726F 		.ascii	"error_sum\000"
+ 2213      725F7375 
+ 2213      6D00
+ 2214              	.LASF25:
+ 2215 0216 53656D61 		.ascii	"SemaphoreHandle_t\000"
+ 2215      70686F72 
+ 2215      6548616E 
+ 2215      646C655F 
+ 2215      7400
+ 2216              	.LASF27:
+ 2217 0228 70726576 		.ascii	"prev_dest\000"
+ 2217      5F646573 
+ 2217      7400
+ 2218              	.LASF0:
+ 2219 0232 7369676E 		.ascii	"signed char\000"
+ 2219      65642063 
+ 2219      68617200 
+ 2220              	.LASF10:
+ 2221 023e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2221      206C6F6E 
+ 2221      6720756E 
+ 2221      7369676E 
+ 2221      65642069 
+ 2222              	.LASF14:
+ 2223 0255 75696E74 		.ascii	"uint32_t\000"
+ 2223      33325F74 
+ 2223      00
+ 2224              	.LASF11:
+ 2225 025e 756E7369 		.ascii	"unsigned int\000"
+ 2225      676E6564 
+ 2225      20696E74 
+ 2225      00
+ 2226              	.LASF21:
+ 2227 026b 42617365 		.ascii	"BaseType_t\000"
+ 2227      54797065 
+ 2227      5F7400
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 52
 
 
- 2132      7369676E 
- 2132      65642069 
- 2133              	.LASF14:
- 2134 02fe 75696E74 		.ascii	"uint32_t\000"
- 2134      33325F74 
- 2134      00
- 2135              	.LASF11:
- 2136 0307 756E7369 		.ascii	"unsigned int\000"
- 2136      676E6564 
- 2136      20696E74 
- 2136      00
- 2137              	.LASF21:
- 2138 0314 42617365 		.ascii	"BaseType_t\000"
- 2138      54797065 
- 2138      5F7400
- 2139              	.LASF52:
- 2140 031f 67617465 		.ascii	"gatekeeper\000"
- 2140      6B656570 
- 2140      657200
- 2141              	.LASF33:
- 2142 032a 74696D65 		.ascii	"time\000"
- 2142      00
- 2143              	.LASF29:
- 2144 032f 6572726F 		.ascii	"error_prev\000"
- 2144      725F7072 
- 2144      657600
- 2145              	.LASF3:
- 2146 033a 73686F72 		.ascii	"short unsigned int\000"
- 2146      7420756E 
- 2146      7369676E 
- 2146      65642069 
- 2146      6E7400
- 2147              	.LASF17:
- 2148 034d 63686172 		.ascii	"char\000"
- 2148      00
- 2149              	.LASF32:
- 2150 0352 6D6F746F 		.ascii	"motor_volt\000"
- 2150      725F766F 
- 2150      6C7400
- 2151              	.LASF66:
- 2152 035d 6D61696E 		.ascii	"main\000"
- 2152      00
- 2153              	.LASF38:
- 2154 0362 74797065 		.ascii	"type\000"
- 2154      00
- 2155              	.LASF13:
- 2156 0367 696E7433 		.ascii	"int32_t\000"
- 2156      325F7400 
- 2157              	.LASF42:
- 2158 036f 78506F72 		.ascii	"xPortPendSVHandler\000"
- 2158      7450656E 
- 2158      64535648 
- 2158      616E646C 
- 2158      657200
- 2159              	.LASF26:
- 2160 0382 78436F6D 		.ascii	"xComPortHandle\000"
- 2160      506F7274 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 51
+ 2228              	.LASF52:
+ 2229 0276 67617465 		.ascii	"gatekeeper\000"
+ 2229      6B656570 
+ 2229      657200
+ 2230              	.LASF33:
+ 2231 0281 74696D65 		.ascii	"time\000"
+ 2231      00
+ 2232              	.LASF29:
+ 2233 0286 6572726F 		.ascii	"error_prev\000"
+ 2233      725F7072 
+ 2233      657600
+ 2234              	.LASF3:
+ 2235 0291 73686F72 		.ascii	"short unsigned int\000"
+ 2235      7420756E 
+ 2235      7369676E 
+ 2235      65642069 
+ 2235      6E7400
+ 2236              	.LASF17:
+ 2237 02a4 63686172 		.ascii	"char\000"
+ 2237      00
+ 2238              	.LASF32:
+ 2239 02a9 6D6F746F 		.ascii	"motor_volt\000"
+ 2239      725F766F 
+ 2239      6C7400
+ 2240              	.LASF66:
+ 2241 02b4 6D61696E 		.ascii	"main\000"
+ 2241      00
+ 2242              	.LASF38:
+ 2243 02b9 74797065 		.ascii	"type\000"
+ 2243      00
+ 2244              	.LASF13:
+ 2245 02be 696E7433 		.ascii	"int32_t\000"
+ 2245      325F7400 
+ 2246              	.LASF42:
+ 2247 02c6 78506F72 		.ascii	"xPortPendSVHandler\000"
+ 2247      7450656E 
+ 2247      64535648 
+ 2247      616E646C 
+ 2247      657200
+ 2248              	.LASF26:
+ 2249 02d9 78436F6D 		.ascii	"xComPortHandle\000"
+ 2249      506F7274 
+ 2249      48616E64 
+ 2249      6C6500
+ 2250              	.LASF67:
+ 2251 02e8 70727648 		.ascii	"prvHardwareSetup\000"
+ 2251      61726477 
+ 2251      61726553 
+ 2251      65747570 
+ 2251      00
+ 2252              	.LASF55:
+ 2253 02f9 62756666 		.ascii	"buffer\000"
+ 2253      657200
+ 2254              	.LASF61:
+ 2255 0300 6D61696E 		.ascii	"main.c\000"
+ 2255      2E6300
+ 2256              	.LASF8:
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 53
 
 
- 2160      48616E64 
- 2160      6C6500
- 2161              	.LASF67:
- 2162 0391 70727648 		.ascii	"prvHardwareSetup\000"
- 2162      61726477 
- 2162      61726553 
- 2162      65747570 
- 2162      00
- 2163              	.LASF55:
- 2164 03a2 62756666 		.ascii	"buffer\000"
- 2164      657200
- 2165              	.LASF61:
- 2166 03a9 6D61696E 		.ascii	"main.c\000"
- 2166      2E6300
- 2167              	.LASF8:
- 2168 03b0 6C6F6E67 		.ascii	"long unsigned int\000"
- 2168      20756E73 
- 2168      69676E65 
- 2168      6420696E 
- 2168      7400
- 2169              	.LASF16:
- 2170 03c2 646F7562 		.ascii	"double\000"
- 2170      6C6500
- 2171              	.LASF54:
- 2172 03c9 72785F72 		.ascii	"rx_receive\000"
- 2172      65636569 
- 2172      766500
- 2173              	.LASF5:
- 2174 03d4 5F5F696E 		.ascii	"__int32_t\000"
- 2174      7433325F 
- 2174      7400
- 2175              	.LASF24:
- 2176 03de 51756575 		.ascii	"QueueHandle_t\000"
- 2176      6548616E 
- 2176      646C655F 
- 2176      7400
- 2177              	.LASF30:
- 2178 03ec 6572726F 		.ascii	"error\000"
- 2178      7200
- 2179              	.LASF64:
- 2180 03f2 76506F72 		.ascii	"vPortRaiseBASEPRI\000"
- 2180      74526169 
- 2180      73654241 
- 2180      53455052 
- 2180      4900
- 2181              	.LASF57:
- 2182 0404 72696768 		.ascii	"right_wheel\000"
- 2182      745F7768 
- 2182      65656C00 
- 2183              	.LASF51:
- 2184 0410 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 2184      52784275 
- 2184      66666572 
- 2184      00
- 2185              	.LASF56:
- 2186 041d 6C656674 		.ascii	"left_wheel\000"
- 2186      5F776865 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\cchpMgoP.s 			page 52
+ 2257 0307 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2257      20756E73 
+ 2257      69676E65 
+ 2257      6420696E 
+ 2257      7400
+ 2258              	.LASF16:
+ 2259 0319 646F7562 		.ascii	"double\000"
+ 2259      6C6500
+ 2260              	.LASF54:
+ 2261 0320 72785F72 		.ascii	"rx_receive\000"
+ 2261      65636569 
+ 2261      766500
+ 2262              	.LASF5:
+ 2263 032b 5F5F696E 		.ascii	"__int32_t\000"
+ 2263      7433325F 
+ 2263      7400
+ 2264              	.LASF24:
+ 2265 0335 51756575 		.ascii	"QueueHandle_t\000"
+ 2265      6548616E 
+ 2265      646C655F 
+ 2265      7400
+ 2266              	.LASF30:
+ 2267 0343 6572726F 		.ascii	"error\000"
+ 2267      7200
+ 2268              	.LASF62:
+ 2269 0349 433A5C55 		.ascii	"C:\\Users\\shevi\\Downloads\\FYP_POSCCreator_Master"
+ 2269      73657273 
+ 2269      5C736865 
+ 2269      76695C44 
+ 2269      6F776E6C 
+ 2270 0378 2D6D6173 		.ascii	"-master\\FYP_POSCCreator_Master-master\\FYP_PSOCCre"
+ 2270      7465725C 
+ 2270      4659505F 
+ 2270      504F5343 
+ 2270      43726561 
+ 2271 03a9 61746F72 		.ascii	"ator_Master\\CORTEX_CY8C5588_PSoC_Creator_GCC\\Free"
+ 2271      5F4D6173 
+ 2271      7465725C 
+ 2271      434F5254 
+ 2271      45585F43 
+ 2272 03da 52544F53 		.ascii	"RTOS_Demo.cydsn\000"
+ 2272      5F44656D 
+ 2272      6F2E6379 
+ 2272      64736E00 
+ 2273              	.LASF64:
+ 2274 03ea 76506F72 		.ascii	"vPortRaiseBASEPRI\000"
+ 2274      74526169 
+ 2274      73654241 
+ 2274      53455052 
+ 2274      4900
+ 2275              	.LASF57:
+ 2276 03fc 72696768 		.ascii	"right_wheel\000"
+ 2276      745F7768 
+ 2276      65656C00 
+ 2277              	.LASF51:
+ 2278 0408 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 2278      52784275 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\cc7JCaEk.s 			page 54
 
 
- 2186      656C00
- 2187              	.LASF41:
- 2188 0428 5049445F 		.ascii	"PID_initialise\000"
- 2188      696E6974 
- 2188      69616C69 
- 2188      736500
- 2189              	.LASF65:
- 2190 0437 756C4E65 		.ascii	"ulNewBASEPRI\000"
- 2190      77424153 
- 2190      45505249 
- 2190      00
- 2191              	.LASF47:
- 2192 0444 70635461 		.ascii	"pcTaskName\000"
- 2192      736B4E61 
- 2192      6D6500
- 2193              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2278      66666572 
+ 2278      00
+ 2279              	.LASF56:
+ 2280 0415 6C656674 		.ascii	"left_wheel\000"
+ 2280      5F776865 
+ 2280      656C00
+ 2281              	.LASF41:
+ 2282 0420 5049445F 		.ascii	"PID_initialise\000"
+ 2282      696E6974 
+ 2282      69616C69 
+ 2282      736500
+ 2283              	.LASF65:
+ 2284 042f 756C4E65 		.ascii	"ulNewBASEPRI\000"
+ 2284      77424153 
+ 2284      45505249 
+ 2284      00
+ 2285              	.LASF47:
+ 2286 043c 70635461 		.ascii	"pcTaskName\000"
+ 2286      736B4E61 
+ 2286      6D6500
+ 2287              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

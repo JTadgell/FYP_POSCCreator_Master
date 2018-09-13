@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
   24:Generated_Source\PSoC5/UART_1_PM.c **** static UART_1_BACKUP_STRUCT  UART_1_backup =
   25:Generated_Source\PSoC5/UART_1_PM.c **** {
   26:Generated_Source\PSoC5/UART_1_PM.c ****     /* enableState - disabled */
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 2
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 2
 
 
   27:Generated_Source\PSoC5/UART_1_PM.c ****     0u,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
   53              		.size	UART_1_SaveConfig, .-UART_1_SaveConfig
   54              		.section	.text.UART_1_RestoreConfig,"ax",%progbits
   55              		.align	2
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 3
 
 
   56              		.global	UART_1_RestoreConfig
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
   77 0008 80BC     		pop	{r7}
   78              		.cfi_restore 7
   79              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 4
 
 
   80 000a 7047     		bx	lr
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  103 0004 094B     		ldr	r3, .L6
  104 0006 1B78     		ldrb	r3, [r3]
  105 0008 DBB2     		uxtb	r3, r3
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 5
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 5
 
 
  106 000a 03F01003 		and	r3, r3, #16
@@ -286,7 +286,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  127              	.L7:
  128              		.align	2
  129              	.L6:
- 130 002c 94650040 		.word	1073767828
+ 130 002c 93640040 		.word	1073767571
  131 0030 00000000 		.word	UART_1_backup
  132              		.cfi_endproc
  133              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  139              		.thumb_func
  140              		.type	UART_1_Wakeup, %function
  141              	UART_1_Wakeup:
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 6
 
 
  142              	.LFB3:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  182:Generated_Source\PSoC5/UART_1_PM.c ****     if(UART_1_backup.enableState != 0u)
  159              		.loc 1 182 0
  160 0010 034B     		ldr	r3, .L11
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 7
 
 
  161 0012 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -394,34 +394,34 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  187 000b 01       		.uleb128 0x1
  188 000c 7B000000 		.4byte	.LASF21
  189 0010 0C       		.byte	0xc
- 190 0011 17010000 		.4byte	.LASF22
- 191 0015 91010000 		.4byte	.LASF23
+ 190 0011 B8010000 		.4byte	.LASF22
+ 191 0015 09010000 		.4byte	.LASF23
  192 0019 00000000 		.4byte	.Ldebug_ranges0+0
  193 001d 00000000 		.4byte	0
  194 0021 00000000 		.4byte	.Ldebug_line0
  195 0025 02       		.uleb128 0x2
  196 0026 01       		.byte	0x1
  197 0027 06       		.byte	0x6
- 198 0028 85010000 		.4byte	.LASF0
+ 198 0028 26020000 		.4byte	.LASF0
  199 002c 02       		.uleb128 0x2
  200 002d 01       		.byte	0x1
  201 002e 08       		.byte	0x8
- 202 002f 09010000 		.4byte	.LASF1
+ 202 002f AA010000 		.4byte	.LASF1
  203 0033 02       		.uleb128 0x2
  204 0034 02       		.byte	0x2
  205 0035 05       		.byte	0x5
- 206 0036 5B020000 		.4byte	.LASF2
+ 206 0036 53020000 		.4byte	.LASF2
  207 003a 02       		.uleb128 0x2
  208 003b 02       		.byte	0x2
  209 003c 07       		.byte	0x7
- 210 003d 72010000 		.4byte	.LASF3
+ 210 003d 13020000 		.4byte	.LASF3
  211 0041 02       		.uleb128 0x2
  212 0042 04       		.byte	0x4
  213 0043 05       		.byte	0x5
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 8
 
 
- 214 0044 3F010000 		.4byte	.LASF4
+ 214 0044 E0010000 		.4byte	.LASF4
  215 0048 02       		.uleb128 0x2
  216 0049 04       		.byte	0x4
  217 004a 07       		.byte	0x7
@@ -454,13 +454,13 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  244 007e 02       		.uleb128 0x2
  245 007f 08       		.byte	0x8
  246 0080 04       		.byte	0x4
- 247 0081 48010000 		.4byte	.LASF10
+ 247 0081 E9010000 		.4byte	.LASF10
  248 0085 02       		.uleb128 0x2
  249 0086 01       		.byte	0x1
  250 0087 08       		.byte	0x8
- 251 0088 3A010000 		.4byte	.LASF11
+ 251 0088 DB010000 		.4byte	.LASF11
  252 008c 04       		.uleb128 0x4
- 253 008d 65020000 		.4byte	.LASF13
+ 253 008d 5D020000 		.4byte	.LASF13
  254 0091 02       		.byte	0x2
  255 0092 3C02     		.2byte	0x23c
  256 0094 98000000 		.4byte	0x98
@@ -469,16 +469,16 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  259 009d 02       		.uleb128 0x2
  260 009e 08       		.byte	0x8
  261 009f 04       		.byte	0x4
- 262 00a0 4F020000 		.4byte	.LASF14
+ 262 00a0 47020000 		.4byte	.LASF14
  263 00a4 02       		.uleb128 0x2
  264 00a5 04       		.byte	0x4
  265 00a6 07       		.byte	0x7
- 266 00a7 78020000 		.4byte	.LASF15
+ 266 00a7 70020000 		.4byte	.LASF15
  267 00ab 06       		.uleb128 0x6
- 268 00ac 5D010000 		.4byte	.LASF24
+ 268 00ac FE010000 		.4byte	.LASF24
  269 00b0 01       		.byte	0x1
  270 00b1 03       		.byte	0x3
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 9
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 9
 
 
  271 00b2 45       		.byte	0x45
@@ -491,7 +491,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  278 00c2 00       		.byte	0
  279 00c3 00       		.byte	0
  280 00c4 08       		.uleb128 0x8
- 281 00c5 81020000 		.4byte	.LASF16
+ 281 00c5 79020000 		.4byte	.LASF16
  282 00c9 03       		.byte	0x3
  283 00ca 4D       		.byte	0x4d
  284 00cb AB000000 		.4byte	0xab
@@ -504,7 +504,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  291 00de 01       		.uleb128 0x1
  292 00df 9C       		.byte	0x9c
  293 00e0 09       		.uleb128 0x9
- 294 00e1 3A020000 		.4byte	.LASF18
+ 294 00e1 32020000 		.4byte	.LASF18
  295 00e5 01       		.byte	0x1
  296 00e6 57       		.byte	0x57
  297 00e7 00000000 		.4byte	.LFB1
@@ -520,7 +520,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  307 0100 01       		.uleb128 0x1
  308 0101 9C       		.byte	0x9c
  309 0102 0A       		.uleb128 0xa
- 310 0103 6A020000 		.4byte	.LASF20
+ 310 0103 62020000 		.4byte	.LASF20
  311 0107 01       		.byte	0x1
  312 0108 AC       		.byte	0xac
  313 0109 00000000 		.4byte	.LFB3
@@ -528,7 +528,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  315 0111 01       		.uleb128 0x1
  316 0112 9C       		.byte	0x9c
  317 0113 0B       		.uleb128 0xb
- 318 0114 4F010000 		.4byte	.LASF26
+ 318 0114 F0010000 		.4byte	.LASF26
  319 0118 01       		.byte	0x1
  320 0119 18       		.byte	0x18
  321 011a C4000000 		.4byte	0xc4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  325 0124 00       		.byte	0
  326              		.section	.debug_abbrev,"",%progbits
  327              	.Ldebug_abbrev0:
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 10
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 10
 
 
  328 0000 01       		.uleb128 0x1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  382 0036 05       		.uleb128 0x5
  383 0037 35       		.uleb128 0x35
  384 0038 00       		.byte	0
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 11
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 11
 
 
  385 0039 49       		.uleb128 0x49
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  439 006f 3A       		.uleb128 0x3a
  440 0070 0B       		.uleb128 0xb
  441 0071 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 12
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 12
 
 
  442 0072 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  496 0004 0200     		.2byte	0x2
  497 0006 00000000 		.4byte	.Ldebug_info0
  498 000a 04       		.byte	0x4
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 13
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 13
 
 
  499 000b 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  537              	.LASF5:
  538 003a 6C6F6E67 		.ascii	"long unsigned int\000"
  538      20756E73 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 14
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 14
 
 
  538      69676E65 
@@ -815,103 +815,102 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 1
  548      74696F6E 
  548      2D736563 
  548      74696F6E 
- 549              	.LASF1:
- 550 0109 756E7369 		.ascii	"unsigned char\000"
- 550      676E6564 
- 550      20636861 
- 550      7200
- 551              	.LASF22:
- 552 0117 47656E65 		.ascii	"Generated_Source\\PSoC5\\UART_1_PM.c\000"
- 552      72617465 
- 552      645F536F 
- 552      75726365 
- 552      5C50536F 
- 553              	.LASF11:
- 554 013a 63686172 		.ascii	"char\000"
- 554      00
- 555              	.LASF4:
- 556 013f 6C6F6E67 		.ascii	"long int\000"
- 556      20696E74 
- 556      00
- 557              	.LASF10:
- 558 0148 646F7562 		.ascii	"double\000"
- 558      6C6500
- 559              	.LASF26:
- 560 014f 55415254 		.ascii	"UART_1_backup\000"
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 15
+ 549              	.LASF23:
+ 550 0109 433A5C55 		.ascii	"C:\\Users\\shevi\\Downloads\\FYP_POSCCreator_Master"
+ 550      73657273 
+ 550      5C736865 
+ 550      76695C44 
+ 550      6F776E6C 
+ 551 0138 2D6D6173 		.ascii	"-master\\FYP_POSCCreator_Master-master\\FYP_PSOCCre"
+ 551      7465725C 
+ 551      4659505F 
+ 551      504F5343 
+ 551      43726561 
+ 552 0169 61746F72 		.ascii	"ator_Master\\CORTEX_CY8C5588_PSoC_Creator_GCC\\Free"
+ 552      5F4D6173 
+ 552      7465725C 
+ 552      434F5254 
+ 552      45585F43 
+ 553 019a 52544F53 		.ascii	"RTOS_Demo.cydsn\000"
+ 553      5F44656D 
+ 553      6F2E6379 
+ 553      64736E00 
+ 554              	.LASF1:
+ 555 01aa 756E7369 		.ascii	"unsigned char\000"
+ 555      676E6564 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 15
 
 
- 560      5F315F62 
- 560      61636B75 
- 560      7000
- 561              	.LASF24:
- 562 015d 55415254 		.ascii	"UART_1_backupStruct_\000"
- 562      5F315F62 
- 562      61636B75 
- 562      70537472 
- 562      7563745F 
- 563              	.LASF3:
- 564 0172 73686F72 		.ascii	"short unsigned int\000"
- 564      7420756E 
- 564      7369676E 
- 564      65642069 
- 564      6E7400
- 565              	.LASF0:
- 566 0185 7369676E 		.ascii	"signed char\000"
- 566      65642063 
- 566      68617200 
- 567              	.LASF23:
- 568 0191 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\FYP\\FYP_POSCCreator_M"
- 568      73657273 
- 568      5C736865 
- 568      76695C44 
- 568      6F63756D 
- 569 01bf 61737465 		.ascii	"aster-cb49844c11f80dd632253a3ce6c772ad769288bc\\FYP"
- 569      722D6362 
- 569      34393834 
- 569      34633131 
- 569      66383064 
- 570 01f1 5F50534F 		.ascii	"_PSOCCreator_Master\\CORTEX_CY8C5588_PSoC_Creator_G"
- 570      43437265 
- 570      61746F72 
- 570      5F4D6173 
- 570      7465725C 
- 571 0223 43435C46 		.ascii	"CC\\FreeRTOS_Demo.cydsn\000"
- 571      72656552 
- 571      544F535F 
- 571      44656D6F 
- 571      2E637964 
+ 555      20636861 
+ 555      7200
+ 556              	.LASF22:
+ 557 01b8 47656E65 		.ascii	"Generated_Source\\PSoC5\\UART_1_PM.c\000"
+ 557      72617465 
+ 557      645F536F 
+ 557      75726365 
+ 557      5C50536F 
+ 558              	.LASF11:
+ 559 01db 63686172 		.ascii	"char\000"
+ 559      00
+ 560              	.LASF4:
+ 561 01e0 6C6F6E67 		.ascii	"long int\000"
+ 561      20696E74 
+ 561      00
+ 562              	.LASF10:
+ 563 01e9 646F7562 		.ascii	"double\000"
+ 563      6C6500
+ 564              	.LASF26:
+ 565 01f0 55415254 		.ascii	"UART_1_backup\000"
+ 565      5F315F62 
+ 565      61636B75 
+ 565      7000
+ 566              	.LASF24:
+ 567 01fe 55415254 		.ascii	"UART_1_backupStruct_\000"
+ 567      5F315F62 
+ 567      61636B75 
+ 567      70537472 
+ 567      7563745F 
+ 568              	.LASF3:
+ 569 0213 73686F72 		.ascii	"short unsigned int\000"
+ 569      7420756E 
+ 569      7369676E 
+ 569      65642069 
+ 569      6E7400
+ 570              	.LASF0:
+ 571 0226 7369676E 		.ascii	"signed char\000"
+ 571      65642063 
+ 571      68617200 
  572              	.LASF18:
- 573 023a 55415254 		.ascii	"UART_1_RestoreConfig\000"
+ 573 0232 55415254 		.ascii	"UART_1_RestoreConfig\000"
  573      5F315F52 
  573      6573746F 
  573      7265436F 
  573      6E666967 
  574              	.LASF14:
- 575 024f 6C6F6E67 		.ascii	"long double\000"
+ 575 0247 6C6F6E67 		.ascii	"long double\000"
  575      20646F75 
  575      626C6500 
  576              	.LASF2:
- 577 025b 73686F72 		.ascii	"short int\000"
+ 577 0253 73686F72 		.ascii	"short int\000"
  577      7420696E 
  577      7400
  578              	.LASF13:
- 579 0265 72656738 		.ascii	"reg8\000"
+ 579 025d 72656738 		.ascii	"reg8\000"
  579      00
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccakMFXA.s 			page 16
-
-
  580              	.LASF20:
- 581 026a 55415254 		.ascii	"UART_1_Wakeup\000"
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccgamrll.s 			page 16
+
+
+ 581 0262 55415254 		.ascii	"UART_1_Wakeup\000"
  581      5F315F57 
  581      616B6575 
  581      7000
  582              	.LASF15:
- 583 0278 73697A65 		.ascii	"sizetype\000"
+ 583 0270 73697A65 		.ascii	"sizetype\000"
  583      74797065 
  583      00
  584              	.LASF16:
- 585 0281 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
+ 585 0279 55415254 		.ascii	"UART_1_BACKUP_STRUCT\000"
  585      5F315F42 
  585      41434B55 
  585      505F5354 

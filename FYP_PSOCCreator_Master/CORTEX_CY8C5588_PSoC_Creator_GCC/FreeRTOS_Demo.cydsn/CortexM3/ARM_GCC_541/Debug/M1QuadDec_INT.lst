@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
   21:Generated_Source\PSoC5/M1QuadDec_INT.c **** 
   22:Generated_Source\PSoC5/M1QuadDec_INT.c **** 
   23:Generated_Source\PSoC5/M1QuadDec_INT.c **** volatile int32 M1QuadDec_count32SoftPart = 0;
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 2
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 2
 
 
   24:Generated_Source\PSoC5/M1QuadDec_INT.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
   51              		.loc 1 61 0
   52 000c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
   53 000e 03F00103 		and	r3, r3, #1
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 3
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 3
 
 
   54 0012 002B     		cmp	r3, #0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
   83:Generated_Source\PSoC5/M1QuadDec_INT.c **** 
   84:Generated_Source\PSoC5/M1QuadDec_INT.c ****     #ifdef M1QuadDec_ISR_EXIT_CALLBACK
   85:Generated_Source\PSoC5/M1QuadDec_INT.c ****         M1QuadDec_ISR_ExitCallback();
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 4
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 4
 
 
   86:Generated_Source\PSoC5/M1QuadDec_INT.c ****     #endif /* M1QuadDec_ISR_EXIT_CALLBACK */
@@ -197,7 +197,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
   98              	.L7:
   99 0056 00BF     		.align	2
  100              	.L6:
- 101 0058 6C640040 		.word	1073767532
+ 101 0058 6F640040 		.word	1073767535
  102 005c 00000000 		.word	M1QuadDec_count32SoftPart
  103              		.cfi_endproc
  104              	.LFE0:
@@ -214,8 +214,8 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  115 000b 01       		.uleb128 0x1
  116 000c 78000000 		.4byte	.LASF17
  117 0010 0C       		.byte	0xc
- 118 0011 04020000 		.4byte	.LASF18
- 119 0015 5B010000 		.4byte	.LASF19
+ 118 0011 FC010000 		.4byte	.LASF18
+ 119 0015 06010000 		.4byte	.LASF19
  120 0019 00000000 		.4byte	.Ldebug_ranges0+0
  121 001d 00000000 		.4byte	0
  122 0021 00000000 		.4byte	.Ldebug_line0
@@ -234,30 +234,30 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  135 003a 03       		.uleb128 0x3
  136 003b 08       		.byte	0x8
  137 003c 04       		.byte	0x4
- 138 003d 2B020000 		.4byte	.LASF2
+ 138 003d 23020000 		.4byte	.LASF2
  139 0041 03       		.uleb128 0x3
  140 0042 01       		.byte	0x1
  141 0043 06       		.byte	0x6
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 5
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 5
 
 
- 142 0044 4F010000 		.4byte	.LASF3
+ 142 0044 F0010000 		.4byte	.LASF3
  143 0048 03       		.uleb128 0x3
  144 0049 01       		.byte	0x1
  145 004a 08       		.byte	0x8
- 146 004b 06010000 		.4byte	.LASF4
+ 146 004b A7010000 		.4byte	.LASF4
  147 004f 03       		.uleb128 0x3
  148 0050 02       		.byte	0x2
  149 0051 05       		.byte	0x5
- 150 0052 37020000 		.4byte	.LASF5
+ 150 0052 2F020000 		.4byte	.LASF5
  151 0056 03       		.uleb128 0x3
  152 0057 02       		.byte	0x2
  153 0058 07       		.byte	0x7
- 154 0059 3C010000 		.4byte	.LASF6
+ 154 0059 DD010000 		.4byte	.LASF6
  155 005d 03       		.uleb128 0x3
  156 005e 04       		.byte	0x4
  157 005f 05       		.byte	0x5
- 158 0060 19010000 		.4byte	.LASF7
+ 158 0060 BA010000 		.4byte	.LASF7
  159 0064 03       		.uleb128 0x3
  160 0065 04       		.byte	0x4
  161 0066 07       		.byte	0x7
@@ -269,18 +269,18 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  167 0072 03       		.uleb128 0x3
  168 0073 04       		.byte	0x4
  169 0074 07       		.byte	0x7
- 170 0075 46020000 		.4byte	.LASF10
+ 170 0075 3E020000 		.4byte	.LASF10
  171 0079 03       		.uleb128 0x3
  172 007a 01       		.byte	0x1
  173 007b 08       		.byte	0x8
- 174 007c 14010000 		.4byte	.LASF11
+ 174 007c B5010000 		.4byte	.LASF11
  175 0080 04       		.uleb128 0x4
  176 0081 43000000 		.4byte	.LASF12
  177 0085 02       		.byte	0x2
  178 0086 9201     		.2byte	0x192
  179 0088 48000000 		.4byte	0x48
  180 008c 04       		.uleb128 0x4
- 181 008d 4F020000 		.4byte	.LASF13
+ 181 008d 47020000 		.4byte	.LASF13
  182 0091 02       		.byte	0x2
  183 0092 9701     		.2byte	0x197
  184 0094 5D000000 		.4byte	0x5d
@@ -291,14 +291,14 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  189 009f 03       		.uleb128 0x3
  190 00a0 08       		.byte	0x8
  191 00a1 04       		.byte	0x4
- 192 00a2 22010000 		.4byte	.LASF15
+ 192 00a2 C3010000 		.4byte	.LASF15
  193 00a6 04       		.uleb128 0x4
- 194 00a7 41020000 		.4byte	.LASF16
+ 194 00a7 39020000 		.4byte	.LASF16
  195 00ab 02       		.byte	0x2
  196 00ac 3C02     		.2byte	0x23c
  197 00ae B2000000 		.4byte	0xb2
  198 00b2 05       		.uleb128 0x5
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 6
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 6
 
 
  199 00b3 80000000 		.4byte	0x80
@@ -312,7 +312,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  207 00c7 9C       		.byte	0x9c
  208 00c8 DB000000 		.4byte	0xdb
  209 00cc 07       		.uleb128 0x7
- 210 00cd 29010000 		.4byte	.LASF21
+ 210 00cd CA010000 		.4byte	.LASF21
  211 00d1 01       		.byte	0x1
  212 00d2 30       		.byte	0x30
  213 00d3 80000000 		.4byte	0x80
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  253 0016 0B       		.uleb128 0xb
  254 0017 0B       		.uleb128 0xb
  255 0018 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 7
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 7
 
 
  256 0019 0B       		.uleb128 0xb
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  310 004f 18       		.uleb128 0x18
  311 0050 9742     		.uleb128 0x2117
  312 0052 19       		.uleb128 0x19
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 8
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 8
 
 
  313 0053 01       		.uleb128 0x1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  367 000c 00000000 		.4byte	0
  368              		.section	.debug_line,"",%progbits
  369              	.Ldebug_line0:
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 9
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 9
 
 
  370 0000 6B000000 		.section	.debug_str,"MS",%progbits,1
@@ -538,89 +538,88 @@ ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 1
  389      37373135 
  390 00de 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  390      66756E63 
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 10
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 10
 
 
  390      74696F6E 
  390      2D736563 
  390      74696F6E 
- 391              	.LASF4:
- 392 0106 756E7369 		.ascii	"unsigned char\000"
- 392      676E6564 
- 392      20636861 
- 392      7200
- 393              	.LASF11:
- 394 0114 63686172 		.ascii	"char\000"
- 394      00
- 395              	.LASF7:
- 396 0119 6C6F6E67 		.ascii	"long int\000"
- 396      20696E74 
- 396      00
- 397              	.LASF15:
- 398 0122 646F7562 		.ascii	"double\000"
- 398      6C6500
- 399              	.LASF21:
- 400 0129 4D315175 		.ascii	"M1QuadDec_swStatus\000"
- 400      61644465 
- 400      635F7377 
- 400      53746174 
- 400      757300
- 401              	.LASF6:
- 402 013c 73686F72 		.ascii	"short unsigned int\000"
- 402      7420756E 
- 402      7369676E 
- 402      65642069 
- 402      6E7400
- 403              	.LASF3:
- 404 014f 7369676E 		.ascii	"signed char\000"
- 404      65642063 
- 404      68617200 
- 405              	.LASF19:
- 406 015b 433A5C55 		.ascii	"C:\\Users\\shevi\\Documents\\FYP\\FYP_POSCCreator_M"
- 406      73657273 
- 406      5C736865 
- 406      76695C44 
- 406      6F63756D 
- 407 0189 61737465 		.ascii	"aster-cb49844c11f80dd632253a3ce6c772ad769288bc\\FYP"
- 407      722D6362 
- 407      34393834 
- 407      34633131 
- 407      66383064 
- 408 01bb 5F50534F 		.ascii	"_PSOCCreator_Master\\CORTEX_CY8C5588_PSoC_Creator_G"
- 408      43437265 
- 408      61746F72 
- 408      5F4D6173 
- 408      7465725C 
- 409 01ed 43435C46 		.ascii	"CC\\FreeRTOS_Demo.cydsn\000"
- 409      72656552 
- 409      544F535F 
- 409      44656D6F 
- 409      2E637964 
+ 391              	.LASF19:
+ 392 0106 433A5C55 		.ascii	"C:\\Users\\shevi\\Downloads\\FYP_POSCCreator_Master"
+ 392      73657273 
+ 392      5C736865 
+ 392      76695C44 
+ 392      6F776E6C 
+ 393 0135 2D6D6173 		.ascii	"-master\\FYP_POSCCreator_Master-master\\FYP_PSOCCre"
+ 393      7465725C 
+ 393      4659505F 
+ 393      504F5343 
+ 393      43726561 
+ 394 0166 61746F72 		.ascii	"ator_Master\\CORTEX_CY8C5588_PSoC_Creator_GCC\\Free"
+ 394      5F4D6173 
+ 394      7465725C 
+ 394      434F5254 
+ 394      45585F43 
+ 395 0197 52544F53 		.ascii	"RTOS_Demo.cydsn\000"
+ 395      5F44656D 
+ 395      6F2E6379 
+ 395      64736E00 
+ 396              	.LASF4:
+ 397 01a7 756E7369 		.ascii	"unsigned char\000"
+ 397      676E6564 
+ 397      20636861 
+ 397      7200
+ 398              	.LASF11:
+ 399 01b5 63686172 		.ascii	"char\000"
+ 399      00
+ 400              	.LASF7:
+ 401 01ba 6C6F6E67 		.ascii	"long int\000"
+ 401      20696E74 
+ 401      00
+ 402              	.LASF15:
+ 403 01c3 646F7562 		.ascii	"double\000"
+ 403      6C6500
+ 404              	.LASF21:
+ 405 01ca 4D315175 		.ascii	"M1QuadDec_swStatus\000"
+ 405      61644465 
+ 405      635F7377 
+ 405      53746174 
+ 405      757300
+ 406              	.LASF6:
+ 407 01dd 73686F72 		.ascii	"short unsigned int\000"
+ 407      7420756E 
+ 407      7369676E 
+ 407      65642069 
+ 407      6E7400
+ 408              	.LASF3:
+ 409 01f0 7369676E 		.ascii	"signed char\000"
+ 409      65642063 
+ 409      68617200 
  410              	.LASF18:
- 411 0204 47656E65 		.ascii	"Generated_Source\\PSoC5\\M1QuadDec_INT.c\000"
-ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccnu43ru.s 			page 11
-
-
+ 411 01fc 47656E65 		.ascii	"Generated_Source\\PSoC5\\M1QuadDec_INT.c\000"
  411      72617465 
+ARM GAS  C:\Users\shevi\AppData\Local\Temp\ccPnvzeH.s 			page 11
+
+
  411      645F536F 
  411      75726365 
  411      5C50536F 
  412              	.LASF2:
- 413 022b 6C6F6E67 		.ascii	"long double\000"
+ 413 0223 6C6F6E67 		.ascii	"long double\000"
  413      20646F75 
  413      626C6500 
  414              	.LASF5:
- 415 0237 73686F72 		.ascii	"short int\000"
+ 415 022f 73686F72 		.ascii	"short int\000"
  415      7420696E 
  415      7400
  416              	.LASF16:
- 417 0241 72656738 		.ascii	"reg8\000"
+ 417 0239 72656738 		.ascii	"reg8\000"
  417      00
  418              	.LASF10:
- 419 0246 73697A65 		.ascii	"sizetype\000"
+ 419 023e 73697A65 		.ascii	"sizetype\000"
  419      74797065 
  419      00
  420              	.LASF13:
- 421 024f 696E7433 		.ascii	"int32\000"
+ 421 0247 696E7433 		.ascii	"int32\000"
  421      3200
  422              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

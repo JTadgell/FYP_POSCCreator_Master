@@ -1,5 +1,5 @@
 # FreeRTOS_Demo
-# 2018-09-10 02:05:52Z
+# 2018-09-12 03:05:57Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -24,3 +24,4 @@ set_io "Laser(0)" iocell 3 3
 set_io "pwm(0)" iocell 1 7
 set_io "LED_RED(0)" iocell 12 2
 set_io "LED_BLUE(0)" iocell 12 3
+set_io "pwm_3(0)" iocell 3 1

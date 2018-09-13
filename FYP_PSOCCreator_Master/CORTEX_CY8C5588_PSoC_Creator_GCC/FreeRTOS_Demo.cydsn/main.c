@@ -84,7 +84,7 @@ wheel_data left_wheel;
 wheel_data right_wheel;
 PID_data k;
 
-int isMaster=1;          // use 1 if it is the master, 0 if it is the slave.
+int isMaster=0;          // use 1 if it is the master, 0 if it is the slave.
 int first_run=1;
 
 // START OF FUNCTIONS
@@ -145,22 +145,39 @@ void receive_data( void *p ) {
                     CySoftwareReset();
                 }  
             
-                if (type=='4' && ~isMaster){//Camera position for LED CV
+                if (type=='4'){//Camera position for LED CV
+                    if(isMaster==0){
                     sprintf((char *) local_write, "VERTICAL \n");
                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
                     PWM_1_Wakeup();                 
                     PWM_1_WriteCompare(1200);
                     CyDelay(1000);
-                    PWM_1_Sleep();
+                    PWM_1_Sleep();}
+                    if(isMaster==1){
+                    sprintf((char *) local_write, "Laser UP \n");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    PWM_2_Wakeup();                 
+                    PWM_2_WriteCompare(1850); //DONT GO Below 1800 
+                    CyDelay(1000);
+                    PWM_2_Sleep();}
+                        
                     
                 }
-                if (type=='5' && ~isMaster){//Causes position for Laser DOT CV
+                if (type=='5'){//Causes position for Laser DOT CV
+                    if(isMaster==0){
                     sprintf((char *) local_write, "HORIZONTAL \n");
                     vSerialPutString(pxPort, (const signed char *) local_write, 64);
                     PWM_1_Wakeup();
                     PWM_1_WriteCompare(2100);//0 deg;
                     CyDelay(1000);
-                    PWM_1_Sleep();
+                    PWM_1_Sleep();}
+                    if(isMaster==1){
+                    sprintf((char *) local_write, "Laser DOWN \n");
+                    vSerialPutString(pxPort, (const signed char *) local_write, 64);
+                    PWM_2_Wakeup();                 
+                    PWM_2_WriteCompare(2100); //DONT GO ABOVE 2100
+                    CyDelay(1000);
+                    PWM_2_Sleep();}
                     
                 }
                  if (type=='6' && isMaster){//TURN ON LED_BLUE
@@ -261,8 +278,12 @@ void prvHardwareSetup( void ) {
     Timer_1_Start();
 
     /* Start up the master peripherals. */
-    if (isMaster){
-         
+    if (isMaster==1){
+        Clock_2_Start();
+        PWM_2_Start();
+        PWM_2_WriteCompare(1850);//90 deg Camera;
+        CyDelay(1000);
+        PWM_2_Sleep();
     }
     
     /* Start up the slave peripherals. */
